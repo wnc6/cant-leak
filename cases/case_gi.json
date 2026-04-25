@@ -1,0 +1,246 @@
+{
+  "case_id": "GI-001",
+  "specialty": "gastrointestinal",
+  "difficulty": "medical_student_osce",
+  "patient": {
+    "name": "David Okafor",
+    "age": 42,
+    "sex": "male"
+  },
+  "chief_complaint": "Worsening abdominal pain and bloody stools for the past 3 weeks",
+  "diagnosis": "ulcerative colitis, initial presentation",
+  "facts": [
+    {
+      "id": "G01",
+      "slot": "symptom",
+      "content": "Crampy lower abdominal pain, predominantly left-sided",
+      "attributes": {
+        "onset": "3 weeks ago",
+        "location": "lower abdomen, mostly left side",
+        "duration": "intermittent episodes lasting 30-60 minutes",
+        "frequency": "daily, 4-6 episodes per day",
+        "severity": "5/10 baseline, 7/10 during flares",
+        "progression": "gradually worsening"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "G02",
+      "slot": "symptom",
+      "content": "Bloody stools with mucus, bright red blood mixed with stool",
+      "attributes": {
+        "onset": "2 weeks ago",
+        "frequency": "most bowel movements",
+        "progression": "increasing amount of blood"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "G03",
+      "slot": "symptom",
+      "content": "Increased bowel frequency, 8-10 bowel movements per day (up from usual 1-2), loose to watery with urgency",
+      "attributes": {
+        "onset": "3 weeks ago",
+        "progression": "worsening"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "G04",
+      "slot": "symptom",
+      "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night",
+      "attributes": {
+        "onset": "1 week ago",
+        "frequency": "nightly"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about nighttime symptoms, sleep disruption, OR whether diarrhea occurs at night",
+      "unlock_keywords": ["night", "sleep", "wake", "nocturnal", "at night", "during the night", "when you sleep"]
+    },
+    {
+      "id": "G05",
+      "slot": "symptom",
+      "content": "Tenesmus — sensation of incomplete evacuation after most bowel movements",
+      "attributes": {
+        "onset": "2 weeks ago",
+        "frequency": "after most bowel movements"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about sensation after bowel movements, straining, OR feeling of incomplete emptying",
+      "unlock_keywords": ["after bowel", "incomplete", "strain", "tenesmus", "empty", "finish", "done", "feel like you still", "sensation after"]
+    },
+    {
+      "id": "G06",
+      "slot": "symptom",
+      "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks",
+      "attributes": {
+        "onset": "gradual over 3 weeks"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about weight changes OR appetite changes",
+      "unlock_keywords": ["weight", "appetite", "lost weight", "gain weight", "eat", "hunger", "pounds", "kilos"]
+    },
+    {
+      "id": "G07",
+      "slot": "symptom",
+      "content": "Achy pain in both knees and ankles, no swelling or redness",
+      "attributes": {
+        "onset": "2 weeks ago",
+        "location": "bilateral knees and ankles",
+        "severity": "mild"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about joint symptoms, OR performs a review of systems that specifically includes musculoskeletal questions",
+      "unlock_keywords": ["joint", "knee", "ankle", "musculoskeletal", "arthritis", "ache", "stiff", "pain in your", "body pain", "anywhere else hurt"]
+    },
+    {
+      "id": "G08",
+      "slot": "symptom",
+      "content": "Fatigue affecting work performance, worsening with the diarrhea",
+      "attributes": {
+        "onset": "2 weeks ago",
+        "severity": "moderate"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "G09",
+      "slot": "symptom",
+      "content": "Low-grade fever (37.8-38.0°C), a few times per week",
+      "attributes": {
+        "onset": "1 week ago",
+        "frequency": "intermittent"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about fever, chills, or constitutional symptoms",
+      "unlock_keywords": ["fever", "temperature", "chill", "constitutional", "sweat", "hot", "cold"]
+    },
+    {
+      "id": "G10",
+      "slot": "patient_medical_history",
+      "content": "No significant prior medical conditions",
+      "disclosed": true
+    },
+    {
+      "id": "G11",
+      "slot": "patient_medical_history",
+      "content": "Appendectomy at age 16, no complications",
+      "disclosed": true
+    },
+    {
+      "id": "G12",
+      "slot": "medication",
+      "content": "Has been self-medicating with loperamide (Imodium) for diarrhea for the past 2 weeks, with minimal relief",
+      "disclosed": true
+    },
+    {
+      "id": "G13",
+      "slot": "medication",
+      "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms",
+      "disclosed": false,
+      "disclosure_condition": "Student asks about NSAID use, pain medication use, OR what the patient has tried for the joint pain",
+      "unlock_keywords": ["NSAID", "ibuprofen", "advil", "motrin", "pain medication", "painkiller", "anti-inflammatory", "what have you taken", "tried for the pain", "over the counter"]
+    },
+    {
+      "id": "G14",
+      "slot": "habits",
+      "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work",
+      "disclosed": false,
+      "disclosure_condition": "Student asks directly about alcohol consumption in a non-judgmental way, OR asks about coping mechanisms and stress management",
+      "unlock_keywords": ["alcohol", "drink", "beer", "wine", "liquor", "coping", "stress", "how do you deal", "manage stress"]
+    },
+    {
+      "id": "G15",
+      "slot": "habits",
+      "content": "Non-smoker",
+      "disclosed": true
+    },
+    {
+      "id": "G16",
+      "slot": "habits",
+      "content": "No recreational drug use",
+      "disclosed": true
+    },
+    {
+      "id": "G17",
+      "slot": "habits",
+      "content": "Sexually active with his girlfriend, uses condoms, no concerns",
+      "disclosed": true
+    },
+    {
+      "id": "G18",
+      "slot": "habits",
+      "content": "Irregular meals due to long work hours, mostly takeout",
+      "disclosed": true
+    },
+    {
+      "id": "G19",
+      "slot": "family_medical_history",
+      "content": "Older sister diagnosed with Crohn's disease at age 30",
+      "disclosed": false,
+      "disclosure_condition": "Student asks about family history of GI disease, inflammatory bowel disease, OR autoimmune conditions",
+      "unlock_keywords": ["family history", "family", "IBD", "inflammatory bowel", "Crohn", "colitis", "autoimmune", "bowel disease", "GI disease", "digestive disease", "parent", "sibling", "sister", "brother"]
+    },
+    {
+      "id": "G20",
+      "slot": "family_medical_history",
+      "content": "Father has type 2 diabetes; mother is healthy",
+      "disclosed": true
+    },
+    {
+      "id": "G21",
+      "slot": "occupation",
+      "content": "Software engineer at a startup, working 60+ hour weeks with high stress",
+      "disclosed": true
+    },
+    {
+      "id": "G22",
+      "slot": "residence",
+      "content": "Lives alone in an apartment in Austin, Texas",
+      "disclosed": true
+    },
+    {
+      "id": "G23",
+      "slot": "travel",
+      "content": "Traveled to Mexico 3 months ago for a work conference, had no GI issues during or after the trip",
+      "disclosed": true
+    },
+    {
+      "id": "G24",
+      "slot": "exposure",
+      "content": "No known sick contacts with similar symptoms, no recent food poisoning",
+      "disclosed": true
+    },
+    {
+      "id": "G25",
+      "slot": "medical_test",
+      "content": "Has not seen a doctor in over 2 years, no recent bloodwork or tests",
+      "disclosed": true
+    },
+    {
+      "id": "G26",
+      "slot": "basic_information",
+      "content": "No known drug allergies",
+      "disclosed": true
+    }
+  ],
+  "summary": {
+    "total_facts": 26,
+    "disclosed": 18,
+    "withheld": 8,
+    "withheld_ids": ["G04", "G05", "G06", "G07", "G09", "G13", "G14", "G19"],
+    "slot_coverage": {
+      "symptom": 9,
+      "patient_medical_history": 2,
+      "medication": 2,
+      "habits": 5,
+      "family_medical_history": 2,
+      "occupation": 1,
+      "residence": 1,
+      "travel": 1,
+      "exposure": 1,
+      "medical_test": 1,
+      "basic_information": 1
+    }
+  }
+}

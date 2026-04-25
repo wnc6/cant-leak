@@ -1,0 +1,229 @@
+{
+  "case_id": "CARDIO-001",
+  "specialty": "cardiology",
+  "difficulty": "medical_student_osce",
+  "patient": {
+    "name": "Michael Torres",
+    "age": 54,
+    "sex": "male"
+  },
+  "chief_complaint": "Chest tightness and shortness of breath for the past 3 days",
+  "diagnosis": "unstable angina",
+  "facts": [
+    {
+      "id": "C01",
+      "slot": "symptom",
+      "content": "Chest tightness, substernal, described as a pressure sensation",
+      "attributes": {
+        "onset": "3 days ago",
+        "duration": "episodes lasting 10-15 minutes",
+        "location": "substernal",
+        "frequency": "3-4 times per day",
+        "severity": "6/10 at rest, 8/10 with exertion",
+        "progression": "gradually worsening over 3 days"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "C02",
+      "slot": "symptom",
+      "content": "Shortness of breath on exertion, concurrent with chest tightness",
+      "attributes": {
+        "onset": "3 days ago",
+        "severity": "moderate, limits ability to climb stairs",
+        "progression": "worsening"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "C03",
+      "slot": "symptom",
+      "content": "Diaphoresis (sweating) during chest tightness episodes",
+      "attributes": {
+        "onset": "2 days ago",
+        "frequency": "accompanies most chest tightness episodes"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about associated symptoms during chest pain episodes (e.g., 'Do you notice anything else when the tightness happens?' or asks specifically about sweating, nausea, or dizziness)",
+      "unlock_keywords": ["sweat", "nausea", "dizz", "associated", "anything else", "other symptom", "notice anything", "accompan", "along with"]
+    },
+    {
+      "id": "C04",
+      "slot": "symptom",
+      "content": "Mild nausea during chest tightness episodes, no vomiting",
+      "attributes": {
+        "onset": "2 days ago",
+        "severity": "mild"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about GI symptoms OR associated symptoms during chest pain, AND has already inquired about the character or quality of the chest pain",
+      "unlock_keywords": ["nausea", "vomit", "stomach", "GI", "gastro", "digest", "associated", "anything else", "other symptom"]
+    },
+    {
+      "id": "C05",
+      "slot": "symptom",
+      "content": "Left arm tingling during the more severe episodes",
+      "attributes": {
+        "onset": "yesterday",
+        "location": "left arm, shoulder to fingertips"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about radiation of the chest pain OR asks about numbness, tingling, or pain in the arms",
+      "unlock_keywords": ["radiat", "spread", "arm", "tingl", "numb", "shoulder", "travel", "move to", "go to", "anywhere else"]
+    },
+    {
+      "id": "C06",
+      "slot": "symptom",
+      "content": "Mild bilateral ankle swelling, shoes feel tighter than usual",
+      "attributes": {
+        "onset": "1 week ago",
+        "location": "bilateral ankles",
+        "severity": "mild"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about swelling in the legs or feet, OR performs a review of systems that specifically includes lower extremity questions",
+      "unlock_keywords": ["swell", "ankle", "leg", "feet", "foot", "edema", "lower extrem", "fluid"]
+    },
+    {
+      "id": "C07",
+      "slot": "patient_medical_history",
+      "content": "Hypertension diagnosed 8 years ago",
+      "disclosed": true
+    },
+    {
+      "id": "C08",
+      "slot": "patient_medical_history",
+      "content": "Type 2 diabetes diagnosed 5 years ago",
+      "disclosed": true
+    },
+    {
+      "id": "C09",
+      "slot": "patient_medical_history",
+      "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own",
+      "disclosed": false,
+      "disclosure_condition": "Student asks about cholesterol OR asks about cardiac risk factors beyond hypertension and diabetes",
+      "unlock_keywords": ["cholesterol", "lipid", "statin", "risk factor", "cardiac risk", "heart risk", "fat", "triglyceride"]
+    },
+    {
+      "id": "C10",
+      "slot": "medication",
+      "content": "Amlodipine 10mg daily for hypertension, but misses doses 2-3 times per week due to irregular schedule on the road",
+      "disclosed": true
+    },
+    {
+      "id": "C11",
+      "slot": "medication",
+      "content": "Metformin 1000mg twice daily for diabetes, fairly consistent",
+      "disclosed": true
+    },
+    {
+      "id": "C12",
+      "slot": "habits",
+      "content": "Smokes half a pack of cigarettes per day, has smoked for 25 years (12.5 pack-years)",
+      "disclosed": true
+    },
+    {
+      "id": "C13",
+      "slot": "habits",
+      "content": "Sedentary lifestyle due to occupation, does not exercise",
+      "disclosed": false,
+      "disclosure_condition": "Student asks about exercise or physical activity",
+      "unlock_keywords": ["exercis", "physical activity", "active", "workout", "fitness", "walk", "run", "sport", "sedentary"]
+    },
+    {
+      "id": "C14",
+      "slot": "habits",
+      "content": "Diet heavy in fast food, eats fast food 5-6 days per week",
+      "disclosed": false,
+      "disclosure_condition": "Student asks about diet or eating habits",
+      "unlock_keywords": ["diet", "eat", "food", "meal", "nutrition", "what do you eat"]
+    },
+    {
+      "id": "C15",
+      "slot": "habits",
+      "content": "Drinks 1-2 beers on weekends, no heavy drinking",
+      "disclosed": true
+    },
+    {
+      "id": "C16",
+      "slot": "habits",
+      "content": "No recreational drug use",
+      "disclosed": true
+    },
+    {
+      "id": "C17",
+      "slot": "habits",
+      "content": "Sexually active with his wife, no concerns",
+      "disclosed": true
+    },
+    {
+      "id": "C18",
+      "slot": "family_medical_history",
+      "content": "Father had a heart attack at age 52 and died",
+      "disclosed": false,
+      "disclosure_condition": "Student specifically asks about family history of heart disease, heart attacks, or cardiac problems — a generic 'any family history of medical conditions' is NOT sufficient",
+      "unlock_keywords": ["heart disease", "heart attack", "cardiac", "cardiovascular", "myocardial", "coronary", "heart problem", "heart condition"]
+    },
+    {
+      "id": "C19",
+      "slot": "family_medical_history",
+      "content": "Mother has hypertension and type 2 diabetes, alive at 78",
+      "disclosed": true
+    },
+    {
+      "id": "C20",
+      "slot": "occupation",
+      "content": "Long-haul truck driver, spends most of the week on the road",
+      "disclosed": true
+    },
+    {
+      "id": "C21",
+      "slot": "residence",
+      "content": "Lives with wife in suburban Ohio, home when not driving",
+      "disclosed": true
+    },
+    {
+      "id": "C22",
+      "slot": "exposure",
+      "content": "No recent illness, no sick contacts",
+      "disclosed": true
+    },
+    {
+      "id": "C23",
+      "slot": "travel",
+      "content": "Drives across the Midwest for work but no international travel",
+      "disclosed": true
+    },
+    {
+      "id": "C24",
+      "slot": "medical_test",
+      "content": "Last saw a doctor about 1 year ago for a routine checkup, was told his cholesterol was high",
+      "disclosed": true
+    },
+    {
+      "id": "C25",
+      "slot": "basic_information",
+      "content": "No known drug allergies",
+      "disclosed": true
+    }
+  ],
+  "summary": {
+    "total_facts": 25,
+    "disclosed": 17,
+    "withheld": 8,
+    "withheld_ids": ["C03", "C04", "C05", "C06", "C09", "C13", "C14", "C18"],
+    "slot_coverage": {
+      "symptom": 6,
+      "patient_medical_history": 3,
+      "medication": 2,
+      "habits": 6,
+      "family_medical_history": 2,
+      "occupation": 1,
+      "residence": 1,
+      "exposure": 1,
+      "travel": 1,
+      "medical_test": 1,
+      "basic_information": 1
+    }
+  }
+}

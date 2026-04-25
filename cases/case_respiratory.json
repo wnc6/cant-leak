@@ -1,0 +1,237 @@
+{
+  "case_id": "RESP-001",
+  "specialty": "respiratory",
+  "difficulty": "medical_student_osce",
+  "patient": {
+    "name": "Sarah Kim",
+    "age": 34,
+    "sex": "female"
+  },
+  "chief_complaint": "Persistent cough and difficulty breathing for 2 weeks",
+  "diagnosis": "community-acquired pneumonia with underlying undiagnosed asthma",
+  "facts": [
+    {
+      "id": "R01",
+      "slot": "symptom",
+      "content": "Persistent productive cough, started dry and became productive with yellowish-green sputum over the past 5 days",
+      "attributes": {
+        "onset": "2 weeks ago",
+        "duration": "constant, worse at night",
+        "severity": "moderate, disrupts sleep",
+        "progression": "started dry, became productive 5 days ago"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "R02",
+      "slot": "symptom",
+      "content": "Difficulty breathing and wheezing",
+      "attributes": {
+        "onset": "10 days ago",
+        "severity": "moderate, noticeable with walking and talking",
+        "progression": "worsening"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "R03",
+      "slot": "symptom",
+      "content": "Low-grade fever, around 38.2°C (100.8°F), intermittent and worse in evenings",
+      "attributes": {
+        "onset": "5 days ago",
+        "severity": "low-grade",
+        "progression": "intermittent"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "R04",
+      "slot": "symptom",
+      "content": "Night sweats, soaking through pajamas every night for 4 nights",
+      "attributes": {
+        "onset": "4 days ago",
+        "frequency": "nightly",
+        "severity": "soaks through pajamas"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about constitutional symptoms beyond fever (e.g., chills, night sweats) OR asks specifically what happens at night besides the cough",
+      "unlock_keywords": ["sweat", "night sweat", "chill", "shiver", "constitutional", "at night", "during the night", "when you sleep", "besides the cough"]
+    },
+    {
+      "id": "R05",
+      "slot": "symptom",
+      "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing",
+      "attributes": {
+        "onset": "3 days ago",
+        "location": "right lower chest",
+        "severity": "5/10",
+        "characteristics": "pleuritic, worse with inspiration and coughing"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about chest pain OR asks about pain associated with breathing or coughing",
+      "unlock_keywords": ["chest pain", "pain", "hurt", "ache", "sore", "pleurit", "pain when you breath", "pain when you cough"]
+    },
+    {
+      "id": "R06",
+      "slot": "symptom",
+      "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed",
+      "attributes": {
+        "onset": "since childhood, around age 8",
+        "frequency": "2-3 episodes per year",
+        "duration": "each episode lasts a few days",
+        "progression": "has been happening for years, patient considers it normal"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks whether breathing problems have occurred before this illness, OR asks about history of asthma, wheezing, or allergies",
+      "unlock_keywords": ["before", "previous", "history of", "asthma", "wheez", "allerg", "in the past", "ever had", "happened before", "prior"]
+    },
+    {
+      "id": "R07",
+      "slot": "symptom",
+      "content": "Fatigue and malaise, has missed 3 days of work",
+      "attributes": {
+        "onset": "1 week ago",
+        "severity": "moderate"
+      },
+      "disclosed": true
+    },
+    {
+      "id": "R08",
+      "slot": "symptom",
+      "content": "Decreased appetite for the past 5 days",
+      "attributes": {
+        "onset": "5 days ago"
+      },
+      "disclosed": false,
+      "disclosure_condition": "Student asks about appetite, weight changes, or nutritional intake",
+      "unlock_keywords": ["appetite", "eat", "weight", "nutrition", "food", "hunger", "meal"]
+    },
+    {
+      "id": "R09",
+      "slot": "patient_medical_history",
+      "content": "Seasonal allergies (allergic rhinitis) since teenage years, takes over-the-counter cetirizine as needed",
+      "disclosed": true
+    },
+    {
+      "id": "R10",
+      "slot": "patient_medical_history",
+      "content": "No prior hospitalizations or surgeries",
+      "disclosed": true
+    },
+    {
+      "id": "R11",
+      "slot": "medication",
+      "content": "Cetirizine 10mg as needed during allergy season",
+      "disclosed": true
+    },
+    {
+      "id": "R12",
+      "slot": "medication",
+      "content": "Has been taking OTC dextromethorphan (cough suppressant) for the past week with minimal relief",
+      "disclosed": true
+    },
+    {
+      "id": "R13",
+      "slot": "habits",
+      "content": "Never smoked",
+      "disclosed": true
+    },
+    {
+      "id": "R14",
+      "slot": "habits",
+      "content": "Social alcohol use, 1-2 glasses of wine on weekends",
+      "disclosed": true
+    },
+    {
+      "id": "R15",
+      "slot": "habits",
+      "content": "No recreational drug use",
+      "disclosed": true
+    },
+    {
+      "id": "R16",
+      "slot": "habits",
+      "content": "Sexually active with her partner, uses oral contraceptives, no concerns",
+      "disclosed": true
+    },
+    {
+      "id": "R17",
+      "slot": "exposure",
+      "content": "Several students in her class have been sick with upper respiratory infections in the past month",
+      "disclosed": true
+    },
+    {
+      "id": "R18",
+      "slot": "exposure",
+      "content": "Lives with her partner and a cat; partner has had a mild cold recently",
+      "disclosed": false,
+      "disclosure_condition": "Student asks about household contacts, sick contacts at home, OR asks about her living situation",
+      "unlock_keywords": ["live with", "household", "at home", "partner", "roommate", "who do you live", "anyone at home", "sick contact", "anyone else sick", "home environment"]
+    },
+    {
+      "id": "R19",
+      "slot": "family_medical_history",
+      "content": "Mother has asthma",
+      "disclosed": false,
+      "disclosure_condition": "Student asks about family history of respiratory disease, asthma, or lung conditions",
+      "unlock_keywords": ["family history", "family", "asthma", "lung", "respiratory", "breathing problem", "mother", "father", "parent", "sibling"]
+    },
+    {
+      "id": "R20",
+      "slot": "family_medical_history",
+      "content": "Maternal grandmother died of lung cancer",
+      "disclosed": false,
+      "disclosure_condition": "Student asks about family history of cancer OR asks a general family history question and follows up on respiratory/lung conditions",
+      "unlock_keywords": ["cancer", "family history", "grandmother", "grandparent", "lung", "malignant", "tumor", "oncolog"]
+    },
+    {
+      "id": "R21",
+      "slot": "occupation",
+      "content": "Elementary school teacher, works with young children daily",
+      "disclosed": true
+    },
+    {
+      "id": "R22",
+      "slot": "residence",
+      "content": "Lives in an apartment in Portland, Oregon with her partner",
+      "disclosed": true
+    },
+    {
+      "id": "R23",
+      "slot": "travel",
+      "content": "No recent travel outside the state",
+      "disclosed": true
+    },
+    {
+      "id": "R24",
+      "slot": "medical_test",
+      "content": "Last physical exam about a year ago, everything was normal",
+      "disclosed": true
+    },
+    {
+      "id": "R25",
+      "slot": "basic_information",
+      "content": "Allergic to penicillin — causes rash",
+      "disclosed": true
+    }
+  ],
+  "summary": {
+    "total_facts": 25,
+    "disclosed": 18,
+    "withheld": 7,
+    "withheld_ids": ["R04", "R05", "R06", "R08", "R18", "R19", "R20"],
+    "slot_coverage": {
+      "symptom": 8,
+      "patient_medical_history": 2,
+      "medication": 2,
+      "habits": 4,
+      "exposure": 2,
+      "family_medical_history": 2,
+      "occupation": 1,
+      "residence": 1,
+      "travel": 1,
+      "medical_test": 1,
+      "basic_information": 1
+    }
+  }
+}
