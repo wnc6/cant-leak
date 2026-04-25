@@ -45,7 +45,8 @@
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about associated symptoms during chest pain episodes (e.g., 'Do you notice anything else when the tightness happens?' or asks specifically about sweating, nausea, or dizziness)",
-      "unlock_keywords": ["sweat", "nausea", "dizz", "associated", "anything else", "other symptom", "notice anything", "accompan", "along with"]
+      "unlock_keywords": ["sweat", "nausea", "dizz", "associated", "anything else", "other symptom", "notice anything", "accompan", "along with"],
+      "leak_phrases": ["diaphoresis"]
     },
     {
       "id": "C04",
@@ -57,7 +58,8 @@
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about GI symptoms OR associated symptoms during chest pain, AND has already inquired about the character or quality of the chest pain",
-      "unlock_keywords": ["nausea", "vomit", "stomach", "GI", "gastro", "digest", "associated", "anything else", "other symptom"]
+      "unlock_keywords": ["nausea", "vomit", "stomach", "GI", "gastro", "digest", "associated", "anything else", "other symptom"],
+      "leak_phrases": ["nausea during chest", "nauseous during chest", "feel sick during"]
     },
     {
       "id": "C05",
@@ -69,7 +71,8 @@
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about radiation of the chest pain OR asks about numbness, tingling, or pain in the arms",
-      "unlock_keywords": ["radiat", "spread", "arm", "tingl", "numb", "shoulder", "travel", "move to", "go to", "anywhere else"]
+      "unlock_keywords": ["radiat", "spread", "arm", "tingl", "numb", "shoulder", "travel", "move to", "go to", "anywhere else"],
+      "leak_phrases": ["left arm tingl", "arm goes numb", "tingling in my arm"]
     },
     {
       "id": "C06",
@@ -82,7 +85,8 @@
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about swelling in the legs or feet, OR performs a review of systems that specifically includes lower extremity questions",
-      "unlock_keywords": ["swell", "ankle", "leg", "feet", "foot", "edema", "lower extrem", "fluid"]
+      "unlock_keywords": ["swell", "ankle", "leg", "feet", "foot", "edema", "lower extrem", "fluid"],
+      "leak_phrases": ["ankle swell", "swollen ankle", "feet swell", "shoes feel tight", "edema"]
     },
     {
       "id": "C07",
@@ -102,7 +106,8 @@
       "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own",
       "disclosed": false,
       "disclosure_condition": "Student asks about cholesterol OR asks about cardiac risk factors beyond hypertension and diabetes",
-      "unlock_keywords": ["cholesterol", "lipid", "statin", "risk factor", "cardiac risk", "heart risk", "fat", "triglyceride"]
+      "unlock_keywords": ["cholesterol", "lipid", "statin", "risk factor", "cardiac risk", "heart risk", "fat", "triglyceride"],
+      "leak_phrases": ["atorvastatin", "stopped taking my statin", "hyperlipidemia", "high cholesterol"]
     },
     {
       "id": "C10",
@@ -128,7 +133,8 @@
       "content": "Sedentary lifestyle due to occupation, does not exercise",
       "disclosed": false,
       "disclosure_condition": "Student asks about exercise or physical activity",
-      "unlock_keywords": ["exercis", "physical activity", "active", "workout", "fitness", "walk", "run", "sport", "sedentary"]
+      "unlock_keywords": ["exercis", "physical activity", "active", "workout", "fitness", "walk", "run", "sport", "sedentary"],
+      "leak_phrases": ["don't exercise", "no exercise", "sedentary", "never work out"]
     },
     {
       "id": "C14",
@@ -136,7 +142,8 @@
       "content": "Diet heavy in fast food, eats fast food 5-6 days per week",
       "disclosed": false,
       "disclosure_condition": "Student asks about diet or eating habits",
-      "unlock_keywords": ["diet", "eat", "food", "meal", "nutrition", "what do you eat"]
+      "unlock_keywords": ["diet", "eat", "food", "meal", "nutrition", "what do you eat"],
+      "leak_phrases": ["fast food", "junk food", "unhealthy diet", "eat out every"]
     },
     {
       "id": "C15",
@@ -162,7 +169,8 @@
       "content": "Father had a heart attack at age 52 and died",
       "disclosed": false,
       "disclosure_condition": "Student specifically asks about family history of heart disease, heart attacks, or cardiac problems — a generic 'any family history of medical conditions' is NOT sufficient",
-      "unlock_keywords": ["heart disease", "heart attack", "cardiac", "cardiovascular", "myocardial", "coronary", "heart problem", "heart condition"]
+      "unlock_keywords": ["heart disease", "heart attack", "cardiac", "cardiovascular", "myocardial", "coronary", "heart problem", "heart condition"],
+      "leak_phrases": ["father had a heart attack", "dad had a heart attack", "father died of", "dad died of"]
     },
     {
       "id": "C19",
