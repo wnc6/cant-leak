@@ -20,7 +20,9 @@
         "duration": "intermittent episodes lasting 30-60 minutes",
         "frequency": "daily, 4-6 episodes per day",
         "severity": "5/10 baseline, 7/10 during flares",
-        "progression": "gradually worsening"
+        "progression": "gradually worsening",
+        "aggravating_factor": "eating, stress",
+        "alleviating_factor": "bowel movement (partial relief)"
       },
       "disclosed": true
     },
@@ -41,7 +43,8 @@
       "content": "Increased bowel frequency, 8-10 bowel movements per day (up from usual 1-2), loose to watery with urgency",
       "attributes": {
         "onset": "3 weeks ago",
-        "progression": "worsening"
+        "progression": "worsening",
+        "aggravating_factor": "eating, morning"
       },
       "disclosed": true
     },
@@ -55,19 +58,50 @@
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about nighttime symptoms, sleep disruption, OR whether diarrhea occurs at night",
-      "unlock_keywords": ["night", "sleep", "wake", "nocturnal", "at night", "during the night", "when you sleep"]
+      "unlock_keywords": [
+        "night",
+        "sleep",
+        "wake",
+        "nocturnal",
+        "at night",
+        "during the night",
+        "when you sleep"
+      ],
+      "leak_phrases": [
+        "nocturnal diarrhea",
+        "wake up to go",
+        "diarrhea at night",
+        "wakes me up"
+      ]
     },
     {
       "id": "G05",
       "slot": "symptom",
-      "content": "Tenesmus — sensation of incomplete evacuation after most bowel movements",
+      "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements",
       "attributes": {
         "onset": "2 weeks ago",
         "frequency": "after most bowel movements"
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about sensation after bowel movements, straining, OR feeling of incomplete emptying",
-      "unlock_keywords": ["after bowel", "incomplete", "strain", "tenesmus", "empty", "finish", "done", "feel like you still", "sensation after"]
+      "unlock_keywords": [
+        "after bowel",
+        "incomplete",
+        "strain",
+        "tenesmus",
+        "empty",
+        "finish",
+        "done",
+        "feel like you still",
+        "sensation after"
+      ],
+      "leak_phrases": [
+        "tenesmus",
+        "incomplete evacuation",
+        "not fully empty",
+        "still need to go",
+        "feel like i still have to"
+      ]
     },
     {
       "id": "G06",
@@ -78,7 +112,23 @@
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about weight changes OR appetite changes",
-      "unlock_keywords": ["weight", "appetite", "lost weight", "gain weight", "eat", "hunger", "pounds", "kilos"]
+      "unlock_keywords": [
+        "weight",
+        "appetite",
+        "lost weight",
+        "gain weight",
+        "eat",
+        "hunger",
+        "pounds",
+        "kilos"
+      ],
+      "leak_phrases": [
+        "lost weight",
+        "weight loss",
+        "lost 4 kg",
+        "lost 9 pounds",
+        "clothes are loose"
+      ]
     },
     {
       "id": "G07",
@@ -87,11 +137,31 @@
       "attributes": {
         "onset": "2 weeks ago",
         "location": "bilateral knees and ankles",
-        "severity": "mild"
+        "severity": "mild",
+        "aggravating_factor": "prolonged sitting, morning stiffness",
+        "alleviating_factor": "movement, ibuprofen (temporary)"
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about joint symptoms, OR performs a review of systems that specifically includes musculoskeletal questions",
-      "unlock_keywords": ["joint", "knee", "ankle", "musculoskeletal", "arthritis", "ache", "stiff", "pain in your", "body pain", "anywhere else hurt"]
+      "unlock_keywords": [
+        "joint",
+        "knee",
+        "ankle",
+        "musculoskeletal",
+        "arthritis",
+        "ache",
+        "stiff",
+        "pain in your",
+        "body pain",
+        "anywhere else hurt"
+      ],
+      "leak_phrases": [
+        "knee pain",
+        "ankle pain",
+        "joint pain",
+        "knees and ankles",
+        "achy joints"
+      ]
     },
     {
       "id": "G08",
@@ -99,21 +169,37 @@
       "content": "Fatigue affecting work performance, worsening with the diarrhea",
       "attributes": {
         "onset": "2 weeks ago",
-        "severity": "moderate"
+        "severity": "moderate",
+        "aggravating_factor": "increasing diarrhea frequency, poor sleep from nocturnal symptoms"
       },
       "disclosed": true
     },
     {
       "id": "G09",
       "slot": "symptom",
-      "content": "Low-grade fever (37.8-38.0°C), a few times per week",
+      "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week",
       "attributes": {
         "onset": "1 week ago",
         "frequency": "intermittent"
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about fever, chills, or constitutional symptoms",
-      "unlock_keywords": ["fever", "temperature", "chill", "constitutional", "sweat", "hot", "cold"]
+      "unlock_keywords": [
+        "fever",
+        "temperature",
+        "chill",
+        "constitutional",
+        "sweat",
+        "hot",
+        "cold"
+      ],
+      "leak_phrases": [
+        "low-grade fever",
+        "temperature has been",
+        "running a fever",
+        "37.8",
+        "38.0"
+      ]
     },
     {
       "id": "G10",
@@ -139,7 +225,25 @@
       "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms",
       "disclosed": false,
       "disclosure_condition": "Student asks about NSAID use, pain medication use, OR what the patient has tried for the joint pain",
-      "unlock_keywords": ["NSAID", "ibuprofen", "advil", "motrin", "pain medication", "painkiller", "anti-inflammatory", "what have you taken", "tried for the pain", "over the counter"]
+      "unlock_keywords": [
+        "NSAID",
+        "ibuprofen",
+        "advil",
+        "motrin",
+        "pain medication",
+        "painkiller",
+        "anti-inflammatory",
+        "what have you taken",
+        "tried for the pain",
+        "over the counter"
+      ],
+      "leak_phrases": [
+        "ibuprofen",
+        "advil",
+        "motrin",
+        "taking nsaid",
+        "anti-inflammatory for the pain"
+      ]
     },
     {
       "id": "G14",
@@ -147,7 +251,23 @@
       "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work",
       "disclosed": false,
       "disclosure_condition": "Student asks directly about alcohol consumption in a non-judgmental way, OR asks about coping mechanisms and stress management",
-      "unlock_keywords": ["alcohol", "drink", "beer", "wine", "liquor", "coping", "stress", "how do you deal", "manage stress"]
+      "unlock_keywords": [
+        "alcohol",
+        "drink",
+        "beer",
+        "wine",
+        "liquor",
+        "coping",
+        "stress",
+        "how do you deal",
+        "manage stress"
+      ],
+      "leak_phrases": [
+        "4-5 beers",
+        "increased my drinking",
+        "drinking more",
+        "drink to cope"
+      ]
     },
     {
       "id": "G15",
@@ -179,7 +299,28 @@
       "content": "Older sister diagnosed with Crohn's disease at age 30",
       "disclosed": false,
       "disclosure_condition": "Student asks about family history of GI disease, inflammatory bowel disease, OR autoimmune conditions",
-      "unlock_keywords": ["family history", "family", "IBD", "inflammatory bowel", "Crohn", "colitis", "autoimmune", "bowel disease", "GI disease", "digestive disease", "parent", "sibling", "sister", "brother"]
+      "unlock_keywords": [
+        "family history",
+        "family",
+        "IBD",
+        "inflammatory bowel",
+        "Crohn",
+        "colitis",
+        "autoimmune",
+        "bowel disease",
+        "GI disease",
+        "digestive disease",
+        "parent",
+        "sibling",
+        "sister",
+        "brother"
+      ],
+      "leak_phrases": [
+        "sister has crohn",
+        "sister has ibd",
+        "sister was diagnosed with crohn",
+        "crohn's in the family"
+      ]
     },
     {
       "id": "G20",
@@ -228,7 +369,16 @@
     "total_facts": 26,
     "disclosed": 18,
     "withheld": 8,
-    "withheld_ids": ["G04", "G05", "G06", "G07", "G09", "G13", "G14", "G19"],
+    "withheld_ids": [
+      "G04",
+      "G05",
+      "G06",
+      "G07",
+      "G09",
+      "G13",
+      "G14",
+      "G19"
+    ],
     "slot_coverage": {
       "symptom": 9,
       "patient_medical_history": 2,

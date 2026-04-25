@@ -18,7 +18,9 @@
         "onset": "2 weeks ago",
         "duration": "constant, worse at night",
         "severity": "moderate, disrupts sleep",
-        "progression": "started dry, became productive 5 days ago"
+        "progression": "started dry, became productive 5 days ago",
+        "aggravating_factor": "lying down, nighttime",
+        "alleviating_factor": "sitting upright, OTC cough suppressant (minimal)"
       },
       "disclosed": true
     },
@@ -29,14 +31,16 @@
       "attributes": {
         "onset": "10 days ago",
         "severity": "moderate, noticeable with walking and talking",
-        "progression": "worsening"
+        "progression": "worsening",
+        "aggravating_factor": "walking, talking, physical activity",
+        "alleviating_factor": "rest, sitting still"
       },
       "disclosed": true
     },
     {
       "id": "R03",
       "slot": "symptom",
-      "content": "Low-grade fever, around 38.2°C (100.8°F), intermittent and worse in evenings",
+      "content": "Low-grade fever, around 38.2\u00b0C (100.8\u00b0F), intermittent and worse in evenings",
       "attributes": {
         "onset": "5 days ago",
         "severity": "low-grade",
@@ -55,7 +59,23 @@
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about constitutional symptoms beyond fever (e.g., chills, night sweats) OR asks specifically what happens at night besides the cough",
-      "unlock_keywords": ["sweat", "night sweat", "chill", "shiver", "constitutional", "at night", "during the night", "when you sleep", "besides the cough"]
+      "unlock_keywords": [
+        "sweat",
+        "night sweat",
+        "chill",
+        "shiver",
+        "constitutional",
+        "at night",
+        "during the night",
+        "when you sleep",
+        "besides the cough"
+      ],
+      "leak_phrases": [
+        "night sweat",
+        "soaking through",
+        "pajamas soaked",
+        "drenched at night"
+      ]
     },
     {
       "id": "R05",
@@ -65,11 +85,29 @@
         "onset": "3 days ago",
         "location": "right lower chest",
         "severity": "5/10",
-        "characteristics": "pleuritic, worse with inspiration and coughing"
+        "characteristics": "pleuritic, worse with inspiration and coughing",
+        "aggravating_factor": "deep breathing, coughing",
+        "alleviating_factor": "shallow breathing, staying still"
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about chest pain OR asks about pain associated with breathing or coughing",
-      "unlock_keywords": ["chest pain", "pain", "hurt", "ache", "sore", "pleurit", "pain when you breath", "pain when you cough"]
+      "unlock_keywords": [
+        "chest pain",
+        "pain",
+        "hurt",
+        "ache",
+        "sore",
+        "pleurit",
+        "pain when you breath",
+        "pain when you cough"
+      ],
+      "leak_phrases": [
+        "right-sided chest pain",
+        "pleuritic",
+        "sharp chest pain",
+        "hurts when i breathe",
+        "hurts when i cough"
+      ]
     },
     {
       "id": "R06",
@@ -79,11 +117,30 @@
         "onset": "since childhood, around age 8",
         "frequency": "2-3 episodes per year",
         "duration": "each episode lasts a few days",
-        "progression": "has been happening for years, patient considers it normal"
+        "progression": "has been happening for years, patient considers it normal",
+        "aggravating_factor": "colds, exercise, cold air"
       },
       "disclosed": false,
       "disclosure_condition": "Student asks whether breathing problems have occurred before this illness, OR asks about history of asthma, wheezing, or allergies",
-      "unlock_keywords": ["before", "previous", "history of", "asthma", "wheez", "allerg", "in the past", "ever had", "happened before", "prior"]
+      "unlock_keywords": [
+        "before",
+        "previous",
+        "history of",
+        "asthma",
+        "wheez",
+        "allerg",
+        "in the past",
+        "ever had",
+        "happened before",
+        "prior"
+      ],
+      "leak_phrases": [
+        "since childhood",
+        "since i was a kid",
+        "wheezing episodes",
+        "undiagnosed asthma",
+        "happens every year"
+      ]
     },
     {
       "id": "R07",
@@ -104,7 +161,21 @@
       },
       "disclosed": false,
       "disclosure_condition": "Student asks about appetite, weight changes, or nutritional intake",
-      "unlock_keywords": ["appetite", "eat", "weight", "nutrition", "food", "hunger", "meal"]
+      "unlock_keywords": [
+        "appetite",
+        "eat",
+        "weight",
+        "nutrition",
+        "food",
+        "hunger",
+        "meal"
+      ],
+      "leak_phrases": [
+        "decreased appetite",
+        "not eating",
+        "lost my appetite",
+        "don't feel like eating"
+      ]
     },
     {
       "id": "R09",
@@ -166,7 +237,25 @@
       "content": "Lives with her partner and a cat; partner has had a mild cold recently",
       "disclosed": false,
       "disclosure_condition": "Student asks about household contacts, sick contacts at home, OR asks about her living situation",
-      "unlock_keywords": ["live with", "household", "at home", "partner", "roommate", "who do you live", "anyone at home", "sick contact", "anyone else sick", "home environment"]
+      "unlock_keywords": [
+        "live with",
+        "household",
+        "at home",
+        "partner",
+        "roommate",
+        "who do you live",
+        "anyone at home",
+        "sick contact",
+        "anyone else sick",
+        "home environment"
+      ],
+      "leak_phrases": [
+        "partner has a cold",
+        "partner is sick",
+        "boyfriend is sick",
+        "girlfriend is sick",
+        "cat at home"
+      ]
     },
     {
       "id": "R19",
@@ -174,7 +263,23 @@
       "content": "Mother has asthma",
       "disclosed": false,
       "disclosure_condition": "Student asks about family history of respiratory disease, asthma, or lung conditions",
-      "unlock_keywords": ["family history", "family", "asthma", "lung", "respiratory", "breathing problem", "mother", "father", "parent", "sibling"]
+      "unlock_keywords": [
+        "family history",
+        "family",
+        "asthma",
+        "lung",
+        "respiratory",
+        "breathing problem",
+        "mother",
+        "father",
+        "parent",
+        "sibling"
+      ],
+      "leak_phrases": [
+        "mother has asthma",
+        "mom has asthma",
+        "mother's asthma"
+      ]
     },
     {
       "id": "R20",
@@ -182,7 +287,21 @@
       "content": "Maternal grandmother died of lung cancer",
       "disclosed": false,
       "disclosure_condition": "Student asks about family history of cancer OR asks a general family history question and follows up on respiratory/lung conditions",
-      "unlock_keywords": ["cancer", "family history", "grandmother", "grandparent", "lung", "malignant", "tumor", "oncolog"]
+      "unlock_keywords": [
+        "cancer",
+        "family history",
+        "grandmother",
+        "grandparent",
+        "lung",
+        "malignant",
+        "tumor",
+        "oncolog"
+      ],
+      "leak_phrases": [
+        "grandmother died of lung cancer",
+        "grandma had lung cancer",
+        "grandmother had cancer"
+      ]
     },
     {
       "id": "R21",
@@ -211,7 +330,7 @@
     {
       "id": "R25",
       "slot": "basic_information",
-      "content": "Allergic to penicillin — causes rash",
+      "content": "Allergic to penicillin \u2014 causes rash",
       "disclosed": true
     }
   ],
@@ -219,7 +338,15 @@
     "total_facts": 25,
     "disclosed": 18,
     "withheld": 7,
-    "withheld_ids": ["R04", "R05", "R06", "R08", "R18", "R19", "R20"],
+    "withheld_ids": [
+      "R04",
+      "R05",
+      "R06",
+      "R08",
+      "R18",
+      "R19",
+      "R20"
+    ],
     "slot_coverage": {
       "symptom": 8,
       "patient_medical_history": 2,
