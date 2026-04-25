@@ -1,0 +1,52 @@
+{
+  "condition": "isolated_architecture",
+  "strategy": "direct_questioning",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some chest tightness, it's a pressure sensation in my chest that just kind of comes and goes. I'm worried something might be wrong.",
+      "time": 11.8
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "It's this feeling of pressure in my chest, like someone's squeezing it or tightening a band around me. It's mostly substernal, right in the center of my chest.",
+      "time": 12.9
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about 2 weeks ago, I'd say. At first, it was just every now and then, but lately, it seems to be happening more often when I exert myself or get stressed.",
+      "time": 13.3
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It happens a few times a week, usually when I'm driving long hours on the road. It'll start about 30 minutes into my drive and then go away after a while.",
+      "time": 17.3
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It would be an 8 out of 10 in terms of how bad it feels. Sometimes, when I'm really stressed or driving uphill, it gets so tight that I have to pull over for a few minutes until it lets up. But most of the time, it's more like a nagging discomfort that I can deal with.",
+      "time": 18.3
+    }
+  ],
+  "summary": {
+    "total_turns": 5,
+    "total_time": 73.6,
+    "avg_time_per_turn": 14.7,
+    "condition_state": {
+      "turn_number": 5,
+      "unlocked_fact_ids": [],
+      "conversation_length": 10,
+      "condition": "isolated_architecture",
+      "total_retries": 0
+    },
+    "leaks": [],
+    "leak_count": 0
+  }
+}

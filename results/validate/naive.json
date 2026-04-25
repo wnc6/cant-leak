@@ -1,0 +1,49 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some chest tightness and shortness of breath for the past three days, ever since I got back from a long haul driving trip last week. It's been getting worse with exertion, like when I'm climbing up into my truck or carrying groceries inside.",
+      "time": 8.7
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "It feels like a pressure sensation in my chest, right under my breastbone. It's hard to explain, but it's kind of like someone is squeezing my chest tight.",
+      "time": 1.3
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about three days ago, after I got back from that driving trip. Like I said, it was a long haul and I was on the road for over a week, so maybe something happened during that time that triggered it or something.",
+      "time": 1.7
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It happens all the time now - every day, multiple times a day. Sometimes it's just a little pressure, and other times it gets really bad and feels like my chest is going to burst.",
+      "time": 1.5
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It's probably an 8 out of 10 when it's at its worst. It's hard to breathe and I feel like I'm going to pass out, so that's pretty uncomfortable.",
+      "time": 1.4
+    }
+  ],
+  "summary": {
+    "total_turns": 5,
+    "total_time": 14.7,
+    "avg_time_per_turn": 2.9,
+    "condition_state": {
+      "turn_number": 5,
+      "condition": "naive_prompting"
+    },
+    "leaks": [],
+    "leak_count": 0
+  }
+}

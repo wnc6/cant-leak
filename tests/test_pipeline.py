@@ -43,7 +43,7 @@ def run_conversation(strategy_name: str, max_turns: int = 20):
 
     planner = DisclosurePlanner(CASE_PATH)
     verifier = Verifier(CASE_PATH)
-    student_messages = get_strategy(strategy_name)
+    student_messages = get_strategy(strategy_name, "cardiology")
 
     turns = min(max_turns, len(student_messages))
 
