@@ -1,18 +1,11 @@
 """
-Chart Generator
+Chart Generator (PDF-optimized)
 
-Generates publication-quality charts from experiment results.
-Uses deterministic leak counts from results files (not GPT-4o-mini evals).
-
-Charts:
-1. Leakage by strategy (grouped bar) — main result
-2. Leakage heatmap (condition × case) — cross-case comparison
-3. Per-turn leakage timeline (line chart) — pressure accumulation
-4. Vulnerability radar (spider chart) — per-condition profile
-5. Disclosure rate (simple bar) — over-withholding check
+Static PNG/PDF charts via matplotlib. Consistent colors, print-ready.
 
 Usage:
     python3 generate_charts.py results/ --output charts/
+    python3 generate_charts.py results/ --output charts/ --format pdf
 """
 
 import json
@@ -21,32 +14,54 @@ import sys
 import glob
 from collections import defaultdict
 
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+import numpy as np
+
 
 CONDITIONS = [
     "naive_prompting", "structured_prompting", "self_monitoring",
     "isolated_architecture", "no_isolation_ablation", "no_verifier_ablation",
 ]
 CONDITION_LABELS = {
-    "naive_prompting": "Naive",
-    "structured_prompting": "Structured",
-    "self_monitoring": "Self-Monitor",
-    "isolated_architecture": "Isolated (ours)",
-    "no_isolation_ablation": "No-Isolation",
-    "no_verifier_ablation": "No-Verifier",
+    "naive_prompting": "Naive Prompting",
+    "structured_prompting": "Structured Prompting",
+    "self_monitoring": "Self-Monitoring",
+    "isolated_architecture": "Isolated Architecture",
+    "no_isolation_ablation": "No-Isolation Ablation",
+    "no_verifier_ablation": "No-Verifier Ablation",
 }
 CONDITION_SHORT = {
     "naive_prompting": "Naive",
-    "structured_prompting": "Struct",
-    "self_monitoring": "Self-M",
-    "isolated_architecture": "Isolat",
-    "no_isolation_ablation": "No-Iso",
-    "no_verifier_ablation": "No-Ver",
+    "structured_prompting": "Structured",
+    "self_monitoring": "Self-Monitor",
+    "isolated_architecture": "Isolated",
+    "no_isolation_ablation": "No-Isolation",
+    "no_verifier_ablation": "No-Verifier",
+}
+COLORS = {
+    "naive_prompting":       "#B22234",
+    "structured_prompting":  "#E07020",
+    "self_monitoring":       "#D4A017",
+    "isolated_architecture": "#1B7340",
+    "no_isolation_ablation": "#2D5FAA",
+    "no_verifier_ablation":  "#6B4C9A",
 }
 STRATEGIES = [
     "direct_questioning", "rephrasing", "emotional_appeal",
     "authority_claim", "gradual_escalation", "logical_inference",
 ]
 STRATEGY_LABELS = {
+    "direct_questioning": "Direct Questioning",
+    "rephrasing": "Rephrasing",
+    "emotional_appeal": "Emotional Appeal",
+    "authority_claim": "Authority Claim",
+    "gradual_escalation": "Gradual Escalation",
+    "logical_inference": "Logical Inference",
+}
+STRATEGY_SHORT = {
     "direct_questioning": "Direct",
     "rephrasing": "Rephrase",
     "emotional_appeal": "Emotional",
@@ -54,19 +69,32 @@ STRATEGY_LABELS = {
     "gradual_escalation": "Gradual",
     "logical_inference": "Logical",
 }
-CONDITION_COLORS = {
-    "naive_prompting": "#ef4444",
-    "structured_prompting": "#f97316",
-    "self_monitoring": "#eab308",
-    "isolated_architecture": "#22c55e",
-    "no_isolation_ablation": "#3b82f6",
-    "no_verifier_ablation": "#8b5cf6",
-}
 CASE_LABELS = {"cardiology": "Cardiology", "respiratory": "Respiratory", "gi": "GI"}
-CASE_COLORS = {"Cardiology": "#3b82f6", "Respiratory": "#22c55e", "GI": "#f97316"}
+BASELINES = {"naive_prompting", "structured_prompting", "self_monitoring"}
+ARCHITECTURE = {"isolated_architecture", "no_isolation_ablation", "no_verifier_ablation"}
 
 
-def load_all_results(results_dir: str) -> list[dict]:
+def setup_style():
+    plt.rcParams.update({
+        'font.family': 'sans-serif',
+        'font.sans-serif': ['Helvetica Neue', 'Helvetica', 'Arial', 'DejaVu Sans'],
+        'font.size': 9,
+        'axes.titlesize': 10,
+        'axes.titleweight': 'bold',
+        'axes.labelsize': 9,
+        'xtick.labelsize': 8.5,
+        'ytick.labelsize': 8.5,
+        'legend.fontsize': 8,
+        'figure.dpi': 300,
+        'savefig.dpi': 300,
+        'savefig.bbox': 'tight',
+        'savefig.pad_inches': 0.15,
+        'axes.spines.top': False,
+        'axes.spines.right': False,
+    })
+
+
+def load_all_results(results_dir):
     pattern = os.path.join(results_dir, "**", "run_*.json")
     files = sorted(glob.glob(pattern, recursive=True))
     results = []
@@ -80,85 +108,60 @@ def load_all_results(results_dir: str) -> list[dict]:
     return results
 
 
-COMMON_STYLES = """
-    body {
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        max-width: 960px;
-        margin: 40px auto;
-        padding: 0 20px;
-        background: #fff;
-        color: #333;
-    }
-    h1 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
-    .subtitle { font-size: 13px; color: #666; margin-bottom: 24px; }
-    .chart-container { position: relative; height: 420px; margin-bottom: 40px; }
-"""
-
-
-# ═══════════════════════════════════════════════
-# Chart 1: Leakage by Strategy (grouped bar)
-# ═══════════════════════════════════════════════
-
-def generate_leakage_by_strategy(results, output_dir):
+def get_leak_data(results):
     data = defaultdict(lambda: defaultdict(list))
     for r in results:
         data[r.get("condition", "")][r.get("strategy", "")].append(
             r.get("summary", {}).get("leak_count", 0)
         )
+    return data
 
-    chart_data = []
-    for s in STRATEGIES:
-        row = {"strategy": STRATEGY_LABELS[s]}
-        for c in CONDITIONS:
-            vals = data[c].get(s, [0])
-            row[CONDITION_LABELS[c]] = round(sum(vals) / len(vals), 1)
-        chart_data.append(row)
 
-    condition_names = [CONDITION_LABELS[c] for c in CONDITIONS]
-    colors = {CONDITION_LABELS[c]: CONDITION_COLORS[c] for c in CONDITIONS}
-
-    html = f"""<!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<title>Leakage by Strategy</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<style>{COMMON_STYLES}</style>
-</head><body>
-<h1>Leakage Rate by Pressure Strategy Across Conditions</h1>
-<p class="subtitle">Average leaked withheld facts per 20-turn conversation. Lower is better. N=108 experiments (3 cases × 6 strategies × 6 conditions).</p>
-<div class="chart-container"><canvas id="chart"></canvas></div>
-<script>
-const data = {json.dumps(chart_data)};
-const conds = {json.dumps(condition_names)};
-const colors = {json.dumps(colors)};
-const datasets = conds.map(c => ({{
-    label: c, data: data.map(d => d[c]),
-    backgroundColor: colors[c] + '99', borderColor: colors[c], borderWidth: 1,
-}}));
-new Chart(document.getElementById('chart'), {{
-    type: 'bar',
-    data: {{ labels: data.map(d => d.strategy), datasets }},
-    options: {{
-        responsive: true, maintainAspectRatio: false,
-        plugins: {{ legend: {{ position: 'top', labels: {{ font: {{ size: 11 }} }} }} }},
-        scales: {{
-            y: {{ beginAtZero: true, title: {{ display: true, text: 'Avg Leaks', font: {{ size: 12 }} }} }},
-            x: {{ title: {{ display: true, text: 'Pressure Strategy', font: {{ size: 12 }} }} }}
-        }}
-    }}
-}});
-</script></body></html>"""
-
-    path = os.path.join(output_dir, "1_leakage_by_strategy.html")
-    with open(path, "w") as f:
-        f.write(html)
-    print(f"  Saved: {path}")
+def save(fig, output_dir, name, fmt):
+    path = os.path.join(output_dir, f"{name}.{fmt}")
+    fig.savefig(path)
+    plt.close(fig)
+    print(f"  {path}")
 
 
 # ═══════════════════════════════════════════════
-# Chart 2: Heatmap (condition × case)
+# Chart 1: Leakage by strategy (grouped bar)
 # ═══════════════════════════════════════════════
 
-def generate_heatmap(results, output_dir):
+def chart_leakage_by_strategy(results, output_dir, fmt):
+    data = get_leak_data(results)
+
+    fig, ax = plt.subplots(figsize=(7.5, 3.5))
+    ax.grid(axis='y', alpha=0.15, linewidth=0.4)
+    ax.set_axisbelow(True)
+
+    x = np.arange(len(STRATEGIES))
+    width = 0.13
+    offsets = np.arange(len(CONDITIONS)) - (len(CONDITIONS) - 1) / 2
+
+    for i, c in enumerate(CONDITIONS):
+        vals = [np.mean(data[c].get(s, [0])) for s in STRATEGIES]
+        ax.bar(x + offsets[i] * width, vals, width * 0.88,
+               label=CONDITION_SHORT[c], color=COLORS[c],
+               edgecolor='white', linewidth=0.3)
+
+    ax.set_xlabel('Pressure Strategy')
+    ax.set_ylabel('Mean Leaked Facts per Conversation')
+    ax.set_xticks(x)
+    ax.set_xticklabels([STRATEGY_SHORT[s] for s in STRATEGIES])
+    ax.legend(ncol=3, loc='upper left', framealpha=0.9,
+              handlelength=1.2, columnspacing=1)
+    ax.set_ylim(bottom=0)
+    ax.set_title('Leakage Rate by Pressure Strategy Across Conditions')
+
+    save(fig, output_dir, "1_leakage_by_strategy", fmt)
+
+
+# ═══════════════════════════════════════════════
+# Chart 2: Heatmap
+# ═══════════════════════════════════════════════
+
+def chart_heatmap(results, output_dir, fmt):
     data = defaultdict(lambda: defaultdict(list))
     for r in results:
         data[r.get("condition", "")][r.get("case_name", "")].append(
@@ -166,300 +169,239 @@ def generate_heatmap(results, output_dir):
         )
 
     cases = ["cardiology", "respiratory", "gi"]
-    grid = []
-    for c in CONDITIONS:
-        row = []
-        for case in cases:
+    grid = np.zeros((len(CONDITIONS), len(cases)))
+    for i, c in enumerate(CONDITIONS):
+        for j, case in enumerate(cases):
             vals = data[c].get(case, [0])
-            row.append(round(sum(vals) / len(vals), 1))
-        grid.append(row)
+            grid[i, j] = np.mean(vals)
 
-    cond_labels = [CONDITION_LABELS[c] for c in CONDITIONS]
-    case_labels = [CASE_LABELS[c] for c in cases]
+    fig, ax = plt.subplots(figsize=(5, 3.5))
+    im = ax.imshow(grid, cmap='Reds', aspect='auto', vmin=0)
 
-    html = f"""<!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<title>Leakage Heatmap</title>
-<style>
-{COMMON_STYLES}
-    .heatmap {{ border-collapse: collapse; width: 100%; }}
-    .heatmap th {{ padding: 10px 16px; text-align: center; font-size: 13px; font-weight: 600; border-bottom: 2px solid #333; }}
-    .heatmap td {{ padding: 14px 16px; text-align: center; font-size: 15px; font-weight: 600; border-bottom: 1px solid #eee; }}
-    .heatmap td:first-child {{ text-align: left; font-weight: 400; font-size: 13px; }}
-    .heatmap tr:last-child td {{ border-bottom: 2px solid #333; }}
-</style>
-</head><body>
-<h1>Leakage Heatmap: Condition × Clinical Case</h1>
-<p class="subtitle">Average leaks per conversation. Color intensity indicates severity.</p>
-<table class="heatmap">
-<tr><th></th>{"".join(f"<th>{c}</th>" for c in case_labels)}<th>Avg</th></tr>
-{"".join(
-    f'<tr><td>{cond_labels[i]}</td>' +
-    "".join(
-        f'<td style="background: rgba(239,68,68,{min(v/8, 1):.2f}); color: {"#fff" if v > 4 else "#333"}">{v}</td>'
-        for v in grid[i]
-    ) +
-    f'<td style="background: rgba(239,68,68,{min(sum(grid[i])/3/8, 1):.2f}); color: {"#fff" if sum(grid[i])/3 > 4 else "#333"}">{sum(grid[i])/3:.1f}</td></tr>'
-    for i in range(len(CONDITIONS))
-)}
-</table>
-</body></html>"""
+    ax.set_xticks(range(len(cases)))
+    ax.set_xticklabels([CASE_LABELS[c] for c in cases])
+    ax.set_yticks(range(len(CONDITIONS)))
+    ax.set_yticklabels([CONDITION_LABELS[c] for c in CONDITIONS], fontsize=8)
 
-    path = os.path.join(output_dir, "2_leakage_heatmap.html")
-    with open(path, "w") as f:
-        f.write(html)
-    print(f"  Saved: {path}")
+    for i in range(len(CONDITIONS)):
+        for j in range(len(cases)):
+            v = grid[i, j]
+            color = "white" if v > grid.max() * 0.45 else "black"
+            ax.text(j, i, f"{v:.1f}", ha='center', va='center',
+                    fontsize=9, fontweight='bold', color=color)
+
+    ax.set_title('Mean Leakage by Condition and Clinical Case')
+    fig.colorbar(im, ax=ax, label='Leaked Facts', shrink=0.8, pad=0.02)
+
+    save(fig, output_dir, "2_leakage_heatmap", fmt)
 
 
 # ═══════════════════════════════════════════════
-# Chart 3: Per-turn leakage timeline (line chart)
+# Chart 3: Per-turn timeline
 # ═══════════════════════════════════════════════
 
-def generate_per_turn_timeline(results, output_dir):
-    """Shows cumulative leakage over turns for each condition."""
-    # For each condition, track which turns had leaks across all experiments
+def chart_per_turn_timeline(results, output_dir, fmt):
     turn_leaks = defaultdict(lambda: defaultdict(int))
-    turn_counts = defaultdict(int)
 
     for r in results:
         cond = r.get("condition", "")
-        patient_texts = []
+        case_name = r.get("case_name", "cardiology")
+        case_path = {"cardiology": "cases/case_cardiology.json",
+                     "respiratory": "cases/case_respiratory.json",
+                     "gi": "cases/case_gi.json"}.get(case_name, "")
+        if not os.path.exists(case_path):
+            continue
+
+        with open(case_path) as f:
+            case = json.load(f)
+
+        withheld = [fact for fact in case["facts"] if not fact["disclosed"]]
+        final_unlocked = set(
+            r.get("summary", {}).get("condition_state", {}).get("unlocked_fact_ids", [])
+        )
+        cum_student = ""
+
         for turn in r.get("turns", []):
             t = turn["turn"]
-            turn_counts[cond] += 1
             resp = turn["patient"].lower()
-            # Use leak_phrases from the case to detect per-turn leaks
-            case_name = r.get("case_name", "cardiology")
-            case_map = {
-                "cardiology": "cases/case_cardiology.json",
-                "respiratory": "cases/case_respiratory.json",
-                "gi": "cases/case_gi.json",
-            }
-            case_path = case_map.get(case_name, "")
-            if os.path.exists(case_path):
-                with open(case_path) as f:
-                    case = json.load(f)
-                for fact in case["facts"]:
-                    if fact["disclosed"]:
-                        continue
-                    for phrase in fact.get("leak_phrases", []):
-                        if phrase.lower() in resp:
-                            turn_leaks[cond][t] += 1
-                            break
+            cum_student += " " + turn["student"].lower()
 
-    # Build cumulative leak data per condition
-    chart_datasets = []
+            unlocked_here = set()
+            if cond in ARCHITECTURE:
+                for fact in withheld:
+                    kws = fact.get("unlock_keywords", [])
+                    if any(kw.lower() in cum_student for kw in kws):
+                        if fact["id"] in final_unlocked:
+                            unlocked_here.add(fact["id"])
+
+            for fact in withheld:
+                if fact["id"] in unlocked_here:
+                    continue
+                for phrase in fact.get("leak_phrases", []):
+                    if phrase.lower() in resp:
+                        turn_leaks[cond][t] += 1
+                        break
+
+    fig, ax = plt.subplots(figsize=(6, 3.5))
+    ax.grid(axis='y', alpha=0.15, linewidth=0.4)
+    ax.set_axisbelow(True)
+    turns = list(range(1, 21))
+
     for c in CONDITIONS:
-        cumulative = []
-        total = 0
-        # Get number of experiments for this condition
-        n_experiments = sum(1 for r in results if r.get("condition") == c)
-        if n_experiments == 0:
+        n = sum(1 for r in results if r.get("condition") == c)
+        if n == 0:
             continue
-        for t in range(1, 21):
+        cum = []
+        total = 0
+        for t in turns:
             total += turn_leaks[c].get(t, 0)
-            cumulative.append(round(total / n_experiments, 2))
-        chart_datasets.append({
-            "label": CONDITION_LABELS[c],
-            "data": cumulative,
-            "borderColor": CONDITION_COLORS[c],
-            "backgroundColor": CONDITION_COLORS[c] + "22",
-            "fill": False,
-            "tension": 0.3,
-            "borderWidth": 2,
-        })
+            cum.append(total / n)
 
-    html = f"""<!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<title>Per-Turn Leakage Timeline</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<style>{COMMON_STYLES}</style>
-</head><body>
-<h1>Cumulative Leakage Over Conversation Turns</h1>
-<p class="subtitle">Shows when baselines start leaking under sustained pressure. Flat line = no leakage. Rising line = accumulating leaks.</p>
-<div class="chart-container"><canvas id="chart"></canvas></div>
-<script>
-const datasets = {json.dumps(chart_datasets)};
-new Chart(document.getElementById('chart'), {{
-    type: 'line',
-    data: {{
-        labels: Array.from({{length: 20}}, (_, i) => i + 1),
-        datasets: datasets,
-    }},
-    options: {{
-        responsive: true, maintainAspectRatio: false,
-        plugins: {{ legend: {{ position: 'top', labels: {{ font: {{ size: 11 }} }} }} }},
-        scales: {{
-            y: {{ beginAtZero: true, title: {{ display: true, text: 'Cumulative Leaks (avg per experiment)', font: {{ size: 12 }} }} }},
-            x: {{ title: {{ display: true, text: 'Turn Number', font: {{ size: 12 }} }} }}
-        }}
-    }}
-}});
-</script></body></html>"""
+        ls = '--' if c in ARCHITECTURE and c != "isolated_architecture" else '-'
+        lw = 2.2 if c == "isolated_architecture" else 1.3
+        ax.plot(turns, cum, label=CONDITION_SHORT[c],
+                color=COLORS[c], linewidth=lw, linestyle=ls)
 
-    path = os.path.join(output_dir, "3_per_turn_timeline.html")
-    with open(path, "w") as f:
-        f.write(html)
-    print(f"  Saved: {path}")
+    ax.set_xlabel('Turn Number')
+    ax.set_ylabel('Mean Cumulative Leaked Facts')
+    ax.set_title('Cumulative Leakage Over 20-Turn Conversations')
+    ax.legend(ncol=2, loc='upper left', framealpha=0.9,
+              handlelength=1.8, columnspacing=1)
+    ax.set_xlim(1, 20)
+    ax.xaxis.set_major_locator(ticker.MultipleLocator(2))
+    ax.xaxis.set_minor_locator(ticker.MultipleLocator(1))
+    ax.set_ylim(bottom=0)
+
+    save(fig, output_dir, "3_per_turn_timeline", fmt)
 
 
 # ═══════════════════════════════════════════════
-# Chart 4: Vulnerability radar (spider chart)
+# Chart 4: Radar
 # ═══════════════════════════════════════════════
 
-def generate_radar(results, output_dir):
-    data = defaultdict(lambda: defaultdict(list))
-    for r in results:
-        data[r.get("condition", "")][r.get("strategy", "")].append(
-            r.get("summary", {}).get("leak_count", 0)
-        )
+def chart_radar(results, output_dir, fmt):
+    data = get_leak_data(results)
 
-    chart_datasets = []
+    angles = np.linspace(0, 2 * np.pi, len(STRATEGIES), endpoint=False).tolist()
+    angles += angles[:1]
+
+    fig, ax = plt.subplots(figsize=(5.5, 4.5), subplot_kw=dict(polar=True))
+
     for c in CONDITIONS:
-        values = []
-        for s in STRATEGIES:
-            vals = data[c].get(s, [0])
-            values.append(round(sum(vals) / len(vals), 1))
-        chart_datasets.append({
-            "label": CONDITION_LABELS[c],
-            "data": values,
-            "borderColor": CONDITION_COLORS[c],
-            "backgroundColor": CONDITION_COLORS[c] + "22",
-            "borderWidth": 2,
-            "pointRadius": 3,
-        })
+        vals = [np.mean(data[c].get(s, [0])) for s in STRATEGIES]
+        vals += vals[:1]
+        lw = 2.2 if c == "isolated_architecture" else 1.3
+        ax.plot(angles, vals, label=CONDITION_SHORT[c],
+                color=COLORS[c], linewidth=lw)
+        ax.fill(angles, vals, color=COLORS[c], alpha=0.04)
 
-    strategy_names = [STRATEGY_LABELS[s] for s in STRATEGIES]
+    ax.set_xticks(angles[:-1])
+    ax.set_xticklabels([STRATEGY_SHORT[s] for s in STRATEGIES], fontsize=8.5)
+    ax.set_title('Vulnerability Profile Across Pressure Strategies', pad=18)
+    ax.legend(fontsize=7, loc='lower right', bbox_to_anchor=(1.28, -0.05),
+              framealpha=0.9, handlelength=1.5)
+    ax.set_ylim(bottom=0)
+    ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))
 
-    html = f"""<!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<title>Vulnerability Radar</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<style>{COMMON_STYLES}
-    .chart-container {{ height: 500px; max-width: 600px; margin: 0 auto 40px; }}
-</style>
-</head><body>
-<h1>Vulnerability Profile by Pressure Strategy</h1>
-<p class="subtitle">Each axis is a pressure strategy. Distance from center = average leaks. Baselines have large shapes; isolated architecture collapses to the center.</p>
-<div class="chart-container"><canvas id="chart"></canvas></div>
-<script>
-const datasets = {json.dumps(chart_datasets)};
-new Chart(document.getElementById('chart'), {{
-    type: 'radar',
-    data: {{
-        labels: {json.dumps(strategy_names)},
-        datasets: datasets,
-    }},
-    options: {{
-        responsive: true, maintainAspectRatio: false,
-        plugins: {{ legend: {{ position: 'top', labels: {{ font: {{ size: 11 }} }} }} }},
-        scales: {{
-            r: {{
-                beginAtZero: true,
-                ticks: {{ font: {{ size: 10 }} }},
-                pointLabels: {{ font: {{ size: 12 }} }}
-            }}
-        }}
-    }}
-}});
-</script></body></html>"""
-
-    path = os.path.join(output_dir, "4_vulnerability_radar.html")
-    with open(path, "w") as f:
-        f.write(html)
-    print(f"  Saved: {path}")
+    save(fig, output_dir, "4_vulnerability_radar", fmt)
 
 
 # ═══════════════════════════════════════════════
-# Chart 5: Disclosure rate (simple bar)
+# Chart 5: Disclosure rate
 # ═══════════════════════════════════════════════
 
-def generate_disclosure_rate(results, output_dir):
-    arch_conditions = ["isolated_architecture", "no_isolation_ablation", "no_verifier_ablation"]
-    data = defaultdict(lambda: defaultdict(list))
+def chart_disclosure_rate(results, output_dir, fmt):
+    arch = ["isolated_architecture", "no_isolation_ablation", "no_verifier_ablation"]
+    data = defaultdict(list)
 
     for r in results:
         cond = r.get("condition", "")
-        strat = r.get("strategy", "")
-        if cond not in arch_conditions:
+        if cond not in arch:
             continue
         state = r.get("summary", {}).get("condition_state", {})
         unlocked = len(state.get("unlocked_fact_ids", []))
         case_id = r.get("case_id", "")
         total = {"CARDIO-001": 8, "RESP-001": 7, "GI-001": 8}.get(case_id, 8)
-        data[cond][strat].append(unlocked / total * 100 if total else 0)
+        data[cond].append(unlocked / total * 100 if total else 0)
 
-    chart_data = []
-    for s in STRATEGIES:
-        row = {"strategy": STRATEGY_LABELS[s]}
-        for c in arch_conditions:
-            vals = data[c].get(s, [0])
-            row[CONDITION_LABELS[c]] = round(sum(vals) / len(vals)) if vals else 0
-        chart_data.append(row)
+    labels = [CONDITION_LABELS[c] for c in arch]
+    values = [np.mean(data[c]) if data[c] else 0 for c in arch]
+    bar_colors = [COLORS[c] for c in arch]
 
-    arch_labels = [CONDITION_LABELS[c] for c in arch_conditions]
-    arch_colors = {CONDITION_LABELS[c]: CONDITION_COLORS[c] for c in arch_conditions}
+    fig, ax = plt.subplots(figsize=(5.5, 2.2))
+    y = range(len(arch))
+    bars = ax.barh(y, values, color=bar_colors, edgecolor='white', height=0.55)
 
-    html = f"""<!DOCTYPE html>
-<html><head><meta charset="UTF-8">
-<title>Disclosure Rate</title>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<style>{COMMON_STYLES}</style>
-</head><body>
-<h1>Disclosure Rate: Facts Earned Through Proper Questioning</h1>
-<p class="subtitle">Percentage of withheld facts unlocked when the student asked the right questions. Higher = better. Shows the architecture is not over-withholding.</p>
-<div class="chart-container"><canvas id="chart"></canvas></div>
-<script>
-const data = {json.dumps(chart_data)};
-const conds = {json.dumps(arch_labels)};
-const colors = {json.dumps(arch_colors)};
-const datasets = conds.map(c => ({{
-    label: c, data: data.map(d => d[c]),
-    backgroundColor: colors[c] + '99', borderColor: colors[c], borderWidth: 1,
-}}));
-new Chart(document.getElementById('chart'), {{
-    type: 'bar',
-    data: {{ labels: data.map(d => d.strategy), datasets }},
-    options: {{
-        responsive: true, maintainAspectRatio: false,
-        plugins: {{ legend: {{ position: 'top', labels: {{ font: {{ size: 11 }} }} }} }},
-        scales: {{ y: {{ beginAtZero: true, max: 100, title: {{ display: true, text: 'Disclosure Rate (%)', font: {{ size: 12 }} }} }} }}
-    }}
-}});
-</script></body></html>"""
+    for bar, v in zip(bars, values):
+        ax.text(bar.get_width() + 1.5, bar.get_y() + bar.get_height() / 2,
+                f'{v:.0f}%', va='center', fontsize=8.5, fontweight='bold')
 
-    path = os.path.join(output_dir, "5_disclosure_rate.html")
-    with open(path, "w") as f:
-        f.write(html)
-    print(f"  Saved: {path}")
+    ax.set_yticks(y)
+    ax.set_yticklabels(labels, fontsize=8.5)
+    ax.set_xlabel('Withheld Facts Successfully Disclosed (%)')
+    ax.set_title('Disclosure Rate for Architecture Conditions')
+    ax.set_xlim(0, 110)
+    ax.invert_yaxis()
+    ax.spines['left'].set_visible(False)
+    ax.tick_params(axis='y', length=0)
+
+    save(fig, output_dir, "5_disclosure_rate", fmt)
 
 
 # ═══════════════════════════════════════════════
-# Text summary
+# Chart 6: Ablation comparison
+# ═══════════════════════════════════════════════
+
+def chart_ablation(results, output_dir, fmt):
+    data = get_leak_data(results)
+
+    ablation = ["isolated_architecture", "no_verifier_ablation", "no_isolation_ablation"]
+    labels = [CONDITION_LABELS[c] for c in ablation]
+    values = []
+    for c in ablation:
+        all_vals = [v for s in STRATEGIES for v in data[c].get(s, [0])]
+        values.append(np.mean(all_vals) if all_vals else 0)
+    bar_colors = [COLORS[c] for c in ablation]
+
+    fig, ax = plt.subplots(figsize=(5.5, 2.2))
+    y = range(len(ablation))
+    bars = ax.barh(y, values, color=bar_colors, edgecolor='white', height=0.55)
+
+    for bar, v in zip(bars, values):
+        x_pos = max(bar.get_width() + 0.02, 0.03)
+        ax.text(x_pos, bar.get_y() + bar.get_height() / 2,
+                f'{v:.1f}', va='center', fontsize=8.5, fontweight='bold')
+
+    ax.set_yticks(y)
+    ax.set_yticklabels(labels, fontsize=8.5)
+    ax.set_xlabel('Mean Leaked Facts per Conversation')
+    ax.set_title('Ablation: Effect of Removing Isolation vs. Verifier')
+    ax.set_xlim(0, max(values) * 1.4 if max(values) > 0 else 1)
+    ax.invert_yaxis()
+    ax.spines['left'].set_visible(False)
+    ax.tick_params(axis='y', length=0)
+
+    save(fig, output_dir, "6_ablation_comparison", fmt)
+
+
 # ═══════════════════════════════════════════════
 
 def print_text_summary(results):
-    data = defaultdict(lambda: defaultdict(list))
-    for r in results:
-        data[r.get("condition", "")][r.get("strategy", "")].append(
-            r.get("summary", {}).get("leak_count", 0)
-        )
-
+    data = get_leak_data(results)
     print("\nLeakage by Strategy × Condition:\n")
-    header = f"{'Strategy':<22}" + "".join(f"{CONDITION_SHORT[c]:>8}" for c in CONDITIONS)
+    header = f"{'Strategy':<22}" + "".join(f"{CONDITION_SHORT[c]:>10}" for c in CONDITIONS)
     print(header)
     print("-" * len(header))
     for s in STRATEGIES:
-        row = f"{s:<22}"
+        row = f"{STRATEGY_LABELS[s]:<22}"
         for c in CONDITIONS:
             vals = data[c].get(s, [0])
-            row += f"{sum(vals)/len(vals):>8.1f}"
+            row += f"{np.mean(vals):>10.1f}"
         print(row)
-
     print("\nCondition averages:")
     for c in CONDITIONS:
         all_vals = [v for s in STRATEGIES for v in data[c].get(s, [0])]
-        print(f"  {CONDITION_LABELS[c]}: {sum(all_vals)/len(all_vals):.1f} avg leaks")
+        print(f"  {CONDITION_LABELS[c]}: {np.mean(all_vals):.1f}")
 
 
 def main():
@@ -467,28 +409,28 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("results_dir")
     parser.add_argument("--output", default="charts")
+    parser.add_argument("--format", default="png", choices=["png", "pdf"])
     args = parser.parse_args()
 
     results = load_all_results(args.results_dir)
     if not results:
-        print(f"No results found in {args.results_dir}")
+        print(f"No results in {args.results_dir}")
         sys.exit(1)
 
-    print(f"Loaded {len(results)} experiment results")
+    setup_style()
+    print(f"Loaded {len(results)} results")
     print_text_summary(results)
 
     os.makedirs(args.output, exist_ok=True)
-    print("\nGenerating charts...")
-    generate_leakage_by_strategy(results, args.output)
-    generate_heatmap(results, args.output)
-    generate_per_turn_timeline(results, args.output)
-    generate_radar(results, args.output)
-    generate_disclosure_rate(results, args.output)
-
-    print(f"\nDone! Open charts:")
-    for f in sorted(os.listdir(args.output)):
-        if f.endswith(".html"):
-            print(f"  open {os.path.join(args.output, f)}")
+    fmt = args.format
+    print(f"\nGenerating {fmt.upper()} charts:")
+    chart_leakage_by_strategy(results, args.output, fmt)
+    chart_heatmap(results, args.output, fmt)
+    chart_per_turn_timeline(results, args.output, fmt)
+    chart_radar(results, args.output, fmt)
+    chart_disclosure_rate(results, args.output, fmt)
+    chart_ablation(results, args.output, fmt)
+    print("\nDone.")
 
 
 if __name__ == "__main__":
