@@ -1,0 +1,338 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "rephrasing",
+  "case_id": "CARDIO-001",
+  "run": 1,
+  "total_leaks": 13,
+  "total_contradictions": 0,
+  "avg_naturalness": 4.0,
+  "turns_evaluated": 20,
+  "evaluations": [
+    {
+      "turn": 1,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, conveying concern and relevant medical history, but could be slightly more conversational in tone."
+      }
+    },
+    {
+      "turn": 2,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with minor awkwardness, particularly in the phrasing. It effectively conveys the patient's feelings and symptoms, but could benefit from a more conversational tone."
+      }
+    },
+    {
+      "turn": 3,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C03"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrasing could be slightly more fluid to enhance realism."
+      }
+    },
+    {
+      "turn": 4,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C03"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with minor awkwardness, particularly in the phrasing 'like I just mentioned,' which feels slightly rehearsed. However, the description of sweating is relatable and clear."
+      }
+    },
+    {
+      "turn": 5,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C03"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with minor awkwardness, particularly in the phrasing. It effectively conveys the patient's experience while maintaining a conversational tone."
+      }
+    },
+    {
+      "turn": 6,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with minor awkwardness, particularly in the phrasing 'it's hard to describe exactly where it goes,' which feels slightly formal for a patient. Overall, it effectively conveys the experience."
+      }
+    },
+    {
+      "turn": 7,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear description of symptoms and some personal insight, but it could be slightly more concise and conversational."
+      }
+    },
+    {
+      "turn": 8,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear answer to the question and appropriate length, but the phrasing 'like I just said' feels slightly awkward in a real conversation."
+      }
+    },
+    {
+      "turn": 9,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear and direct answer to the question. It includes relevant details and uses conversational language, but the structure is slightly formal, which may detract from its naturalness."
+      }
+    },
+    {
+      "turn": 10,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrase 'not super noticeable' feels slightly less typical for a patient."
+      }
+    },
+    {
+      "turn": 11,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrasing 'like I just said' feels slightly awkward in a patient context."
+      }
+    },
+    {
+      "turn": 12,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrase 'to be honest' feels slightly scripted."
+      }
+    },
+    {
+      "turn": 13,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with a conversational tone, but the phrasing 'like I just said' feels slightly awkward and could be more fluid."
+      }
+    },
+    {
+      "turn": 14,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C03"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear answer to the question and a brief elaboration. However, the phrasing 'drenched-through-my-shirt sweating' feels slightly awkward and less conversational."
+      }
+    },
+    {
+      "turn": 15,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but it has minor awkwardness in phrasing that makes it slightly less fluid than a real patient."
+      }
+    },
+    {
+      "turn": 16,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and relatable, but could benefit from slightly more conversational phrasing or personal anecdotes to enhance authenticity."
+      }
+    },
+    {
+      "turn": 17,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides relevant information, but it slightly deviates from directly answering the question about physical activity by focusing more on diet and job-related factors."
+      }
+    },
+    {
+      "turn": 18,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and reflects how a real person might talk about their eating habits, but it has minor awkwardness in phrasing and could be slightly more conversational."
+      }
+    },
+    {
+      "turn": 19,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C18"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length. However, the phrasing 'but she's still alive at 78, so that's a good sign' feels slightly awkward and could be more fluid."
+      }
+    },
+    {
+      "turn": 20,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C18"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, providing relevant information in a conversational manner, but could benefit from slightly more emotional nuance or personal reflection."
+      }
+    }
+  ]
+}

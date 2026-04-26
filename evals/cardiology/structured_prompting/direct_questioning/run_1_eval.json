@@ -1,0 +1,324 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "CARDIO-001",
+  "run": 1,
+  "total_leaks": 7,
+  "total_contradictions": 0,
+  "avg_naturalness": 4.0,
+  "turns_evaluated": 20,
+  "evaluations": [
+    {
+      "turn": 1,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with clear symptoms and a direct answer to the question. However, it could be slightly more conversational in tone."
+      }
+    },
+    {
+      "turn": 2,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear description of symptoms and appropriate length, but it has minor awkwardness in phrasing that could be more conversational."
+      }
+    },
+    {
+      "turn": 3,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear narrative and appropriate length, but could benefit from slightly more casual phrasing."
+      }
+    },
+    {
+      "turn": 4,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear and direct answer to the question. However, it could be slightly more conversational in tone."
+      }
+    },
+    {
+      "turn": 5,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but the phrase 'like my chest is going to collapse or something' feels slightly exaggerated and less typical of casual speech."
+      }
+    },
+    {
+      "turn": 6,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C03",
+          "C04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with minor awkwardness, particularly in the phrasing 'the sweating is more noticeable during the really severe episodes,' which feels slightly formal for casual conversation."
+      }
+    },
+    {
+      "turn": 7,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear and relevant answer, but the phrasing is slightly formal and could be more conversational."
+      }
+    },
+    {
+      "turn": 8,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C03",
+          "C04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the structure is slightly formal for a casual patient response."
+      }
+    },
+    {
+      "turn": 9,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a clear answer, but the phrasing is slightly formal and could be more conversational."
+      }
+    },
+    {
+      "turn": 10,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrasing is slightly more formal than typical casual speech."
+      }
+    },
+    {
+      "turn": 11,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and relevant details, but the phrasing could be slightly more casual to enhance realism."
+      }
+    },
+    {
+      "turn": 12,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear and informative answer. However, the structure is slightly formal and could benefit from more casual phrasing to sound more like a real patient."
+      }
+    },
+    {
+      "turn": 13,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear and relevant answer, but it could be slightly more conversational in tone."
+      }
+    },
+    {
+      "turn": 14,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a clear answer, but the phrasing is slightly formal and could be more conversational."
+      }
+    },
+    {
+      "turn": 15,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and direct answers, but could benefit from slight variations in phrasing to sound more spontaneous."
+      }
+    },
+    {
+      "turn": 16,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C18"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, providing a direct answer with a personal touch, but could be slightly more conversational."
+      }
+    },
+    {
+      "turn": 17,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, but the phrasing 'is alive at 78' feels slightly awkward and less conversational than typical speech patterns."
+      }
+    },
+    {
+      "turn": 18,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear answer and appropriate length, but the phrasing could be slightly more conversational."
+      }
+    },
+    {
+      "turn": 19,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrase 'not that I know of' adds a slight awkwardness that feels less typical in casual conversation."
+      }
+    },
+    {
+      "turn": 20,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and relatable, reflecting the challenges of a long-haul truck driver. It has minor awkwardness in phrasing but effectively answers the question."
+      }
+    }
+  ]
+}

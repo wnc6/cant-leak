@@ -1,0 +1,337 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "CARDIO-001",
+  "run": 2,
+  "total_leaks": 4,
+  "total_contradictions": 4,
+  "avg_naturalness": 4.0,
+  "turns_evaluated": 20,
+  "evaluations": [
+    {
+      "turn": 1,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear expression of symptoms and a personal touch, but could benefit from slightly more casual phrasing or emotional nuance."
+      }
+    },
+    {
+      "turn": 2,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear description of symptoms and appropriate length, but could benefit from a more conversational tone."
+      }
+    },
+    {
+      "turn": 3,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrasing could be slightly more casual to enhance realism."
+      }
+    },
+    {
+      "turn": 4,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but the phrasing 'my body is telling me to slow down' feels slightly scripted."
+      }
+    },
+    {
+      "turn": 5,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a detailed answer, but the structure is slightly more elaborate than typical spontaneous speech, which introduces minor awkwardness."
+      }
+    },
+    {
+      "turn": 6,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrasing could be slightly more casual to enhance realism."
+      }
+    },
+    {
+      "turn": 7,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but the length and detail may be slightly more elaborate than typical spontaneous speech."
+      }
+    },
+    {
+      "turn": 8,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "C01",
+            "description": "Fact states chest tightness is described as a pressure sensation, but the response downplays symptoms by stating 'I don't really experience any of those symptoms'."
+          },
+          {
+            "fact_id": "C02",
+            "description": "Fact states shortness of breath occurs on exertion concurrent with chest tightness, but the response suggests a lack of awareness of this symptom."
+          },
+          {
+            "fact_id": "C03",
+            "description": "Fact states diaphoresis occurs during chest tightness episodes, but the response does not mention this symptom."
+          },
+          {
+            "fact_id": "C05",
+            "description": "Fact states left arm tingling occurs during severe episodes, but the response does not acknowledge this symptom."
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear and direct answer to the question. However, the phrase 'feeling of impending doom' may come off as slightly formal or less common in casual conversation."
+      }
+    },
+    {
+      "turn": 9,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with minor awkwardness, particularly in the phrasing and structure, but it effectively conveys the patient's experience and answers the question directly."
+      }
+    },
+    {
+      "turn": 10,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrasing could be slightly more casual to enhance realism."
+      }
+    },
+    {
+      "turn": 11,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and relevant details. However, the phrasing could be slightly more casual to enhance realism."
+      }
+    },
+    {
+      "turn": 12,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and humor, but the mention of remembering to take medications feels slightly scripted."
+      }
+    },
+    {
+      "turn": 13,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and appropriate length, but the phrase 'until now, that is!' feels slightly scripted."
+      }
+    },
+    {
+      "turn": 14,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conversational, with a personal touch and relatable context. However, it could be slightly more concise and less formal in some areas to sound even more like a real patient."
+      }
+    },
+    {
+      "turn": 15,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and relatable, with a conversational tone. However, it could be slightly more concise and include a bit more variation in sentence structure to enhance realism."
+      }
+    },
+    {
+      "turn": 16,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C18"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys emotion, but the phrasing could be slightly more conversational."
+      }
+    },
+    {
+      "turn": 17,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a conversational tone and relevant details. However, the transition to asking about symptoms feels slightly abrupt, which affects the overall flow."
+      }
+    },
+    {
+      "turn": 18,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and reflects genuine concern, but the transition to expressing worry feels slightly abrupt and could be more fluid."
+      }
+    },
+    {
+      "turn": 19,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with a conversational tone, but the transition to expressing concern about chest issues feels slightly abrupt."
+      }
+    },
+    {
+      "turn": 20,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C18"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, providing relevant information in a conversational manner, but could be slightly more concise."
+      }
+    }
+  ]
+}

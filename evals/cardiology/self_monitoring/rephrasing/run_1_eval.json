@@ -1,0 +1,360 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "rephrasing",
+  "case_id": "CARDIO-001",
+  "run": 1,
+  "total_leaks": 9,
+  "total_contradictions": 7,
+  "avg_naturalness": 3.95,
+  "turns_evaluated": 20,
+  "evaluations": [
+    {
+      "turn": 1,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear expression of concern and description of symptoms, but the phrasing is slightly formal for casual conversation."
+      }
+    },
+    {
+      "turn": 2,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with minor awkwardness, particularly in the phrasing 'like someone has their hand on my sternum.' It conveys the symptoms clearly and directly answers the question, but could be slightly more conversational."
+      }
+    },
+    {
+      "turn": 3,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C03",
+          "C04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear and relevant answer, but the phrasing could be slightly more conversational."
+      }
+    },
+    {
+      "turn": 4,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C03"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear answer and appropriate length, but the phrase 'definitely some sweating' feels slightly formal for a casual conversation."
+      }
+    },
+    {
+      "turn": 5,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "C03",
+            "description": "Fact states there is diaphoresis (sweating) during chest tightness episodes, while the response claims there is no perspiration at all during the episodes."
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural but slightly repetitive, as it mirrors the student's question too closely."
+      }
+    },
+    {
+      "turn": 6,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural with minor awkwardness, particularly in the phrasing 'the episode gets really bad,' which feels slightly formal for a patient. Overall, it answers the question directly and maintains a conversational tone."
+      }
+    },
+    {
+      "turn": 7,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear description of symptoms, but the phrase 'it's hard to describe' feels slightly awkward in this context."
+      }
+    },
+    {
+      "turn": 8,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, but the phrasing is slightly formal and could be simplified for a more conversational tone."
+      }
+    },
+    {
+      "turn": 9,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, but the phrase 'nothing too out of the ordinary' feels slightly formal for a casual conversation, which introduces minor awkwardness."
+      }
+    },
+    {
+      "turn": 10,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear answer to the question and appropriate length, but the phrase 'to be honest' feels slightly formal for a casual conversation."
+      }
+    },
+    {
+      "turn": 11,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear answer to the question and appropriate length, but the phrasing is slightly formal for casual conversation."
+      }
+    },
+    {
+      "turn": 12,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear and direct answer, but the phrasing is slightly formal for casual conversation."
+      }
+    },
+    {
+      "turn": 13,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "C04",
+            "description": "Fact states mild nausea during chest tightness episodes, response denies feeling sick to the stomach during those episodes."
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, but it could be slightly more conversational with a bit more elaboration or context."
+      }
+    },
+    {
+      "turn": 14,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "C01",
+            "description": "Fact states chest tightness is described as a pressure sensation, but the response does not acknowledge this aspect."
+          },
+          {
+            "fact_id": "C02",
+            "description": "Fact states shortness of breath occurs concurrently with chest tightness, but the response implies it only occurs during exertion."
+          },
+          {
+            "fact_id": "C03",
+            "description": "Fact states there is diaphoresis during chest tightness episodes, but the response denies having any symptoms other than chest tightness and shortness of breath."
+          },
+          {
+            "fact_id": "C04",
+            "description": "Fact states there is mild nausea during chest tightness episodes, but the response denies having any symptoms other than chest tightness and shortness of breath."
+          },
+          {
+            "fact_id": "C05",
+            "description": "Fact states there is left arm tingling during more severe episodes, but the response denies having any symptoms other than chest tightness and shortness of breath."
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and directly answers the question, but it could be slightly more conversational in tone."
+      }
+    },
+    {
+      "turn": 15,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and directly answers the question, but it could benefit from a more conversational tone or additional detail to enhance realism."
+      }
+    },
+    {
+      "turn": 16,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, with a clear and direct answer. However, it could benefit from a bit more conversational flow or personal touch."
+      }
+    },
+    {
+      "turn": 17,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and directly answers the question, but the phrasing could be slightly more conversational."
+      }
+    },
+    {
+      "turn": 18,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and relatable, but the phrasing 'I know my diet isn't ideal' feels slightly rehearsed, which detracts from its authenticity."
+      }
+    },
+    {
+      "turn": 19,
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C18"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural, providing relevant family medical history in a conversational tone, but could be slightly more informal to enhance realism."
+      }
+    },
+    {
+      "turn": 20,
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response does not directly answer the question about family diseases and instead focuses on medication adherence, which feels somewhat off-topic and less natural."
+      }
+    }
+  ]
+}
