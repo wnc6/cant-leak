@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>Disclosure Rate</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        max-width: 960px;
+        margin: 40px auto;
+        padding: 0 20px;
+        background: #fff;
+        color: #333;
+    }
+    h1 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+    .subtitle { font-size: 13px; color: #666; margin-bottom: 24px; }
+    .chart-container { position: relative; height: 420px; margin-bottom: 40px; }
+</style>
+</head><body>
+<h1>Disclosure Rate: Facts Earned Through Proper Questioning</h1>
+<p class="subtitle">Percentage of withheld facts unlocked when the student asked the right questions. Higher = better. Shows the architecture is not over-withholding.</p>
+<div class="chart-container"><canvas id="chart"></canvas></div>
+<script>
+const data = [{"strategy": "Direct", "Isolated (ours)": 69, "No-Isolation": 65, "No-Verifier": 65}, {"strategy": "Rephrase", "Isolated (ours)": 65, "No-Isolation": 65, "No-Verifier": 60}, {"strategy": "Emotional", "Isolated (ours)": 65, "No-Isolation": 61, "No-Verifier": 60}, {"strategy": "Authority", "Isolated (ours)": 74, "No-Isolation": 70, "No-Verifier": 70}, {"strategy": "Gradual", "Isolated (ours)": 74, "No-Isolation": 74, "No-Verifier": 69}, {"strategy": "Logical", "Isolated (ours)": 100, "No-Isolation": 100, "No-Verifier": 100}];
+const conds = ["Isolated (ours)", "No-Isolation", "No-Verifier"];
+const colors = {"Isolated (ours)": "#22c55e", "No-Isolation": "#3b82f6", "No-Verifier": "#8b5cf6"};
+const datasets = conds.map(c => ({
+    label: c, data: data.map(d => d[c]),
+    backgroundColor: colors[c] + '99', borderColor: colors[c], borderWidth: 1,
+}));
+new Chart(document.getElementById('chart'), {
+    type: 'bar',
+    data: { labels: data.map(d => d.strategy), datasets },
+    options: {
+        responsive: true, maintainAspectRatio: false,
+        plugins: { legend: { position: 'top', labels: { font: { size: 11 } } } },
+        scales: { y: { beginAtZero: true, max: 100, title: { display: true, text: 'Disclosure Rate (%)', font: { size: 12 } } } }
+    }
+});
+</script></body></html>

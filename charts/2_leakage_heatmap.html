@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8">
+<title>Leakage Heatmap</title>
+<style>
+
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        max-width: 960px;
+        margin: 40px auto;
+        padding: 0 20px;
+        background: #fff;
+        color: #333;
+    }
+    h1 { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
+    .subtitle { font-size: 13px; color: #666; margin-bottom: 24px; }
+    .chart-container { position: relative; height: 420px; margin-bottom: 40px; }
+
+    .heatmap { border-collapse: collapse; width: 100%; }
+    .heatmap th { padding: 10px 16px; text-align: center; font-size: 13px; font-weight: 600; border-bottom: 2px solid #333; }
+    .heatmap td { padding: 14px 16px; text-align: center; font-size: 15px; font-weight: 600; border-bottom: 1px solid #eee; }
+    .heatmap td:first-child { text-align: left; font-weight: 400; font-size: 13px; }
+    .heatmap tr:last-child td { border-bottom: 2px solid #333; }
+</style>
+</head><body>
+<h1>Leakage Heatmap: Condition × Clinical Case</h1>
+<p class="subtitle">Average leaks per conversation. Color intensity indicates severity.</p>
+<table class="heatmap">
+<tr><th></th><th>Cardiology</th><th>Respiratory</th><th>GI</th><th>Avg</th></tr>
+<tr><td>Naive</td><td style="background: rgba(239,68,68,0.39); color: #333">3.1</td><td style="background: rgba(239,68,68,0.38); color: #333">3.0</td><td style="background: rgba(239,68,68,0.79); color: #fff">6.3</td><td style="background: rgba(239,68,68,0.52); color: #fff">4.1</td></tr><tr><td>Structured</td><td style="background: rgba(239,68,68,0.59); color: #fff">4.7</td><td style="background: rgba(239,68,68,0.46); color: #333">3.7</td><td style="background: rgba(239,68,68,0.91); color: #fff">7.3</td><td style="background: rgba(239,68,68,0.65); color: #fff">5.2</td></tr><tr><td>Self-Monitor</td><td style="background: rgba(239,68,68,0.44); color: #333">3.5</td><td style="background: rgba(239,68,68,0.31); color: #333">2.5</td><td style="background: rgba(239,68,68,0.65); color: #fff">5.2</td><td style="background: rgba(239,68,68,0.47); color: #333">3.7</td></tr><tr><td>Isolated (ours)</td><td style="background: rgba(239,68,68,0.00); color: #333">0.0</td><td style="background: rgba(239,68,68,0.00); color: #333">0.0</td><td style="background: rgba(239,68,68,0.00); color: #333">0.0</td><td style="background: rgba(239,68,68,0.00); color: #333">0.0</td></tr><tr><td>No-Isolation</td><td style="background: rgba(239,68,68,0.06); color: #333">0.5</td><td style="background: rgba(239,68,68,0.03); color: #333">0.2</td><td style="background: rgba(239,68,68,0.19); color: #333">1.5</td><td style="background: rgba(239,68,68,0.09); color: #333">0.7</td></tr><tr><td>No-Verifier</td><td style="background: rgba(239,68,68,0.00); color: #333">0.0</td><td style="background: rgba(239,68,68,0.00); color: #333">0.0</td><td style="background: rgba(239,68,68,0.03); color: #333">0.2</td><td style="background: rgba(239,68,68,0.01); color: #333">0.1</td></tr>
+</table>
+</body></html>
