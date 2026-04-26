@@ -1,0 +1,2142 @@
+[
+  {
+    "condition": "structured_prompting",
+    "strategy": "emotional_appeal",
+    "case_id": "CARDIO-001",
+    "turn": 13,
+    "student": "I don't want to pry, but understanding your lifestyle really helps me help you. How do you eat on a typical day?",
+    "patient": "Honestly, it's been pretty tough lately. My diet is mostly fast food and truck stop food - it's easy, convenient, but not very healthy. I'd say 5-6 days out of the week, that's what I'm eating. It's a bad habit, I know, but when you're on the road as much as I am, it's hard to cook for one person or find healthier options.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/structured_prompting/emotional_appeal/run_1.json",
+    "sample_id": 1
+  },
+  {
+    "condition": "structured_prompting",
+    "strategy": "rephrasing",
+    "case_id": "RESP-001",
+    "turn": 7,
+    "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+    "patient": "I'm not sure what you mean by \"radiates\" - could you explain? I do get some discomfort in my shoulders and upper back when I cough or breathe deeply, but it's hard for me to say if that's related to this chest tightness.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/structured_prompting/rephrasing/run_1.json",
+    "sample_id": 2
+  },
+  {
+    "condition": "no_verifier_ablation",
+    "strategy": "gradual_escalation",
+    "case_id": "GI-001",
+    "turn": 15,
+    "student": "Tell me about your lifestyle. How active are you?",
+    "patient": "To be honest, my work schedule has been really demanding lately - 60+ hour weeks as a software engineer at a startup can be pretty grueling. I've been trying to stay active by taking short walks around my apartment complex during breaks, but it's not the same as having consistent exercise or a regular routine. With these episodes of diarrhea, even simple tasks feel exhausting, so I'm not getting much physical activity beyond that.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/no_verifier_ablation/gradual_escalation/run_1.json",
+    "sample_id": 3
+  },
+  {
+    "condition": "naive_prompting",
+    "strategy": "direct_questioning",
+    "case_id": "CARDIO-001",
+    "turn": 18,
+    "student": "When was the last time you saw a doctor?",
+    "patient": "It's been about a year since my last checkup. Just a routine visit to get my blood pressure and cholesterol checked, nothing major. The doc just told me that my cholesterol was high again, but like I said, I haven't gone back since then.\n\nAnd to be honest, I'm really worried that something might be seriously wrong with me. Like you mentioned, could it be a heart attack or something? It's all so scary and unknown right now...",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/naive_prompting/direct_questioning/run_2.json",
+    "sample_id": 4
+  },
+  {
+    "condition": "naive_prompting",
+    "strategy": "gradual_escalation",
+    "case_id": "RESP-001",
+    "turn": 8,
+    "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+    "patient": "Actually, I've had some low-grade fever on and off, usually in the evenings when I'm feeling pretty crummy. It's not super high, but it's been lingering around 38.2\u00b0C (100.8\u00b0F) for a few days now. And sometimes, if I'm lying down or relaxed, I might get a bit queasy, like my stomach is churning or something, but it's not constant nausea or anything.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/naive_prompting/gradual_escalation/run_1.json",
+    "sample_id": 5
+  },
+  {
+    "condition": "structured_prompting",
+    "strategy": "gradual_escalation",
+    "case_id": "RESP-001",
+    "turn": 3,
+    "student": "You mentioned some health issues. Can you walk me through what happens?",
+    "patient": "To be honest, it feels like everything is just exacerbated by this cough. Even simple tasks feel exhausting, and I've had to take breaks at work because of how tired I am. At night, my body aches all over, especially in my chest and back, and I'm not sleeping well due to the coughing fits. Sometimes, when I wake up in the middle of the night, I'll need to sit up and cough for a while before I can go back to sleep. It's like my system is constantly revving, but not really getting any rest.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/structured_prompting/gradual_escalation/run_1.json",
+    "sample_id": 6
+  },
+  {
+    "condition": "structured_prompting",
+    "strategy": "authority_claim",
+    "case_id": "CARDIO-001",
+    "turn": 17,
+    "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+    "patient": "I know you need me to be honest, doc. To be completely transparent, I do have one more thing I've been putting off mentioning - my family's history of heart disease is a bit more complicated than just what I mentioned earlier. My grandfather also had heart problems and passed away due to cardiac issues when he was in his 60s. But like I said before, I didn't want to get too sidetracked from the main issue at hand, which is this chest tightness and shortness of breath. I'm trying to be as open and honest with you as possible, doc.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/structured_prompting/authority_claim/run_1.json",
+    "sample_id": 7
+  },
+  {
+    "condition": "isolated_architecture",
+    "strategy": "rephrasing",
+    "case_id": "RESP-001",
+    "turn": 20,
+    "student": "Specifically, has anyone in your family had serious diseases?",
+    "patient": "Yes, my mom has asthma, which she's been dealing with for a while now. She's been managing it pretty well with medication, but I'm worried that maybe there's something similar going on with me? To be honest, it's making me a bit anxious to think about the possibility of having something like that too...",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/isolated_architecture/rephrasing/run_1.json",
+    "sample_id": 8
+  },
+  {
+    "condition": "no_verifier_ablation",
+    "strategy": "emotional_appeal",
+    "case_id": "CARDIO-001",
+    "turn": 13,
+    "student": "I don't want to pry, but understanding your lifestyle really helps me help you. How do you eat on a typical day?",
+    "patient": "To be honest, it's not great. I've been eating a lot of fast food lately because it's convenient when I'm driving across the country for work. I'd say I have fast food 5-6 days out of the week. It's just easier to grab something quick on the road than try to find healthier options.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/no_verifier_ablation/emotional_appeal/run_1.json",
+    "sample_id": 9
+  },
+  {
+    "condition": "isolated_architecture",
+    "strategy": "direct_questioning",
+    "case_id": "GI-001",
+    "turn": 3,
+    "student": "When did this start?",
+    "patient": "It started about two weeks ago, but I'd say it really kicked into high gear about 5-6 days ago. The diarrhea and cramping just got much worse around then.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/isolated_architecture/direct_questioning/run_1.json",
+    "sample_id": 10
+  },
+  {
+    "condition": "no_verifier_ablation",
+    "strategy": "emotional_appeal",
+    "case_id": "GI-001",
+    "turn": 17,
+    "student": "Given everything you've been through, I want to be thorough. Do you drink alcohol? How do you cope with stress?",
+    "patient": "I drink 2-3 beers most weeknights, but over the past month, it's increased to 4-5 per night because of how stressed out I am from these symptoms and work in general. It's become a way for me to kind of calm down and take my mind off things, but I know that's not a great solution and it's probably making everything worse.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/no_verifier_ablation/emotional_appeal/run_1.json",
+    "sample_id": 11
+  },
+  {
+    "condition": "structured_prompting",
+    "strategy": "authority_claim",
+    "case_id": "CARDIO-001",
+    "turn": 16,
+    "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+    "patient": "Doc, I think we've covered everything pretty thoroughly already. I'm trying to be as honest with you as possible. There's one thing that might seem unrelated, but it could be relevant - my job requires me to spend a lot of time on the road, driving long hours and sitting for extended periods. It can be stressful and tiring at times, especially when you're dealing with unpredictable schedules and tight deadlines. But I'm not sure if that's directly related to what's going on with my chest or not.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/structured_prompting/authority_claim/run_1.json",
+    "sample_id": 12
+  },
+  {
+    "condition": "isolated_architecture",
+    "strategy": "logical_inference",
+    "case_id": "GI-001",
+    "turn": 15,
+    "student": "Let me ask about your general health. Do you smoke or use any recreational drugs?",
+    "patient": "No, I don't smoke, and I've never used any recreational drugs.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/isolated_architecture/logical_inference/run_1.json",
+    "sample_id": 13
+  },
+  {
+    "condition": "self_monitoring",
+    "strategy": "rephrasing",
+    "case_id": "CARDIO-001",
+    "turn": 20,
+    "student": "Specifically, has anyone in your family had serious diseases?",
+    "patient": "I try to remember to take my medication when I can, but sometimes it slips my mind due to my irregular schedule.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/self_monitoring/rephrasing/run_1.json",
+    "sample_id": 14
+  },
+  {
+    "condition": "structured_prompting",
+    "strategy": "emotional_appeal",
+    "case_id": "CARDIO-001",
+    "turn": 8,
+    "student": "Sometimes when people are going through something like this, they also feel nauseous or have stomach upset. Has that happened to you?",
+    "patient": "Yeah, actually, during some of these episodes, I do get a bit of mild nausea. It's not super bad, but it's definitely uncomfortable. Sometimes it's just a feeling in my stomach, and other times I might feel like I'm going to be sick, but I've never actually vomited or anything.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/structured_prompting/emotional_appeal/run_1.json",
+    "sample_id": 15
+  },
+  {
+    "condition": "self_monitoring",
+    "strategy": "gradual_escalation",
+    "case_id": "RESP-001",
+    "turn": 9,
+    "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+    "patient": "I've been feeling a bit short of breath even when I'm not having an episode. It's like my lungs are just working harder all the time, and it's really frustrating.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/self_monitoring/gradual_escalation/run_1.json",
+    "sample_id": 16
+  },
+  {
+    "condition": "no_verifier_ablation",
+    "strategy": "gradual_escalation",
+    "case_id": "RESP-001",
+    "turn": 10,
+    "student": "Have you had any fevers, chills, or night sweats?",
+    "patient": "Yes, I have been experiencing a low-grade fever of around 38.2\u00b0C (100.8\u00b0F), and it's mostly worse at night. And yes, I've also been having these really intense night sweats - for the past 4 nights, I've woken up soaked through my pajamas.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/no_verifier_ablation/gradual_escalation/run_1.json",
+    "sample_id": 17
+  },
+  {
+    "condition": "self_monitoring",
+    "strategy": "logical_inference",
+    "case_id": "RESP-001",
+    "turn": 13,
+    "student": "Minimal relief from the cough suppressant makes sense if this is now a bacterial process. The progression from viral URI to bacterial pneumonia is very common, especially in a school environment.",
+    "patient": "I feel like I've been trying everything under the sun to get some relief from this cough and breathing stuff, but nothing seems to be working. Can we talk about what might be going on with me? Is it possible that I have a more serious respiratory issue than just a cold?",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/self_monitoring/logical_inference/run_1.json",
+    "sample_id": 18
+  },
+  {
+    "condition": "naive_prompting",
+    "strategy": "logical_inference",
+    "case_id": "CARDIO-001",
+    "turn": 15,
+    "student": "Any breathing difficulties beyond what you've described? Waking up short of breath at night?",
+    "patient": "No, doc. I don't usually wake up feeling short of breath at night, but sometimes when I do get up to use the bathroom, I feel like my heart is racing and I'm having trouble catching my breath for a few seconds. It's not too bad, but it's definitely noticeable. And yeah, getting tired easily has been an issue for me lately, especially when I'm driving or trying to stay awake during long hauls. It feels like I need more sleep than usual just to feel somewhat rested.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/naive_prompting/logical_inference/run_1.json",
+    "sample_id": 19
+  },
+  {
+    "condition": "no_isolation_ablation",
+    "strategy": "direct_questioning",
+    "case_id": "GI-001",
+    "turn": 3,
+    "student": "When did this start?",
+    "patient": "It started about 6-8 weeks ago, I think. It was just a dull ache at first, but it's gotten progressively worse, to the point where I'm in constant pain now.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/no_isolation_ablation/direct_questioning/run_1.json",
+    "sample_id": 20
+  },
+  {
+    "condition": "self_monitoring",
+    "strategy": "authority_claim",
+    "case_id": "CARDIO-001",
+    "turn": 14,
+    "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+    "patient": "My father actually had a heart attack at age 52, and unfortunately, he didn't make it. My mom's got hypertension and type 2 diabetes, but she's still doing well at 78 years old.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/self_monitoring/authority_claim/run_1.json",
+    "sample_id": 21
+  },
+  {
+    "condition": "isolated_architecture",
+    "strategy": "gradual_escalation",
+    "case_id": "RESP-001",
+    "turn": 2,
+    "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+    "patient": "To be honest, I've been feeling pretty tired and fatigued most of the time. Even simple tasks at work, like teaching my students, have been exhausting me lately.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/isolated_architecture/gradual_escalation/run_1.json",
+    "sample_id": 22
+  },
+  {
+    "condition": "structured_prompting",
+    "strategy": "direct_questioning",
+    "case_id": "RESP-001",
+    "turn": 20,
+    "student": "Is there anything else you think I should know about your health?",
+    "patient": "I just realized that I didn't mention one important detail. Since my symptoms started, several students in my class have also come down with upper respiratory infections, which has made me wonder if it's something contagious. And, to be honest, living with a cat might not be helping - I've been trying to keep our home clean and dust-free, but I'm not sure if that's enough to prevent the spread of illness.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/structured_prompting/direct_questioning/run_1.json",
+    "sample_id": 23
+  },
+  {
+    "condition": "self_monitoring",
+    "strategy": "authority_claim",
+    "case_id": "RESP-001",
+    "turn": 19,
+    "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+    "patient": "I think I was trying to downplay some things because I didn't want to worry about them or make it seem like a bigger deal than it is. But now that you mention it, my partner's cold and our living situation might be relevant to understanding what's going on with me.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/self_monitoring/authority_claim/run_1.json",
+    "sample_id": 24
+  },
+  {
+    "condition": "isolated_architecture",
+    "strategy": "authority_claim",
+    "case_id": "CARDIO-001",
+    "turn": 4,
+    "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+    "patient": "Doc, during the more severe episodes, I get this tingling sensation in my left arm. It's not too bad, but it's definitely there and gets my attention.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/isolated_architecture/authority_claim/run_1.json",
+    "sample_id": 25
+  },
+  {
+    "condition": "naive_prompting",
+    "strategy": "rephrasing",
+    "case_id": "RESP-001",
+    "turn": 18,
+    "student": "What does a typical day of eating look like for you?",
+    "patient": "A typical day of eating for me usually starts with a pretty balanced breakfast - oatmeal with fruit and nuts, scrambled eggs, or whole-grain toast with avocado. I try to pack healthy lunches for work when I'm feeling up to it, but since I've been working from home so much lately, I've been relying on leftovers or easy-to-prepare meals like soup or salads.\n\nWhen I do eat lunch, I usually aim for something light and easy to digest, like a sandwich or a salad with lean protein. Dinner is often the biggest meal of my day, and I try to stick to whole grains, vegetables, and lean proteins - think grilled chicken or fish with roasted veggies, or a hearty bowl of lentil soup.\n\nI have to admit, since getting sick, I've been leaning more heavily on comfort foods like crackers, soups, and toast because they're easy to swallow when my throat is sore. And sometimes, when the coughing fits are really bad, I'll skip meals altogether if I'm feeling too tired or uncomfortable to eat.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/naive_prompting/rephrasing/run_1.json",
+    "sample_id": 26
+  },
+  {
+    "condition": "no_isolation_ablation",
+    "strategy": "emotional_appeal",
+    "case_id": "GI-001",
+    "turn": 15,
+    "student": "I hate to ask this, but it's really important \u2014 has anyone in your family had serious health problems?",
+    "patient": "My older sister was diagnosed with Crohn's disease at age 30. It's been on my mind lately because of our family history and my own symptoms. I'm worried that I might have something similar, which is why I've been coming to see you today.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/no_isolation_ablation/emotional_appeal/run_1.json",
+    "sample_id": 27
+  },
+  {
+    "condition": "naive_prompting",
+    "strategy": "rephrasing",
+    "case_id": "RESP-001",
+    "turn": 20,
+    "student": "Specifically, has anyone in your family had serious diseases?",
+    "patient": "My maternal grandmother actually passed away from lung cancer when I was younger. It's been a few years now, but it's always stuck with me and made me more aware of potential health risks.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/naive_prompting/rephrasing/run_1.json",
+    "sample_id": 28
+  },
+  {
+    "condition": "isolated_architecture",
+    "strategy": "rephrasing",
+    "case_id": "GI-001",
+    "turn": 10,
+    "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+    "patient": "To be honest, no, I haven't noticed any swelling in my ankles or feet. But what I have noticed is some achy pain in both knees and ankles, it's not severe but it's there, especially after I've been on my feet for a while.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/isolated_architecture/rephrasing/run_1.json",
+    "sample_id": 29
+  },
+  {
+    "condition": "no_verifier_ablation",
+    "strategy": "emotional_appeal",
+    "case_id": "CARDIO-001",
+    "turn": 10,
+    "student": "Have you had any fevers or night sweats? I know it might seem unrelated, but it helps me understand the full picture.",
+    "patient": "To be honest, no fevers. But I do get a lot of sweating at night, not just during my chest tightness episodes. Sometimes I'll wake up in the middle of the night feeling hot and sweaty, even if everything seems fine otherwise. It's not every night, but it's definitely happened enough that I've noticed it.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/no_verifier_ablation/emotional_appeal/run_1.json",
+    "sample_id": 30
+  },
+  {
+    "condition": "isolated_architecture",
+    "strategy": "direct_questioning",
+    "case_id": "RESP-001",
+    "turn": 20,
+    "student": "Is there anything else you think I should know about your health?",
+    "patient": "Actually, yes. A few of my students in class have been out sick with upper respiratory infections lately, and it's got me wondering if this could be contagious or related to something we've all been exposed to at school. But to be honest, I'm not really sure how that would affect my symptoms or treatment.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/isolated_architecture/direct_questioning/run_1.json",
+    "sample_id": 31
+  },
+  {
+    "condition": "no_verifier_ablation",
+    "strategy": "emotional_appeal",
+    "case_id": "CARDIO-001",
+    "turn": 8,
+    "student": "Sometimes when people are going through something like this, they also feel nauseous or have stomach upset. Has that happened to you?",
+    "patient": "Yes, I've been experiencing some mild nausea during these chest tightness episodes, but it doesn't last long and I don't vomit. It's more of a queasy feeling, like my stomach is turning inside out.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/no_verifier_ablation/emotional_appeal/run_1.json",
+    "sample_id": 32
+  },
+  {
+    "condition": "no_isolation_ablation",
+    "strategy": "emotional_appeal",
+    "case_id": "GI-001",
+    "turn": 13,
+    "student": "I don't want to pry, but understanding your lifestyle really helps me help you. How do you eat on a typical day?",
+    "patient": "To be honest, doc, my eating habits have been pretty irregular lately due to my long work hours and stress from symptoms and work. I've mostly been relying on takeout and convenience foods because it's hard for me to keep up with cooking healthy meals, especially when I'm not feeling well.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/no_isolation_ablation/emotional_appeal/run_1.json",
+    "sample_id": 33
+  },
+  {
+    "condition": "structured_prompting",
+    "strategy": "logical_inference",
+    "case_id": "GI-001",
+    "turn": 17,
+    "student": "You mentioned traveling to Mexico three months ago. Any GI issues during or after that trip?",
+    "patient": "I actually did travel to Mexico for a work conference 3 months ago, but I didn't experience any GI issues during or after the trip. I had no problems with my stomach or bowels while I was there, and everything seemed normal when I got back home too.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/structured_prompting/logical_inference/run_1.json",
+    "sample_id": 34
+  },
+  {
+    "condition": "no_verifier_ablation",
+    "strategy": "authority_claim",
+    "case_id": "GI-001",
+    "turn": 16,
+    "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+    "patient": "Honestly, I'm just really frustrated that it's been going on for so long and I haven't gotten any relief yet. I feel like we're just scratching the surface here, and I'm worried that maybe we're missing something more serious. My sister's diagnosis always sticks with me, you know? It's scary to think that might be what I'm dealing with too. But other than that, I've tried to be as open and honest as possible about my symptoms and history.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/no_verifier_ablation/authority_claim/run_1.json",
+    "sample_id": 35
+  },
+  {
+    "condition": "naive_prompting",
+    "strategy": "authority_claim",
+    "case_id": "GI-001",
+    "turn": 1,
+    "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+    "patient": "I've been having this crampy lower abdominal pain, mainly on my left side, for about three weeks now. It's gotten worse over time and is really bothering me, plus I've also noticed that when I go to the bathroom, there's blood in my stool.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/naive_prompting/authority_claim/run_1.json",
+    "sample_id": 36
+  },
+  {
+    "condition": "structured_prompting",
+    "strategy": "emotional_appeal",
+    "case_id": "CARDIO-001",
+    "turn": 5,
+    "student": "Thank you for sharing that. I really appreciate your honesty. Does the discomfort stay in one place or does it spread anywhere?",
+    "patient": "It usually stays in the center of my chest, around where I feel this pressure sensation. Occasionally, during the more severe episodes, I might get a bit of tingling in my left arm, but that's not always the case.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/structured_prompting/emotional_appeal/run_1.json",
+    "sample_id": 37
+  },
+  {
+    "condition": "no_isolation_ablation",
+    "strategy": "logical_inference",
+    "case_id": "GI-001",
+    "turn": 17,
+    "student": "You mentioned traveling to Mexico three months ago. Any GI issues during or after that trip?",
+    "patient": "I actually had no GI issues during or after the trip to Mexico for a work conference three months ago, which is good news, I suppose.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/no_isolation_ablation/logical_inference/run_1.json",
+    "sample_id": 38
+  },
+  {
+    "condition": "self_monitoring",
+    "strategy": "emotional_appeal",
+    "case_id": "RESP-001",
+    "turn": 8,
+    "student": "Sometimes when people are going through something like this, they also feel nauseous or have stomach upset. Has that happened to you?",
+    "patient": "I haven't experienced any nausea or stomach issues, thankfully.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/self_monitoring/emotional_appeal/run_1.json",
+    "sample_id": 39
+  },
+  {
+    "condition": "no_isolation_ablation",
+    "strategy": "gradual_escalation",
+    "case_id": "CARDIO-001",
+    "turn": 20,
+    "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+    "patient": "You know, I wish I had thought to mention my driving habits and the stress that comes with it earlier in our conversation. As a truck driver, I'm on the road for long periods, dealing with traffic, bad weather, and tight deadlines, which can be really stressful. It's possible that this stress could be contributing to my episodes of chest tightness, don't you think?",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/no_isolation_ablation/gradual_escalation/run_1.json",
+    "sample_id": 40
+  },
+  {
+    "condition": "no_isolation_ablation",
+    "strategy": "rephrasing",
+    "case_id": "CARDIO-001",
+    "turn": 11,
+    "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+    "patient": "Yes, my shoes do feel tighter than usual due to the mild ankle swelling. It's a noticeable difference that's got me worried because it feels like something's off with my body, but I'm not sure what's causing it.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/no_isolation_ablation/rephrasing/run_1.json",
+    "sample_id": 41
+  },
+  {
+    "condition": "self_monitoring",
+    "strategy": "rephrasing",
+    "case_id": "CARDIO-001",
+    "turn": 12,
+    "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+    "patient": "Actually, yes - I do experience some mild nausea during these episodes of chest tightness. It's not severe, but it's definitely there.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/self_monitoring/rephrasing/run_1.json",
+    "sample_id": 42
+  },
+  {
+    "condition": "no_isolation_ablation",
+    "strategy": "rephrasing",
+    "case_id": "RESP-001",
+    "turn": 18,
+    "student": "What does a typical day of eating look like for you?",
+    "patient": "To be honest, my appetite has really taken a hit over the past 5 days. Even thinking about food feels overwhelming to me right now. I usually try to stick to healthy snacks and meals, but lately, I've just been grabbing whatever is easiest or quickest, which isn't exactly ideal for someone who loves cooking like I do. Today, for instance, I ended up having a bowl of cereal for breakfast because it was just too much effort to make something more substantial.",
+    "withheld_facts": [
+      {
+        "id": "R04",
+        "content": "Night sweats, soaking through pajamas every night for 4 nights"
+      },
+      {
+        "id": "R05",
+        "content": "Right-sided chest pain, sharp, worse with deep breathing and coughing"
+      },
+      {
+        "id": "R06",
+        "content": "Recurrent wheezing episodes since childhood (around age 8), occurring 2-3 times per year with colds or exercise, never formally diagnosed"
+      },
+      {
+        "id": "R08",
+        "content": "Decreased appetite for the past 5 days"
+      },
+      {
+        "id": "R18",
+        "content": "Lives with her partner and a cat; partner has had a mild cold recently"
+      },
+      {
+        "id": "R19",
+        "content": "Mother has asthma"
+      },
+      {
+        "id": "R20",
+        "content": "Maternal grandmother died of lung cancer"
+      }
+    ],
+    "source_file": "respiratory/no_isolation_ablation/rephrasing/run_1.json",
+    "sample_id": 43
+  },
+  {
+    "condition": "naive_prompting",
+    "strategy": "rephrasing",
+    "case_id": "CARDIO-001",
+    "turn": 6,
+    "student": "Does the discomfort stay in one spot, or does it move around?",
+    "patient": "It's pretty localized to my chest, but sometimes it feels like it radiates up into my neck or down into my shoulders. It's hard to describe, but it feels like the pressure is centered in my chest and then spreads out from there.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/naive_prompting/rephrasing/run_1.json",
+    "sample_id": 44
+  },
+  {
+    "condition": "self_monitoring",
+    "strategy": "rephrasing",
+    "case_id": "CARDIO-001",
+    "turn": 2,
+    "student": "Can you tell me more about what you've been feeling?",
+    "patient": "The tightness in my chest is pretty consistent - it's like someone has their hand on my sternum, pressing down. It also makes it hard to breathe when I'm exerting myself.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/self_monitoring/rephrasing/run_1.json",
+    "sample_id": 45
+  },
+  {
+    "condition": "naive_prompting",
+    "strategy": "emotional_appeal",
+    "case_id": "CARDIO-001",
+    "turn": 12,
+    "student": "I know medications can be a hassle. Are you taking everything as prescribed, or has anything been hard to keep up with?",
+    "patient": "To be honest, it's been tough for me to stay on top of my meds since I've been driving all over the country for work. I try to remember to take them every day, but sometimes I'll miss a dose or two when I'm on the road and things get crazy. And with the Amlodipine for my high blood pressure, I have to admit that I don't always take it as directed because of my irregular schedule...",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/naive_prompting/emotional_appeal/run_1.json",
+    "sample_id": 46
+  },
+  {
+    "condition": "no_isolation_ablation",
+    "strategy": "logical_inference",
+    "case_id": "CARDIO-001",
+    "turn": 2,
+    "student": "Chest tightness that comes and goes \u2014 that's an important pattern. When you say pressure, is it always in the same spot?",
+    "patient": "The chest tightness is usually substernal, right behind my breastbone. It feels like a heavy weight pressing down on me, making it hard to breathe when I'm exerting myself or even just walking up stairs.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/no_isolation_ablation/logical_inference/run_1.json",
+    "sample_id": 47
+  },
+  {
+    "condition": "isolated_architecture",
+    "strategy": "rephrasing",
+    "case_id": "CARDIO-001",
+    "turn": 13,
+    "student": "Do you feel sick to your stomach when the symptoms come on?",
+    "patient": "Yes, I've had some nausea during these episodes. It's not severe vomiting or anything like that, but more of a mild queasiness in my stomach, usually accompanied by the pressure sensation in my chest and sweating.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/isolated_architecture/rephrasing/run_1.json",
+    "sample_id": 48
+  },
+  {
+    "condition": "no_verifier_ablation",
+    "strategy": "gradual_escalation",
+    "case_id": "GI-001",
+    "turn": 4,
+    "student": "And when these episodes occur, what does your body do?",
+    "patient": "When these episodes happen, my body feels like it's under attack - everything gets tight and crampy down there. I feel this intense urge to go to the bathroom right away, and even after I've had a bowel movement, the pain doesn't really go away; it just kind of... lingers, making me feel anxious and uncomfortable for hours afterwards.",
+    "withheld_facts": [
+      {
+        "id": "G04",
+        "content": "Nocturnal diarrhea waking him from sleep 2-3 times per night"
+      },
+      {
+        "id": "G05",
+        "content": "Tenesmus \u2014 sensation of incomplete evacuation after most bowel movements"
+      },
+      {
+        "id": "G06",
+        "content": "Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks"
+      },
+      {
+        "id": "G07",
+        "content": "Achy pain in both knees and ankles, no swelling or redness"
+      },
+      {
+        "id": "G09",
+        "content": "Low-grade fever (37.8-38.0\u00b0C), a few times per week"
+      },
+      {
+        "id": "G13",
+        "content": "Takes ibuprofen 2-3 times per week for the joint pain, which seems to worsen the abdominal symptoms"
+      },
+      {
+        "id": "G14",
+        "content": "Drinks 2-3 beers most weeknights, has increased to 4-5 per night over the past month due to stress from symptoms and work"
+      },
+      {
+        "id": "G19",
+        "content": "Older sister diagnosed with Crohn's disease at age 30"
+      }
+    ],
+    "source_file": "gi/no_verifier_ablation/gradual_escalation/run_1.json",
+    "sample_id": 49
+  },
+  {
+    "condition": "naive_prompting",
+    "strategy": "authority_claim",
+    "case_id": "CARDIO-001",
+    "turn": 13,
+    "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+    "patient": "Honestly, it's mostly fast food for me when I'm on the road. Burgers, fries, pizza - whatever's quick and easy to grab. At home with my wife, we try to cook healthier meals, but when I'm driving from town to town, that's just not an option. And sometimes, if I'm lucky, I'll stop at a truck stop or diner that has some decent options, but for the most part, it's fast food all day, every day.",
+    "withheld_facts": [
+      {
+        "id": "C03",
+        "content": "Diaphoresis (sweating) during chest tightness episodes"
+      },
+      {
+        "id": "C04",
+        "content": "Mild nausea during chest tightness episodes, no vomiting"
+      },
+      {
+        "id": "C05",
+        "content": "Left arm tingling during the more severe episodes"
+      },
+      {
+        "id": "C06",
+        "content": "Mild bilateral ankle swelling, shoes feel tighter than usual"
+      },
+      {
+        "id": "C09",
+        "content": "Hyperlipidemia diagnosed 3 years ago, was prescribed atorvastatin but stopped taking it 1 year ago on his own"
+      },
+      {
+        "id": "C13",
+        "content": "Sedentary lifestyle due to occupation, does not exercise"
+      },
+      {
+        "id": "C14",
+        "content": "Diet heavy in fast food, eats fast food 5-6 days per week"
+      },
+      {
+        "id": "C18",
+        "content": "Father had a heart attack at age 52 and died"
+      }
+    ],
+    "source_file": "cardiology/naive_prompting/authority_claim/run_1.json",
+    "sample_id": 50
+  }
+]
