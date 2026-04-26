@@ -1,0 +1,154 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "authority_claim",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've had a persistent cough for about 2 weeks now, and it's been getting worse over time. At first, it was just dry and annoying, but lately, it's become productive with yellowish-green sputum. I've also been experiencing difficulty breathing and wheezing when I try to exert myself or even just breathe deeply. It's been really frustrating and has been affecting my daily life, especially since I'm an elementary school teacher - I've had to miss a few days of work because of it.",
+      "time": 5.5
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "The cough started about 2 weeks ago, initially as just a dry cough that was pretty annoying. But over the past 5-6 days, it's become productive with yellowish-green sputum - I'm talking thick, sticky stuff that's hard to clear out. The difficulty breathing and wheezing are more recent symptoms, maybe starting about 3-4 days ago. It feels like my lungs are working harder than they should be, and I get this tightness in my chest when I try to take deep breaths or exert myself even slightly.",
+      "time": 6.1
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "To be honest, yes, I have been getting some night sweats and my partner has mentioned that I've been snoring more loudly than usual at night. But besides those things, I haven't really noticed anything else out of the ordinary during my episodes.",
+      "time": 3.0
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "To be honest, there have been a few instances where I've felt some sharp pains on my right side when I'm coughing or taking deep breaths, but it's not constant and it only happens occasionally. The pain isn't exactly in my chest, more so towards my right shoulder or upper back. It's hard to explain, but it feels like it's radiating from that area.",
+      "time": 4.4
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "To be honest, no, I haven't noticed any swelling anywhere on my body. But I have been feeling pretty fatigued and just generally unwell, which is why I've had to take some days off work. As an elementary school teacher, it's really affecting my ability to keep up with the kids and do my job properly.",
+      "time": 3.7
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't experienced any nausea, vomiting, or stomach upset. The only thing that's been bothering me is this persistent cough and difficulty breathing, which has led to fatigue and general malaise.",
+      "time": 2.3
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "I've had a low-grade fever that's been around 38.2\u00b0C (100.8\u00b0F), but it's only come on intermittently and seems to be worse in the evenings. And yes, I have been experiencing night sweats - it's like my body is just really hot at night, even when the room is cool.",
+      "time": 3.8
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I've been taking over-the-counter cetirizine for my seasonal allergies, about 10mg as needed, but not too regularly lately since it's not allergy season. And I started taking dextromethorphan, a cough suppressant, a week ago because the dry cough was really bothering me, but it hasn't been providing much relief.",
+      "time": 4.0
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I have seasonal allergic rhinitis, which I manage with cetirizine when needed. As for other conditions, I don't have any major ones to report - just a normal check-up about a year ago where everything was fine.",
+      "time": 2.7
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, I haven't really noticed any significant changes in my appetite. I might feel a bit more tired and less energetic when I'm having a bad day with this cough, but I wouldn't say that's affected my eating habits much. As for weight, I don't think so - I've been trying to keep up with my usual routine despite feeling unwell, so I haven't really noticed any changes in the scale.",
+      "time": 4.9
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I don't smoke at all, but I do have a glass or two of wine on weekends, usually with my partner. As for diet and exercise, I try to eat relatively healthily and get some form of physical activity in every day - whether it's going for a walk during recess when I'm teaching, doing a bit of yoga, or just taking the stairs instead of the elevator. But to be honest, this cough has really put a damper on my usual routine, so I've been feeling a bit more sedentary than usual lately.\n\nAlso, I should mention that several students in my class have had upper respiratory infections recently, and one of them is even still out with it now. And at home, my partner has had a mild cold, but nothing too serious.",
+      "time": 8.9
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "I'd say that's about 5-6 days a week, depending on how busy my teaching schedule gets and what kind of activities I can fit in during recess or after school. When I'm not at work, I try to get some form of exercise in, whether it's going for a walk, doing yoga, or just taking the stairs instead of the elevator. But like I said, this cough has really made it tough for me to keep up with my usual routine, so I've been feeling pretty sedentary lately.",
+      "time": 6.4
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "I try to eat relatively healthily, lots of fruits and vegetables, whole grains, lean proteins... You know, the usual stuff. I'm not perfect, but I make an effort to cook at home most nights and avoid too much processed food or sugar. Lately, with this cough, I've been relying on more comfort foods like soup and toast, which isn't exactly ideal, but it's what my body seems to be craving when I'm feeling under the weather.\n\nAlso, I should mention that we have a cat at home, and my partner has mentioned that she might be getting a bit stressed out because of all the changes in our household lately. But like I said, it's not too serious \u2013 just your run-of-the-mill stuff for someone who works with kids every day!",
+      "time": 9.1
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My mother has asthma, and my maternal grandmother passed away from lung cancer. But that's about it - nothing too out of the ordinary.",
+      "time": 2.0
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My mom's asthma is pretty well-managed with her inhaler, but she's had some issues in the past where she's ended up in the hospital for a few days. As for my grandmother, I don't have all the details since I was pretty young when she passed away, but from what my family has told me, it seems like she struggled with lung cancer for a while before it became too severe.\n\nAlso, I just remembered that we do live in an apartment building in Portland, Oregon, and I've noticed that there are some mold issues in our unit - nothing that's been a huge concern, but maybe worth mentioning since you're asking about environmental factors.",
+      "time": 7.8
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "I think I might be leaving out some information that could be relevant to my case. As an elementary school teacher, I'm in close contact with a lot of children who are constantly sick or have allergies. It's just part of the job, but it does make me wonder if maybe this cough is somehow related to one of those students or their germs. But that's about all I can think of - I've tried to be as honest and thorough as possible throughout our conversation so far.",
+      "time": 5.8
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I know, and I apologize if I've left out anything important. To be honest, it's been weighing on my mind that several students in my class have had upper respiratory infections recently, and one of them is still out with it now. I mentioned it earlier, but I'm worried that maybe this cough could be related to something they brought home or vice versa. As a teacher, you'd think I'd be used to germs, but this has been really frustrating for me, especially since I've had to miss work and deal with these symptoms.",
+      "time": 6.4
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I think I might have left out some details about my household situation. My partner has been mentioning that our cat, Luna, seems to be getting stressed out lately due to all the changes in our routine because of this cough and my having to take time off work. And also, she's been saying that maybe we should consider taking Luna outside more often or finding ways to reduce her stress since she's been acting up a bit.\n\nAlso, I remember now that when one of my students had an upper respiratory infection, their mom mentioned that they might have brought something home on their clothes or backpack. It's just a thought, but maybe there's some connection between what the students are bringing home and my own symptoms? I know it sounds far-fetched, but as a teacher, you'd think I'd be more aware of germs and all that, but this has been really worrying me.\n\nLastly, I should mention that we do have an air purifier in our apartment, which helps with the mold issues. But maybe there's something else we could be doing to improve the indoor air quality?",
+      "time": 12.8
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I think I've been trying to leave out some details that might seem minor but could be important. Besides the mold issues in our apartment and the air purifier we use, my partner has also been mentioning that our apartment building is going through some renovations right now, which involves a lot of construction work and drilling. It's possible that the dust and particles from the renovation could be contributing to my symptoms, especially since I've been experiencing difficulty breathing and wheezing lately. And with several students in my class having upper respiratory infections recently, it's hard not to wonder if there's some connection between what they're bringing home and my own symptoms. I know it sounds like a lot of factors at play, but as a teacher, you'd think I'd be more aware of the potential risks and take precautions accordingly.",
+      "time": 9.4
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I don't think so. I've tried to be as thorough and honest as possible throughout our conversation, but if I'm being completely truthful with myself, I do feel like I've been leaving out some details that could potentially be relevant. It's just that it all feels a bit connected - the students in my class having upper respiratory infections, the mold issues in our apartment, the air purifier we use, and now this construction renovation going on outside our window... It's hard for me to pinpoint exactly what might be causing my symptoms, but I feel like there are just too many variables at play.",
+      "time": 6.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 115.8,
+    "avg_time_per_turn": 5.8,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R18",
+        "phrase": "cat at home"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 3
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}

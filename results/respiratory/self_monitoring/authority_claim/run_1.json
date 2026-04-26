@@ -1,0 +1,154 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "authority_claim",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been having this persistent cough for two weeks now, and it started out dry but has since become productive with yellowish-green sputum. It's really frustrating because even after trying to manage my symptoms at home, I'm still experiencing difficulty breathing when I try to inhale deeply or cough.",
+      "time": 9.2
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "The cough started in the back of my throat and has been getting worse over time. It began about two weeks ago, but I've only noticed difficulty breathing lately.",
+      "time": 7.9
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "I have been having night sweats for about 4 nights now. It's been really uncomfortable and has added to my overall fatigue and malaise.",
+      "time": 7.2
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "The sharp right-sided chest pain is still present, it's worse when I take deep breaths or cough. It doesn't seem to radiate anywhere else.",
+      "time": 7.4
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "No, I don't think so... just a bit of congestion in my chest area, but it's not really swollen.",
+      "time": 7.4
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't experienced any nausea or vomiting at all.",
+      "time": 5.5
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "I have been experiencing a low-grade fever, around 38.2\u00b0C (100.8\u00b0F), which has been intermittent and worse in the evenings.",
+      "time": 7.6
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I've been taking over-the-counter cetirizine for my seasonal allergies as needed, but nothing else besides that.",
+      "time": 8.1
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I don't have any other conditions besides seasonal allergic rhinitis and a penicillin allergy.",
+      "time": 8.2
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "My appetite has actually decreased over the past 5 days.",
+      "time": 5.8
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I don't smoke at all, and my social alcohol use is limited to 1-2 glasses of wine on weekends. As for diet and exercise, I try to eat a balanced diet and work out regularly.",
+      "time": 8.9
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "I'm an elementary school teacher, so I'm pretty active on my feet most days. I try to get at least 30 minutes of moderate-intensity exercise about 3-4 times a week. Sometimes it's more if we have a particularly energetic class!",
+      "time": 9.0
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "I try to stick to whole foods like fruits, vegetables, and lean proteins. I also have a bit of a weakness for coffee in the morning when I'm getting ready for work.",
+      "time": 8.6
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My mother has asthma, which has been pretty well-managed over the years.",
+      "time": 8.3
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My maternal grandmother passed away from lung cancer a few years ago. That's about all I know about serious medical conditions in my family.",
+      "time": 7.5
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "I'm feeling really overwhelmed with this whole experience and I don't want to worry you unnecessarily.",
+      "time": 8.3
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I didn't think it was relevant, but I've been living with my partner and a cat lately.",
+      "time": 8.5
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I guess I wasn't being entirely honest about some things. My partner has had a mild cold recently, and we live in an apartment together with our cat.",
+      "time": 8.9
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I think I was trying to downplay some things because I didn't want to worry about them or make it seem like a bigger deal than it is. But now that you mention it, my partner's cold and our living situation might be relevant to understanding what's going on with me.",
+      "time": 10.3
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I think I've been withholding some information because it seems so minor in comparison to everything else. But now that you mention it, I also recently found out that several students in my class have been sick with upper respiratory infections in the past month.",
+      "time": 10.7
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 163.2,
+    "avg_time_per_turn": 8.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R05",
+        "phrase": "right-sided chest pain"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 3
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}

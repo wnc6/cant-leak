@@ -1,0 +1,141 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having this persistent cough that just won't go away, and I'm really struggling to breathe at times. It's been going on for about two weeks now, and it's starting to affect my daily life, including work.",
+      "time": 6.4
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "It's this persistent cough that's just constant - dry at first, but over the past few days, it's started producing yellowish-green sputum. When I'm really trying to breathe deeply or exert myself, it gets worse and makes me feel like I'm suffocating a bit.",
+      "time": 2.1
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It actually started about two weeks ago, but at first, it was just a dry cough that I thought might be from allergies since it's been a pretty dry winter. It wasn't until maybe 5-7 days in that it started producing mucus and got really bad.",
+      "time": 2.0
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It happens constantly, even when I'm just sitting around or lying down. Sometimes it's more intense than others, but even when I'm not exerting myself, I can feel this tightness in my chest and a persistent cough that won't stop.",
+      "time": 1.8
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "Honestly, I'd say it's about an 8 or 9 out of 10. The only reason it's not a 10 is because there are moments when it subsides a bit and I can catch my breath, but those moments are getting fewer and farther between. It's really starting to affect my daily life and making me feel miserable.",
+      "time": 2.4
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "Yeah, besides the cough and difficulty breathing, I've also had a low-grade fever that comes and goes, usually in the evenings. And sometimes, after coughing or exerting myself, I get this sharp pain on my right side of my chest. It's pretty uncomfortable and makes me feel like I'm having trouble catching my breath even more.",
+      "time": 2.4
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "Actually, yeah... it gets a lot worse when I try to sleep. Even just lying down can trigger it, and sometimes I'll wake up in the middle of the night coughing so hard that I'm gasping for air. It's really scary, to be honest.",
+      "time": 2.0
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "To be honest, I've been having some pretty intense nighttime sweats lately, and I've noticed they're usually worse when my fever is acting up. As for nausea or dizziness, I haven't experienced those symptoms too much, but sometimes after a particularly bad coughing fit, I'll feel lightheaded and need to sit down for a bit.",
+      "time": 2.5
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "No, it's mostly just in my chest area. Sometimes if I'm really exerting myself or coughing hard, I might feel a little pressure in my back, but nothing too severe.",
+      "time": 1.4
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "No, I don't think so. My legs and feet are fine, no swelling or anything like that. Just this persistent cough and difficulty breathing that's really getting to me.",
+      "time": 1.3
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I've been taking over-the-counter dextromethorphan for my cough, but it's only provided minimal relief so far. I also take cetirizine when my seasonal allergies act up, which is usually during the spring and fall months.",
+      "time": 1.8
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "I don't have any other medical conditions besides my asthma-like symptoms from childhood that I mentioned earlier. My doctor at the time said it was just a minor issue, but it's never been formally diagnosed.",
+      "time": 1.5
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "I don't think so, no one has ever mentioned checking my cholesterol levels before. But to be honest, I'm not really worried about that right now, I just want this cough and breathing stuff taken care of!",
+      "time": 1.6
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I don't smoke at all, but I do have a social glass of wine on weekends with my partner. I'm not sure if it's relevant to what's going on with me, but I thought I'd mention it just in case.\n\nOh, and one more thing - I've been working as an elementary school teacher for years, and we're currently in the midst of a cold season with several students getting sick. I wonder if that might be connected to my symptoms somehow?",
+      "time": 3.3
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "My diet is pretty regular, I'd say. I try to eat healthy most of the time, but lately, with this cough and everything, I've been having a bit less appetite than usual. Nothing too out of the ordinary though. As for exercise, I'm not super active, but I do try to get in some moderate physical activity during my lunch breaks or after school, usually just a short walk or some stretching exercises.",
+      "time": 3.0
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "No, I don't think so. My mother actually has asthma, but that's about it. She's always been pretty healthy otherwise. And to be honest, I've never really thought about my family history with heart conditions until now... maybe I should ask her more about it? But I'm not sure how relevant that would be to what's going on with me right now.",
+      "time": 2.7
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "To be honest, my grandmother passed away from lung cancer when I was younger. It's been a while since I thought about it, but it does make me wonder if there might be some genetic component to what's going on with me now. But like you said, that's probably not directly related to this current issue, right?",
+      "time": 2.4
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "My last physical exam was about a year ago, and everything was normal back then. I haven't had any other symptoms or health issues since then, until this cough and breathing trouble started showing up two weeks ago.",
+      "time": 1.6
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "Actually, yes... I'm allergic to penicillin. It causes a rash on my skin whenever I take it. My doctor knows about it, so they usually prescribe something else for me when I need antibiotics.",
+      "time": 1.6
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "I've been trying to keep track of my symptoms and see if I can connect them to anything that might be causing this. I remember that a few weeks ago, one of my students was diagnosed with pneumonia, and I wondered if I might have gotten exposed to something like that. But at the same time, none of my colleagues or friends seem to be experiencing anything similar... do you think it could be related to a virus or infection?",
+      "time": 3.0
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 46.6,
+    "avg_time_per_turn": 2.3,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}

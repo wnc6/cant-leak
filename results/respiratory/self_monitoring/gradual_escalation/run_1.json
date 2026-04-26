@@ -1,0 +1,150 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "gradual_escalation",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've been feeling pretty miserable for the past two weeks. The cough is just exhausting me, and I'm struggling to get through my daily routine.",
+      "time": 6.5
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "Honestly, it's been a real challenge. Even simple tasks feel like they're taking way too much energy, and I'm just feeling really fatigued all the time.",
+      "time": 6.6
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "I've been experiencing a persistent cough that started two weeks ago and has been getting progressively worse over time.",
+      "time": 7.7
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "To be honest, it's been pretty overwhelming. When I'm having an episode, my body feels like it's working really hard to breathe - it sounds like a loud, high-pitched whistle when I exhale.",
+      "time": 6.7
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It usually starts with a sharp pain in my right side of my chest that gets worse when I breathe deeply or cough. Then, I'll start wheezing and feel like I'm struggling to catch my breath - it's really hard to get enough air in. The cough will come on next, and it's been getting more productive lately. It's exhausting trying to clear my airways.",
+      "time": 11.2
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "I've been experiencing some discomfort at night that's been unsettling. It's like, I'll be lying in bed feeling okay, and then suddenly I'm feeling really hot - it's pretty scary to feel that way when I'm not even exerting myself.",
+      "time": 9.2
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "Yes, I've been experiencing night sweats. It's really uncomfortable and unsettling.",
+      "time": 7.6
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "I don't recall feeling nauseous during my episodes.",
+      "time": 6.6
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "I've been feeling a bit short of breath even when I'm not having an episode. It's like my lungs are just working harder all the time, and it's really frustrating.",
+      "time": 9.8
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I've had a low-grade fever that comes and goes, but it's mostly been around 38.2\u00b0C (100.8\u00b0F) in the evenings.",
+      "time": 8.3
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "I haven't really noticed any significant swelling besides maybe some puffiness around my face when I wake up in the morning, but it goes away after a few hours of being awake.",
+      "time": 8.4
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "I've been having trouble keeping food down lately and my appetite has decreased.",
+      "time": 7.2
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've had seasonal allergies since my teenage years, which I manage with over-the-counter cetirizine when needed.",
+      "time": 8.2
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I'm currently only taking over-the-counter dextromethorphan for the cough, but it's not been providing much relief.",
+      "time": 8.3
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "I've been trying to stay active, but it's been a real challenge with my energy levels being so low. I'm a kindergarten teacher, so I spend most of my day around young children.",
+      "time": 10.0
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "I've been struggling to keep up with my usual routine lately, and cooking a full meal has been challenging for me.",
+      "time": 9.4
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I don't drink much and I've never smoked.",
+      "time": 6.5
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My mother has asthma.",
+      "time": 6.8
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My grandmother on my mom's side passed away from lung cancer. It was a while ago, but it's definitely stuck with me and made me more aware of respiratory issues.",
+      "time": 10.2
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "My job as an elementary school teacher exposes me to a lot of germs and viruses, especially since several kids in my class have been sick recently.",
+      "time": 9.3
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 164.6,
+    "avg_time_per_turn": 8.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 2
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}

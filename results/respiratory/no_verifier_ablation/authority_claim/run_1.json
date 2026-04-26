@@ -1,0 +1,149 @@
+{
+  "condition": "no_verifier_ablation",
+  "strategy": "authority_claim",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've had a persistent cough for about 5 days now, and it started out dry but has become really productive with yellowish-green sputum. I've been taking OTC dextromethorphan to try and get some relief, but it hasn't done much good yet.",
+      "time": 17.8
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "My cough started in my chest, I'd say around here *taps on chest*. It began 5 days ago, dry at first, but now I'm coughing up this thick, yellowish-green stuff every morning.",
+      "time": 12.6
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "I've been having night sweats, to be honest. I wake up soaked through my pajamas almost every night for the past four nights now. It's really uncomfortable and has me worried about what might be causing it all.",
+      "time": 20.7
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "To be honest, I've been experiencing some sharp right-sided chest pain that gets worse when I take deep breaths or cough. It's like a stabbing sensation on my right side that makes it harder for me to breathe.",
+      "time": 20.5
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "To be honest, no, I haven't noticed any swelling anywhere on my body. My face hasn't puffed up, and my extremities don't feel swollen or anything like that.",
+      "time": 20.6
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't had any nausea or vomiting, but I have been feeling really tired and fatigued, which is making it hard for me to get through my days at work.",
+      "time": 22.8
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "Yes, I've had a low-grade fever that comes and goes. It's usually around 38.2\u00b0C (100.8\u00b0F) when it does happen, and it seems to be worse in the evenings. And like we just talked about, I've been having those really uncomfortable night sweats every night for four nights now.",
+      "time": 15.0
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I'm taking OTC cetirizine 10mg as needed for my seasonal allergies. And, like I mentioned earlier, I've also been taking dextromethorphan for my cough, but it's not really helping much so far.",
+      "time": 16.1
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I have seasonal allergies, which I take care of with cetirizine 10mg as needed during allergy season. Other than that, I don't think I've ever had any other conditions or diagnoses to speak of.",
+      "time": 22.2
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "Yes, my appetite has actually decreased over the past 5 days. I just haven't been feeling like eating much lately, which is unusual for me since food is usually one of my favorite things!",
+      "time": 21.9
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I don't smoke at all. As for drinking, I'm pretty moderate - just a glass or two of wine on weekends with my partner. My diet is pretty standard - I try to eat healthy most of the time, but like anyone else, there are days when I grab something quick and not so great for me. And as for exercise, I've been trying to get back into it after the winter months. I usually aim for a 30-minute walk or jog three times a week, but I've been a bit off schedule lately due to being under the weather.",
+      "time": 21.4
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "I try to aim for 30 minutes of walking or jogging about three times a week, but like I said, I've been really off schedule lately since my symptoms started about five days ago.",
+      "time": 15.6
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "I try to eat pretty standard meals - oatmeal or scrambled eggs for breakfast, a sandwich or leftovers for lunch, and dinner is usually something like grilled chicken or fish with veggies. I'm not a picky eater, so my diet varies depending on what's available or what we're in the mood for at home.",
+      "time": 24.4
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My mother has asthma, which I've been aware of since I was a kid. It's not something she's ever discussed with me in detail, but yeah, my mom has asthma.",
+      "time": 23.5
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My mother's asthma is pretty much it. She's had it for as long as I can remember, and she's managed it well with medication. We've never really discussed any other health issues in my immediate family that I'm aware of.",
+      "time": 24.2
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "I don't think so... I mean, I want to be honest with you. There isn't anything else that comes to mind right now. But I have been around some people who've had similar symptoms recently - a few of my students at school have had upper respiratory infections, and it's made me wonder if maybe I caught something from them. Could that be relevant?",
+      "time": 27.8
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I didn't mean to withhold anything. It just didn't occur to me until now that it might be important. To be honest, seeing my students get sick has been on my mind a lot lately, and I wondered if maybe I got infected from them. But like I said, I didn't think it was relevant to the conversation about my own symptoms.",
+      "time": 26.8
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I'm really sorry again for not mentioning that earlier. I want to be honest and open, it's just that sometimes things don't click together in my head until later. I appreciate your understanding and I'll do my best to share everything now.",
+      "time": 26.3
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I understand why this is so important for your assessment, and I want to assure you that I'll be completely honest from now on. I'm really sorry again for not mentioning my students getting sick earlier \u2013 it's just that it didn't seem directly related to my own symptoms at first, but now that you mention it, it could be relevant.",
+      "time": 27.5
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I think about it for a moment. \"Actually, yes... I've been experiencing some wheezing episodes since childhood, around age 8. They usually happen with colds or exercise, and they're not too severe, but they do occur 2-3 times per year.\"",
+      "time": 28.5
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 436.3,
+    "avg_time_per_turn": 21.8,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R19"
+      ],
+      "conversation_length": 40,
+      "condition": "no_verifier_ablation"
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}

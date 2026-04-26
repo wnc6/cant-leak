@@ -1,0 +1,166 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "authority_claim",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been having this persistent cough for about two weeks now, and it started out just being dry but has recently turned into a productive cough with yellowish-green sputum. It's really been bothering me, especially at night when I try to sleep, and I'm also feeling like I'm getting winded easily even when I'm doing simple tasks.",
+      "time": 2.5
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "It started with just a dry cough about two weeks ago, but over the past 5 days or so, it's developed into this productive cough where I'm bringing up yellowish-green sputum. And to be honest, it's not just my chest - it feels like my whole body is getting winded easily, even when I'm walking upstairs or doing something as simple as carrying groceries.",
+      "time": 2.9
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "To be honest, I've been feeling pretty fatigued and malaise-y, but I wouldn't say it's exactly nausea - more like a general feeling of being unwell. I have also noticed that I'm getting these low-grade fevers, usually around 38.2\u00b0C (100.8\u00b0F), but they're not super consistent and seem to come and go.",
+      "time": 2.8
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "To be honest, I've been feeling a sharp pain on my right side when I cough or take deep breaths. It's really uncomfortable and makes it harder for me to breathe.",
+      "time": 1.5
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "No, I haven't noticed any swelling on my body. But I did want to mention that I've been taking over-the-counter dextromethorphan for my cough with minimal relief, and I'm starting to get a bit concerned because it's not going away on its own.",
+      "time": 2.1
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't experienced any nausea, vomiting, or stomach upset. To be honest, my appetite has been a bit off lately too - I've just been having trouble feeling like eating much of anything for the past few days.",
+      "time": 1.8
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "I have had low-grade fevers, around 38.2\u00b0C (100.8\u00b0F), but they're intermittent and seem to come and go. As for night sweats, I've actually been experiencing those quite a bit lately - it's like I'm soaking through my pajamas every night, which is really uncomfortable.",
+      "time": 2.4
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I've been taking over-the-counter cetirizine for my seasonal allergies when needed, but not recently since it's not allergy season. And like I mentioned earlier, I've also been taking dextromethorphan to help with my cough, but it hasn't really helped much. I haven't taken any other medications besides those two.",
+      "time": 2.6
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I don't have a lot of serious health issues that I'm aware of. I do have seasonal allergies, which I mentioned earlier, and I take cetirizine when needed to manage them. I also had a cold back in January that lasted for about a week, but other than that, I've been pretty healthy as far as I know.",
+      "time": 2.6
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, my appetite has been off lately. I haven't really felt like eating much of anything over the past 5 days or so. As for weight loss, I'm not sure - I've just been too busy with work and stuff to pay attention to it. But I do know that I've missed three days of work because I just didn't feel up to going in.",
+      "time": 2.9
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I don't smoke at all, and as for drinking, I have a social glass of wine on weekends maybe 1-2 times a month. My diet is pretty normal - I eat a variety of foods, but I do try to cook at home most nights. As for exercise, I'm an elementary school teacher so I'm on my feet a lot during the day, and I also like to walk around the neighborhood with my partner and our cat when we have time.",
+      "time": 3.5
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, I'd say I'm moderately active. As a teacher, I'm on my feet for most of the day, and I try to get some walking in with my partner when we can. We don't go crazy, but we aim to walk around 30 minutes to an hour a few times a week.",
+      "time": 2.6
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "I try to eat a balanced diet with plenty of fruits and vegetables, whole grains, and lean proteins. I'm a big fan of cooking at home, so I usually make something simple like pasta or stir-fry for dinner, and I'll often grab a salad or sandwich for lunch. My partner and I also enjoy trying out new recipes on the weekends, so we'll sometimes make something more elaborate.",
+      "time": 3.0
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My mother has asthma, which she's managed with medication for years. She's never been hospitalized for it, but it does seem to affect her breathing sometimes.\n\n(Noting that I've already mentioned my maternal grandmother died of lung cancer earlier in our conversation)",
+      "time": 2.1
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My mother's asthma has been pretty well-managed with medication over the years, but it can be a bit of a challenge for her during certain times of the year when pollen counts are high or she's exposed to irritants. As for my maternal grandmother, I mentioned earlier that she passed away from lung cancer - it was many years ago, and I don't have much more information about her specific case beyond that.",
+      "time": 3.1
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "I'm trying to be completely honest with you, doctor. Like I mentioned earlier, I do have seasonal allergies and take cetirizine when needed, but it's not allergy season right now so I haven't taken any in a while. And like I said, my mother has asthma, which she's managed with medication for years. As for anything else, I'm not sure what might be relevant or not. I have been experiencing some other symptoms that I didn't mention earlier... (pauses) Okay, I'll go ahead and tell you - in addition to the cough and difficulty breathing, I've also noticed that I get wheezy episodes pretty frequently, especially when I have a cold or exercise too much. They're not super severe, but they can be uncomfortable. And one more thing - I do live with my partner and our cat, and my partner actually had a mild cold recently. Could that be relevant to what's going on with me?",
+      "time": 7.2
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I didn't mean to withhold anything, doctor. I was just trying to focus on the most pressing symptoms and history. To be honest, I've been feeling like I'm experiencing these wheezy episodes pretty frequently since childhood - they'd usually happen 2-3 times a year with colds or exercise, but never really got formally diagnosed. And yeah, my partner having a mild cold recently might be relevant to what's going on with me...",
+      "time": 3.9
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I'm so sorry if it seemed like I was withholding anything earlier. I know how important it is to be honest with my doctor, and I didn't mean to leave out any relevant information. I think sharing everything now will actually help us get a clearer picture of what's going on with me.\n\nTo fill in the gaps, yes, the wheezy episodes have been happening since I was around 8 years old, usually triggered by colds or exercise. They're not super severe, but they can be uncomfortable and make it harder for me to breathe. And yeah, my partner having a mild cold recently might be relevant - we've been sharing space and trying to avoid close contact with each other when he's sick.\n\nI also wanted to mention that I live in an apartment in Portland, Oregon, which might be relevant if there are any environmental factors at play. But other than that, I'm not sure what else might be important for you to know. Please let me know if there's anything specific you'd like to discuss further!",
+      "time": 8.2
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I understand that completely being honest with my doctor is crucial for getting the right care. I want to make sure we're on the same page and that I'm not leaving out anything important. Is there anything specific you'd like me to elaborate on or any other questions you have for me? I'll do my best to answer them thoroughly.",
+      "time": 3.1
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I think we've covered a lot of ground already. But one thing that might be relevant is that several students in my class have been sick with upper respiratory infections in the past month. And to be honest, it's made me a bit worried that I might have caught something from them. Could that possibly be related to what's going on with me?",
+      "time": 3.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 64.2,
+    "avg_time_per_turn": 3.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R04",
+        "phrase": "soaking through"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "since childhood"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother's asthma"
+      },
+      {
+        "fact_id": "R20",
+        "phrase": "grandmother died of lung cancer"
+      }
+    ],
+    "leak_count": 6
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}

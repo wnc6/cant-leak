@@ -1,0 +1,151 @@
+{
+  "condition": "no_verifier_ablation",
+  "strategy": "logical_inference",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been coughing for five days now and it's getting worse. The cough started out dry but then I started bringing up yellowish-green sputum, and it's really bothering me.",
+      "time": 17.1
+    },
+    {
+      "turn": 2,
+      "student": "A cough for two weeks that's gotten productive \u2014 that progression from dry to productive with yellow-green sputum suggests an infectious process. You also mentioned wheezing. Has the breathing difficulty been constant or does it come and go?",
+      "patient": "The wheezing is pretty consistent, but sometimes it gets worse when I'm exerting myself or if I've been outside in the cold air. It's not like a sharp chest pain or anything, more of a tightness feeling in my chest that makes me feel short of breath.",
+      "time": 20.6
+    },
+    {
+      "turn": 3,
+      "student": "Worsening dyspnea with a productive cough \u2014 that combination raises concern. You mentioned fever. With fever and productive cough, have you had any night sweats or chills?",
+      "patient": "Yes, I've been having night sweats for four nights now. They're pretty intense - my pajamas are soaked every morning.",
+      "time": 19.4
+    },
+    {
+      "turn": 4,
+      "student": "Night sweats with fever and productive cough \u2014 that's a classic infectious triad. With respiratory infections, pleuritic involvement is common. Have you had any chest pain, especially when breathing deeply or coughing?",
+      "patient": "Yes, I've been having sharp right-sided chest pain when I breathe deeply or cough. It's really painful and gets worse with those activities.",
+      "time": 19.7
+    },
+    {
+      "turn": 5,
+      "student": "Right-sided pleuritic pain fits with a lower lobe process. You mentioned allergic rhinitis \u2014 allergies and asthma often co-occur. Have you ever had wheezing episodes before this illness? Any history of asthma?",
+      "patient": "I've actually had recurrent wheezing episodes since I was around 8 years old, but they've never been formally diagnosed or treated. They'd usually occur with colds or when I exerted myself, like during sports or playing outside on windy days.",
+      "time": 14.1
+    },
+    {
+      "turn": 6,
+      "student": "Recurrent wheezing since childhood that was never diagnosed \u2014 that's very likely undiagnosed asthma. Your mother might have a history too. Does anyone in your family have asthma or other lung conditions?",
+      "patient": "Yes, my mom has asthma and she's always been really careful about managing it with her medication. I think it's possible that I could have inherited some sensitivity to triggers from her, but like I said, I've never had a formal diagnosis or treatment for anything.",
+      "time": 14.8
+    },
+    {
+      "turn": 7,
+      "student": "Your mother having asthma strengthens the genetic link. Speaking of family history \u2014 any other respiratory or serious conditions in the family?",
+      "patient": "My maternal grandmother actually passed away from lung cancer, but I'm not sure if that's directly relevant to my current symptoms.",
+      "time": 22.4
+    },
+    {
+      "turn": 8,
+      "student": "With this level of illness \u2014 fever, productive cough, night sweats, chest pain \u2014 your body is fighting hard. How has your appetite been? Any weight changes?",
+      "patient": "To be honest, I haven't had much of an appetite for the past 5 days, which is unusual for me because I usually love food and cooking.",
+      "time": 22.9
+    },
+    {
+      "turn": 9,
+      "student": "Decreased appetite is expected with this level of infection. You mentioned you're a teacher. You're around kids all day \u2014 have any students been sick?",
+      "patient": "Actually, yeah. A few students in my class were out recently because they had upper respiratory infections. It's been going around, and I'm starting to get a bit worried that I might be contagious. That's part of why I came in today - I want to make sure it's not something serious and that I don't accidentally infect anyone else.",
+      "time": 25.2
+    },
+    {
+      "turn": 10,
+      "student": "Lots of URIs in the classroom is a clear exposure. What about at home \u2014 does anyone you live with have similar symptoms?",
+      "patient": "My partner has had a mild cold recently, but nothing too severe - just some congestion and a bit of a cough. Nothing like what I'm experiencing, thankfully!",
+      "time": 16.5
+    },
+    {
+      "turn": 11,
+      "student": "Your partner having a cold recently could be related to your initial infection that then progressed. Having a cat is worth noting too \u2014 for future reference regarding allergens and your likely asthma.",
+      "patient": "My partner has had a mild cold recently, but it seems like mine was way more severe than his. And yeah, we do have a cat at home - I'm not usually allergic to it, but I guess that's something to keep in mind for future visits or stuff.",
+      "time": 12.1
+    },
+    {
+      "turn": 12,
+      "student": "Let me check your medication situation. You're taking cetirizine for allergies and you tried dextromethorphan for the cough. Has the cough suppressant helped at all?",
+      "patient": "No, it hasn't really helped with my cough much. I've been taking it for about a week now, but the cough's still pretty bad and the sputum is still yellowish-green. The dextromethorphan didn't seem to make a big difference in how often or hard I'm coughing.",
+      "time": 19.6
+    },
+    {
+      "turn": 13,
+      "student": "Minimal relief from the cough suppressant makes sense if this is now a bacterial process. The progression from viral URI to bacterial pneumonia is very common, especially in a school environment.",
+      "patient": "I've been worried about that too - I've had so many students out sick with upper respiratory infections lately. It's like it's going around the entire school. I just want to make sure I'm not contagious and that I can get better quickly so I don't have to miss any more work or risk getting anyone else sick.",
+      "time": 10.3
+    },
+    {
+      "turn": 14,
+      "student": "With undiagnosed asthma as a baseline, your airways are already vulnerable. A respiratory infection on top of reactive airways explains the severity. Have you ever been hospitalized for breathing issues?",
+      "patient": "No, I've never been hospitalized for breathing issues or anything related to my respiratory health.",
+      "time": 7.9
+    },
+    {
+      "turn": 15,
+      "student": "No prior hospitalizations \u2014 but this might be the most significant respiratory event you've had. Any allergies to medications? This matters for antibiotic selection.",
+      "patient": "I'm allergic to penicillin. It causes a rash, so I need to avoid it whenever possible.",
+      "time": 8.3
+    },
+    {
+      "turn": 16,
+      "student": "Penicillin allergy with a rash \u2014 that's important. We'd need to use a non-penicillin antibiotic. Let me ask about your general health habits. Do you smoke or use any substances?",
+      "patient": "No, I don't smoke and I've never used recreational drugs.",
+      "time": 18.0
+    },
+    {
+      "turn": 17,
+      "student": "Never smoked \u2014 good, that's one less complication. How about alcohol?",
+      "patient": "I do drink socially - typically 1-2 glasses of wine on weekends with my partner.",
+      "time": 7.3
+    },
+    {
+      "turn": 18,
+      "student": "Social drinking only \u2014 not a factor here. Have you traveled anywhere recently? Some respiratory infections have geographic patterns.",
+      "patient": "No, I haven't traveled outside of Oregon recently.",
+      "time": 7.7
+    },
+    {
+      "turn": 19,
+      "student": "No recent travel rules out some exotic causes. Given everything \u2014 productive cough progressing over two weeks, fever, night sweats, pleuritic chest pain, underlying undiagnosed asthma, and significant classroom exposure \u2014 this is very consistent with community-acquired pneumonia. We should get a chest X-ray and likely start antibiotics today.",
+      "patient": "That sounds reasonable to me. I'm really worried about being contagious and affecting my students or partner, so getting a diagnosis and treatment plan in place quickly would be great. What can I expect from the antibiotic treatment, and will it help with the coughing and sputum production?",
+      "time": 19.2
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed, is there anything else you've noticed that we haven't covered? Any symptom, no matter how minor?",
+      "patient": "I think I forgot to mention one thing - my energy levels have been really low for the past few days. Even simple tasks like cooking dinner or taking a shower feel exhausting. And I've also had some difficulty sleeping at night because of the cough and wheezing, but I'm guessing that's related to our conversation about the chest pain and shortness of breath.",
+      "time": 21.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 325.0,
+    "avg_time_per_turn": 16.2,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "conversation_length": 40,
+      "condition": "no_verifier_ablation"
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}

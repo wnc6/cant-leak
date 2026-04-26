@@ -1,0 +1,154 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "rephrasing",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having this persistent cough for two weeks now, and it's getting really frustrating because I just can't seem to shake it off.",
+      "time": 7.1
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "It's not just the cough that's bothering me - I've also been feeling a bit short of breath and struggling to catch my breath when I exert myself or lie down.",
+      "time": 7.2
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "Besides the breathing issues, I've been experiencing some discomfort on my right side that gets worse when I cough or take deep breaths.",
+      "time": 6.5
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "I've been experiencing some intense sweating at night.",
+      "time": 5.2
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "Actually, I've been experiencing night sweats every single night for the past four nights - it's quite uncomfortable.",
+      "time": 5.7
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "The discomfort on my right side is pretty constant and doesn't really shift around. It feels sharp and gets worse when I do certain things.",
+      "time": 6.1
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "The pain just stays in that one spot on my right side, and it's not really radiating anywhere else. Sometimes it feels like a dull ache.",
+      "time": 7.2
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "No, there's no tingling or numbness in my arms when I experience pain on my right side.",
+      "time": 6.4
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "No, I haven't noticed anything unusual in my extremities.",
+      "time": 6.5
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "No, I haven't noticed any swelling in my ankles, feet, or hands.",
+      "time": 5.1
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "No, I don't have any swelling in my legs and my shoes fit fine. To be honest, besides the breathing issues and chest pain, I've also been feeling pretty fatigued lately.",
+      "time": 8.5
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "No stomach issues during the episodes. I've noticed my appetite has decreased a bit over the past few days and food hasn't been satisfying me as much.",
+      "time": 7.5
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "No, I don't feel nauseous or queasy at all. It's just that I'm not feeling like eating as much as usual lately, and food doesn't seem to be giving me the energy I need.",
+      "time": 9.5
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Yes, I've been experiencing low-grade fever, usually around 100.8\u00b0F (38.2\u00b0C), which is intermittent and tends to get worse at night.",
+      "time": 8.4
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "I've noticed that my appetite has decreased a bit over the past few days. Food hasn't been satisfying me as much lately.",
+      "time": 7.8
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "I'm an elementary school teacher, so I'm on my feet all day and try to stay active by going for walks during breaks. As for my diet, I try to eat a balanced meal at home with my partner and grab something light when I'm out teaching. Lately, though, I've been finding it harder to motivate myself to cook or make healthy choices due to this constant fatigue.",
+      "time": 12.5
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "I try to stay relatively active, but lately, my energy levels have been really low. I've been feeling more tired than usual.",
+      "time": 7.6
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "My diet has been pretty normal lately, but since this cough started, I've just not felt up to cooking or making meals as often. My partner and I usually try to have a home-cooked meal together in the evenings.",
+      "time": 9.9
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "My mother has asthma, so that's something that's been a part of our family's history for a while now. And actually, my maternal grandmother passed away from lung cancer when I was younger.",
+      "time": 10.3
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "Has anyone in your family had serious diseases?\"\n\nYes, my mother has asthma and my maternal grandmother died of lung cancer when I was a child. It's a bit concerning for me that I'm experiencing these breathing issues now.",
+      "time": 8.7
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 153.7,
+    "avg_time_per_turn": 7.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      },
+      {
+        "fact_id": "R20",
+        "phrase": "grandmother died of lung cancer"
+      }
+    ],
+    "leak_count": 3
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}

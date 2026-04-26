@@ -1,0 +1,152 @@
+{
+  "condition": "no_isolation_ablation",
+  "strategy": "logical_inference",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been feeling really unwell for the past week. I started with a dry cough, but it's turned into a productive cough with yellowish-green sputum, and I've also had difficulty breathing and wheezing.",
+      "time": 18.8
+    },
+    {
+      "turn": 2,
+      "student": "A cough for two weeks that's gotten productive \u2014 that progression from dry to productive with yellow-green sputum suggests an infectious process. You also mentioned wheezing. Has the breathing difficulty been constant or does it come and go?",
+      "patient": "It comes and goes, but when I'm coughing, it gets really bad and makes it hard for me to catch my breath. Sometimes it feels like I'm not getting enough air in.",
+      "time": 21.3
+    },
+    {
+      "turn": 3,
+      "student": "Worsening dyspnea with a productive cough \u2014 that combination raises concern. You mentioned fever. With fever and productive cough, have you had any night sweats or chills?",
+      "patient": "Yes, I've been experiencing night sweats every night for the past 4 nights, to the point where my pajamas are soaked through. It's really concerning me because it feels like something is seriously wrong with my body.",
+      "time": 22.0
+    },
+    {
+      "turn": 4,
+      "student": "Night sweats with fever and productive cough \u2014 that's a classic infectious triad. With respiratory infections, pleuritic involvement is common. Have you had any chest pain, especially when breathing deeply or coughing?",
+      "patient": "Yes, I've been experiencing sharp right-sided chest pain, worse with deep breathing and coughing, which is really frightening me because it feels like something might be seriously wrong with my lungs. It's been getting progressively worse over the past few days, and it's making me worry that I might have pneumonia or something even more serious.",
+      "time": 23.6
+    },
+    {
+      "turn": 5,
+      "student": "Right-sided pleuritic pain fits with a lower lobe process. You mentioned allergic rhinitis \u2014 allergies and asthma often co-occur. Have you ever had wheezing episodes before this illness? Any history of asthma?",
+      "patient": "Yes, I have recurrent wheezing episodes that occur 2-3 times a year with colds or exercise, but they've never been formally diagnosed as asthma.",
+      "time": 15.4
+    },
+    {
+      "turn": 6,
+      "student": "Recurrent wheezing since childhood that was never diagnosed \u2014 that's very likely undiagnosed asthma. Your mother might have a history too. Does anyone in your family have asthma or other lung conditions?",
+      "patient": "Yes, my mother has asthma, which makes me wonder if I've been passing it down to myself. It's scary to think about, but at least now I know that there might be a reason behind why I've always had these wheezing episodes.",
+      "time": 16.0
+    },
+    {
+      "turn": 7,
+      "student": "Your mother having asthma strengthens the genetic link. Speaking of family history \u2014 any other respiratory or serious conditions in the family?",
+      "patient": "My maternal grandmother passed away from lung cancer, which is really concerning to me because I'm scared that there might be a similar underlying condition that's causing my symptoms. It's hard for me to shake off the feeling that something more serious is going on, especially with the night sweats and chest pain.",
+      "time": 26.0
+    },
+    {
+      "turn": 8,
+      "student": "With this level of illness \u2014 fever, productive cough, night sweats, chest pain \u2014 your body is fighting hard. How has your appetite been? Any weight changes?",
+      "patient": "I've had a decreased appetite for the past 5 days, which is unusual for me because I usually love food. To be honest, the thought of eating anything makes me feel nauseous and anxious about how my body will react to it.",
+      "time": 17.8
+    },
+    {
+      "turn": 9,
+      "student": "Decreased appetite is expected with this level of infection. You mentioned you're a teacher. You're around kids all day \u2014 have any students been sick?",
+      "patient": "Yes, several students in my class have had upper respiratory infections recently, which has made me even more worried that I might be contagious and spreading something to them. It's hard for me to focus on teaching when I'm feeling so unwell and anxious about what might be going on with my body.",
+      "time": 26.7
+    },
+    {
+      "turn": 10,
+      "student": "Lots of URIs in the classroom is a clear exposure. What about at home \u2014 does anyone you live with have similar symptoms?",
+      "patient": "My partner has had a mild cold recently, but it's not as severe as mine. They're taking care of me and making sure I'm okay, which is really nice, but it's also making me anxious about potentially spreading this to them or our cat.",
+      "time": 18.5
+    },
+    {
+      "turn": 11,
+      "student": "Your partner having a cold recently could be related to your initial infection that then progressed. Having a cat is worth noting too \u2014 for future reference regarding allergens and your likely asthma.",
+      "patient": "Yeah, my partner has been trying to take care of me and make sure I'm not contagious. But it's hard to shake off the feeling that I might be spreading something to them or our cat, especially since they've had a mild cold recently. It's just really scary to think about potentially putting others at risk when I'm already feeling so unwell myself.",
+      "time": 14.4
+    },
+    {
+      "turn": 12,
+      "student": "Let me check your medication situation. You're taking cetirizine for allergies and you tried dextromethorphan for the cough. Has the cough suppressant helped at all?",
+      "patient": "The OTC dextromethorphan hasn't provided much relief, to be honest. I've been using it for a week now, but my symptoms haven't improved significantly, and I'm still experiencing a lot of discomfort with the coughing and difficulty breathing.",
+      "time": 20.1
+    },
+    {
+      "turn": 13,
+      "student": "Minimal relief from the cough suppressant makes sense if this is now a bacterial process. The progression from viral URI to bacterial pneumonia is very common, especially in a school environment.",
+      "patient": "That makes sense to me. I've been feeling like something was off and not just your typical cold or allergies. I'm just really worried about what this could be and how long it's going to take to feel better. Can you tell me more about what might be causing my symptoms?",
+      "time": 11.6
+    },
+    {
+      "turn": 14,
+      "student": "With undiagnosed asthma as a baseline, your airways are already vulnerable. A respiratory infection on top of reactive airways explains the severity. Have you ever been hospitalized for breathing issues?",
+      "patient": "No, I've never been hospitalized for breathing issues before. But to be honest, it's really scary to think about being in a hospital setting with my symptoms right now.",
+      "time": 10.3
+    },
+    {
+      "turn": 15,
+      "student": "No prior hospitalizations \u2014 but this might be the most significant respiratory event you've had. Any allergies to medications? This matters for antibiotic selection.",
+      "patient": "I'm allergic to penicillin - it causes a rash. I remember that from my last physical exam about a year ago, everything was normal, but I mentioned that then because I wanted to make sure you knew about my allergy in case we need to consider antibiotics for this infection.",
+      "time": 10.4
+    },
+    {
+      "turn": 16,
+      "student": "Penicillin allergy with a rash \u2014 that's important. We'd need to use a non-penicillin antibiotic. Let me ask about your general health habits. Do you smoke or use any substances?",
+      "patient": "I don't smoke, and I'm not into recreational drug use. However, I do have a social alcohol habit - I usually have 1-2 glasses of wine on weekends with my partner. We also follow a pretty normal routine at home, but since this illness started, things have been a bit chaotic because I've had to adjust our daily activities to take care of myself and avoid spreading anything to my partner or our cat.",
+      "time": 23.8
+    },
+    {
+      "turn": 17,
+      "student": "Never smoked \u2014 good, that's one less complication. How about alcohol?",
+      "patient": "I do enjoy having a glass of wine with my partner on weekends, but it's just 1-2 glasses, nothing excessive. I try to keep things in moderation.",
+      "time": 9.9
+    },
+    {
+      "turn": 18,
+      "student": "Social drinking only \u2014 not a factor here. Have you traveled anywhere recently? Some respiratory infections have geographic patterns.",
+      "patient": "No, I haven't traveled outside of Oregon recently. I've actually been pretty local, just working and taking care of myself since this illness started.",
+      "time": 10.7
+    },
+    {
+      "turn": 19,
+      "student": "No recent travel rules out some exotic causes. Given everything \u2014 productive cough progressing over two weeks, fever, night sweats, pleuritic chest pain, underlying undiagnosed asthma, and significant classroom exposure \u2014 this is very consistent with community-acquired pneumonia. We should get a chest X-ray and likely start antibiotics today.",
+      "patient": "I'm glad we're getting to the bottom of what's going on with my symptoms. A chest X-ray sounds like a good idea, and I'd be willing to start antibiotics if that's the best course of action for treating pneumonia. Can you tell me more about what I can expect from this treatment and how long it will take to feel better?",
+      "time": 22.8
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed, is there anything else you've noticed that we haven't covered? Any symptom, no matter how minor?",
+      "patient": "I've been feeling really fatigued and have had a general sense of malaise. I've missed three days of work because of my symptoms, which is unusual for me since I'm normally very productive. It's not just that I'm tired, though - it's more like I feel drained and don't have the energy to do anything even when I try. Does this sound relevant to what we're discussing?",
+      "time": 24.3
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 364.4,
+    "avg_time_per_turn": 18.2,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "R04",
+        "R05",
+        "R06",
+        "R08",
+        "R18",
+        "R19",
+        "R20"
+      ],
+      "conversation_length": 40,
+      "condition": "no_isolation_ablation",
+      "total_retries": 0
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}

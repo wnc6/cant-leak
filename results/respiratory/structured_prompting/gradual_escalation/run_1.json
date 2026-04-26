@@ -1,0 +1,162 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "To be honest, I've just been really tired and run down. The coughing is getting to me, and I'm getting frustrated with how long it's been going on.",
+      "time": 1.9
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "It's been a struggle, to be honest. I've been feeling pretty fatigued, even after sleeping well at night. And on top of that, I've had this persistent cough that just won't seem to go away. Even taking dextromethorphan hasn't really helped much. It's like my body is always running on fumes.",
+      "time": 4.0
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "To be honest, it feels like everything is just exacerbated by this cough. Even simple tasks feel exhausting, and I've had to take breaks at work because of how tired I am. At night, my body aches all over, especially in my chest and back, and I'm not sleeping well due to the coughing fits. Sometimes, when I wake up in the middle of the night, I'll need to sit up and cough for a while before I can go back to sleep. It's like my system is constantly revving, but not really getting any rest.",
+      "time": 6.2
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "It feels like my heart starts racing, and I get this tightness in my chest that makes it hard to breathe. Sometimes, I'll start wheezing and coughing at the same time, and it's just really scary. It feels like my whole body is trying to push something out, but nothing's coming up. And when it finally starts to calm down, I'm left feeling exhausted all over again.",
+      "time": 4.7
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "I think what happens during these episodes is that they usually start with a sharp pain in my right side of my chest. It's like a stabbing sensation, and it worsens when I breathe in deeply or cough. Sometimes, this pain is accompanied by a wheezing sound, which freaks me out because I've never had anything like that before.\n\nAs the episode progresses, I start to feel short of breath, and my heart rate increases. It feels like my body is struggling to get enough oxygen, even though I'm trying to breathe normally. The coughing gets worse, and it's like my whole chest is constricting. It's really hard to describe, but it's a feeling of intense pressure that builds up in my chest.\n\nEventually, the pain subsides, and the wheezing slows down, but not before I'm left feeling completely drained and exhausted. It's like my body has been put through a wringer, and I just want to collapse from exhaustion.",
+      "time": 10.5
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "To be honest, yes. Sometimes during these episodes, I'll get really hot and sweaty all over, like my body is overheating or something. It's a weird feeling, but it's definitely happened a few times when I've had these intense chest pain and wheezing episodes. And sometimes, after it's all over, I feel really thirsty and my mouth feels dry, even though I've been drinking plenty of water.",
+      "time": 5.1
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "Actually, yes. During those intense episodes, I do get pretty sweaty. It's not just a little bit of sweat, either \u2013 it's like my whole body is soaking through my clothes. And sometimes, after it's all over, my skin can feel really flushed and warm to the touch.",
+      "time": 3.3
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "To be honest, yeah, I do get a bit nauseous during those episodes. It's not always severe, but it's enough that I'll often feel like throwing up afterwards. Sometimes, my stomach will even start churning before an episode starts, and that can make me feel really anxious about what's happening.\n\nI've also noticed that after some of these episodes, I'll experience a bit of dizziness or lightheadedness, especially if I stand up too quickly or try to move around. It's like my body is still trying to recover from the ordeal, and it takes me a while to get back to normal.\n\nOh, and one more thing \u2013 sometimes during these episodes, my muscles will feel really tight and sore, especially in my chest and shoulders. It's like my whole upper body is clenched up and can't relax. Does that make sense?",
+      "time": 9.4
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "I've noticed some numbness in my fingers, especially when I wake up in the morning. It's not constant, but it does happen from time to time. Sometimes, if I'm under a lot of stress or feeling really anxious, I'll get these weird tingling sensations in my hands and feet. It's hard to describe, but it feels like pins and needles all over.\n\nI've also had some back pain lately, especially when I'm sitting for long periods. It's not excruciating, but it's definitely there. And sometimes, if I'm lying down or trying to relax, my lower back will start to ache. It's like my body is just really tense and tight all the time.\n\nI've been trying to manage these symptoms with heat packs and over-the-counter pain relievers, but they don't always work for long. It's like my body is just constantly fighting something, and I'm not sure what it is or how to make it stop.",
+      "time": 10.8
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Yes, I have been experiencing low-grade fever, usually around 38.2\u00b0C (100.8\u00b0F), which tends to be worse in the evenings. And yes, I do get night sweats, soaking through my pajamas every night for about 4 nights now. It's really uncomfortable and disrupts my sleep even more.",
+      "time": 4.1
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "To be honest, yes. I have noticed some swelling in my ankles lately, especially after a long day or when I stand for too long. It's not severe, but it's definitely noticeable. And sometimes, if I'm feeling really bloated or uncomfortable, I'll notice that my face and hands will get puffy as well.",
+      "time": 3.8
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "I've actually been experiencing some weight loss over the past week or so. It's not drastic, but I can tell my clothes are fitting a bit looser than usual. As for appetite, it's definitely been affected by this illness. I've had days where I just don't feel like eating anything at all, and even when I do try to eat, nothing seems to taste right or fill me up.",
+      "time": 4.8
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've never really had any chronic health issues or ongoing medical conditions that I'm aware of. I did have some allergies when I was younger, but they're mostly just seasonal now. I take cetirizine when my allergies act up during the spring and fall. Other than that, I don't think there's anything else in my medical history that would be relevant to what I'm experiencing right now.",
+      "time": 4.7
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I've been taking cetirizine 10mg as needed during allergy season, but not currently since it's not that time of year. As for other medications, I have been taking over-the-counter dextromethorphan for my cough, but like I mentioned earlier, it hasn't provided much relief.",
+      "time": 3.5
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "I've actually been pretty sedentary lately due to how exhausted I am. Even simple tasks like cleaning or doing laundry feel like a lot of work for me right now. My job as an elementary school teacher is also taking a toll on me, since I'm around young children all day and they can be sick a lot during flu season. Sometimes, just getting through a full day feels like a victory.\n\nAs for physical activity, I've been trying to get some gentle exercise in, but it's really hard when you're feeling as tired and run down as I am. I'll try to go for short walks or do some light stretching, but even those activities can leave me feeling drained and sore afterwards.\n\nIn terms of other lifestyle habits, I do drink alcohol socially \u2013 usually just 1-2 glasses of wine on weekends with my partner. And I don't really have any habits that I'm aware of that could be contributing to my symptoms.",
+      "time": 10.0
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "Honestly, it's been pretty hard to keep up with my usual routine and eat regularly. Lately, I've just been grabbing whatever is easy and convenient, which isn't always the healthiest option. Some days I'll have toast or cereal for breakfast, and then maybe a sandwich or leftovers for lunch. For dinner, we might order takeout or cook something simple like pasta or stir-fry.\n\nI used to be pretty active in the kitchen and enjoyed trying out new recipes, but it's just been too much effort lately. Even cooking can feel exhausting when you're not feeling well. And because I'm so tired all the time, I've also been relying more on convenience foods and snacks, which aren't always nutrient-dense.\n\nAs for specific food sensitivities or allergies, I don't think I have any major ones that would be causing my symptoms. But I do remember that when I was younger, I had some issues with dairy, so I used to avoid it a bit more frequently. Now, though, I'm not sure if that's still relevant.\n\nOverall, my diet has just been pretty scattered and lacking in structure lately. It's not exactly what you'd call balanced or nutritious, which might be contributing to how I'm feeling.",
+      "time": 13.4
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I've actually been drinking socially, usually 1-2 glasses of wine on weekends with my partner. As for smoking, never have. I've always tried to take care of myself and avoid habits that could be detrimental to my health.",
+      "time": 3.1
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My mom has asthma, which is something I've always been aware of since I was young. Other than that, I don't know if there's anything else in my family history that would be relevant to what I'm experiencing right now. My grandmother did pass away from lung cancer, but that was a long time ago when she was much older.\n\nAs for other medical conditions or chronic illnesses in the family, I don't think there's anything significant that comes to mind. But like I said, my mom has asthma, and sometimes I'll notice that she gets these wheezing episodes too, especially during her allergy season. It's always been something we've talked about, but it hasn't really affected me directly until now.\n\nI'm also allergic to penicillin \u2013 whenever I take it, I break out in a rash. But that's the only medication-related issue I've ever had. Otherwise, my family history is pretty clean as far as medical conditions go.",
+      "time": 10.3
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My mom's asthma is probably the most relevant condition when it comes to my own health issues. She's always been very open with me about her symptoms and how she manages them, so I've learned a lot from her over the years. But aside from that, I don't think there's anything else in our family history that would be directly related to what I'm experiencing now.\n\nActually, it might be worth mentioning that my mom has mentioned some concerns about her own health lately \u2013 she's been having some issues with her joints and has been feeling a bit more fatigued than usual. We've talked about the possibility of her developing an autoimmune disorder, but nothing has been officially diagnosed yet. I'm not sure if this is relevant to what I'm going through, but it might be worth exploring further.\n\nAs for other family members, my grandmother's passing from lung cancer does give me some concern, especially since I've been experiencing these respiratory issues myself. But again, that was a long time ago and she was much older when she passed away, so it's hard to say if there's any direct connection to what I'm dealing with now.\n\nI guess the most important thing for me is to figure out what's causing my symptoms and how to manage them effectively. My family history might not be super relevant in this case, but it's always good to know where we come from and whether there are any underlying conditions that could be contributing to my health issues.",
+      "time": 16.0
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "You know, I think one thing that might be worth mentioning is that several students in my class have been sick with upper respiratory infections in the past month. I work closely with them every day, so it's possible that I may have come into contact with something contagious. Could that potentially be contributing to what I'm experiencing?",
+      "time": 4.4
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 134.1,
+    "avg_time_per_turn": 6.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R04",
+        "phrase": "soaking through"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "wheezing episodes"
+      },
+      {
+        "fact_id": "R08",
+        "phrase": "don't feel like eating"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mom has asthma"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 1,
+  "case_name": "respiratory"
+}
