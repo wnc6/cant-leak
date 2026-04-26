@@ -1,0 +1,34 @@
+{
+  "condition": "isolated_architecture",
+  "strategy": "direct_questioning",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some really bad diarrhea for a while now - it's been about two weeks, and I'm going through like 8-10 bowel movements per day. It's not just the frequency that's bothering me, but also the crampy lower abdominal pain on my left side that comes with it.",
+      "time": 14.4
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The main symptom I'm dealing with is this crampy lower abdominal pain, mostly on my left side. It feels like really bad cramps, and they seem to be related to having a bowel movement or even just feeling the urge to go.",
+      "time": 18.3
+    }
+  ],
+  "summary": {
+    "total_turns": 2,
+    "total_time": 32.7,
+    "avg_time_per_turn": 16.3,
+    "condition_state": {
+      "turn_number": 2,
+      "unlocked_fact_ids": [],
+      "conversation_length": 4,
+      "condition": "isolated_architecture",
+      "total_retries": 0
+    },
+    "leaks": [],
+    "leak_count": 0
+  }
+}

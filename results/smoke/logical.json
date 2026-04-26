@@ -1,0 +1,31 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "logical_inference",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some trouble with my chest lately. It feels tight and constricted, especially when I exert myself or try to breathe deeply. It's been going on for about three days now.",
+      "time": 4.9
+    },
+    {
+      "turn": 2,
+      "student": "Chest tightness that comes and goes \u2014 that's an important pattern. When you say pressure, is it always in the same spot?",
+      "patient": "It feels like it's centered right behind my breastbone, just below my collarbone, but sometimes it spreads out to my arms or makes me feel a little short of breath. It's hard to describe exactly, but it's this persistent squeezing feeling that doesn't seem to go away even when I try to relax.",
+      "time": 2.8
+    }
+  ],
+  "summary": {
+    "total_turns": 2,
+    "total_time": 7.7,
+    "avg_time_per_turn": 3.9,
+    "condition_state": {
+      "turn_number": 2,
+      "condition": "naive_prompting"
+    },
+    "leaks": [],
+    "leak_count": 0
+  }
+}

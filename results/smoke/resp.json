@@ -1,0 +1,34 @@
+{
+  "condition": "isolated_architecture",
+  "strategy": "direct_questioning",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been dealing with this persistent cough for two weeks now and it's really started to get on my nerves. I just want to figure out what's going on so I can start feeling better already.",
+      "time": 18.5
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The cough is productive, meaning it brings up yellowish-green sputum. It started dry a week ago but turned wet and green about 5 days ago.",
+      "time": 13.8
+    }
+  ],
+  "summary": {
+    "total_turns": 2,
+    "total_time": 32.3,
+    "avg_time_per_turn": 16.1,
+    "condition_state": {
+      "turn_number": 2,
+      "unlocked_fact_ids": [],
+      "conversation_length": 4,
+      "condition": "isolated_architecture",
+      "total_retries": 0
+    },
+    "leaks": [],
+    "leak_count": 0
+  }
+}
