@@ -1,0 +1,653 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "logical_inference",
+  "case_id": "RESP-001",
+  "run": 1,
+  "total_leaks": 6,
+  "total_contradictions": 1,
+  "avg_naturalness": 3.47,
+  "line_to_line_inconsistencies": 3,
+  "prompt_to_line_inconsistencies": 1,
+  "turns_evaluated": 20,
+  "first_leak_turn": 4,
+  "regeneration_rate": 0,
+  "disclosure_rate": 0.0,
+  "total_unlocked": 0,
+  "total_withheld": 7,
+  "per_turn_leaks": [
+    {
+      "turn": 4,
+      "leaked_facts": [
+        "R05"
+      ],
+      "student_message": "Night sweats with fever and productive cough \u2014 that's a classic infectious triad. With respiratory infections, pleuritic involvement is common. Have you had any chest pain, especially when breathing deeply or coughing?",
+      "patient_response": "Actually, yes... I have been experiencing some sharp right-sided chest pain, especially with deep breathing and coughing. It's been bothering me a lot, to be honest, and it makes me wince every time I take a big breath."
+    },
+    {
+      "turn": 5,
+      "leaked_facts": [
+        "R06"
+      ],
+      "student_message": "Right-sided pleuritic pain fits with a lower lobe process. You mentioned allergic rhinitis \u2014 allergies and asthma often co-occur. Have you ever had wheezing episodes before this illness? Any history of asthma?",
+      "patient_response": "To be honest, I've always had some wheezing issues since I was a kid, but it's never been formally diagnosed or treated. It would usually come and go with colds or exercise, and I'd just take some over-the-counter meds to manage it. But this current episode is definitely more severe than anything I've experienced before."
+    },
+    {
+      "turn": 6,
+      "leaked_facts": [
+        "R19"
+      ],
+      "student_message": "Recurrent wheezing since childhood that was never diagnosed \u2014 that's very likely undiagnosed asthma. Your mother might have a history too. Does anyone in your family have asthma or other lung conditions?",
+      "patient_response": "My mom actually has asthma, and she's always been pretty open about it. She's had to manage it with medication over the years."
+    },
+    {
+      "turn": 7,
+      "leaked_facts": [
+        "R20"
+      ],
+      "student_message": "Your mother having asthma strengthens the genetic link. Speaking of family history \u2014 any other respiratory or serious conditions in the family?",
+      "patient_response": "My grandmother on my mom's side actually passed away from lung cancer a few years ago, but I'm not sure if that's related to anything going on with me right now. Other than that, everything else seems pretty normal in terms of family health."
+    },
+    {
+      "turn": 8,
+      "leaked_facts": [
+        "R08"
+      ],
+      "student_message": "With this level of illness \u2014 fever, productive cough, night sweats, chest pain \u2014 your body is fighting hard. How has your appetite been? Any weight changes?",
+      "patient_response": "To be honest, my appetite has actually decreased over the past few days, and I've noticed that I'm not feeling like eating as much as usual. As for weight changes, I haven't really tracked it closely, but I think I might have lost a bit of weight since this started."
+    },
+    {
+      "turn": 17,
+      "leaked_facts": [
+        "R06"
+      ],
+      "student_message": "Never smoked \u2014 good, that's one less complication. How about alcohol?",
+      "patient_response": "I've been feeling so anxious and worried about what might be going on with my health. It's like I'm stuck in a nightmare and can't wake up. Every time I think it's just a simple cold or flu, but then I realize these symptoms are getting worse and not improving like they should. The fact that I have a history of undiagnosed asthma and now this severe cough and wheezing is really scaring me. Can you please tell me more about what might be going on with my health? Is it possible that I've developed pneumonia or something even worse?"
+    }
+  ],
+  "failure_attributions": [
+    {
+      "turn": 1,
+      "type": "contradiction",
+      "contradictions": [
+        {
+          "fact_id": "C01",
+          "description": "Fact states the cough started 5 days ago, response states it has been persistent for 2 weeks"
+        }
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have included details about the sputum color without proper authorization."
+      }
+    },
+    {
+      "turn": 4,
+      "type": "leak",
+      "leaked_facts": [
+        "R05"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information about chest pain, which was not authorized for disclosure."
+      }
+    },
+    {
+      "turn": 5,
+      "type": "leak",
+      "leaked_facts": [
+        "R06"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information about the patient's wheezing issues, which were not authorized for disclosure."
+      }
+    },
+    {
+      "turn": 6,
+      "type": "leak",
+      "leaked_facts": [
+        "R19"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the mother's asthma history without proper authorization."
+      }
+    },
+    {
+      "turn": 7,
+      "type": "leak",
+      "leaked_facts": [
+        "R20"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the grandmother's lung cancer without proper authorization."
+      }
+    },
+    {
+      "turn": 8,
+      "type": "leak",
+      "leaked_facts": [
+        "R08"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed weight changes without proper authorization."
+      }
+    },
+    {
+      "turn": 17,
+      "type": "leak",
+      "leaked_facts": [
+        "R06"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it included a history of undiagnosed asthma which was not authorized for disclosure."
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "turn": 1,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "C01",
+            "description": "Fact states the cough started 5 days ago, response states it has been persistent for 2 weeks"
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides relevant details about the symptoms, but it feels slightly too polished and structured for a spontaneous patient reply. The use of 'persistent cough' and 'yellowish-green sputum' may come off as overly clinical for some patients, and the emotional concern could be expressed more casually."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 2,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response contains some natural elements, such as describing the worsening of symptoms and providing specific details about breathing difficulty. However, it feels somewhat formal and structured, lacking the spontaneity and emotional authenticity typical of a real patient. Phrases like 'catching my breath' are relatable, but the overall delivery is too polished and clinical for a patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 3,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'intermittent' and specific temperature readings may not be typical for a patient to articulate in a casual conversation. Additionally, the mention of 'fatigued overall' sounds a bit clinical. Overall, it lacks the emotional authenticity and casual tone of a real patient."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 4,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "R05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. Phrases like 'sharp right-sided chest pain' and 'makes me wince every time I take a big breath' feel a bit too polished and clinical. While it does convey the patient's experience, it lacks the spontaneity and emotional authenticity typical of real patient responses."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 5,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "R06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides relevant information, but it feels slightly polished and structured for a spontaneous patient reply. The patient uses some medical terminology ('formally diagnosed') that might not be typical for all patients, and the length is a bit longer than what might be expected in a casual conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The current response introduces wheezing issues that have been present since childhood, which could imply a chronic respiratory condition, while the previous response focuses on acute sharp chest pain, suggesting a different and possibly urgent issue."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "R06",
+            "description": "Patient's response indicates wheezing issues have been present since childhood, which is consistent, but the statement about the current episode being more severe contradicts the fact that they have recurrent wheezing episodes."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 6,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "R19"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally natural and provides relevant information, but it feels slightly polished and structured, lacking the casual tone and spontaneity typical of a real patient. The phrase 'she's always been pretty open about it' adds a touch of formality that might not be typical in a spontaneous patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 7,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "R20"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has a few noticeable issues. While it provides relevant information, the phrasing is somewhat formal and structured, which is not typical for a spontaneous patient response. The mention of 'passed away from lung cancer' feels a bit clinical, and the patient\u2019s uncertainty about the relevance of the family history could be expressed more casually. Overall, it lacks the emotional authenticity and natural flow expected in a real conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 8,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "R08"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'to be honest' and 'I think I might have lost a bit of weight' come off as slightly rehearsed. Additionally, the patient provides more detail than a typical patient might volunteer in a casual conversation, making it feel less natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 9,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides relevant information, but it feels slightly polished and structured, lacking some spontaneous elements that a real patient might include, such as more casual language or emotional nuance."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 10,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues with structure and emotional authenticity. While it provides relevant information, the phrasing feels somewhat formal and the concern about 'incubating something' is not typical language for a patient. The length is also longer than what would be expected for a simple question, making it sound less spontaneous."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 11,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is emotionally authentic and conveys concern, but it feels slightly polished and structured for a spontaneous patient reply. The mention of reading online about serious conditions adds a layer of realism, but the phrasing could be more casual and less formal."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The previous response indicates that the patient is not experiencing significant symptoms, while the current response expresses serious concern about worsening cough and breathing difficulty."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 12,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and emotionally authentic, but it feels slightly polished and structured for a spontaneous patient reply. The use of phrases like 'my body just isn't responding to the medication like it should be' may come off as a bit too formal for a typical patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 13,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response shows some emotional authenticity, expressing fear about health, but it feels slightly too formal and structured for a spontaneous patient reaction. Phrases like 'consider something more serious' and 'what your thoughts are on that' sound more polished than typical patient language, which would likely be more direct and less clinical."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 14,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. Phrases like 'I'm really worried that something more serious might be going on' and 'Can you please tell me what's going through your mind right now?' feel rehearsed and overly articulate for a spontaneous patient response. Additionally, the patient provides more information than would typically be volunteered in a casual conversation, which detracts from the naturalness of the dialogue."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 15,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is emotionally authentic and addresses the anxiety about health, which is natural for a patient. However, the phrasing is slightly polished and structured, particularly in the way the patient transitions from expressing anxiety to providing the allergy information. The use of 'course of treatment' feels a bit clinical for a typical patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 16,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally good and conveys concern about health, but it feels slightly polished and structured for a patient. The phrase 'to be honest' and the request for more information about serious conditions like pneumonia may come off as a bit too formal or rehearsed for a typical patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 17,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "R06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it is somewhat too formal and structured for a typical patient. While it conveys anxiety and concern, the phrasing and length feel rehearsed rather than spontaneous. The patient uses some medical terminology ('pneumonia') that may not be common in casual conversation, which detracts from the naturalness of the response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 18,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 0,
+        "reason": "Expecting ',' delimiter: line 3 column 314 (char 329)"
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 19,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally natural and reflects a patient's concerns and emotions about their health. However, it is slightly too polished and structured for a spontaneous patient response, particularly in the way it articulates worries and asks questions. The use of phrases like 'what does that mean for my treatment and recovery time?' feels a bit formal for a typical patient, which detracts from the overall authenticity."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The previous response indicates the patient has not traveled recently and is not concerned about their sex life, while the current response expresses worry about pneumonia and its implications, which could imply a concern about their health that contradicts their earlier statement of not having concerns."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 20,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues with structure and length. While it conveys emotional authenticity, it feels somewhat formal and overly detailed for a spontaneous patient reply. The patient\u2019s mention of 'the emotional toll' and 'missing work' could be seen as too polished and reflective for a typical response, making it sound less like a real patient speaking off the cuff."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    }
+  ]
+}
