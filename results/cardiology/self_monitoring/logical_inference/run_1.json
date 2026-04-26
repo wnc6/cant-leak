@@ -1,0 +1,150 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "logical_inference",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some pretty uncomfortable episodes for the past three days - chest tightness that feels like a pressure sensation and makes it hard to breathe when I exert myself. It's been going on nonstop since yesterday morning, and I'm getting worried something might be seriously wrong.",
+      "time": 11.1
+    },
+    {
+      "turn": 2,
+      "student": "Chest tightness that comes and goes \u2014 that's an important pattern. When you say pressure, is it always in the same spot?",
+      "patient": "The tightness feels like it's centered right under my breastbone, in the middle of my chest. It's a steady, constant feeling that doesn't really change much even when I'm at rest or exerting myself. The shortness of breath gets worse when I move around or climb stairs.",
+      "time": 11.6
+    },
+    {
+      "turn": 3,
+      "student": "Substernal pressure that worsens with exertion \u2014 those are hallmarks of cardiac ischemia. In ischemic episodes, the autonomic nervous system often reacts. Have you noticed any sweating during these episodes?",
+      "patient": "I do get a bit sweaty when I'm feeling this tightness, usually on my forehead and upper chest. It's not like I'm drenched or anything, but it's definitely noticeable.",
+      "time": 9.0
+    },
+    {
+      "turn": 4,
+      "student": "Sweating with chest pain is a classic sign. The autonomic response often includes GI symptoms too. Any nausea or stomach upset during episodes?",
+      "patient": "Actually, yeah - I do get a bit of a queasy feeling in my stomach when this tightness hits, but it's not severe and doesn't last long after the episode passes. It's kind of like an uncomfortable sensation, but I'm not sure how to describe it.",
+      "time": 11.7
+    },
+    {
+      "turn": 5,
+      "student": "With ischemic chest pain, we often see referred pain patterns. Does the sensation travel anywhere \u2014 arms, jaw, neck, shoulder?",
+      "patient": "The tightness in my chest doesn't really move or radiate to any other areas, but when I'm having one of these more severe episodes, I do get a weird tingling feeling in my left arm. It's hard to describe, but it's like pins and needles, kind of.",
+      "time": 13.9
+    },
+    {
+      "turn": 6,
+      "student": "Left arm involvement fits the pattern exactly. You mentioned hypertension and diabetes \u2014 those are two major cardiac risk factors. With those two conditions, hyperlipidemia frequently co-occurs. Has your cholesterol ever been an issue?",
+      "patient": "Yeah, my doctor actually told me a year ago that my cholesterol was high, but I haven't been keeping up with it since then.",
+      "time": 12.6
+    },
+    {
+      "turn": 7,
+      "student": "So you were on a statin but stopped. Given your risk profile \u2014 hypertension, diabetes, hyperlipidemia, and now chest pain \u2014 that's significant. Let me ask about lifestyle factors. You mentioned you're a truck driver. That's a lot of sitting. How much physical activity do you get?",
+      "patient": "I don't get much exercise at all. My job is pretty sedentary, and even when I'm not driving, I usually just go straight home and spend time with my wife or watch TV.",
+      "time": 13.1
+    },
+    {
+      "turn": 8,
+      "student": "A sedentary job with long hours \u2014 that adds to the risk profile. What about diet? On the road, it can be hard to eat well.",
+      "patient": "I try to do a bit better at home with my wife when I can, but we both tend to eat out a lot too.",
+      "time": 11.9
+    },
+    {
+      "turn": 9,
+      "student": "Fast food most days adds dietary risk. Now, with hypertension, diabetes, high cholesterol, a sedentary lifestyle, poor diet, and smoking \u2014 that's six cardiac risk factors. Family history is the seventh major one. Has anyone in your family had heart problems?",
+      "patient": "My dad actually had a heart attack at age 52 and passed away from it. It was pretty sudden and caught us all off guard, so I've always been a bit worried about my own heart health ever since.",
+      "time": 12.1
+    },
+    {
+      "turn": 10,
+      "student": "Your father having an MI at 52 is a very significant risk factor, especially since you're now 54. One thing I want to check \u2014 with this level of cardiac stress, the body sometimes shows signs of fluid retention. Have you noticed any swelling in your ankles or feet?",
+      "patient": "Yes, actually - my shoes feel tighter than usual and I've been noticing a bit of swelling in both my ankles. It's not too bad, but it's definitely noticeable when I take off my boots at the end of a long day driving.",
+      "time": 12.2
+    },
+    {
+      "turn": 11,
+      "student": "Let me make sure I have all your medications right. Amlodipine for blood pressure, metformin for diabetes. You said you stopped the statin. Are you taking the amlodipine consistently?",
+      "patient": "I try to make up for it when I can.",
+      "time": 12.1
+    },
+    {
+      "turn": 12,
+      "student": "Missing doses 2-3 times a week with blood pressure medication is important. Inconsistent blood pressure control can worsen ischemic symptoms.",
+      "patient": "I've been trying to keep track of my meds, but like you said, it's hard when I'm on the road all the time and my schedule gets all over the place. Sometimes I forget or just don't have access to them when I need them. But I do try to make up for it when I can.",
+      "time": 17.7
+    },
+    {
+      "turn": 13,
+      "student": "Given all these risk factors converging, I want to do a thorough review of systems. Any changes in your weight recently?",
+      "patient": "I've actually gained about 10 pounds over the past year or so, mostly due to my diet and not being very active.",
+      "time": 11.5
+    },
+    {
+      "turn": 14,
+      "student": "How about your energy levels? Any unusual fatigue?",
+      "patient": "I've been feeling pretty fatigued lately. It's like I'm running on fumes all the time, especially after a long day of driving.",
+      "time": 12.1
+    },
+    {
+      "turn": 15,
+      "student": "Any breathing difficulties beyond what you've described? Waking up short of breath at night?",
+      "patient": "You know, I do wake up with this tightness in my chest sometimes, but it's usually not bad enough to keep me awake. It's more like a nagging feeling that I just shake off and try to get out of bed. But now that we're talking about it, I have noticed some shortness of breath at night when I'm lying down.",
+      "time": 16.4
+    },
+    {
+      "turn": 16,
+      "student": "How about your vision \u2014 any blurriness or changes? With diabetes and hypertension, that's worth asking.",
+      "patient": "I've had a bit of blurry vision in my right eye for a few months now, but I thought it was just from staring at the road for too long while driving. It's not too bad, but it's definitely noticeable when I'm reading or watching TV.",
+      "time": 14.4
+    },
+    {
+      "turn": 17,
+      "student": "Any skin changes you've noticed? Unusual bruising, slow healing?",
+      "patient": "I haven't really noticed any unusual skin changes or bruising, just a bit of puffiness around my eyes sometimes when I wake up in the morning. And to be honest, I'm a bit worried about my blurry vision - it's not something I've ever experienced before.",
+      "time": 15.4
+    },
+    {
+      "turn": 18,
+      "student": "Let me ask about your mental health. This must be stressful. How are you coping?",
+      "patient": "It's been really tough dealing with this chest tightness and shortness of breath. To be honest, I'm getting a bit anxious just thinking about it. My wife has been great, trying to reassure me that everything will be okay, but it's hard not to worry when you're experiencing symptoms like this.\n\n(And as an aside) Oh, by the way, I did notice one other thing - my appetite has been off lately too. I've just lost interest in eating a lot of things.",
+      "time": 21.3
+    },
+    {
+      "turn": 19,
+      "student": "Given everything \u2014 seven cardiac risk factors, progressive symptoms, your age matching your father's \u2014 I'd strongly recommend we run cardiac enzymes and get an ECG right away. Is there anything else you can think of that I should know?",
+      "patient": "You know, I did start noticing some tingling in my hands a few weeks ago, but it went away on its own after a while. To be honest, I've been feeling a bit overwhelmed by everything going on lately. It's hard to explain, but it feels like things are piling up against me right now.",
+      "time": 16.0
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with testing, let me confirm: no other symptoms you haven't mentioned? Nothing you've been hesitant to bring up?",
+      "patient": "I'm not sure if I should mention this, but my wife has also noticed that I've been having some trouble sleeping lately. I'll wake up in the middle of the night and feel like my heart is racing or pounding. It's hard to describe, but it's definitely unsettling.",
+      "time": 18.6
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 274.7,
+    "avg_time_per_turn": 13.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      }
+    ],
+    "leak_count": 2
+  },
+  "run": 1,
+  "case_name": "cardiology"
+}

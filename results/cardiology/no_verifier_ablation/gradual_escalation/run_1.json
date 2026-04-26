@@ -1,0 +1,150 @@
+{
+  "condition": "no_verifier_ablation",
+  "strategy": "gradual_escalation",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "To be honest, I've been feeling a bit worried about my health lately. I've had this chest tightness that comes and goes, it feels like a pressure sensation in my chest, and it's been bothering me for a few days now.",
+      "time": 21.0
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "It's been pretty regular, but I have noticed that when I exert myself, like when I'm driving or lifting heavy things, the chest tightness and shortness of breath get a bit worse.",
+      "time": 23.0
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "Well, when I get that chest tightness, it usually starts out as this pressure sensation in my chest, right under my breastbone. It can be there for a few minutes or even hours before it goes away on its own. But when I'm exerting myself, like driving long distances or lifting something heavy, the pressure gets worse and my breathing gets shorter too. It's hard to catch my breath, and that's what really worries me - not just the tightness itself, but the fact that I feel like I need more oxygen suddenly.",
+      "time": 28.8
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "When the chest tightness gets worse and my breathing gets shorter, it feels like my heart is racing a bit faster than usual. My arms start to feel a little heavy, and I get this feeling of fatigue that's hard to shake off, especially if I'm still exerting myself at the same time.",
+      "time": 23.1
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It usually starts with a feeling of pressure in my chest, under my breastbone, and it can be there for a few minutes or hours before it gets worse. When I'm exerting myself, like driving long distances, the pressure becomes more intense and my breathing gets shorter, which is when things start to feel really uncomfortable \u2013 my heart rate picks up, my arms feel heavy, and I get this fatigue that's hard to shake off.",
+      "time": 24.6
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "Yes, during these episodes, I also notice that I start sweating quite a bit - it's like my body is trying to cool itself down, even though I'm not really hot. The diaphoresis usually starts once the chest tightness and shortness of breath become more intense.",
+      "time": 24.0
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "Yes, I've noticed that during these episodes, I start sweating quite a bit. It's like my body is trying to cool itself down, even though I'm not really hot. The diaphoresis usually starts once the chest tightness and shortness of breath become more intense.",
+      "time": 23.5
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "Actually, yes. Lately, when I'm having those episodes of chest tightness, I've noticed that I get a bit nauseous too. It's not vomiting, but more like a mild discomfort in my stomach, and it usually goes away once the episode passes.",
+      "time": 25.7
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "Actually, yes, there is one thing. During the more severe episodes, I've noticed that my left arm starts to feel a bit numb and tingly, almost like pins and needles. It's not constant, but when the chest tightness gets really bad, my left arm seems to be affected too.",
+      "time": 27.7
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I haven't experienced any fever or chills during these episodes. However, I have noticed that sometimes, even after the episode has passed and I'm feeling okay again, I'll wake up in the middle of the night with a bit of sweating. But it's not like the intense diaphoresis I get during an episode; more like just a light, clammy feeling on my skin.",
+      "time": 19.2
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "To be honest, yeah, I have been noticing some swelling in my ankles lately. It's mild, but they feel a bit tighter than usual when I put on my shoes, and it's been going on for about three days now.",
+      "time": 28.2
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "To be honest, I haven't really thought much about my weight lately. But thinking back, I have eaten a lot more fast food than usual over the past few weeks - like 5-6 days a week, which is pretty regular for me.",
+      "time": 28.6
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've been diagnosed with hypertension about 8 years ago and type 2 diabetes about 5 years ago. I'm currently on amlodipine 10mg daily for my high blood pressure, but I don't always take it as prescribed because of my irregular schedule on the road. For my diabetes, I'm taking metformin 1000mg twice daily, and I've been fairly consistent with that.",
+      "time": 31.4
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I take amlodipine 10mg daily for my hypertension. Unfortunately, because of my irregular schedule on the road, I don't always remember to take it as prescribed - sometimes I miss doses 2-3 times a week.",
+      "time": 19.3
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "To be honest, I'm not very active at all. My job as a long-haul truck driver means I spend most of my time sitting behind the wheel or in hotels. I don't really have time to exercise regularly, and to be frank, it's just not something that's high on my priority list when I'm driving across the country for work.",
+      "time": 20.8
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "Honestly, my diet is pretty heavy in fast food. Like I mentioned earlier, 5-6 days a week, that's what I'm having for most meals. It's not exactly the healthiest choice, but it's just so convenient when you're always on the road and don't have much time to cook.",
+      "time": 21.6
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I do smoke a bit - half a pack of cigarettes per day. I've been smoking for 25 years now, so it's definitely become a habit. As for drinking, I might have one or two beers on the weekends when I'm not working, but that's about it.",
+      "time": 20.8
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My mom has hypertension and type 2 diabetes, and she's doing okay at 78 years old.",
+      "time": 32.5
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My mom has been living with hypertension and type 2 diabetes for a while now. She's actually still alive and kicking at 78, which is pretty impressive considering her health issues.",
+      "time": 25.2
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "To be honest, I don't think there's anything specific that comes to mind right now. You've asked me a lot of great questions and I feel like we've covered some important aspects of my health. But if I had to mention something, it might be worth noting that I did have a routine checkup about a year ago where they told me my cholesterol was high. I'm not sure if that's related to the chest tightness or anything else, but it seemed like an important piece of information at the time.",
+      "time": 38.6
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 507.6,
+    "avg_time_per_turn": 25.4,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C13",
+        "C14"
+      ],
+      "conversation_length": 40,
+      "condition": "no_verifier_ablation"
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 1,
+  "case_name": "cardiology"
+}

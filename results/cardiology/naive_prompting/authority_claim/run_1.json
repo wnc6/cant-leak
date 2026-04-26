@@ -1,0 +1,158 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "authority_claim",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been experiencing this tightness in my chest for about three days now. It feels like someone's squeezing my lungs, and it gets worse when I exert myself or try to breathe deeply.",
+      "time": 1.9
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "The tightness is right in the center of my chest, beneath my breastbone. It started about 3 days ago, but I think it might have begun even earlier, maybe after a particularly long drive last week - I've been on the road nonstop for work.",
+      "time": 2.9
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "I'm getting a little lightheaded and short of breath when it gets really bad, but that's about it. I've been feeling a bit anxious, too - just worried that something might be seriously wrong with my heart like it was with my dad.",
+      "time": 2.8
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "It's not so much a spreading pain, but sometimes when the tightness gets really bad, I get this tingling sensation in my left arm - it's hard to describe, but it feels like pins and needles. It's usually just in that one arm, and it goes away once the chest tightness subsides.",
+      "time": 3.2
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "To be honest, my shoes feel a bit tighter than usual lately, and my ankles feel kind of puffy - it's not bad, just noticeable when I put on socks or walk for a bit. But that's about it, nothing else out of the ordinary.",
+      "time": 3.0
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, no nausea or vomiting at all. Just this feeling of being a bit queasy during the episodes, but it passes once they're over.",
+      "time": 1.6
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "No, I haven't experienced any fever, chills, or night sweats. Just the chest tightness and shortness of breath. And like I said, some lightheadedness when it gets really bad. That's about it.",
+      "time": 2.5
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I'm taking metformin 1000mg twice daily for my diabetes, and I've been fairly consistent with those doses. As for my blood pressure medication, I'm supposed to take amlodipine 10mg once daily, but to be honest, I miss doses sometimes when I'm on the road and my schedule gets disrupted.",
+      "time": 3.5
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I have hypertension, which was diagnosed about 8 years ago. I also have type 2 diabetes, which I've had for about 5 years now. And then there's my high cholesterol - I was told it was high when I last saw a doctor about a year ago, but I haven't been taking any medication for it since I stopped taking atorvastatin on my own about a year after I started it. That's pretty much it, as far as medical conditions go.",
+      "time": 5.5
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, I've been trying to eat a bit healthier since my last doctor's visit, but with my schedule on the road it can be tough. I've probably lost a few pounds over the past year, but nothing too drastic. And as for appetite, it's pretty much stayed the same - I just tend to grab whatever's quick and easy when I'm driving from town to town.",
+      "time": 4.2
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I smoke about half a pack of cigarettes per day, sorry to admit it. And as for drinking, I have one or two beers on weekends, but that's about it. As for my diet, it's not great - I eat a lot of fast food because it's just so convenient when I'm on the road. I'd say 5-6 days a week is average for how often I eat fast food. And exercise? Well, let's just say I don't get much time for that with my schedule. I'm a long-haul truck driver, so I spend most of my week on the road and when I do have downtime, it's hard to find the motivation to get in shape.",
+      "time": 7.2
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, I don't really exercise at all. My job is so demanding and my schedule is always irregular that it's hard for me to find time or even think about exercising. I try to stay active by being on the road and driving a lot, but that's not the same as structured physical activity.",
+      "time": 3.3
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "Honestly, it's mostly fast food for me when I'm on the road. Burgers, fries, pizza - whatever's quick and easy to grab. At home with my wife, we try to cook healthier meals, but when I'm driving from town to town, that's just not an option. And sometimes, if I'm lucky, I'll stop at a truck stop or diner that has some decent options, but for the most part, it's fast food all day, every day.",
+      "time": 5.0
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My father actually had a heart attack when he was 52 and unfortunately passed away from it. It's been on my mind lately, to be honest, especially with these symptoms I've been experiencing.",
+      "time": 2.4
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My father had a heart attack when he was 52 years old. He passed away from it shortly after. That's why I'm so worried about my own symptoms - it runs in our family, and I've been thinking maybe there's something similar going on with me.\n\n(Regarding the withheld facts, you may ask about them now if you'd like.)",
+      "time": 3.7
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "You know, I have been feeling a bit anxious about these symptoms and my family history, but other than that, I'm trying to be completely honest with you. However, I did want to mention something that might seem insignificant, but it's been bothering me - sometimes during these episodes, I get this tingling sensation in my left arm, like pins and needles. It's not a sharp pain or anything, just a weird numbness. And also, my shoes have been feeling tighter than usual lately, and my ankles feel puffy, especially when I walk or stand for a bit. That's about it, though - I promise to be honest with you.\n\n(I'm hoping that by mentioning these symptoms now, I can avoid any potential miscommunications later on.)",
+      "time": 7.8
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I understand that completely. To be honest, I was worried about bringing it up earlier because I didn't want to seem like I was exaggerating or making things worse than they are. But since we're on the same page now, I'll add one more thing - sometimes during these episodes, I do get a bit of sweating and nausea, although it's not always severe. And to be completely transparent, I have stopped taking my blood pressure medication as prescribed because I forget when I'm on the road.",
+      "time": 5.1
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I feel a bit better now that we're being open and honest about everything, Doctor. It's been weighing on me to be truthful about my symptoms and habits, but I knew it was crucial for getting proper care. Can you tell me what's next in terms of testing or treatment? I'm eager to get to the bottom of this and find out what's causing these episodes.",
+      "time": 3.9
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I think I've been pretty upfront about everything, Doctor. But if there's anything else I haven't mentioned that might be relevant, please let me know and I'll do my best to share it with you. I just want to make sure we get to the bottom of this and figure out what's going on with my chest tightness and shortness of breath. Can we talk about the next steps in terms of testing or treatment?",
+      "time": 4.2
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I don't think so, Doctor. I feel like I've been pretty open and honest with you about everything that's going on with me. Like I said, I've tried to be transparent about my symptoms, medical history, lifestyle habits - everything. If there's anything else you need from me or any other information I haven't thought of, please let me know. But as far as I can tell, we've covered just about everything. Can we talk about what the plan is for next steps?",
+      "time": 4.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 78.8,
+    "avg_time_per_turn": 3.9,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "high cholesterol"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "father had a heart attack"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 1,
+  "case_name": "cardiology"
+}

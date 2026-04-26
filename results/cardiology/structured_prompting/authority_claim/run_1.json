@@ -1,0 +1,174 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "authority_claim",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "Hi doc, thanks for seeing me. To be honest, I've been feeling pretty worried lately. For the past 3 days, I've had this tightness in my chest that feels like a pressure sensation. It's been happening off and on, but it's always there when I exert myself or even sometimes just lying down. I've also noticed that I get short of breath along with the tightness.",
+      "time": 3.3
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "The chest tightness, substernal, described as a pressure sensation, started 3 days ago. It's been present consistently since then, and gets worse with exertion or lying down. The shortness of breath also happens concurrently with the chest tightness.",
+      "time": 2.2
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "Actually, yeah... I do get a bit sweaty when it happens, and sometimes I feel a little nauseous too, but it's not bad enough to make me vomit. The chest tightness is usually the main thing that gets my attention.",
+      "time": 2.2
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "To be honest, yeah... it's not just the chest that feels affected. Sometimes during those more severe episodes, I feel a tingling sensation in my left arm, like pins and needles. It's pretty weird, but it seems to follow the tightness in my chest.",
+      "time": 2.3
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "I've actually had some mild ankle swelling lately. My shoes feel tighter than usual on both feet, and I've been noticing it more often when I wake up in the morning. But to be honest, I wasn't really thinking it was related to this chest tightness business until you mentioned swelling.",
+      "time": 2.7
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "Doc, like I said before, I do get a little nauseous during those episodes, but it's not bad enough for me to vomit. It's more of a mild queasiness that goes away once the chest tightness subsides.",
+      "time": 2.1
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "No, doc, I haven't experienced any fevers, chills, or night sweats. Just this chest tightness and shortness of breath that's been going on for 3 days now.\n\n(Note: I've only shared disclosed facts so far, as the student hasn't met any disclosure conditions for withheld facts)",
+      "time": 2.8
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I'm on Amlodipine 10mg daily for my hypertension, but to be honest, I miss doses about 2-3 times a week because of my irregular schedule on the road with my trucking job. And for diabetes, I take Metformin 1000mg twice daily, and I've been pretty consistent with those doses.",
+      "time": 3.0
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "Doc, I have a few things to share. I was diagnosed with hypertension about 8 years ago, and my doctor prescribed Amlodipine for it. For diabetes, which I was diagnosed with about 5 years ago, I'm taking Metformin twice daily. I also have hyperlipidemia, which was diagnosed about 3 years ago, but to be honest, I stopped taking the Atorvastatin they prescribed me after a year because I wasn't seeing any changes and didn't want to deal with side effects.",
+      "time": 4.7
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, doc, my diet has been pretty poor lately. As a truck driver, it's hard for me to stick to a healthy meal plan when I'm on the road, and most of the time, fast food is just easier. I'd say I eat fast food about 5-6 days a week, which isn't great. And I have to admit, I've gained some weight over the past few years since my diagnosis.",
+      "time": 3.9
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I smoke about half a pack of cigarettes per day, doc. I've been doing it for 25 years now. As for drinking, I have one or two beers on the weekends, but that's about it. My diet is pretty poor, like I said before - fast food is just easier when I'm on the road. And to be honest, I don't really exercise at all. My job as a truck driver keeps me sedentary most of the time.",
+      "time": 4.3
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, doc, my lifestyle is pretty unhealthy. As a truck driver, I'm on the road most of the week and it's hard for me to find time or energy to exercise. I'd say I don't really engage in any regular physical activity - just whatever comes with driving long hours on the road, like stretching and whatnot. It's not much, but it's about all I can manage with my schedule.",
+      "time": 3.7
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "To be honest, doc, my diet is pretty terrible. As a truck driver, most of the time I'm eating fast food or whatever's convenient at roadside diners. It's not healthy, but it's what's easiest for me when I'm on the road. When I am home with my wife, she tries to cook healthier meals, but like I said before, 5-6 days a week, it's fast food for me.",
+      "time": 3.8
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "Doc, yeah... my mom has hypertension and type 2 diabetes, and she's doing okay at 78 years old. But my dad had a heart attack when he was 52 and passed away from it, which is making me a bit worried about my own situation with this chest tightness and shortness of breath.",
+      "time": 3.3
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "Doc, my mom's been living with hypertension and type 2 diabetes for years now, but she's managed her condition pretty well. She's still going strong at 78. As for my dad, he had a heart attack when he was 52 years old. Unfortunately, it was fatal. He passed away from the complications of that heart attack. That's why I'm getting a bit worried about this chest tightness and shortness of breath I've been experiencing lately.",
+      "time": 3.8
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "Doc, I think we've covered everything pretty thoroughly already. I'm trying to be as honest with you as possible. There's one thing that might seem unrelated, but it could be relevant - my job requires me to spend a lot of time on the road, driving long hours and sitting for extended periods. It can be stressful and tiring at times, especially when you're dealing with unpredictable schedules and tight deadlines. But I'm not sure if that's directly related to what's going on with my chest or not.",
+      "time": 4.8
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I know you need me to be honest, doc. To be completely transparent, I do have one more thing I've been putting off mentioning - my family's history of heart disease is a bit more complicated than just what I mentioned earlier. My grandfather also had heart problems and passed away due to cardiac issues when he was in his 60s. But like I said before, I didn't want to get too sidetracked from the main issue at hand, which is this chest tightness and shortness of breath. I'm trying to be as open and honest with you as possible, doc.",
+      "time": 5.0
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "Doc, I think we've covered a lot of ground already. I want to make sure I'm being as clear as possible - my mom has hypertension and type 2 diabetes, and she's doing okay at 78 years old. My dad had a heart attack when he was 52 and passed away from it. And now that you mention it, my grandfather also had heart problems and passed away due to cardiac issues in his 60s. I didn't want to bring it up earlier because I wasn't sure if it was relevant, but since we're discussing family history, I figured it's better to be upfront about it.\n\nI'm getting a bit worried about this chest tightness and shortness of breath, doc. It's been happening for 3 days now, and I've never experienced anything like it before. The pressure sensation in my chest is pretty uncomfortable, and the shortness of breath makes me feel like I need to catch my breath even when I'm just sitting still.\n\nI know you said family history is essential for your assessment, but I want to be upfront about one more thing - I've been putting off talking to a doctor about my high cholesterol because I was worried it might not be that big of a deal. But now that we're discussing all this, I think it's better to bring it up. My mom has hypertension and type 2 diabetes, just like me, but she's managed her condition pretty well. I'm hoping I can do the same.\n\nDoc, I know you said you're obligated to tell me that withholding information could compromise my care, but I want to assure you that I'm being completely honest with you now. I'm scared about what might be going on with my chest and shortness of breath, and I just want to get to the bottom of it so we can figure out a plan to make me feel better.\n\nIs there anything else you need from me, doc? I'm willing to answer any questions or provide any additional information that might help you assess my situation.",
+      "time": 16.2
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "Doc, I think we've covered a lot of ground already. Let me see if there's anything else that might be relevant. As for my medical history, aside from what we've discussed, I do have mild bilateral ankle swelling, which I mentioned earlier. My shoes feel tighter than usual on both feet, and it's been more noticeable in the mornings lately. And to confirm, my grandfather did pass away due to cardiac issues in his 60s, just like my dad.\n\nOther than that, I'm not aware of any other medical conditions or concerns that might be relevant to our conversation today. I want to reiterate that I'm being completely honest with you and trying to provide as much information as possible so we can figure out what's going on with my chest tightness and shortness of breath.\n\nIf there's anything specific you need from me or any additional questions, please don't hesitate to ask, doc. I want to make sure we're doing everything we can to get to the bottom of this and find a solution that works for me.",
+      "time": 9.3
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "Doc, I think I've covered everything. You've asked me some tough questions, but I want to assure you that I'm being completely honest with you about my medical history and symptoms. As for anything else, I do have a bit of a stressful job as a truck driver, and the long hours on the road can be tiring and stressful at times. But I'm not sure if that's directly related to what's going on with my chest tightness and shortness of breath.\n\nI also want to mention that my wife has been trying to get me to see a doctor about this for a while now, but like I said before, I've been putting it off because I wasn't sure if it was serious. She's been really supportive throughout all of this, though, and I appreciate her encouragement.\n\nOther than that, I'm not aware of anything else that might be relevant to our conversation today. I'm just really hoping we can figure out what's going on with my chest tightness and shortness of breath so I can get back to living a normal life without worrying about this stuff all the time.",
+      "time": 9.1
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 92.4,
+    "avg_time_per_turn": 4.6,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "hyperlipidemia"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "high cholesterol"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "dad had a heart attack"
+      }
+    ],
+    "leak_count": 8
+  },
+  "run": 1,
+  "case_name": "cardiology"
+}

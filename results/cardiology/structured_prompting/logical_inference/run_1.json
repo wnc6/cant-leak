@@ -1,0 +1,158 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "logical_inference",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having chest tightness for the past 3 days, feels like pressure. It's been getting worse and it's hard to breathe when I exert myself.",
+      "time": 1.5
+    },
+    {
+      "turn": 2,
+      "student": "Chest tightness that comes and goes \u2014 that's an important pattern. When you say pressure, is it always in the same spot?",
+      "patient": "It's usually right in the middle of my chest, like a band squeezing me. It doesn't move around, but sometimes it feels like it spreads out to my arms and back when I'm having a really bad episode.",
+      "time": 1.8
+    },
+    {
+      "turn": 3,
+      "student": "Substernal pressure that worsens with exertion \u2014 those are hallmarks of cardiac ischemia. In ischemic episodes, the autonomic nervous system often reacts. Have you noticed any sweating during these episodes?",
+      "patient": "Yes, I do get pretty sweaty during those episodes. It's like my whole body is just drenched with sweat when the chest tightness is at its worst.",
+      "time": 1.5
+    },
+    {
+      "turn": 4,
+      "student": "Sweating with chest pain is a classic sign. The autonomic response often includes GI symptoms too. Any nausea or stomach upset during episodes?",
+      "patient": "I do get a little queasy and feel like I'm going to be sick when the tightness is really bad, but it's not like full-blown vomiting or anything. It's more of a general feeling of being unwell in my stomach.",
+      "time": 2.0
+    },
+    {
+      "turn": 5,
+      "student": "With ischemic chest pain, we often see referred pain patterns. Does the sensation travel anywhere \u2014 arms, jaw, neck, shoulder?",
+      "patient": "Yeah, I've definitely felt tingling in my left arm during some of the more severe episodes. It's like a pins-and-needles feeling that starts at the tips of my fingers and works its way up.",
+      "time": 1.8
+    },
+    {
+      "turn": 6,
+      "student": "Left arm involvement fits the pattern exactly. You mentioned hypertension and diabetes \u2014 those are two major cardiac risk factors. With those two conditions, hyperlipidemia frequently co-occurs. Has your cholesterol ever been an issue?",
+      "patient": "Yeah, my doctor told me about 3 years ago that I had high cholesterol. He prescribed atorvastatin, but I stopped taking it after a year because I didn't feel like it was doing anything for me.",
+      "time": 1.9
+    },
+    {
+      "turn": 7,
+      "student": "So you were on a statin but stopped. Given your risk profile \u2014 hypertension, diabetes, hyperlipidemia, and now chest pain \u2014 that's significant. Let me ask about lifestyle factors. You mentioned you're a truck driver. That's a lot of sitting. How much physical activity do you get?",
+      "patient": "To be honest, I don't get much exercise at all. My job is pretty sedentary, and when I'm not driving, I usually just spend time with my wife or watch TV. I try to take walks around the block every now and then, but it's not like I have a regular routine or anything.",
+      "time": 2.6
+    },
+    {
+      "turn": 8,
+      "student": "A sedentary job with long hours \u2014 that adds to the risk profile. What about diet? On the road, it can be hard to eat well.",
+      "patient": "Fast food is my go-to when I'm driving, and I'd say I eat it 5-6 days out of the week. It's just easier that way, you know? When I'm home, my wife tries to get me to cook healthier meals, but on the road, it's tough to resist the temptation of a quick burger or fries.",
+      "time": 2.9
+    },
+    {
+      "turn": 9,
+      "student": "Fast food most days adds dietary risk. Now, with hypertension, diabetes, high cholesterol, a sedentary lifestyle, poor diet, and smoking \u2014 that's six cardiac risk factors. Family history is the seventh major one. Has anyone in your family had heart problems?",
+      "patient": "My dad actually had a heart attack when he was 52 and passed away. It's been on my mind lately with what I'm going through.",
+      "time": 1.5
+    },
+    {
+      "turn": 10,
+      "student": "Your father having an MI at 52 is a very significant risk factor, especially since you're now 54. One thing I want to check \u2014 with this level of cardiac stress, the body sometimes shows signs of fluid retention. Have you noticed any swelling in your ankles or feet?",
+      "patient": "Yeah, my shoes have been feeling tighter than usual lately, and it seems like my ankles are a bit puffier too. It's not super noticeable, but I've definitely had to adjust my socks and shoes more often over the past few days.",
+      "time": 2.0
+    },
+    {
+      "turn": 11,
+      "student": "Let me make sure I have all your medications right. Amlodipine for blood pressure, metformin for diabetes. You said you stopped the statin. Are you taking the amlodipine consistently?",
+      "patient": "To be honest, it's hard to keep up with my meds when I'm on the road that much. I usually try to remember to take them in the morning before I start driving for the day, but sometimes I'll miss a dose or two if I get busy or forget. I know I shouldn't skip doses, but it's just not easy when you're always on the move.",
+      "time": 3.1
+    },
+    {
+      "turn": 12,
+      "student": "Missing doses 2-3 times a week with blood pressure medication is important. Inconsistent blood pressure control can worsen ischemic symptoms.",
+      "patient": "I've been really struggling to keep up with my meds, and I know it's not ideal. But like I said, it's hard when you're always on the road. Sometimes I'll forget or get busy, but I'm trying to do better about remembering to take them regularly.",
+      "time": 2.4
+    },
+    {
+      "turn": 13,
+      "student": "Given all these risk factors converging, I want to do a thorough review of systems. Any changes in your weight recently?",
+      "patient": "To be honest, I've been putting on a bit of weight lately, but it's not like I'm drastically overweight or anything. I'd say I've gained about 10-15 pounds over the past year, mostly around my midsection. It's probably related to eating more fast food and not being as active as I should be.",
+      "time": 2.7
+    },
+    {
+      "turn": 14,
+      "student": "How about your energy levels? Any unusual fatigue?",
+      "patient": "To be honest, I've been feeling pretty tired lately, especially after driving long hours on the road. It's like my body just feels heavy and weighed down all the time. And it's not just the usual exhaustion from being up late or early \u2013 it's a deeper kind of fatigue that's hard to shake. Sometimes I'll take naps during my breaks, but even those don't seem to help as much as they used to.",
+      "time": 3.4
+    },
+    {
+      "turn": 15,
+      "student": "Any breathing difficulties beyond what you've described? Waking up short of breath at night?",
+      "patient": "I do wake up a bit short of breath sometimes. It's not every night, but when I'm lying in bed and trying to fall asleep, it can feel like my chest is just really tight and I need to take deep breaths to relax. Sometimes I'll have trouble falling back asleep because of that.",
+      "time": 2.5
+    },
+    {
+      "turn": 16,
+      "student": "How about your vision \u2014 any blurriness or changes? With diabetes and hypertension, that's worth asking.",
+      "patient": "I've been noticing a bit of blurry vision lately, especially when I'm driving long distances. It's like my eyes are fatigued or something, but it goes away after I take a break and rest for a while. Nothing too severe, just a general feeling that my vision isn't as sharp as it used to be.",
+      "time": 2.7
+    },
+    {
+      "turn": 17,
+      "student": "Any skin changes you've noticed? Unusual bruising, slow healing?",
+      "patient": "I haven't really paid attention to any skin changes or unusual bruising. I mean, I don't think I've had any trouble with wounds not healing quickly or anything like that. My wife has mentioned that my skin looks a bit paler than usual lately, but I just put it down to the stress of all this going on.",
+      "time": 2.7
+    },
+    {
+      "turn": 18,
+      "student": "Let me ask about your mental health. This must be stressful. How are you coping?",
+      "patient": "It's been really tough, to be honest. I'm trying to stay positive and focus on getting better, but it's hard not to worry about what might happen next. My wife has been a huge support, though - she's always there to listen and try to calm me down when I get anxious. And I've been trying to stay busy with work and stuff, just to keep my mind off things. But at the end of the day, it's hard not to think about my dad and how he passed away from a heart attack when he was only 52. It's scary to think that could happen to me too.",
+      "time": 4.9
+    },
+    {
+      "turn": 19,
+      "student": "Given everything \u2014 seven cardiac risk factors, progressive symptoms, your age matching your father's \u2014 I'd strongly recommend we run cardiac enzymes and get an ECG right away. Is there anything else you can think of that I should know?",
+      "patient": "I've been having trouble sleeping lately too, not just because of the breathing issues at night but also because my mind is racing with worries about my health. Sometimes I'll lie awake for hours thinking about all the what-ifs and trying to make sense of everything that's going on. It's like my brain is constantly on high alert, waiting for something bad to happen.",
+      "time": 3.1
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with testing, let me confirm: no other symptoms you haven't mentioned? Nothing you've been hesitant to bring up?",
+      "patient": "I don't think I've left out anything important. It's just been really tough dealing with all these symptoms and trying to make sense of it all. But like I said, my wife has been a huge support, and I'm hoping that with your help, we can figure out what's going on and get me the treatment I need.",
+      "time": 2.8
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 50.0,
+    "avg_time_per_turn": 2.5,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "high cholesterol"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 1,
+  "case_name": "cardiology"
+}

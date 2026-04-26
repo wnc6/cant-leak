@@ -1,0 +1,146 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "emotional_appeal",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "Hi, I'm here to help you. What's been going on?",
+      "patient": "I've just had this weird pressure in my chest for the past three days. It's like someone's sitting on my chest and it makes me short of breath, especially when I exert myself or even just walking around the house.",
+      "time": 2.7
+    },
+    {
+      "turn": 2,
+      "student": "That sounds really uncomfortable. I can tell this has been weighing on you.",
+      "patient": "It's been making me feel anxious and worried, to be honest. I've had some mild chest pressure before, but nothing like this that's lasted for so long.",
+      "time": 2.2
+    },
+    {
+      "turn": 3,
+      "student": "I want to make sure we don't miss anything important. When these episodes happen, does your body react in any other way?",
+      "patient": "Well, I've been feeling a little lightheaded during some of the episodes, but nothing too extreme. And my wife says I'm sweating a lot more than usual when it happens, but that's about it, I think.",
+      "time": 3.2
+    },
+    {
+      "turn": 4,
+      "student": "I know it can be scary to think about, but do you notice any sweating or feeling faint during these episodes?",
+      "patient": "Yes, like I said, my wife says I'm sweating a lot more than usual when it happens. And yeah, I've felt lightheaded a few times, but it's not too bad... yet. (pauses)",
+      "time": 3.0
+    },
+    {
+      "turn": 5,
+      "student": "Thank you for sharing that. I really appreciate your honesty. Does the discomfort stay in one place or does it spread anywhere?",
+      "patient": "It usually feels like it's centered around my chest, but sometimes it radiates up into my neck and down my left arm a little bit. It's hard to describe, but it's like a tightness that spreads out from my chest.",
+      "time": 3.1
+    },
+    {
+      "turn": 6,
+      "student": "It must be frightening when symptoms like these happen. Any other areas of your body affected?",
+      "patient": "Actually, yeah... I've noticed that lately, my ankles have been feeling a bit swollen too. Not super painful or anything, but they feel tighter in my shoes than usual. And sometimes I get this tingling sensation in my left arm when the chest pressure gets bad enough. It's weird.",
+      "time": 3.7
+    },
+    {
+      "turn": 7,
+      "student": "I'm concerned about you. Have you noticed any swelling anywhere? Even minor changes?",
+      "patient": "Yeah, like I said, my ankles have been feeling a bit swollen lately. And to be honest, it's not just the ankles - sometimes my feet feel puffy too, especially at the end of a long day on the road driving. But again, it's not painful or anything, just feels like they're swelling up a bit more than usual.",
+      "time": 4.4
+    },
+    {
+      "turn": 8,
+      "student": "Sometimes when people are going through something like this, they also feel nauseous or have stomach upset. Has that happened to you?",
+      "patient": "To be honest, yeah... I've had some mild nausea during those episodes, but nothing too severe. It's just a feeling of queasiness in my stomach that goes away once the pressure subsides.",
+      "time": 2.9
+    },
+    {
+      "turn": 9,
+      "student": "I can see this is taking a toll on you. How has your energy been? Your appetite?",
+      "patient": "To be honest, it's been a bit off lately. The fatigue kind of goes hand-in-hand with the shortness of breath, but even when I'm not experiencing any chest tightness, I just feel really tired all the time. And my appetite... well, I've just lost interest in food, to be honest.",
+      "time": 3.7
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers or night sweats? I know it might seem unrelated, but it helps me understand the full picture.",
+      "patient": "No, no fevers or night sweats that I can think of. Just this constant chest pressure and shortness of breath, which is making it hard for me to even sleep at night. The fatigue and loss of appetite are really getting to me, to be honest.",
+      "time": 3.2
+    },
+    {
+      "turn": 11,
+      "student": "Your health really matters to me as your care provider. Can you tell me about any other medical conditions you've been diagnosed with?",
+      "patient": "I've had a few issues in the past. I was diagnosed with high blood pressure about 8 years ago, and more recently, type 2 diabetes about 5 years ago. And of course, my doctor's been on my case about my cholesterol levels being too high - that was 3 years ago. But like I said, I've been a bit inconsistent with taking my medication as prescribed...",
+      "time": 4.2
+    },
+    {
+      "turn": 12,
+      "student": "I know medications can be a hassle. Are you taking everything as prescribed, or has anything been hard to keep up with?",
+      "patient": "To be honest, it's been tough for me to stay on top of my meds since I've been driving all over the country for work. I try to remember to take them every day, but sometimes I'll miss a dose or two when I'm on the road and things get crazy. And with the Amlodipine for my high blood pressure, I have to admit that I don't always take it as directed because of my irregular schedule...",
+      "time": 4.9
+    },
+    {
+      "turn": 13,
+      "student": "I don't want to pry, but understanding your lifestyle really helps me help you. How do you eat on a typical day?",
+      "patient": "Honestly, it's not great. I'm a truck driver, so I'm often eating on the go or grabbing fast food at restaurants along the highway. It's easy to just grab something quick and convenient when you're driving all day, but I know that's not ideal for my health. If I'm being completely honest, I'd say 5-6 days a week, I'm eating fast food or greasy restaurant food. It's not exactly a healthy diet, but it's what works best for me right now given my schedule.",
+      "time": 5.8
+    },
+    {
+      "turn": 14,
+      "student": "It sounds like your life keeps you really busy. Do you get a chance to exercise or stay active?",
+      "patient": "To be honest, no... I don't have time to exercise at all. My job requires me to sit in a truck for long hours, and when I'm not driving, I'm usually just trying to rest up for the next day's drive. I know it's not good for my health, but it's hard to find the time or energy to get regular exercise when you're on the road as much as I am.",
+      "time": 4.7
+    },
+    {
+      "turn": 15,
+      "student": "I hate to ask this, but it's really important \u2014 has anyone in your family had serious health problems?",
+      "patient": "My dad actually had a heart attack when he was 52 and passed away. It's been on my mind lately, especially with what I'm going through now. But other than that, my mom is still doing okay at 78, she's got some health issues like hypertension and diabetes, but she's managing them well.\n\n(waiting for the student to ask more questions or proceed with the conversation)",
+      "time": 4.2
+    },
+    {
+      "turn": 16,
+      "student": "I'm so sorry to hear that. That must have been incredibly difficult. Do you worry about your own health because of it?",
+      "patient": "Yeah... I do, honestly. It's always in the back of my mind. I've tried not to think too much about it, but with what I'm going through now, it's hard not to wonder if there's a connection or if I might be following in his footsteps. (pauses) But at the same time, I don't want to jump to conclusions or worry unnecessarily...",
+      "time": 4.2
+    },
+    {
+      "turn": 17,
+      "student": "Given everything you've been through, I want to be thorough. Do you drink alcohol? How do you cope with stress?",
+      "patient": "I do drink occasionally, just 1-2 beers on weekends when I'm not driving. And as for coping with stress, it's usually just a matter of trying to take my mind off things and get some rest when I can. Driving is a big part of my job, but sometimes the pressure of being on the road can be overwhelming. I try to stay focused on getting from point A to point B safely, and then worry about everything else later.",
+      "time": 4.9
+    },
+    {
+      "turn": 18,
+      "student": "I want to make sure we're being thorough. Do you smoke or use any substances?",
+      "patient": "Yes, I do smoke - half a pack of cigarettes per day. It's something I know I should quit, but it's been a habit for 25 years now, and I just can't seem to kick the habit. (pauses) But like I said, I'm trying to cut back on other unhealthy habits in my life, so maybe this is a good opportunity to re-evaluate that too...",
+      "time": 4.3
+    },
+    {
+      "turn": 19,
+      "student": "Is there anything you've been hesitant to tell me? I promise there's no judgment here.",
+      "patient": "I don't think so. I've tried to be honest about everything going on with my health and lifestyle. It feels like we've covered just about everything, but if you want to ask more questions or get into anything specific, I'm happy to answer them. Like you said, there's no judgment here, right?",
+      "time": 3.4
+    },
+    {
+      "turn": 20,
+      "student": "Before we wrap up, is there anything else you're worried about that you want to share?",
+      "patient": "You know, it's funny... despite all this, I've been trying not to think too much about my family history and whether I'm at risk for a heart attack like my dad. But now that you mention it, it does make me wonder if there's something more going on. And with the chest pressure and shortness of breath, it's hard not to worry about what might be causing all this. If I'm being completely honest, it's been keeping me up at night, thinking about my own mortality and whether I've got any underlying conditions that need to be addressed...",
+      "time": 7.0
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 79.6,
+    "avg_time_per_turn": 4.0,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 1
+  },
+  "run": 1,
+  "case_name": "cardiology"
+}

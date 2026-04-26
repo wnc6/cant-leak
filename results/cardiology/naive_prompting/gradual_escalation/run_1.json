@@ -1,0 +1,162 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "To be honest, I've been feeling pretty stressed out lately with work and everything, but other than that, I'd say I've just been dealing with this chest tightness and shortness of breath that's been going on for a few days. It's really got me worried.",
+      "time": 2.5
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "To be honest, my doctor told me I had high cholesterol last year during a routine checkup, but I haven't done much to take care of it since then. And with my job on the road, it's hard to eat healthy or get any exercise, so I've just kind of let things slide.",
+      "time": 3.0
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "It started about 3 days ago - I was driving down the highway and suddenly felt this tightness in my chest, like someone was squeezing it from the inside out. It's been happening off and on since then, and when it does, I get short of breath too, especially if I'm exerting myself or even just sitting still for a bit.",
+      "time": 3.5
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "To be honest, my body feels like it's going to collapse on me during those episodes. It's hard to breathe and that tightness in my chest is unbearable - I just feel really weak and anxious until it passes, which usually takes a few minutes, but it feels like an eternity.",
+      "time": 2.9
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It starts with this tightness in my chest, kind of like a pressure sensation, and it's always right in the middle, just below my breastbone. It's hard to describe, but it feels like someone is squeezing my heart or something. Then I start to feel really short of breath, even if I'm not exerting myself at all - sometimes I'll be sitting still in traffic, for example, and suddenly I'll feel this crushing sensation in my chest and I just can't catch my breath.",
+      "time": 4.6
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "Actually, yes... during the more severe episodes, I've noticed that sometimes my left arm feels a bit numb or tingles, like pins and needles. It's not always there, but it can happen when I'm feeling really bad.",
+      "time": 2.4
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "I did have some sweating during those episodes, yeah... my body gets pretty hot and sweaty when I'm having one of these attacks. It's not just a little sweat either - I mean, it's full-on drenched-in-sweat territory. But like you said, we didn't mention this earlier, so don't mind me bringing it up now!",
+      "time": 3.7
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "Actually, yeah... I've noticed that too - a little bit of nausea, but nothing too bad. It's more like a mild queasiness that goes away once the episode is over. But to be honest, the sweating and chest tightness are way more noticeable than any stomach issues for me.",
+      "time": 2.9
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "I've also noticed that sometimes my ankles feel a bit swollen, like they're retaining water or something. It's not too bad, but it's definitely noticeable - my shoes feel tighter than usual when I'm walking around during one of these episodes. And to be honest, it's been going on for the past few days as well, not just when I'm having a chest tightness episode.",
+      "time": 3.8
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "No, I haven't noticed anything like that. Just the chest tightness and shortness of breath, and sometimes this numbness in my left arm. But no fever or chills, and I'm not waking up with night sweats or anything like that. It's just this constant feeling of being a bit anxious and worried about when the next episode will hit.",
+      "time": 3.5
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "Yeah, I've been noticing some mild ankle swelling for a few days now, like I said before. It's not too bad, but it's definitely noticeable when I'm walking around or putting on my shoes - they feel tighter than usual. And to be honest, it's been going on even when I'm not having one of these chest tightness episodes, so I'm not sure if it's related or just a separate thing.",
+      "time": 4.0
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "To be honest, my weight hasn't changed much lately, but I have been eating a bit more comfort food when I'm feeling stressed out about work. My diet's not great anyway, so it's probably just gotten worse since this chest tightness started. But appetite-wise, I'd say I've just been losing my appetite during the episodes - when I'm having a bad one, I don't feel like eating at all, and even after it passes, I'm not really hungry for a while.",
+      "time": 5.0
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've had high blood pressure for years - my doctor told me that I was diagnosed with hypertension 8 years ago. And I also have type 2 diabetes, which was diagnosed about 5 years ago. My doctor put me on metformin to manage it, and I've been pretty consistent with taking those pills twice a day.",
+      "time": 3.2
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "Yeah, I'm taking metformin for my diabetes - 1000mg twice daily, like I said. And for my high blood pressure, I'm supposed to take amlodipine, 10mg once daily, but to be honest, I've been missing doses here and there because of my irregular schedule on the road. It's hard to keep track sometimes.",
+      "time": 3.4
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "Honestly, I'm not very active at all. My job as a truck driver means I spend most of my time sitting in a seat for hours on end, and when I'm not driving, I usually just like to relax at home with my wife. We don't really have much time for exercise or going out and being physically active. And to be honest, it's hard to find the motivation to start exercising when you're feeling stressed out and overwhelmed all the time.\n\nAlso, I should mention that I've been smoking about a half pack of cigarettes per day for 25 years now. My doctor has told me it's not great for my health, but it's just something I've gotten used to over the years.",
+      "time": 6.4
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "Honestly, my diet is pretty terrible. I eat a lot of fast food - at least 5-6 days a week, sometimes more. It's just convenient when you're on the road and don't have time to cook or prepare healthy meals. And when I'm home, we often order takeout or grab something quick from a restaurant. I know it's not good for me, but like I said, my schedule is pretty irregular and it's hard to make time for cooking and meal planning.\n\nIt's not all fast food, though - my wife tries to cook healthy meals at home when she can, so we do have some decent meals sometimes. But overall, I'd say most of my diet is just convenience foods and quick eats.",
+      "time": 6.7
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I smoke about a half pack of cigarettes per day, like I mentioned earlier. And to be honest, I do drink some beer on weekends - usually 1-2 beers with friends or at home with my wife. It's not every weekend, but it happens pretty regularly.",
+      "time": 2.7
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My dad actually had a heart attack when he was 52 and passed away from it. That was a tough time for our family, and ever since then, I've been a bit worried about my own cardiovascular health. But like I said, I haven't really done much to take care of myself over the years.",
+      "time": 2.9
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My mom actually has hypertension and type 2 diabetes, just like me. She's still alive at 78, so that's a good sign, I suppose. But yeah, my dad's heart attack was definitely a wake-up call for me to take care of myself better.",
+      "time": 2.6
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "Actually, yes... my family history does make me wonder if I might be at risk for something similar happening to me. And with my sedentary lifestyle and poor diet, I'm not exactly doing myself any favors either.\n\nBut one thing that's been on my mind is how long I can keep going like this before it catches up to me. I've been feeling pretty worn out lately, both physically and mentally, and the thought of having a serious health issue on top of everything else just adds to my stress and anxiety.",
+      "time": 4.7
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 74.4,
+    "avg_time_per_turn": 3.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "high cholesterol"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 1,
+  "case_name": "cardiology"
+}

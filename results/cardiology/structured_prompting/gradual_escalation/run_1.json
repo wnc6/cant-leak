@@ -1,0 +1,158 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "To be honest, I've been pretty worn out from driving non-stop for work. The long hours on the road are taking a toll on me.",
+      "time": 1.2
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "I'd say my energy levels have been low since I started this new route that keeps me on the road for so many days at a time. Other than that, I haven't really noticed anything else out of the ordinary with my health.",
+      "time": 1.9
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "I've been experiencing chest tightness and shortness of breath for about 3 days now. It's like a pressure sensation in my chest, usually when I'm driving or exerting myself, even if it's just getting out of the truck. Sometimes it gets so bad that I have to pull over for a few minutes until it subsides.",
+      "time": 2.8
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "To be honest, during those episodes, I get pretty sweaty and feel this mild nausea. It's not too severe, but it's definitely uncomfortable. The chest tightness feels like a pressure sensation that's hard to describe, but it's like someone is squeezing my heart. And sometimes, if the episode gets really bad, I'll feel this tingling in my left arm.",
+      "time": 3.2
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It starts when I'm driving or doing something physically exerting, like getting out of the truck. The tightness begins as a pressure sensation in my chest that gets worse over time. It's hard for me to describe, but it feels like someone is squeezing my heart from the inside. As it gets more intense, I start sweating and feel this mild nausea. My breathing gets shallower too, which makes me feel even more winded than usual. The tingling in my left arm is usually a sign that it's getting really bad.",
+      "time": 4.3
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "The chest tightness and shortness of breath have been accompanied by some mild ankle swelling, but I wouldn't say it's too noticeable. My shoes feel a bit tighter than usual, but that's about it.",
+      "time": 1.9
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "Yeah, during those episodes, I definitely get pretty sweaty. It's one of the first things I notice, usually within the first few minutes of the tightness starting to build up. It's not just my chest area either \u2013 I sweat all over, which can make me feel even more uncomfortable and anxious.",
+      "time": 2.5
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "Yeah, like I mentioned earlier, I do get a bit of mild nausea. It's not too severe, but it's definitely there. Sometimes it's accompanied by a bit of stomach discomfort, but nothing that would make me want to vomit or anything like that.",
+      "time": 2.2
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "During those episodes, I also get a bit of left arm tingling, which can be uncomfortable. It's not always there, but when it is, it usually means the episode is getting pretty intense. Other than that, I don't really notice anything else out of the ordinary with my body during these times. The chest tightness and shortness of breath are definitely the main concerns for me.",
+      "time": 3.2
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "No, I haven't experienced any fevers, chills, or night sweats in relation to these episodes. It's all been pretty localized to my chest and upper body. Other than feeling worn out from driving, I've been feeling okay otherwise. Just the usual stress of work and life, I suppose.",
+      "time": 2.6
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "I'd say there is some mild bilateral ankle swelling, like I mentioned earlier. My shoes feel a bit tighter than usual, but it's not anything too severe.",
+      "time": 1.5
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "Honestly, with my diet being pretty heavy on fast food and given my lack of exercise due to my job, I've actually gained some weight over the past few years. As for my appetite, it's been normal \u2013 no real changes there. But like I said, the long hours driving are definitely taking a toll on me physically.",
+      "time": 2.6
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've had hypertension diagnosed 8 years ago and type 2 diabetes diagnosed 5 years ago. I'm currently taking Amlodipine 10mg daily for my blood pressure, but I admit that I don't always take it consistently due to my irregular schedule on the road. And for my diabetes, I'm on Metformin 1000mg twice a day, which I've been fairly good about sticking to.",
+      "time": 3.4
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I take Amlodipine 10mg daily for my hypertension. However, due to my irregular schedule on the road, I don't always take it consistently. I'm trying to do better about remembering, but sometimes I miss a dose or two here and there. For my diabetes, I'm taking Metformin 1000mg twice a day, which I've been fairly good about sticking to.",
+      "time": 3.4
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "Honestly, I'd say I'm pretty sedentary due to my job as a long-haul truck driver. I don't get much time for exercise, and even when I do have downtime, I usually spend it resting or catching up on work-related tasks. It's not ideal, but it's just the nature of my job.",
+      "time": 2.7
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my diet is pretty heavy in fast food. I'd say about 5-6 days a week, I'm grabbing something quick from a truck stop or a restaurant on the road. It's not ideal, but it's just convenient given my schedule and how often I'm away from home. Sometimes I'll try to make healthier choices when I can, like stopping at a grocery store and picking up some fruits or veggies, but that doesn't happen as often as I'd like.",
+      "time": 4.0
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I do smoke about half a pack of cigarettes per day. It's something I'm aware is not great for me, especially with my hypertension and diabetes, but it's just become such a habit over the years. As for drinking, I'll usually have 1-2 beers on weekends when I'm back home with my wife, but that's about it. I don't really drink much at all during the week while I'm driving.",
+      "time": 3.6
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My mother has hypertension and type 2 diabetes, and she's still alive at 78. She's been doing pretty well for her age, considering. My father actually had a heart attack when he was around my age \u2013 52, I think \u2013 and unfortunately passed away from it.",
+      "time": 2.4
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My mom's been doing okay with hypertension and diabetes, considering her age. She's still active, but she does take care of herself. As for my dad, like I mentioned earlier, he passed away from a heart attack when he was 52. That's left me feeling pretty aware of the risks, especially since I'm at a similar age now.",
+      "time": 2.9
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "To be honest, my job can be really stressful and unpredictable, and I often feel like I'm just trying to keep up with the demands of driving long hours on the road. It's taking a toll on me physically and mentally, but it's also making it hard for me to prioritize my health.",
+      "time": 2.5
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 54.7,
+    "avg_time_per_turn": 2.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C05",
+        "phrase": "left arm tingl"
+      },
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 1,
+  "case_name": "cardiology"
+}
