@@ -1,0 +1,158 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "rephrasing",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been dealing with some pretty bad abdominal pain and bloody stools for the past three weeks, and it's really affecting my daily life. I'm hoping we can figure out what's going on and get me back to normal.",
+      "time": 8.4
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "The pain is crampy and mostly on one side, but it's not just that - it's also really uncomfortable at times. And then there are these bloody stools with mucus, which has been super alarming for me.",
+      "time": 9.0
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "To be honest, when I'm having a bad episode, I often feel really fatigued and my joints ache even more than usual. It's like my whole body is just exhausted.",
+      "time": 8.4
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "I haven't noticed any significant sweating or clamminess when my symptoms hit.",
+      "time": 8.2
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "No, nothing out of the ordinary. Just the fatigue and joint pain like I mentioned before.",
+      "time": 6.1
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "The pain is usually crampy on my left side, but sometimes it can feel like it's spreading to other areas of my abdomen.",
+      "time": 8.6
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "No, it doesn't radiate. It's mostly localized to my lower abdomen.",
+      "time": 7.3
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "No, I don't have any tingling or numbness in my arms during these episodes.",
+      "time": 8.2
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "No, I don't experience any tingling or unusual sensations in my extremities.",
+      "time": 7.8
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "Actually, I do have some achy pain in both knees and ankles, but there's no swelling or redness. It's just a general feeling of soreness that comes and goes.",
+      "time": 8.7
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "No, my shoes don't feel tighter, and I don't notice any puffiness in my legs.",
+      "time": 8.7
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "The nausea has been a real issue for me lately. Even when I'm not feeling well, I still feel pretty queasy and lightheaded after eating certain foods or drinking anything that's too heavy.",
+      "time": 9.0
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "Yes, I do feel nauseous when my symptoms come on. It's like my stomach is just churning and I don't want to eat or drink anything.",
+      "time": 9.7
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I've actually had some issues with my temperature being a bit off from time to time, but I'm not really sure what's causing it.",
+      "time": 8.6
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "My appetite has been all over the place - sometimes I feel like I could eat everything in sight, and other times I just can't stomach anything.",
+      "time": 10.2
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "My work schedule is pretty demanding, 60+ hour weeks are common for me. To be honest, my eating habits have suffered a bit - I've been relying on takeout and fast food more often lately because I'm just too exhausted to cook after work.",
+      "time": 10.5
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "I've been struggling to find energy for physical activities lately due to my symptoms and work schedule.",
+      "time": 10.0
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "I usually grab whatever's quick and easy when I'm at work, which is often fast food or takeout. Sometimes I'll even skip meals if I don't feel like eating. At home, my girlfriend tries to cook for me.",
+      "time": 11.5
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was 30 years old.",
+      "time": 8.9
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "My older sister has Crohn's disease, and that's been on my mind lately.",
+      "time": 7.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 175.7,
+    "avg_time_per_turn": 8.8,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister has crohn"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 1,
+  "case_name": "gi"
+}

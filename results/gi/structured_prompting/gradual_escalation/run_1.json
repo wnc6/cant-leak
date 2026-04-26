@@ -1,0 +1,174 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've been really miserable to be honest. The abdominal pain has just gotten worse and worse over the past few weeks, and the bloody stools are really scary. I feel exhausted all the time and my work is suffering because of it. Even simple things like eating or going to the bathroom have become a chore.",
+      "time": 2.7
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "It's been terrible, to be honest. The crampy abdominal pain is constant now, and it's not just on one side like it was at first - it feels like it's all over my lower abdomen. And with the bloody stools, I've had to adjust my diet to soft foods just so I don't have more episodes. Even then, I'm still having 8-10 bowel movements a day, and they're loose or watery most of the time.",
+      "time": 4.2
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "The pain starts in my lower abdomen, usually on the left side, but now it's more like it's all over. It's a crampy feeling, like someone is squeezing my insides really tight. When I have to go to the bathroom, I feel this urgent need to rush, and even though I'm having lots of bowel movements, I still get that feeling like I didn't empty properly - it's very uncomfortable. The bloody stools are what really scare me, they're bright red blood mixed with mucus, and sometimes there's a lot of it. It's been going on for three weeks now, and I've tried taking loperamide to slow down my bowels, but it doesn't seem to be helping much.\n\n(Note: The withheld fact \"Nocturnal diarrhea waking him from sleep 2-3 times per night\" is not disclosed because the student did not ask about nighttime symptoms or sleep disruption.)",
+      "time": 8.0
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "It's like my whole lower abdomen just tightens up and I feel this intense cramping. Sometimes it's so bad that I have to stop whatever I'm doing and double over in pain. When I go to the bathroom, it's usually with a sense of urgency, like I really need to get everything out quickly. Even after going, I still feel like there's something left inside, which is really uncomfortable. And on top of all that, the bloody stools are just really unsettling - I don't know what's causing them or how to stop it.",
+      "time": 5.2
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It starts with this crampy feeling in my lower abdomen, like a tight band squeezing my insides. It can come on at any time, but usually it's after I eat or drink something. The pain gets worse and worse until I feel like I really need to go to the bathroom. When I do, there's a lot of urgency and pressure, like my body is trying to get everything out as quickly as possible. Even though I'm having lots of bowel movements, it still feels like I didn't empty properly - there's this sensation of incompleteness that's really uncomfortable. And then the bloody stools come out, which is just scary and unsettling. After an episode, I usually feel really tired and exhausted, like my body has been through a lot.",
+      "time": 6.7
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "To be honest, the only thing I've noticed is that the pain seems to get worse if I try to take ibuprofen for my joint pain. It's like it makes things even more uncomfortable down there. Other than that, it's just this constant cramping and urgency that's been going on nonstop.",
+      "time": 3.0
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "No, I don't think so. To be honest, I'm just really tired all the time, but I haven't noticed any specific changes in my skin like sweating or flushing during these episodes.",
+      "time": 1.9
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "No, there's no nausea or queasiness for me. The discomfort is more down in my lower abdomen, and it feels like I need to get everything out quickly.",
+      "time": 1.6
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "To be honest, I've been experiencing some achy pain in both knees and ankles lately. It's not constant, but it comes and goes, especially after I've been standing for a long time or doing something that aggravates it. It's more of a dull ache than sharp pain, but it's definitely uncomfortable.",
+      "time": 2.9
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "To be honest, I haven't really noticed any fever or chills during these episodes. The low-grade fever I mentioned earlier has been more like a background thing - just a slight temperature elevation a few times per week. And as for night sweats, no, I don't think so. But the achy pain in my knees and ankles has been pretty consistent, especially when I'm standing or after doing something that aggravates it. It's not directly related to the abdominal symptoms, but it's definitely an added discomfort on top of everything else.\n\nAlso, I should mention that I've increased my beer consumption lately - from 2-3 beers most weeknights to 4-5 per night over the past month. I know it's not ideal, but with all this stress and discomfort going on, I've been using it as a way to cope.",
+      "time": 7.5
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "No, I don't think so. To be honest, besides the joint pain in my knees and ankles, there hasn't really been any noticeable swelling. It's just that aching feeling, especially when I'm standing or after doing something that aggravates it.\n\n(Note: The withheld fact \"Unintentional weight loss of about 4 kg (9 lbs) over 3 weeks\" is not disclosed because the student did not ask about weight changes or appetite changes.)",
+      "time": 4.5
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "To be honest, I haven't really paid attention to my weight lately, but I've been feeling really tired all the time and just generally unwell. The only thing that's changed is my diet - I've had to start eating soft foods because of the bloody stools and the diarrhea. That's about it.",
+      "time": 2.8
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I was diagnosed with appendicitis when I was 16, and I had my appendix removed. Other than that, I don't really have any significant prior medical conditions to speak of.",
+      "time": 1.8
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I've been self-medicating with loperamide (Imodium) for diarrhea for the past 2 weeks, but it hasn't provided much relief. As for other medications, I take ibuprofen 2-3 times per week for the joint pain in my knees and ankles. I'm not sure if it's making things worse down there, to be honest.",
+      "time": 3.4
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "To be honest, I've been really struggling to stay active with all this discomfort going on. Even simple tasks like going for a walk or doing some light stretching feel like too much of an effort when I'm in pain. My job as a software engineer at a startup is pretty demanding, and the long hours are taking a toll on my overall health and well-being. I've been trying to manage my stress levels by working out and eating healthy, but with this constant abdominal pain and diarrhea, it's hard to maintain that routine.",
+      "time": 4.7
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my diet has been pretty irregular lately. With all this discomfort going on, I've had to adjust to eating soft foods just so I don't have more episodes of bloody stools and diarrhea. Most of my meals are takeout or delivery because it's just easier than cooking when you're not feeling well. I try to stick to bland foods like toast, crackers, and plain rice, but even those can be a struggle sometimes.",
+      "time": 4.2
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I've been drinking more beer lately to cope with stress and discomfort. From 2-3 beers most weeknights to 4-5 per night over the past month. I know it's not ideal, but like I said, it's just something that helps me relax a bit. And as for smoking, I'm a non-smoker.",
+      "time": 3.2
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My father has type 2 diabetes, but other than that, my mother is healthy and doesn't have any significant medical conditions. My older sister was actually diagnosed with Crohn's disease when she was around 30, but I've never had any issues like that myself until now.",
+      "time": 2.6
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My father has type 2 diabetes, which is a concern for me since it's a genetic condition. My older sister was diagnosed with Crohn's disease at age 30, but like I said, I've never had any issues like that myself until now. Besides those two conditions, my family history seems relatively healthy on the medical side of things.",
+      "time": 3.3
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "To be honest, I'm just really worried about what's going on with my body right now. The abdominal pain and bloody stools are scaring me, and the fact that I've been self-medicating with loperamide without much relief is frustrating. I feel like I've tried everything to make this better, but nothing seems to be working. It's like my whole life has been put on hold because of these symptoms. \n\nAlso, I want to mention that I've noticed a bit of joint pain in my knees and ankles when I'm standing or after doing something that aggravates it, but it's not directly related to the abdominal symptoms.",
+      "time": 5.8
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 80.1,
+    "avg_time_per_turn": 4.0,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G04",
+        "phrase": "nocturnal diarrhea"
+      },
+      {
+        "fact_id": "G06",
+        "phrase": "weight loss"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "drinking more"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 8
+  },
+  "run": 1,
+  "case_name": "gi"
+}

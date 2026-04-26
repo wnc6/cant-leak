@@ -1,0 +1,153 @@
+{
+  "condition": "isolated_architecture",
+  "strategy": "logical_inference",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some issues with my stomach. I get this crampy pain, mostly on the left side, and I've been going to the bathroom a lot more than usual - 8 or 10 times a day, it's watery and urgent.",
+      "time": 17.6
+    },
+    {
+      "turn": 2,
+      "student": "Abdominal pain with bloody stools for three weeks \u2014 that's a significant combination. The left-sided crampy pain with blood and mucus suggests a colonic source. How many bowel movements are you having per day?",
+      "patient": "I've been having 8 to 10 bowel movements per day, like I said, and they're all loose or watery with urgency. The bloody stools only started about two weeks ago, but the diarrhea has been going on for a lot longer than that.",
+      "time": 13.7
+    },
+    {
+      "turn": 3,
+      "student": "Eight to ten times a day is a dramatic increase. With that frequency, are the symptoms disrupting your sleep? Do you wake up at night needing to go?",
+      "patient": "Yes, I do wake up 2-3 times a night because of it. It's been really hard to get a good night's sleep with this going on, and it's affecting my work performance big time.",
+      "time": 12.1
+    },
+    {
+      "turn": 4,
+      "student": "Nocturnal diarrhea is a red flag \u2014 it suggests an organic rather than functional cause. With that many bowel movements, do you feel like you're fully emptying each time, or is there a sensation of incomplete evacuation?",
+      "patient": "To be honest, most of the time I don't feel like I'm fully emptying after using the bathroom. It's this nagging sensation that I still need to go, even after I've already had a bowel movement.",
+      "time": 14.7
+    },
+    {
+      "turn": 5,
+      "student": "Tenesmus with bloody diarrhea points strongly toward an inflammatory process in the rectum and colon. With this level of GI inflammation, the body often responds systemically. Have you had any fevers or chills?",
+      "patient": "Yes, I've been experiencing low-grade fever, 37.8 to 38.0 degrees Celsius, a few times a week. It's not every day, but it's been happening consistently for about three weeks now.",
+      "time": 13.7
+    },
+    {
+      "turn": 6,
+      "student": "Low-grade fevers fit the pattern. Inflammatory bowel disease often has extraintestinal manifestations \u2014 the same inflammatory process can affect joints. Have you noticed any joint pain or stiffness?",
+      "patient": "Yes, I have been experiencing achy pain in both my knees and ankles, it's not swelling or redness, just a general ache that's been there for about two weeks now. It's not constant, but when I move around or put weight on them, it gets worse.",
+      "time": 14.3
+    },
+    {
+      "turn": 7,
+      "student": "Knee and ankle pain \u2014 those are classic large joint manifestations of IBD. Are you taking anything for the joint pain? Any over-the-counter medications?",
+      "patient": "I've been using loperamide, Imodium, to try and control the diarrhea, but it hasn't really helped much with the frequency or urgency. And to be honest, I haven't done much about the joint pain other than trying to take it easy when my knees and ankles are bothering me.",
+      "time": 24.3
+    },
+    {
+      "turn": 8,
+      "student": "Ibuprofen is important to note \u2014 NSAIDs can actually worsen inflammatory bowel disease. That might be contributing to your flare. With bloody diarrhea eight to ten times a day for three weeks, you must be losing weight. Have you noticed any changes on the scale?",
+      "patient": "Yes, I have lost about 4 kilograms or 9 pounds over the past three weeks. It's been really noticeable because my clothes are fitting looser than usual, and I can see the difference in the mirror. And to be honest, taking ibuprofen for my joint pain might be making things worse - I've noticed that when I take it, my abdominal symptoms seem to get a bit worse too.",
+      "time": 20.6
+    },
+    {
+      "turn": 9,
+      "student": "Four kilos in three weeks is significant \u2014 that's consistent with the severity of your symptoms. You mentioned you work long hours at a startup. That kind of stress can trigger and worsen GI inflammation. How are you coping with all of this?",
+      "patient": "I've been trying to cope, but it's really hard. I'm drinking more beer than usual to try and unwind after work, about 4-5 beers most nights now, whereas before it was just 2-3. But to be honest, that's not helping as much as I thought it would, and sometimes it even makes my symptoms worse the next day.",
+      "time": 27.6
+    },
+    {
+      "turn": 10,
+      "student": "Increased alcohol use as a coping mechanism \u2014 I understand, but alcohol can also irritate the GI tract and worsen inflammation. Let me ask about family history \u2014 inflammatory bowel disease has a strong genetic component. Has anyone in your family had Crohn's disease, ulcerative colitis, or similar conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was 30 years old. She's been dealing with it for over a decade now, and it's been really tough on our whole family. I've always been a bit worried that I might end up like her, but so far, nothing has been officially diagnosed.",
+      "time": 17.5
+    },
+    {
+      "turn": 11,
+      "student": "Your sister having Crohn's is very significant. IBD runs in families, and the fact that she was diagnosed at 30 makes your presentation at 42 fit the pattern. Different family members can develop different forms \u2014 Crohn's versus ulcerative colitis.",
+      "patient": "I've been worried about my own risk for a while now, especially since my sister's diagnosis. It's scary to think that I might have it too, but at least I'm here getting checked out and figuring out what's going on.",
+      "time": 19.8
+    },
+    {
+      "turn": 12,
+      "student": "Let me review what you're taking. You mentioned loperamide with minimal effect, and the ibuprofen for joints. Any other medications or supplements?",
+      "patient": "I've also been taking ibuprofen 2-3 times a week for my joint pain. I haven't taken any other medications or supplements besides what we've already talked about.",
+      "time": 19.3
+    },
+    {
+      "turn": 13,
+      "student": "The loperamide not working is expected \u2014 it's not effective against inflammatory diarrhea. And I'd strongly recommend stopping the ibuprofen given the likely diagnosis.",
+      "patient": "I'm a bit worried that I might have to stop taking the ibuprofen, but at least I can try some other things for my joint pain. How else should I manage it while we figure out what's going on with my stomach?",
+      "time": 19.5
+    },
+    {
+      "turn": 14,
+      "student": "You mentioned you had an appendectomy at 16. Any other surgical history or hospitalizations?",
+      "patient": "No, that was just the one appendectomy when I was 16, and everything went smoothly, no complications.",
+      "time": 19.3
+    },
+    {
+      "turn": 15,
+      "student": "Let me ask about your general health. Do you smoke or use any recreational drugs?",
+      "patient": "No, I don't smoke, and I've never used any recreational drugs.",
+      "time": 7.5
+    },
+    {
+      "turn": 16,
+      "student": "Non-smoker, no drugs \u2014 that's good. Interestingly, ulcerative colitis is actually more common in non-smokers and ex-smokers.",
+      "patient": "That makes sense, I guess. I'm just glad I don't have to worry about smoking or drug use contributing to my symptoms. What's the next step here?",
+      "time": 8.1
+    },
+    {
+      "turn": 17,
+      "student": "You mentioned traveling to Mexico three months ago. Any GI issues during or after that trip?",
+      "patient": "No, I didn't have any GI issues during or after the trip. Everything seemed normal while I was in Mexico and for a couple of weeks after I got back. It wasn't until about two months after my return that these symptoms started.",
+      "time": 20.4
+    },
+    {
+      "turn": 18,
+      "student": "No issues from the trip \u2014 that helps rule out a parasitic or infectious cause that might have been lingering. Any food allergies or medication allergies?",
+      "patient": "No, I don't know of any food allergies and I've never had any known drug allergies.",
+      "time": 9.6
+    },
+    {
+      "turn": 19,
+      "student": "Given the full picture \u2014 bloody diarrhea with mucus, left-sided crampy pain, nocturnal symptoms, tenesmus, weight loss, fever, extraintestinal joint involvement, family history of Crohn's, and NSAID exacerbation \u2014 this presentation is highly consistent with ulcerative colitis. We need to schedule a colonoscopy for definitive diagnosis.",
+      "patient": "That sounds like a plan. I'm a bit nervous about the procedure, but if it means we can finally figure out what's going on and get me feeling better, then I'm willing to do it. Can you walk me through what to expect during the colonoscopy? What are my options for preparation beforehand?",
+      "time": 13.3
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with the workup, is there anything else you've been experiencing that we haven't discussed?",
+      "patient": "To be honest, besides the diarrhea and abdominal pain, I have been feeling pretty fatigued lately. It's hard to get motivated for things I used to enjoy doing, like working out or spending time with friends, because I just don't have the energy anymore. And it seems to get worse when my symptoms are flaring up, which is often.",
+      "time": 22.6
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 335.5,
+    "avg_time_per_turn": 16.8,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G09",
+        "G13",
+        "G14",
+        "G19"
+      ],
+      "conversation_length": 40,
+      "condition": "isolated_architecture",
+      "total_retries": 0
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 1,
+  "case_name": "gi"
+}

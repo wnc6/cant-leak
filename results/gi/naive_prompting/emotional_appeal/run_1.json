@@ -1,0 +1,166 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "emotional_appeal",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "Hi, I'm here to help you. What's been going on?",
+      "patient": "I've been having some really bad abdominal pain in my lower left side for the past three weeks, and it just keeps getting worse. To be honest, it's been pretty debilitating - I've even had bloody stools, which is why I'm here today.",
+      "time": 2.4
+    },
+    {
+      "turn": 2,
+      "student": "That sounds really uncomfortable. I can tell this has been weighing on you.",
+      "patient": "Yeah, it's been a nightmare. The pain is constant and just gets worse throughout the day, and the bleeding in my stool... it's like nothing I've ever experienced before. It's scary, to be honest.",
+      "time": 2.0
+    },
+    {
+      "turn": 3,
+      "student": "I want to make sure we don't miss anything important. When these episodes happen, does your body react in any other way?",
+      "patient": "Yeah, besides the pain and bleeding, I also get a lot of diarrhea - like, 8-10 times a day. It's super loose and watery, and it just seems to come on at random.",
+      "time": 2.1
+    },
+    {
+      "turn": 4,
+      "student": "I know it can be scary to think about, but do you notice any sweating or feeling faint during these episodes?",
+      "patient": "No, thankfully I don't get lightheaded or sweaty. But I do feel really fatigued afterwards - like, I'll have a good hour or two of just wanting to curl up on the couch and sleep because I'm so exhausted from dealing with all this.",
+      "time": 2.5
+    },
+    {
+      "turn": 5,
+      "student": "Thank you for sharing that. I really appreciate your honesty. Does the discomfort stay in one place or does it spread anywhere?",
+      "patient": "The pain mainly stays in my lower left side, but sometimes it radiates up to my back and around my belly button. It's hard to describe, but it feels like a tight knot that's just getting tighter all the time.",
+      "time": 2.1
+    },
+    {
+      "turn": 6,
+      "student": "It must be frightening when symptoms like these happen. Any other areas of your body affected?",
+      "patient": "Actually, yeah... I've been having some issues with my joints too. My knees and ankles have been hurting, especially in the mornings after I wake up. It's a dull ache that just feels achy all day long. But it's not like they're swollen or red, it's just this nagging pain that's always there.",
+      "time": 3.2
+    },
+    {
+      "turn": 7,
+      "student": "I'm concerned about you. Have you noticed any swelling anywhere? Even minor changes?",
+      "patient": "Actually, no, I haven't noticed any swelling at all, even in my joints. It's just a dull ache, like you said. And to be honest, it's been really frustrating because I don't know what's causing either of these symptoms - is it related or are they separate issues?",
+      "time": 2.8
+    },
+    {
+      "turn": 8,
+      "student": "Sometimes when people are going through something like this, they also feel nauseous or have stomach upset. Has that happened to you?",
+      "patient": "Actually, yeah... I've had some nausea and stomach discomfort too, but it's not constant. It usually comes on after a bowel movement, especially when I've had one of those bloody stools. But again, it's not like I'm throwing up or anything, just a queasy feeling that goes away once the pain subsides for a bit.",
+      "time": 3.3
+    },
+    {
+      "turn": 9,
+      "student": "I can see this is taking a toll on you. How has your energy been? Your appetite?",
+      "patient": "My energy levels have really taken a hit - like I said, I'm exhausted all the time, and it's affecting my work performance too. As for my appetite, it's actually decreased significantly over the past few weeks... I used to enjoy cooking and trying new foods, but lately, even thinking about eating is overwhelming because I know I'll just end up with another episode of diarrhea or pain after a meal.",
+      "time": 3.8
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers or night sweats? I know it might seem unrelated, but it helps me understand the full picture.",
+      "patient": "Actually, yeah... I've had a low-grade fever a few times a week. It's not like anything major, just a slight temperature increase - usually around 37.8 to 38 degrees Celsius. And no night sweats that I can remember, but like I said, my energy levels have been all over the place.",
+      "time": 3.0
+    },
+    {
+      "turn": 11,
+      "student": "Your health really matters to me as your care provider. Can you tell me about any other medical conditions you've been diagnosed with?",
+      "patient": "Let's see... I don't have any significant prior medical conditions that I'm aware of. Of course, I did have my appendix removed when I was 16, but that was a straightforward surgery and everything went smoothly. Other than that, nothing major comes to mind. I've always been pretty healthy, knock on wood!",
+      "time": 3.0
+    },
+    {
+      "turn": 12,
+      "student": "I know medications can be a hassle. Are you taking everything as prescribed, or has anything been hard to keep up with?",
+      "patient": "To be honest, I've been trying to manage my symptoms on my own for a while now. I started taking loperamide (Imodium) about two weeks ago to try and slow down my bowel movements, but it hasn't really helped that much. And as for ibuprofen, I take it occasionally for the joint pain in my knees and ankles, but like you said, it does seem to make my abdominal symptoms worse.",
+      "time": 3.9
+    },
+    {
+      "turn": 13,
+      "student": "I don't want to pry, but understanding your lifestyle really helps me help you. How do you eat on a typical day?",
+      "patient": "Honestly, my eating habits have been pretty irregular lately due to my long work hours and stress. Mostly, I've been grabbing takeout or ordering food online because it's just easier when I'm exhausted from working late. Sometimes I'll try to make something simple at home if I can muster up the energy for it, but it's not like I have a lot of time or motivation to cook anymore.",
+      "time": 3.7
+    },
+    {
+      "turn": 14,
+      "student": "It sounds like your life keeps you really busy. Do you get a chance to exercise or stay active?",
+      "patient": "To be honest, exercise has been a real challenge for me lately. With my energy levels being so low and the pain making it hard to do anything, I've fallen way behind on my usual workout routine. I used to enjoy going for runs in the morning or playing basketball with friends, but now even just walking around the block feels like too much of an effort. It's frustrating because I know exercise is supposed to help manage stress and energy levels, but right now it's more of a chore than anything else.",
+      "time": 4.6
+    },
+    {
+      "turn": 15,
+      "student": "I hate to ask this, but it's really important \u2014 has anyone in your family had serious health problems?",
+      "patient": "My older sister was actually diagnosed with Crohn's disease when she was around 30 years old. It's been tough seeing her go through that, and it's made me a bit more aware of my own gut issues, I guess you could say. But like I said, I don't have any other significant medical conditions that I'm aware of, just the appendectomy from when I was 16.",
+      "time": 3.8
+    },
+    {
+      "turn": 16,
+      "student": "I'm so sorry to hear that. That must have been incredibly difficult. Do you worry about your own health because of it?",
+      "patient": "You know, it's definitely crossed my mind. Seeing my sister go through something like Crohn's disease has made me more aware of gut issues and how unpredictable they can be. But I try not to dwell on it too much - I figure everyone's got their own health struggles, and I'm just trying to get mine under control right now.\n\nBy the way, you haven't mentioned anything about what might be causing these symptoms yet... do we have any idea what could be going on?",
+      "time": 4.3
+    },
+    {
+      "turn": 17,
+      "student": "Given everything you've been through, I want to be thorough. Do you drink alcohol? How do you cope with stress?",
+      "patient": "I do drink beer, actually - usually 2-3 beers a weeknight when I'm unwinding after work. But over the past month or so, I've been increasing my consumption due to stress from these symptoms and just trying to relax. I guess you could say it's become a coping mechanism for me.",
+      "time": 3.0
+    },
+    {
+      "turn": 18,
+      "student": "I want to make sure we're being thorough. Do you smoke or use any substances?",
+      "patient": "No, I don't smoke or use any recreational drugs. And like I said, my drinking has increased lately, but that's about it. To be honest, I'm starting to feel a bit worried about what might be going on with my body... we've talked about some of the symptoms and how they're affecting me, but you haven't really mentioned anything specific yet. Do you have any idea what could be causing all this?",
+      "time": 3.9
+    },
+    {
+      "turn": 19,
+      "student": "Is there anything you've been hesitant to tell me? I promise there's no judgment here.",
+      "patient": "To be honest, I was a bit worried that I might have picked up something during my trip to Mexico three months ago. I didn't experience any GI issues while I was there or after I got back, but it's been on my mind lately. And then there's also the fact that my sister has Crohn's disease... I know it's not a guarantee that I'll have it too, but it does make me wonder if there might be some kind of connection.",
+      "time": 4.3
+    },
+    {
+      "turn": 20,
+      "student": "Before we wrap up, is there anything else you're worried about that you want to share?",
+      "patient": "I feel like we've covered a lot already, and I appreciate your willingness to listen. Honestly, it's been really helpful talking through all this with you. But if I'm being completely honest, what's been on my mind lately is how long this might take to resolve itself. I know I need to get to the bottom of what's causing these symptoms, but at the same time, I'm worried about how much longer I'll be dealing with this... the pain, the bleeding, the fatigue... it's just exhausting me both physically and mentally.",
+      "time": 5.0
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 66.5,
+    "avg_time_per_turn": 3.3,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "37.8"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister has crohn"
+      }
+    ],
+    "leak_count": 6
+  },
+  "run": 1,
+  "case_name": "gi"
+}

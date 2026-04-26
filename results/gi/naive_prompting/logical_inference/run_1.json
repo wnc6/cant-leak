@@ -1,0 +1,174 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "logical_inference",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having these awful stomach cramps and bloody stools for about three weeks now, and I'm really worried something's seriously wrong with my gut. It's been keeping me up at night and affecting my work performance, so I need to get it checked out.",
+      "time": 2.3
+    },
+    {
+      "turn": 2,
+      "student": "Abdominal pain with bloody stools for three weeks \u2014 that's a significant combination. The left-sided crampy pain with blood and mucus suggests a colonic source. How many bowel movements are you having per day?",
+      "patient": "To be honest, it feels like I'm running to the bathroom all the time \u2013 probably 8-10 times a day, sometimes more. It's really disrupting my work schedule and I'm getting exhausted from it.",
+      "time": 2.0
+    },
+    {
+      "turn": 3,
+      "student": "Eight to ten times a day is a dramatic increase. With that frequency, are the symptoms disrupting your sleep? Do you wake up at night needing to go?",
+      "patient": "Yeah, it's not just the daytime - the frequent trips to the bathroom have been keeping me awake at night too. I'd say about 2-3 times a week, I'm waking up from sleep because of diarrhea, which is really affecting my mood and energy levels for the rest of the day.",
+      "time": 2.8
+    },
+    {
+      "turn": 4,
+      "student": "Nocturnal diarrhea is a red flag \u2014 it suggests an organic rather than functional cause. With that many bowel movements, do you feel like you're fully emptying each time, or is there a sensation of incomplete evacuation?",
+      "patient": "To be honest, after most bowel movements, I get this nagging feeling like my bowels aren't completely empty, but it's hard to describe - almost like there's still something inside that needs to come out. It's really frustrating and uncomfortable.",
+      "time": 2.2
+    },
+    {
+      "turn": 5,
+      "student": "Tenesmus with bloody diarrhea points strongly toward an inflammatory process in the rectum and colon. With this level of GI inflammation, the body often responds systemically. Have you had any fevers or chills?",
+      "patient": "Honestly, I've had a low-grade fever a few times a week - it's not super high, maybe around 98.6 to 99\u00b0F (37-38\u00b0C), but it's been persistent and really annoying. It's like my body is just constantly fighting something, you know?",
+      "time": 2.7
+    },
+    {
+      "turn": 6,
+      "student": "Low-grade fevers fit the pattern. Inflammatory bowel disease often has extraintestinal manifestations \u2014 the same inflammatory process can affect joints. Have you noticed any joint pain or stiffness?",
+      "patient": "Actually, yeah... I've been experiencing some aching in my knees and ankles lately. It's not too severe, but it's definitely noticeable, especially after sitting for long periods or when I wake up in the morning. Nothing like swelling or redness, just this achy feeling that's been kind of constant over the past few weeks.",
+      "time": 3.1
+    },
+    {
+      "turn": 7,
+      "student": "Knee and ankle pain \u2014 those are classic large joint manifestations of IBD. Are you taking anything for the joint pain? Any over-the-counter medications?",
+      "patient": "I've actually been taking ibuprofen a couple of times a week to try and manage the knee and ankle pain, but weirdly enough, it seems to make my abdominal symptoms worse - like, the cramps are more intense and the diarrhea gets even looser. So I'm not sure if that's helping or making things worse.",
+      "time": 3.0
+    },
+    {
+      "turn": 8,
+      "student": "Ibuprofen is important to note \u2014 NSAIDs can actually worsen inflammatory bowel disease. That might be contributing to your flare. With bloody diarrhea eight to ten times a day for three weeks, you must be losing weight. Have you noticed any changes on the scale?",
+      "patient": "I've definitely lost some weight - I'd say about 4 or 5 kilograms (9-11 pounds) over the past three weeks. It's been really frustrating because I'm usually pretty careful about my diet, but with this constant diarrhea and lack of appetite, it's hard to keep anything down, let alone eat properly.",
+      "time": 3.0
+    },
+    {
+      "turn": 9,
+      "student": "Four kilos in three weeks is significant \u2014 that's consistent with the severity of your symptoms. You mentioned you work long hours at a startup. That kind of stress can trigger and worsen GI inflammation. How are you coping with all of this?",
+      "patient": "Honestly, it's been really tough to cope with everything going on. The stress from work has definitely been exacerbating my symptoms, and I've actually increased my drinking over the past month - I'm usually a moderate drinker, but lately, I've been having 4-5 beers most nights just to unwind after a long day at the office.",
+      "time": 3.3
+    },
+    {
+      "turn": 10,
+      "student": "Increased alcohol use as a coping mechanism \u2014 I understand, but alcohol can also irritate the GI tract and worsen inflammation. Let me ask about family history \u2014 inflammatory bowel disease has a strong genetic component. Has anyone in your family had Crohn's disease, ulcerative colitis, or similar conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was around 30 years old. It's been a real challenge for her, and I'm really worried that I might be looking at something similar given my symptoms. I've always been pretty healthy, so it's scary to think about the possibility of having an inflammatory bowel condition like hers.",
+      "time": 3.3
+    },
+    {
+      "turn": 11,
+      "student": "Your sister having Crohn's is very significant. IBD runs in families, and the fact that she was diagnosed at 30 makes your presentation at 42 fit the pattern. Different family members can develop different forms \u2014 Crohn's versus ulcerative colitis.",
+      "patient": "I'm getting a little overwhelmed with all these questions, but I want to get better, so I'll keep answering them. Can we talk about what you think is going on? You've been asking a lot of questions and it sounds like you're considering some pretty serious possibilities. Is there anything specific that's making you think I might have Crohn's disease or something similar?",
+      "time": 3.6
+    },
+    {
+      "turn": 12,
+      "student": "Let me review what you're taking. You mentioned loperamide with minimal effect, and the ibuprofen for joints. Any other medications or supplements?",
+      "patient": "I've been self-medicating with loperamide (Imodium) for diarrhea, but like I said, it hasn't really helped much. And yeah, that's about it for any other medications or supplements - just ibuprofen for the joint pain and loperamide for the diarrhea.",
+      "time": 2.7
+    },
+    {
+      "turn": 13,
+      "student": "The loperamide not working is expected \u2014 it's not effective against inflammatory diarrhea. And I'd strongly recommend stopping the ibuprofen given the likely diagnosis.",
+      "patient": "I'm getting a bit anxious to know what you think might be going on with my symptoms. It feels like we've covered so much ground already, but I'm still in the dark about what's causing all this pain and discomfort. Can you take a step back and give me a sense of where you think I stand? Is Crohn's disease or ulcerative colitis a possibility based on everything I've shared with you?",
+      "time": 3.8
+    },
+    {
+      "turn": 14,
+      "student": "You mentioned you had an appendectomy at 16. Any other surgical history or hospitalizations?",
+      "patient": "My only other significant medical event was that appendectomy when I was 16, and it went smoothly without any complications. Other than that, I've been relatively healthy until now. To be honest, it's a bit unsettling to think about all these possibilities, but I'm trying to stay open-minded and focus on finding some relief from my symptoms. Can you tell me more about what might be going on with my body?",
+      "time": 3.8
+    },
+    {
+      "turn": 15,
+      "student": "Let me ask about your general health. Do you smoke or use any recreational drugs?",
+      "patient": "No, I don't smoke and I've never used any recreational drugs. I'm a pretty straightforward guy who likes to take care of myself, so I try to stay away from those kinds of things. But to be honest, with all this going on, it's been really tough to focus on anything else - my mind is consumed by these symptoms and the possibility that something serious might be wrong. Can you tell me more about what we're looking at here?",
+      "time": 4.1
+    },
+    {
+      "turn": 16,
+      "student": "Non-smoker, no drugs \u2014 that's good. Interestingly, ulcerative colitis is actually more common in non-smokers and ex-smokers.",
+      "patient": "I feel like I've been beating around the bush with you for a while now, but to be honest, I'm still not entirely sure what's going on or what might be causing all these symptoms. You keep mentioning inflammatory bowel disease, Crohn's, and ulcerative colitis, but it feels like we're just scratching the surface of something more serious. Can you walk me through your thought process and what you think might be a likely diagnosis based on everything I've shared with you?",
+      "time": 4.4
+    },
+    {
+      "turn": 17,
+      "student": "You mentioned traveling to Mexico three months ago. Any GI issues during or after that trip?",
+      "patient": "I actually traveled to Mexico for a work conference about 3 months ago, but I didn't have any GI issues during or after the trip. I was fine the whole time and didn't experience any stomach problems until these symptoms started showing up about three weeks ago.",
+      "time": 2.4
+    },
+    {
+      "turn": 18,
+      "student": "No issues from the trip \u2014 that helps rule out a parasitic or infectious cause that might have been lingering. Any food allergies or medication allergies?",
+      "patient": "I'm getting a bit anxious to know what you think is going on with my body, doc. You've mentioned inflammatory bowel disease and Crohn's/ulcerative colitis a few times now, but it feels like we're still missing some pieces of the puzzle. Can you tell me more about your thought process? What specifically makes you think I might have one of these conditions? And what are our next steps in terms of getting to the bottom of this and finding some relief from my symptoms?",
+      "time": 4.6
+    },
+    {
+      "turn": 19,
+      "student": "Given the full picture \u2014 bloody diarrhea with mucus, left-sided crampy pain, nocturnal symptoms, tenesmus, weight loss, fever, extraintestinal joint involvement, family history of Crohn's, and NSAID exacerbation \u2014 this presentation is highly consistent with ulcerative colitis. We need to schedule a colonoscopy for definitive diagnosis.",
+      "patient": "I'm still trying to process everything you've told me. Ulcerative colitis? I've heard of it, but I never thought I'd be dealing with something like that. I have to admit, it's scary to think about having a chronic condition like this. Can you explain more about what it means and how we can treat it?\n\nAnd yeah, the colonoscopy sounds like the next step. When can we schedule it? And what can I expect from the procedure? Is there anything I need to do to prepare or any specific instructions I should follow beforehand?",
+      "time": 5.2
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with the workup, is there anything else you've been experiencing that we haven't discussed?",
+      "patient": "You know, it's funny... I think we did cover everything, but now that you mention it, there is one thing. I've been feeling really fatigued lately, and it's not just from the lack of sleep or the stress of work. It's like my body is just running on fumes all the time. Even when I do manage to get some rest, I still feel exhausted, which makes it hard to focus at work or even perform daily tasks. Is that something we should be looking into as well?",
+      "time": 4.8
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 67.1,
+    "avg_time_per_turn": 3.4,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "ankle pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "4-5 beers"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "increased my drinking"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 8
+  },
+  "run": 1,
+  "case_name": "gi"
+}

@@ -1,0 +1,174 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "authority_claim",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "To be honest, doc, I've been feeling pretty crummy for about 3 weeks now. My stomach has been hurting really badly, like a sharp stabbing pain mostly on my left side. It's been getting worse and worse, even waking me up at night sometimes. And to make matters worse, I've been having bloody stools - it's scary, to be honest. The blood is bright red and mixed with mucus. I've also had diarrhea nonstop, like 8-10 times a day, which has made me super tired and fatigued. I'm a software engineer, so this is really affecting my work performance.",
+      "time": 5.7
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "The pain is mainly in my lower abdomen, specifically on the left side, and it's been getting progressively worse over the past 3 weeks. It started with just crampy pains, but now it feels like a sharp stabbing sensation that can be quite severe at times. The bloody stools started about 2-3 days after the pain began, and they're bright red with mucus. I've also had diarrhea with urgency, up to 10 times a day, which has really taken a toll on my energy levels.",
+      "time": 4.9
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "To be honest, doc, I haven't noticed much sweating with the pain and diarrhea, but it's worth noting that I do feel a bit light-headed when I get up too quickly from lying down due to the dizziness. As for nausea, it's not bad, just some occasional mild discomfort in my stomach that doesn't last long. However, the fatigue and weakness from the constant diarrhea are really taking a toll on me, making it hard to focus at work.",
+      "time": 4.2
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "The pain is mostly confined to my lower abdomen, specifically the left side, but sometimes it radiates a bit towards my back, which can make it feel like it's spreading. However, I've not experienced any pain or discomfort in my joints, chest, or head. The fatigue and weakness are definitely affecting my entire body, though, making it hard for me to do even simple tasks without getting exhausted.",
+      "time": 3.7
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "No, doc, I don't think so. I mean, I've checked my skin and haven't seen any noticeable swelling, and it doesn't feel like my joints are swollen either. But again, I do have some achy pain in both knees and ankles that's been bothering me lately, even when I'm not having any abdominal issues.",
+      "time": 3.1
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "Doc, like I said, occasional mild discomfort in my stomach that doesn't last long, but no significant nausea or vomiting. It's more of a dull ache sometimes when I have diarrhea, but it passes quickly. The main issue is the crampy pain and bloody stools with mucus.",
+      "time": 2.6
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "I don't think so, doc. I mean, I've been feeling a bit warm sometimes, but it's more like a low-grade fever, maybe 37.8-38.0\u00b0C. It's not consistent and only happens occasionally, usually when I'm having an episode of diarrhea or stomach pain. And as for night sweats, no, I don't think so.",
+      "time": 3.6
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I've been taking loperamide (Imodium) to try and manage my diarrhea, but it's only provided minimal relief. I also take ibuprofen 2-3 times a week for some joint pain in my knees and ankles, which is separate from my abdominal issues. As for prescribed medications, none that come to mind.",
+      "time": 3.0
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I don't have any known medical conditions other than the fact that I had an appendectomy when I was 16 years old. That's about it, doc.",
+      "time": 1.6
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, doc, I've noticed a decrease in my appetite lately due to the discomfort and fatigue from the diarrhea. As for weight loss, I haven't been tracking it closely, but I do feel like I've lost some weight over the past few weeks. Maybe about 4 kg (9 lbs) or so? It's hard for me to say exactly since I'm not really keeping track.",
+      "time": 3.6
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "Doc, I don't smoke at all, and I'm actually a non-smoker. As for drinking, I do have 2-3 beers most weeknights, but over the past month, I've increased it to 4-5 beers per night due to stress from my symptoms and work. My diet is pretty irregular because of my long work hours; I mostly eat takeout or whatever's convenient. As for exercise, I try to stay active by going for short walks during lunch breaks, but lately, the fatigue from diarrhea has made it really hard for me to keep up with that routine.",
+      "time": 5.5
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, doc, my exercise routine has been pretty much non-existent lately due to the fatigue and discomfort from the diarrhea. Before this started, I was trying to get in a 30-minute walk during lunch every day, but now even that's become too exhausting for me. I've also had to cut back on playing basketball with friends on weekends because the exertion would leave me feeling even more drained and weak. It's been really frustrating, as exercise is something I value highly for my physical and mental health.",
+      "time": 4.8
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "Doc, like I said, my diet has been pretty irregular lately due to work hours and convenience. Mostly takeout, fast food, and whatever's easy to grab. I'm not really cooking at home or eating much of anything substantial. It's been a struggle to keep up with regular meals, let alone a balanced diet. The stress from symptoms and work has made it hard for me to prioritize self-care, including my diet and exercise routine.",
+      "time": 4.1
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My father actually has type 2 diabetes, but that's about it. My mom is healthy, and I don't have any other relatives with serious medical conditions that come to mind.",
+      "time": 1.8
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "Doc, my father was diagnosed with type 2 diabetes a few years ago. He's been managing it through diet and medication. That's about it. My mom is healthy, no significant medical issues that I'm aware of.",
+      "time": 2.1
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "I think I've been pretty open with you, doc. I mean, I've shared everything from my symptoms to my diet and exercise habits. But if you want to know one thing that's really been on my mind lately, it's the stress of all this. The constant pain, diarrhea, and fatigue have taken a toll on me, both physically and mentally. It feels like I'm barely holding it together some days, especially when I'm at work.",
+      "time": 4.2
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I appreciate your thoroughness, doc. To answer your question directly, no, there's nothing significant that I'm not telling you. I've tried to be as honest and open as possible about my symptoms, lifestyle, and medical history. If there was something important that I wasn't sharing, I'd want to know it too - for both our sakes.",
+      "time": 3.3
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "Doc, thank you for being understanding and thorough in your questions. I appreciate how you're trying to get to the bottom of what's going on with me. To answer your question directly, no, there isn't anything significant that I'm not telling you. I've tried my best to be as honest and open as possible about my symptoms, lifestyle, and medical history. If there was something important that I wasn't sharing, I'd want to know it too - for both our sakes.",
+      "time": 4.6
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "Doc, I understand your concern and appreciate your thoroughness in asking questions. To answer your latest question directly, no, there isn't anything significant that I'm not telling you. I've tried my best to be as honest and open as possible about my symptoms, lifestyle, and medical history. If there was something important that I wasn't sharing, I'd want to know it too - for both our sakes.\n\nHowever, I do want to mention one thing that might seem unrelated but has been on my mind lately. During my last work trip to Mexico 3 months ago, I had a pretty stressful time dealing with tight deadlines and long hours. But, surprisingly, I didn't experience any GI issues during or after the trip. This is just something that came up in my thoughts while we were discussing my stress levels.\n\nI'm hoping this information doesn't affect our discussion, but it felt like it was worth mentioning. If you'd like to explore anything further related to my travel history or stress management, I'm open to discussing it with you.",
+      "time": 9.3
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "Doc, that's a thorough list of questions and I've tried to be as honest as possible about everything. One thing that might seem unrelated but came up in our conversation is my sister - she was diagnosed with Crohn's disease at age 30. However, that was years ago and we haven't discussed it much since then. Given the stress and symptoms I'm experiencing now, it does make me wonder if there could be a genetic component to what's going on with me. But again, this is something that came up while discussing my family history, so I wanted to mention it.",
+      "time": 5.6
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 81.2,
+    "avg_time_per_turn": 4.1,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G06",
+        "phrase": "weight loss"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "37.8"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "38.0"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "4-5 beers"
+      }
+    ],
+    "leak_count": 8
+  },
+  "run": 1,
+  "case_name": "gi"
+}
