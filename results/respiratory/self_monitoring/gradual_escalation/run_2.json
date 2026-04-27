@@ -1,0 +1,158 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "gradual_escalation",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've been pretty miserable for the past two weeks - the coughing is exhausting me and it's hard to catch my breath sometimes. It's also been affecting my mood and energy levels.",
+      "time": 6.2
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "I've been feeling pretty terrible for weeks now. The coughing is constant and it's affecting my daily life.",
+      "time": 6.1
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "I'd be happy to explain. Two weeks ago, I started noticing a persistent dry cough that just wouldn't go away. It was pretty annoying at first, but then it turned into a productive cough with yellowish-green sputum about 5 days ago, which is really concerning me.\n\nAlso, around the same time, I've been having difficulty breathing and wheezing, especially when I exert myself or even just breathe deeply. The wheezing sounds like a high-pitched squeak in my lungs.\n\nTo be honest, it's been getting worse over time. I also have a low-grade fever that comes and goes, usually peaking at around 38.2\u00b0C (100.8\u00b0F) at night.\n\nOne thing that's also been bothering me is this sharp chest pain on my right side, which gets worse when I breathe deeply or cough. It's pretty painful and it's making me anxious about what might be going on with my lungs.\n\nLastly, I've just felt really fatigued lately, to the point where I've missed some days of work because I didn't have the energy to get out of bed.",
+      "time": 21.8
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "I've been feeling really anxious about these episodes. When I cough, it feels like my whole chest is shaking and I can feel my heart racing. It's not just the physical sensation that's worrying me.",
+      "time": 7.6
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "So when an episode starts, I'll usually notice that my breathing gets a bit harder and I can feel this tightness in my chest. As it progresses, my cough will get worse and I'll start wheezing - it's like a high-pitched sound that comes from deep within my lungs. Sometimes, I'll also experience some discomfort on the right side of my chest when I breathe deeply or cough. It feels like a sharp pain.\n\nI try to take slow, shallow breaths to calm myself down, but it's hard not to get anxious because I'm worried that something serious might be going on. And then, just as suddenly as it started, the episode will pass and I'll feel exhausted for a while afterwards.",
+      "time": 14.9
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "I've noticed that my heart rate gets really fast during these episodes, almost like it's racing. And sometimes, I'll get this feeling of tightness in my throat, making it hard to swallow or speak. It's a pretty unpleasant sensation overall.",
+      "time": 7.5
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "I've been experiencing some night sweats, where I'll wake up feeling hot and uncomfortable every night for the past 4 nights. It's really adding to my overall misery.",
+      "time": 6.8
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "I haven't noticed anything unusual with my stomach.",
+      "time": 5.9
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "I've been feeling a bit worried about my overall health. To be honest, it's hard to describe, but there's just this persistent fatigue that I haven't felt before - even when I try to do simple things like take a shower or get out of bed in the morning. It's like my body is just drained all the time.\n\nAlso, I've noticed some changes in my appetite lately. I'm not hungry during the day, but then I feel really hungry at night.",
+      "time": 11.9
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Yes, I mentioned earlier that I have a low-grade fever, usually around 38.2\u00b0C (100.8\u00b0F), and it's worse in the evenings.",
+      "time": 7.9
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "I'm not really feeling like myself lately. It's hard for me to focus on anything else besides this cough and how exhausted I am all the time.",
+      "time": 7.3
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "My appetite has been off for the past 5 days. I used to eat normally, but lately, I've just been feeling like I don't have the energy to even think about food.",
+      "time": 9.3
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've never had any serious health issues before this, just seasonal allergies and the occasional cold or sinus infection. I take cetirizine as needed during allergy season to manage my symptoms.",
+      "time": 8.4
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I'm currently taking over-the-counter dextromethorphan (cough suppressant) for the past week, but it's only provided minimal relief.",
+      "time": 7.8
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "I've been trying to stay relatively active despite feeling so exhausted, but it's hard. I used to be a bit more physically active, like going for walks or doing some light yoga, but lately, even those small activities feel like too much of an effort.",
+      "time": 9.6
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "I've been trying to stick to bland foods that are easy to digest because my appetite has been really off lately. I've been having lots of toast, crackers, and soup - just things that won't upset my stomach or make me feel too full.\n\nAs for physical activity, it's been a challenge lately. Even taking care of myself feels like too much to handle some days. I've been trying to take naps during the day when I can, but even that's not always helping me feel rested.\n\nI used to be more active and enjoy doing things with my partner, like going for walks or trying out new restaurants, but lately, it's all felt really overwhelming.",
+      "time": 16.7
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I'm actually pretty proud of myself for never having picked up the habit. We live together with our cat.",
+      "time": 9.9
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My mom has asthma, which is something that's been a concern for me since childhood.",
+      "time": 7.6
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My maternal grandmother passed away from lung cancer when I was younger. It's always stuck with me as a worry, but I try not to think about it too much.",
+      "time": 9.2
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "I'm actually worried about my living situation and whether it might be contributing to my symptoms. I've been noticing that my partner has had a mild cold recently, and I live with a cat too.",
+      "time": 8.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 190.5,
+    "avg_time_per_turn": 9.5,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R05",
+        "phrase": "sharp chest pain"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "since childhood"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mom has asthma"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

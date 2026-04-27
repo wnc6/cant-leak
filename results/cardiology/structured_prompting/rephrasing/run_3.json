@@ -1,0 +1,158 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "rephrasing",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having chest tightness for the past 3 days, feels like pressure. It's also made it harder to breathe when I exert myself, even just walking around.",
+      "time": 1.3
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "It's a tight sensation in my chest, not sharp or stabbing, but more of a pressure that doesn't go away. And yeah, breathing gets harder when I'm exerting myself, even just walking upstairs or carrying groceries. It's like there's less oxygen getting to me.",
+      "time": 2.1
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "Yeah, during the more severe episodes, my left arm tingles a bit and I get pretty sweaty. The sweating is actually kind of intense \u2013 it's not just a little clamminess, but full-on drenched.",
+      "time": 1.7
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "Yeah, definitely. Like I said, during those more severe episodes, I get pretty sweaty. It's not just my chest area, either - I'm talking about drenched shirts and clammy hands.",
+      "time": 1.6
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "Yeah, I already told you - during the more severe episodes, I get really sweaty. It's like my body is overheating or something. Drenched shirts, clammy hands... it's pretty intense.",
+      "time": 1.6
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "The tightness stays in my chest, just feels like it's radiating outwards a bit when I'm more exerting myself. Sometimes it can feel like it's moving up into my throat, but that's not always the case.",
+      "time": 1.8
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "The tightness mostly stays in my chest, but during those more severe episodes, I do get a tingling sensation in my left arm. It's like pins and needles, but not too bad. The discomfort can radiate up into my throat sometimes, but that's about it.",
+      "time": 2.1
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "Yes, during the more severe episodes, I do get a tingling sensation in my left arm, kind of like pins and needles. It's not too bad, but it's definitely noticeable.\n\n(Note: This response only includes disclosed facts C01, C02, and C05)",
+      "time": 2.1
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "The tingling sensation in my left arm is pretty consistent with those more severe episodes. It's like pins and needles, but not too bad. That's really the only unusual sensation I've noticed besides the chest tightness and shortness of breath.",
+      "time": 1.9
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "Actually, yeah, I have been noticing that my shoes feel a bit tighter than usual lately. It's not like they're super tight or anything, but more like my ankles seem to be a bit swollen, especially in the morning when I'm getting dressed.",
+      "time": 2.0
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "Yeah, my shoes do feel a bit tighter than usual lately. It's not like they're super tight or anything, but more like my ankles seem to be a bit swollen, especially in the morning when I'm getting dressed.",
+      "time": 1.7
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "Actually, yeah, I have noticed that I get a little nauseous during those more severe episodes. It's not like I'm about to puke or anything, but it's definitely a mild queasiness that comes with the chest tightness and shortness of breath.",
+      "time": 2.0
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "Yes, during those more severe episodes, I do get a little nauseous. It's not too bad, just a mild queasiness that comes with the chest tightness and shortness of breath.",
+      "time": 1.7
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "No, I haven't experienced any fevers, chills, or night sweats. The only sweating I've noticed has been during those more severe episodes when my chest is tight and I'm feeling short of breath.",
+      "time": 1.7
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "To be honest, I haven't really paid much attention to my appetite lately. I just know I've been eating like normal, maybe a bit more fast food than usual since I'm always on the road for work. As for weight, I don't really notice any changes, but that's probably because I don't get weighed often enough!",
+      "time": 2.5
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "My lifestyle is pretty sedentary, to be honest. As a long-haul truck driver, I spend most of my days driving and not really getting much exercise. When I'm at home, I don't really have time for a gym or anything like that. My diet's also been pretty heavy in fast food lately \u2013 I'd say 5-6 times a week I'll eat out on the road or grab something quick to go.",
+      "time": 3.3
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "I'm not really active at all, to be honest. As a truck driver, I spend most of my time sitting in the cab, and when I'm at home, I don't have much time for exercise. It's been pretty sedentary lately. And yeah, my diet's been pretty heavy on fast food - it's just easier that way when you're always on the road.",
+      "time": 3.0
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "To be honest, I eat whatever is convenient when I'm on the road. Usually it's fast food or convenience store snacks. When I'm at home with my wife, we try to cook healthy meals together, but most days when I'm driving, I just grab something quick to go. It's not great, I know, but it's just easier that way.\n\n(only disclosed facts C01, C02, C07, C08, C10, C11, C12, C15, C16, C17, C19, C20, C21, C22, C23, C24, and C25 are included in the response)",
+      "time": 4.9
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "My mom has hypertension and type 2 diabetes. She's still alive at 78, doing okay for her age.",
+      "time": 1.2
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "My father had a heart attack when he was 52 and passed away from it. That's been weighing on my mind lately, given what I'm experiencing now.",
+      "time": 1.3
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 41.5,
+    "avg_time_per_turn": 2.1,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C05",
+        "phrase": "left arm tingl"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "father had a heart attack"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 3,
+  "case_name": "cardiology"
+}

@@ -1,0 +1,158 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "rephrasing",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been experiencing some discomfort in my chest for the past three days. It's a tightness or pressure sensation that's making me worried.",
+      "time": 6.1
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "It's a substernal chest tightness, like someone is squeezing my chest from the inside out.",
+      "time": 5.7
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "Yeah, I get this shortness of breath along with it.",
+      "time": 5.2
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "Yes, I've been sweating pretty heavily during these episodes.",
+      "time": 5.6
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "No, actually I do sweat a lot during the episodes.",
+      "time": 5.1
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "It usually stays in the center of my chest.",
+      "time": 4.9
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "I do feel a numbness or tingling sensation in my left arm during the more severe episodes. It's not always there, but when it is, it can be pretty uncomfortable.",
+      "time": 6.4
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "Only when the episodes are more severe. The tingling sensation in my left arm usually shows up then.",
+      "time": 5.3
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "I don't think so. Like I said, I get some numbness and tingling in my left arm when it's bad, but other than that, no other symptoms in my arms or legs.",
+      "time": 8.4
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "Yeah, I've had some mild ankle swelling lately. My shoes feel a bit tighter than usual, but it's not too bad.",
+      "time": 5.7
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "My shoes do feel a bit tighter than usual due to the ankle swelling.",
+      "time": 5.4
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "Actually, I've been experiencing some mild discomfort in my stomach during these episodes, but nothing that's caused me any problems.",
+      "time": 6.5
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "It seems like we're getting into more details about my symptoms. To answer your question directly, I've been feeling a bit queasy during some of these episodes.",
+      "time": 7.7
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I haven't experienced any fever, chills, or night sweats related to my chest discomfort. I'm getting a bit concerned about what might be causing all these symptoms, and I just want to get some answers so we can figure out how to make them go away.",
+      "time": 8.2
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "My appetite hasn't been great lately. I've been feeling a bit run down, and I think I might have lost a few pounds since this all started.",
+      "time": 8.1
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "My diet is pretty bad - I eat a lot of fast food, 5-6 days a week. And as for exercise, I don't really have time for it with my job as a truck driver. I'm on the road most of the week and when I'm not driving, I'm usually just relaxing at home.",
+      "time": 10.0
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "I'd say I'm pretty sedentary. My job as a truck driver doesn't exactly lend itself to regular exercise.",
+      "time": 8.2
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "It's usually a mix of fast food and convenience store snacks, and whatever my wife can whip up when I'm home.",
+      "time": 7.0
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "My mom has been dealing with high blood pressure and diabetes for years - she's 78 and still doing well. My dad... he had a heart attack when he was 52.",
+      "time": 8.7
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "My father passed away from a heart attack at age 52. It's been on my mind lately with what I'm experiencing.\" \n\n\"I've been dealing with an irregular schedule on the road, which has affected my ability to take my blood pressure medication as prescribed.\"\n\n\"I stopped taking my cholesterol medicine about a year ago after being prescribed it for hyperlipidemia.",
+      "time": 10.3
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 138.3,
+    "avg_time_per_turn": 6.9,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "hyperlipidemia"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 3,
+  "case_name": "cardiology"
+}

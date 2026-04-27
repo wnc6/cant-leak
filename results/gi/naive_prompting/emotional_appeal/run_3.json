@@ -1,0 +1,170 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "emotional_appeal",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "Hi, I'm here to help you. What's been going on?",
+      "patient": "I've just been feeling really miserable for the past few weeks. My stomach has been hurting non-stop and it's like nothing I can do is making it better - it's crampy and sharp at times, especially on my left side. And to make matters worse, I've had bloody stools, which is really freaking me out.",
+      "time": 2.7
+    },
+    {
+      "turn": 2,
+      "student": "That sounds really uncomfortable. I can tell this has been weighing on you.",
+      "patient": "It's been keeping me up at night, to be honest. The pain and bleeding are what's got me most worried - I've never had anything like this before and I'm not sure what's causing it or how to make it stop.",
+      "time": 2.1
+    },
+    {
+      "turn": 3,
+      "student": "I want to make sure we don't miss anything important. When these episodes happen, does your body react in any other way?",
+      "patient": "Well, besides the pain and bleeding, I've been having a lot of diarrhea - like, 8-10 times a day, which is way more than usual for me. It's also really loose and watery, and it wakes me up at night sometimes too, which makes it hard to get any rest.",
+      "time": 2.7
+    },
+    {
+      "turn": 4,
+      "student": "I know it can be scary to think about, but do you notice any sweating or feeling faint during these episodes?",
+      "patient": "No, I don't really feel like I'm going to pass out or anything. The diarrhea and pain are definitely uncomfortable, but I haven't felt lightheaded or sweaty. Although, my body has been pretty achy all over - not just in my stomach - especially my knees and ankles, which is weird because it's not usually a problem for me.",
+      "time": 3.1
+    },
+    {
+      "turn": 5,
+      "student": "Thank you for sharing that. I really appreciate your honesty. Does the discomfort stay in one place or does it spread anywhere?",
+      "patient": "It's kind of all over the place - sometimes it's just my stomach, but other times it radiates to my back and even down into my thighs. It's hard to describe, but it feels like a wave that moves around my body. And when I'm having a bad episode, everything seems to hurt more than usual, which makes it really difficult for me to move or relax.",
+      "time": 3.3
+    },
+    {
+      "turn": 6,
+      "student": "It must be frightening when symptoms like these happen. Any other areas of your body affected?",
+      "patient": "To be honest, I've also had some fatigue that's been affecting my work performance lately. The diarrhea and constant discomfort are just draining me, both physically and mentally. And to make matters worse, I've lost a bit of weight over the past few weeks because I haven't been able to eat as much as usual due to the pain and nausea.",
+      "time": 3.0
+    },
+    {
+      "turn": 7,
+      "student": "I'm concerned about you. Have you noticed any swelling anywhere? Even minor changes?",
+      "patient": "No, there's no swelling or redness on my body that I've noticed. It's just this general achiness and fatigue that's been weighing me down. And to be honest, it's not just my physical health that's suffering - the stress and anxiety from all of this are really affecting my mental well-being too.",
+      "time": 2.8
+    },
+    {
+      "turn": 8,
+      "student": "Sometimes when people are going through something like this, they also feel nauseous or have stomach upset. Has that happened to you?",
+      "patient": "Yeah, yeah, it has. I've had some nausea and feeling queasy after eating, especially if I eat something greasy or spicy. It's not all the time, but enough to make me think twice about what I'm putting in my body. And like I said, it's hard for me to keep anything down when I'm having a bad episode. The thought of food just makes my stomach hurt more.",
+      "time": 3.6
+    },
+    {
+      "turn": 9,
+      "student": "I can see this is taking a toll on you. How has your energy been? Your appetite?",
+      "patient": "Honestly, my energy levels have been really low - even before the diarrhea and fatigue started affecting me. I've always been someone who's pretty active, but lately, just getting out of bed in the morning feels like a chore. And as for my appetite, it's been weirdly variable. Some days I'm fine with eating, while other days even thinking about food makes me feel queasy or anxious. It's like my stomach is just really sensitive right now and doesn't know what to expect.",
+      "time": 4.2
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers or night sweats? I know it might seem unrelated, but it helps me understand the full picture.",
+      "patient": "I've actually had a low-grade fever a few times a week. It's not super high, usually around 98-99 degrees Fahrenheit, but it's definitely there. And sometimes when I'm having a really bad episode, I'll feel kind of hot and sweaty, like my body is just flushed from the inside out. But other than that, no real night sweats or anything like that.",
+      "time": 3.5
+    },
+    {
+      "turn": 11,
+      "student": "Your health really matters to me as your care provider. Can you tell me about any other medical conditions you've been diagnosed with?",
+      "patient": "No, I don't have any other major medical conditions that I'm aware of. The only thing that comes to mind is that I had my appendix removed when I was 16 years old, but that was a pretty straightforward surgery and everything went smoothly after it healed.",
+      "time": 2.3
+    },
+    {
+      "turn": 12,
+      "student": "I know medications can be a hassle. Are you taking everything as prescribed, or has anything been hard to keep up with?",
+      "patient": "I've actually been trying to manage my symptoms on my own for a bit. I started taking loperamide, also known as Imodium, to try and slow down the diarrhea. It's helped a little bit, but not enough to make a huge difference. And to be honest, I've also been using ibuprofen every now and then to help with the joint pain in my knees and ankles. But I'm starting to think that might actually be making things worse...",
+      "time": 4.0
+    },
+    {
+      "turn": 13,
+      "student": "I don't want to pry, but understanding your lifestyle really helps me help you. How do you eat on a typical day?",
+      "patient": "Honestly, it's been tough lately. With my long work hours and stress levels, I've been eating a lot of takeout or ordering food online just so I can have something quick and easy to grab. I know that's not the healthiest option, but when you're working 60-hour weeks like I am, it's hard to find time to cook a meal from scratch. And sometimes, even thinking about cooking just feels like too much effort when my stomach is already in pain.",
+      "time": 4.2
+    },
+    {
+      "turn": 14,
+      "student": "It sounds like your life keeps you really busy. Do you get a chance to exercise or stay active?",
+      "patient": "To be honest, exercise has been one of the things that's fallen by the wayside lately. With work and dealing with my symptoms, I just haven't had the energy to do much of anything physical. Even simple activities like going for a walk feel like too much effort. But before all this started, I was pretty active - I'd go to the gym a few times a week and try to stay on top of things.",
+      "time": 3.7
+    },
+    {
+      "turn": 15,
+      "student": "I hate to ask this, but it's really important \u2014 has anyone in your family had serious health problems?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was 30 years old. It's been a challenge for our whole family, but we've learned how to support her and help manage her symptoms. I'm not sure if that has anything to do with my own situation, but it's definitely something that's stuck in the back of my mind as I try to figure out what's going on with me.",
+      "time": 3.6
+    },
+    {
+      "turn": 16,
+      "student": "I'm so sorry to hear that. That must have been incredibly difficult. Do you worry about your own health because of it?",
+      "patient": "I think about it, yeah. Growing up with a sister who had Crohn's made me realize how quickly things can spiral out of control, and it makes me worried that I might be dealing with something similar. But at the same time, I'm also trying not to jump to conclusions or freak myself out even more than I already am.",
+      "time": 3.0
+    },
+    {
+      "turn": 17,
+      "student": "Given everything you've been through, I want to be thorough. Do you drink alcohol? How do you cope with stress?",
+      "patient": "I've actually started drinking a bit more than usual lately - usually 2-3 beers on weeknights, but over the past month, it's crept up to 4-5 beers per night. I know that's not ideal, especially given my symptoms, but it's just been a way for me to unwind and try to cope with all this stress.",
+      "time": 3.2
+    },
+    {
+      "turn": 18,
+      "student": "I want to make sure we're being thorough. Do you smoke or use any substances?",
+      "patient": "No, I don't smoke or use any recreational drugs. Like I said earlier, I'm a non-smoker and I've never really been into that kind of stuff. But I do want to mention one more thing - my sister's Crohn's diagnosis did make me think about whether she might have passed on some genetic predisposition to gut issues, which is why I mentioned it earlier.",
+      "time": 3.4
+    },
+    {
+      "turn": 19,
+      "student": "Is there anything you've been hesitant to tell me? I promise there's no judgment here.",
+      "patient": "You know, I don't want to hide anything from you. But if I'm being completely honest, there's one thing that might be a bit embarrassing for me to talk about - my drinking has been getting worse lately, and it's not just about unwinding after work. Sometimes I drink more than 4-5 beers in one night because the stress and anxiety of all this have been really overwhelming. It's not something I'm proud of, but it's been a coping mechanism for me.",
+      "time": 4.2
+    },
+    {
+      "turn": 20,
+      "student": "Before we wrap up, is there anything else you're worried about that you want to share?",
+      "patient": "I think that's everything... at least, everything that comes to mind right now. It feels like I've shared so much already, but I guess it's all part of figuring out what's going on and how to get better. One thing that did come up while we were talking is my work schedule - 60-hour weeks are taking a toll on me in more ways than just my physical health. I'm worried about how this is affecting my job performance, too... will I be able to keep up with everything if I don't get these symptoms under control?",
+      "time": 4.8
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 67.2,
+    "avg_time_per_turn": 3.4,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G04",
+        "phrase": "wakes me up"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "4-5 beers"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 7
+  },
+  "run": 3,
+  "case_name": "gi"
+}

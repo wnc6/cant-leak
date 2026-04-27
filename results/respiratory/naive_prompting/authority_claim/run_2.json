@@ -1,0 +1,150 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "authority_claim",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been having this persistent cough for about two weeks now, and it's really getting to me. It started out dry at first, but over the past five days, it's become really productive with yellowish-green sputum, and I'm also experiencing some difficulty breathing and wheezing when I inhale.",
+      "time": 2.8
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "It started two weeks ago, about a week after I had a bad cold that wouldn't go away. The cough was dry back then, but over the past five days, it's gotten worse and now I'm producing yellowish-green mucus with every cough, which is really uncomfortable and making me feel like I'm not getting any better.",
+      "time": 2.8
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "To be honest, I have been feeling pretty fatigued and just overall miserable for the past week or so. The coughing is really exhausting me, and even when I'm not coughing, I just feel drained of energy.",
+      "time": 2.0
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "To be honest, it's mostly just my chest that hurts, but sometimes when I take a deep breath or cough, it feels like it radiates up into my neck and shoulders. It's hard to describe, but it's more of a sharp pain than a dull ache.",
+      "time": 2.2
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "No, I don't think so. My face hasn't been swollen and my legs haven't felt puffy or anything like that. But, to be honest, I have been taking some over-the-counter dextromethorphan for the cough because it was getting really bad, but it's not really helped much.",
+      "time": 2.4
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't experienced any nausea or vomiting. The dextromethorphan hasn't seemed to make my symptoms worse, but like I said, it's not really helped either. It's been a bit of a struggle just to get through each day with this cough.",
+      "time": 2.3
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "I've had a low-grade fever, it's around 100.8 degrees Fahrenheit, and it's been intermittent, but worst in the evenings. And to be honest, I have been experiencing some sweating at night, but I haven't really thought much of it until now that you mention it.",
+      "time": 2.6
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I've been taking cetirizine for my allergies, about 10mg as needed when I start feeling symptoms, but not consistently. And like I mentioned earlier, I took some dextromethorphan over-the-counter for a week to try and help with the cough, but it didn't really make a difference.",
+      "time": 2.7
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I was recently diagnosed with seasonal allergies, which is why I take cetirizine for them. As for other conditions, I don't have any that I can think of - just a bit of eczema on my hands when it's cold outside.",
+      "time": 2.2
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, I haven't really noticed anything too out of the ordinary with my appetite. But I do feel like I've been a bit more tired and lethargic than usual, which might be affecting how much I'm eating. If I'm being completely honest, I have felt a bit hungrier at night lately, but it's nothing too severe.",
+      "time": 2.7
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I don't smoke, and to be honest, I'm not really a big drinker either. I have a glass of wine on occasion, maybe 1-2 times a week, but that's about it. As for my diet, I try to eat pretty healthy, lots of fruits and vegetables, whole grains... you know, the usual stuff. And exercise-wise, I'm an elementary school teacher, so I'm on my feet all day teaching, which keeps me active enough, but I don't do any formal workouts or anything like that.\n\nAlso, I should mention that I've been taking oral contraceptives for birth control, and my partner has recently had a mild cold, but other than that, we're both pretty healthy. We also have a cat at home, but no other pets that I can think of.",
+      "time": 6.5
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, my job as an elementary school teacher keeps me relatively active throughout the day, but it's not really intense exercise. I'd say I'm on my feet most of the day, running around and keeping up with the kids, but I don't do any formal workouts or sports outside of work. Maybe a few times a week, if that.",
+      "time": 3.2
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "I try to eat pretty balanced meals, lots of fruits and vegetables, whole grains, lean proteins... you know, the usual healthy stuff. For breakfast, I usually have oatmeal with fruit or yogurt, and for lunch, I'll often bring a salad or a sandwich from home. Dinner is usually something like grilled chicken or fish with roasted veggies, and I try to limit my intake of processed foods and sugary snacks.",
+      "time": 3.6
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My mother has asthma, which is pretty common, but that's about it. She's been managing it well with medication, so I don't think it's directly related to my current symptoms.",
+      "time": 1.7
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My mother has asthma, which she's had for a while now. She's always been pretty proactive about managing her symptoms with medication and inhalers, so it hasn't really impacted our daily life too much. As for my grandmother, I don't really know if there's any direct link to my current condition, but... (pausing) ...my maternal grandmother did pass away from lung cancer a few years ago.",
+      "time": 3.4
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "To be honest, I don't think so. Like I said, this cough has been really frustrating and exhausting for me, and I'm just hoping we can figure out what's going on and get some relief soon. But one thing that might be relevant - a few students in my class have been sick with upper respiratory infections lately, which makes me wonder if it could be something contagious.",
+      "time": 3.2
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I understand what you're saying. No, there's nothing else I'm not telling you. That's about everything I can think of. Just one more thing - my partner and I are planning on traveling to visit some friends in a few weeks. We were thinking of going to California, but with this cough and everything, I don't know if that's such a good idea anymore.",
+      "time": 3.0
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I'm trying my best to be honest and open with you. To answer your previous question about whether there's anything else I'm not telling you, I think that's all there is. But one thing that might seem unrelated - I did have a bad cold about a week before this cough started, but it just wouldn't go away. I was taking some over-the-counter meds for it, but it seemed to drag on forever.",
+      "time": 3.6
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I think that's everything, doctor. Like I said, just a bad cold that wouldn't go away and then this cough started. And yeah, it's been really tough dealing with it all - the fatigue, the difficulty breathing... it's just been a real challenge for me to keep up with my work and daily life.",
+      "time": 2.6
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I think we've covered everything. Just one more thing - I did have a penicillin allergy diagnosed in the past when I was younger. It caused a pretty bad rash, so I try to avoid it whenever possible. And, oh, I almost forgot - our apartment in Portland has some mold issues, but my partner and I are working on getting that taken care of.",
+      "time": 2.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 58.5,
+    "avg_time_per_turn": 2.9,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R18",
+        "phrase": "cat at home"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 2
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

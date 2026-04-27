@@ -1,0 +1,150 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "rephrasing",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some issues with my stomach for a few weeks now. I've got crampy lower abdominal pain that's mostly on the left side, and it's getting worse over time. Plus, I've noticed blood in my stool, which is really freaking me out. It's bright red mixed with mucus, and it's been happening for about 3 weeks now.",
+      "time": 3.2
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "The pain started off as just a dull ache, but over time it's gotten sharper and crampier. It's like a stabbing sensation that comes in waves. And with the blood in my stool, I've also had an increase in bowel movements - I'm going 8-10 times a day now, which is way more than usual for me. The stools are loose and watery too, and I feel this urgent need to have a bowel movement all the time. It's been really uncomfortable and embarrassing, especially with the blood showing up in my stool.",
+      "time": 4.7
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "The fatigue is pretty bad - I feel like I'm running on empty most of the time. And to be honest, it's not just physical exhaustion; it's also mental. The stress from work and trying to deal with this issue on my own has taken a toll on me. I've been self-medicating with loperamide for diarrhea, but it hasn't really helped much, so I'm getting a bit worried.",
+      "time": 3.8
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "No, to be honest, I haven't noticed any significant sweating or clamminess. The main issue is the crampy pain and the bloody stools. (G01, G02, G03)",
+      "time": 1.8
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "I'm not really sure about that - I just know it's been a lot of discomfort and stress for me lately. Like I said, the pain is crampy and sharp, and the bloody stools are what really have me worried. (G01, G02)",
+      "time": 2.4
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "It tends to be more on the left side where I feel the pain, but sometimes it moves down towards my lower back and hips as well. The cramping can also radiate outwards a bit, making me feel uncomfortable all over that area. (G01)",
+      "time": 2.3
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "To be honest, no, I don't get any radiation of pain to my arms, neck, or jaw. It's mostly localized to my lower abdomen and lower back area. (G01)",
+      "time": 1.7
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "No, there's no tingling or numbness in my arms during these episodes. The pain is definitely more on the left side of my abdomen, and like I said earlier, it can move down towards my lower back and hips, but it doesn't radiate to any other areas besides that.",
+      "time": 2.6
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "To be honest, no. The main thing I'm experiencing is the crampy abdominal pain and the bloody stools. It's really been affecting my quality of life, especially with work and daily activities. (G01, G02)",
+      "time": 2.1
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "No, I don't think so. Like I said, the pain is mostly in my lower abdomen and lower back area, but there's no noticeable swelling in my ankles or feet.",
+      "time": 1.6
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "To be honest, no. My main concern right now is the abdominal pain and bloody stools, which are really affecting me physically and mentally. I've been trying to manage it with loperamide, but it's not helping much. (G01, G02, G03)",
+      "time": 2.5
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "The pain is definitely in my lower abdomen and lower back area, and with the bloody stools, I've also had some nausea and queasiness. Sometimes it feels like there's something stuck in my stomach or that I'm going to be sick after a bowel movement, but it's not constant. The crampy pain and the feeling of urgency are what really bother me.",
+      "time": 3.2
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "Yes, I've been feeling pretty queasy at times, especially after some bowel movements. It's like there's this knot in my stomach that doesn't go away for a while. But it's not just nausea - it's more of an overall gut feeling of being unwell. The crampy pain and bloody stools have really taken a toll on me.",
+      "time": 3.2
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "No, I haven't noticed any fever, chills, or night sweats. Just the crampy abdominal pain, bloody stools, and fatigue that's been affecting my daily life and work performance. (G01, G02, G08)",
+      "time": 2.2
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "To be honest, I haven't really noticed any significant changes in my appetite. If anything, I've probably eaten a bit more frequently due to the constant need to have bowel movements. As for weight loss, I haven't really been paying attention to it, but my girlfriend has mentioned that I seem thinner lately. However, I'm not sure if it's just muscle mass from losing strength or actual weight loss. (G06)",
+      "time": 3.7
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "I've been trying to eat regularly, but it's hard when you're having diarrhea all the time. I usually end up grabbing takeout or easy-to-digest foods because they're less likely to irritate my stomach. As for exercise, I try to stay active with some light walking and stretching during breaks at work, but it's not as much as I'd like. My daily routine is pretty hectic - long hours at the office, stress from work, and trying to manage this GI issue on top of everything else has taken a toll on my overall health and well-being. (G18)",
+      "time": 5.1
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "To be honest, I've been trying to stay active with some light walking and stretching during breaks at work, but it's not as much as I'd like due to my symptoms. My daily routine is pretty hectic, with long hours at the office and stress from work, so finding time for regular exercise has been a challenge lately.",
+      "time": 3.0
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "Honestly, it's been pretty irregular due to my symptoms. I've been trying to stick to easy-to-digest foods like takeout or plain toast because they don't irritate my stomach as much. Sometimes I'll have a few cups of coffee in the morning, and then just grab whatever is quick and convenient for lunch. If I'm lucky, I might get a decent meal at dinner time, but it's not consistent. (G18)",
+      "time": 3.8
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "My dad has type 2 diabetes, but my mom is healthy. As for siblings, my older sister was diagnosed with Crohn's disease at a pretty young age, I think around her early thirties. (G20, G19)",
+      "time": 2.2
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "My dad has type 2 diabetes, and it's something we keep an eye on, but my mom is healthy. My older sister was actually diagnosed with Crohn's disease when she was around her early thirties. That's about it for any serious family medical issues that I know of. (G20, G19)",
+      "time": 2.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 58.0,
+    "avg_time_per_turn": 2.9,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G06",
+        "phrase": "weight loss"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 2
+  },
+  "run": 2,
+  "case_name": "gi"
+}

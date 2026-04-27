@@ -1,0 +1,146 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having this really persistent cough for about two weeks now and I'm finding it hard to breathe, especially when I'm walking or exercising. It's just not going away on its own and I'm getting worried.",
+      "time": 1.7
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "It's a really annoying, hacking cough that started out dry at first but now it's productive - I mean, it brings up yellowish-green mucus. And when I try to breathe deeply or exercise, my chest feels tight and I get this wheezing sound in my lungs.",
+      "time": 2.4
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about two weeks ago, but at first, I thought it was just a cold that would go away on its own. It wasn't until about 5 days ago when the cough turned productive and the wheezing started that I realized something more serious might be going on.",
+      "time": 2.2
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It happens all the time, even when I'm just sitting still or lying down. The cough is constant, and I feel like I'm always trying to catch my breath. Sometimes it's worse than others, but it's always there in the background.",
+      "time": 1.9
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It's an 8 or 9 out of 10 - it's just really interfering with my daily life and I'm getting exhausted from trying to breathe all the time. Sometimes when I wake up in the middle of the night, I feel like I can barely get a breath in, which is really scary.",
+      "time": 2.4
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "Yeah, besides the cough and wheezing, I've also had a low-grade fever that comes and goes - usually around evening time. It's not super high, but it's there, and it makes me feel really miserable. And sometimes after I cough or exert myself, I get these chills, like my whole body just shivers.",
+      "time": 2.7
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "Yeah, it definitely gets worse when I'm exercising or trying to breathe deeply - that's when the wheezing is really loud and my chest feels tight. And at night, if I lie down too quickly or roll over in bed, it can trigger a coughing fit that lasts for a while.",
+      "time": 2.3
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "Actually, yes... I do get some night sweats. It's not just my hands or feet getting warm, but I'll wake up in the middle of the night and be soaked through my pajamas. And occasionally, if I'm coughing really hard, it can make me feel a little lightheaded, like I might pass out for a second, but it's always over quickly.",
+      "time": 3.0
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "To be honest, sometimes after I've been coughing really hard, my right side feels kind of sharp and sore. It's not constant, but it can catch me off guard when I'm in a bad coughing fit. Other than that, just the usual fatigue and feeling pretty miserable all the time.",
+      "time": 2.4
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "No, no swelling at all. Just general exhaustion and feeling drained all the time, which is making it hard to do even simple tasks. I've had to miss work a few days because of how bad I'm feeling.",
+      "time": 1.9
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I'm actually just taking some over-the-counter dextromethorphan for the cough, but it's not really helping much. My friend recommended it, and I figured it was worth a try, but like I said, it's not doing much to alleviate the symptoms.",
+      "time": 2.2
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "No, I don't have any other medical conditions that I'm aware of. I had a physical exam about a year ago and everything was normal, so I've been pretty healthy up until this point. The only thing is, I am allergic to penicillin - it causes a rash on my skin, so I try to avoid taking it if possible.",
+      "time": 2.7
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "No, I haven't had my cholesterol checked recently. As I mentioned, my last physical exam was about a year ago and everything came back normal, so I don't think there's been any need for it since then.",
+      "time": 1.8
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I'm actually a social drinker, I have one to two glasses of wine on weekends. And no, I've never smoked.",
+      "time": 1.2
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "I'd say my diet is pretty normal - I eat a variety of foods, try to avoid junk food, but sometimes I do indulge in treats. As for exercise, I'm an elementary school teacher, so I'm on my feet all day teaching and interacting with kids. I also like to stay active by walking or hiking on the weekends, but since this cough started, I've had to really limit my physical activity because it's just too hard to breathe.\n\nOh, and one more thing - several students in my class have been out sick recently with upper respiratory infections, so I'm starting to wonder if maybe I caught something from them?",
+      "time": 4.6
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "No, not that I know of. My mom actually has asthma, but other than that, I don't think there's any history of heart disease in my family. But like I mentioned earlier, my maternal grandmother did pass away from lung cancer, so there might be some concerns about respiratory issues running in the family...",
+      "time": 2.5
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "Actually, that's not entirely accurate - my mom doesn't just have asthma, she actually has a history of bronchitis and pneumonia as well. She's been pretty open with me about her health issues over the years, so I've always tried to take good care of myself to avoid any potential problems.",
+      "time": 2.4
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "I don't think I've seen a doctor since my physical exam about a year ago. To be honest, at first, I thought this cough would just go away on its own, but now that it's been two weeks and it's not getting any better, I'm starting to get really concerned.",
+      "time": 2.3
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "I've already mentioned that I'm allergic to penicillin - it causes a rash on my skin. But besides that, I don't think I have any other allergies to medications.",
+      "time": 1.5
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "I just want to mention one more thing - I've been taking cetirizine for my seasonal allergies in the past, but I'm not currently taking it. And also, I live with a cat and my partner has had a mild cold recently... (pausing) Oh, wait, you didn't ask about that specifically, did you?",
+      "time": 2.7
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 46.8,
+    "avg_time_per_turn": 2.3,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      }
+    ],
+    "leak_count": 1
+  },
+  "run": 3,
+  "case_name": "respiratory"
+}

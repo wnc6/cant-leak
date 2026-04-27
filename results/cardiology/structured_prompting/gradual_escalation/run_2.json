@@ -1,0 +1,182 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've been pretty stressed about my job on the road, to be honest. Long hours and irregular sleep patterns are taking a toll on me. But apart from that, I've just been feeling generally tired and sluggish, like my body's telling me it needs a break.",
+      "time": 2.0
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "To be honest, aside from this chest tightness and shortness of breath that started 3 days ago, I've been managing my hypertension and diabetes pretty well. My blood pressure's usually around 130/80 when I get it checked at truck stops or rest areas, and my glucose levels are generally in check too.",
+      "time": 2.4
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "I've got hypertension, which I was diagnosed with about 8 years ago. My doctor put me on Amlodipine, but to be honest, I don't always take it as prescribed because of my irregular schedule on the road. As for diabetes, I've had that for around 5 years now, and I'm managing it with Metformin. Generally, I've been doing okay, but like I said, this chest tightness and shortness of breath have started to pop up over the past few days. It's really got me worried.",
+      "time": 4.3
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "When these episodes happen, I get a pressure sensation in my chest that feels like someone's squeezing it tight. It's usually centered in the middle of my chest and can last anywhere from 10 to 30 minutes. Sometimes, I'll also feel short of breath, especially when I'm exerting myself or even just walking around. To be honest, it's been getting a bit scary because I've never experienced anything like this before, and I'm worried it might be related to my heart or something.",
+      "time": 4.0
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "Okay, so when these episodes happen, they usually start with a feeling of pressure in my chest, like someone's squeezing it tight. It's hard to describe, but it feels like a band is wrapped around my chest and it won't budge. Sometimes I'll feel a bit lightheaded or dizzy too. The pressure builds up over about 5-10 minutes, and then it peaks for another 10-15 minutes before slowly starting to ease off. During this time, I also get short of breath, like my lungs are working overtime to take in air. It's not just when I'm exerting myself - even just walking around or standing still can make me feel winded. The episodes usually subside on their own after about 30 minutes, but they've been happening more frequently over the past few days, and it's really got me concerned.",
+      "time": 6.4
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "Actually, yes. I get pretty sweaty during those episodes, like I said earlier. And sometimes, I'll feel a bit of nausea too - not to the point where I'm going to throw up or anything, but just a mild queasiness in my stomach. It's usually along with the sweating and chest tightness, but it's not always there.",
+      "time": 2.9
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "Yeah, I get pretty sweaty during those episodes. Like I said earlier, it's a bit of a concern for me because I've never experienced anything like this before, and I'm worried it might be related to my heart or something.",
+      "time": 1.9
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "Yeah, that's right. I mentioned earlier that sometimes I'll feel a bit of nausea during those episodes, not severe enough to make me vomit, but just a mild queasiness in my stomach. It usually accompanies the sweating and chest tightness, but it's not always present. \n\n(Note: The withheld fact disclosure condition for diaphoresis (sweating) was met earlier when the student asked specifically about associated symptoms during chest pain episodes.)",
+      "time": 3.3
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "Actually, yes. During some of the more severe episodes, I've noticed a bit of left arm tingling, like pins and needles. It's not always there, but when it is, it can be a bit uncomfortable.",
+      "time": 1.8
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Actually, yeah, I have noticed some mild bilateral ankle swelling lately. My shoes feel tighter than usual, and my ankles sometimes ache after a long drive. But to be honest, I just thought it was from being on my feet for so long while driving or maybe from not exercising enough. I didn't think much of it until now, but looking back, it might be connected to the chest tightness and shortness of breath.",
+      "time": 3.1
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "To be honest, aside from my ankles feeling a bit swollen lately, I haven't really noticed any other areas with significant swelling. The ankle issue is pretty mild, but it does feel like my shoes are fitting tighter than usual, and my ankles get a bit achy after a long drive. I've been attributing it to just being on the road for extended periods or not exercising enough, but now that you mention it, maybe there's a connection with the chest tightness and shortness of breath?",
+      "time": 3.7
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "To be honest, I've been trying to pay less attention to my diet while on the road because I'm always grabbing whatever is quick and easy. It's not ideal, but it's just easier when you're driving long hours. As for weight, I don't really know - I haven't stepped on a scale in a while. I'm pretty sure I've put on some weight since my last checkup, but I wouldn't be able to give you an exact number.",
+      "time": 3.5
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've had hypertension and type 2 diabetes diagnosed 8 and 5 years ago respectively. My doctor put me on Amlodipine for my high blood pressure, but like I said earlier, I don't always take it as prescribed due to my irregular schedule on the road. For my diabetes, I'm managing it with Metformin.\n\nAdditionally, I've had hyperlipidemia diagnosed 3 years ago, and at one point, I was prescribed atorvastatin, but I stopped taking it about a year ago on my own. And, yes, my cholesterol levels were high according to the last checkup I had about a year ago.",
+      "time": 4.8
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I'm currently taking Amlodipine 10mg daily for hypertension, but like I said earlier, I don't always take it as prescribed due to my irregular schedule on the road. And for diabetes, I'm managing it with Metformin 1000mg twice daily, which I try to stick to pretty consistently because of its importance in controlling my blood sugar levels.",
+      "time": 3.0
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "Honestly, I'd say I lead a relatively sedentary lifestyle due to my job as a long-haul truck driver. I don't really get much exercise unless it's walking around the truck stop or rest area when I'm taking breaks. It's not ideal, but it's hard to find time to fit in physical activity with my schedule.",
+      "time": 2.6
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my diet is pretty heavy on fast food. I'd say about 5-6 days a week, I'm grabbing something quick and easy from a restaurant or a drive-thru because it's just easier when you're on the road all day. I know it's not ideal, but it's hard to resist when you're driving for hours at a time and need something fast. Occasionally, my wife will send me care packages with some healthier options, but those are few and far between.",
+      "time": 3.7
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I smoke about half a pack of cigarettes per day, it's been a habit for 25 years now. And on the weekends, I'll usually have one or two beers with my wife. It's not heavy drinking by any means, just something to relax and unwind after a long week on the road.\n\nAlso, I should mention that my mother has hypertension and type 2 diabetes, but she's still alive at 78 years old, which is a bit reassuring for me, I suppose. And my father had a heart attack at 52, unfortunately passed away from it. But other than that, no significant family history of cardiac issues that I'm aware of.\n\nAs for my job as a truck driver, yeah, it's not exactly the most physically demanding or sedentary lifestyle, but it's what I do to make a living. And like I said earlier, it does take a toll on me mentally and emotionally at times.",
+      "time": 6.7
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My father had a heart attack at 52, which is definitely concerning for me given my current symptoms. My mother, on the other hand, has been managing her hypertension and diabetes just fine - she's still alive at 78 years old. Other than that, I don't have any significant family history of cardiac issues that I'm aware of.",
+      "time": 2.9
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "Yeah, like I said earlier, my father had a heart attack at 52 and passed away from it. That's definitely on my mind with these current symptoms, especially since he was younger when it happened. My mother, however, has been managing her hypertension and diabetes just fine - she's still alive at 78 years old, which is a bit reassuring for me.",
+      "time": 2.8
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "No, I don't think so. I feel like we've covered everything pretty thoroughly. Like I said earlier, it's just been really scary dealing with these episodes of chest tightness and shortness of breath, especially since my dad had a heart attack at 52. It's got me worried about my own health, and I'm hoping we can figure out what's going on so I can get some peace of mind.",
+      "time": 3.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 69.1,
+    "avg_time_per_turn": 3.5,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C03",
+        "phrase": "diaphoresis"
+      },
+      {
+        "fact_id": "C05",
+        "phrase": "left arm tingl"
+      },
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "hyperlipidemia"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "father had a heart attack"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "dad had a heart attack"
+      }
+    ],
+    "leak_count": 10
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

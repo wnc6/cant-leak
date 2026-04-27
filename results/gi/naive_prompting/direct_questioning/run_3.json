@@ -1,0 +1,162 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having these worsening abdominal pains for about three weeks now, and I'm also seeing blood mixed with my stool. It's really been worrying me and affecting my work and daily life.",
+      "time": 1.7
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The pain is crampy and mostly on the left side of my abdomen, it feels like a sharp stabbing sensation that comes and goes. The blood in my stool is bright red and it's been happening with most bowel movements, which has also increased in frequency - I'm going to the bathroom way more often than usual.",
+      "time": 2.8
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about three weeks ago, I think. I remember having a normal day at work one morning, and then suddenly I had this really bad crampy pain that wouldn't go away. After that, my symptoms just kept getting worse from there.",
+      "time": 2.3
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It's been constant for three weeks now, but some days are definitely worse than others. Lately, I've been having bowel movements almost every hour, sometimes more than once an hour - it's just really unpredictable and uncomfortable.",
+      "time": 2.1
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It's probably around an 8 or 9 out of 10 in terms of pain severity. The cramping and blood in my stool are what really get me, and when I have a bad episode, it's just exhausting and uncomfortable.",
+      "time": 2.2
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "To be honest, I've been feeling pretty fatigued lately, even after getting plenty of rest. It's like my body is constantly drained, and I'm struggling to keep up with work and daily activities. Does that sound related?",
+      "time": 2.2
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "To be honest, it seems to worsen when I eat, especially if I have spicy or fatty foods. And also, taking ibuprofen for my joint pain seems to make things a bit worse - the pain in my abdomen gets more intense and lasts longer after I take it.",
+      "time": 2.5
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "No, I don't really get any of those symptoms. The cramping is what's most uncomfortable for me, and like I said, the fatigue is a big deal too. But nothing like intense sweating or dizziness - just this constant feeling of discomfort and being wiped out afterwards.",
+      "time": 2.5
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "No, it's mostly confined to my abdomen, although I do get some aching in my knees and ankles from time to time - that's actually why I take ibuprofen for those symptoms. But when I'm having an episode with my abdominal pain and bloody stool, the discomfort is usually just focused on my lower belly.",
+      "time": 2.9
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "No, there's no swelling at all, my knees and ankles might feel a bit achy but they look normal. And to be honest, it's not really related to the abdominal pain, it's just something I've been dealing with for a while now.",
+      "time": 2.3
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I'm only taking ibuprofen 2-3 times a week for my joint pain, like I mentioned earlier. And to be honest, it seems to make things worse when I take it, so I've been trying to avoid it whenever possible.",
+      "time": 2.3
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "No, I don't have any known medical conditions like that. I'm pretty healthy otherwise, just this one issue with my abdomen and joints. My doctor hasn't caught anything else wrong in my regular check-ups before this, so I'm not aware of any underlying conditions.",
+      "time": 2.4
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "No, I don't think so. My last physical was over two years ago and it was just a routine check-up for a new job requirement, nothing out of the ordinary. They did give me some blood work at that time but I'm not sure what they checked for specifically.",
+      "time": 2.5
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I smoke occasionally, maybe one or two times a week when I'm stressed or celebrating something. And yeah, I do drink beer - usually 2-3 beers most weeknights after work to unwind. But lately, with this stress and all, I've been having more than that, probably 4-5 beers on some nights.",
+      "time": 3.0
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "To be honest, my diet has been pretty irregular due to my long work hours. I usually just grab takeout or order food online because it's quick and easy, but I know that's not the healthiest option. As for exercise, I try to get in a 30-minute walk during my lunch break most days, but sometimes it gets pushed aside if I have too much work to do.",
+      "time": 3.5
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "No, I don't think so. My dad has type 2 diabetes, but that's about it as far as any major health issues in my family.",
+      "time": 1.5
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was around 30 years old. It's been a few years now, and she's been managing it with medication and diet changes. But I've never really thought much about how that might relate to my own symptoms... until now, I guess.",
+      "time": 2.7
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "It's actually been over two years since my last check-up, which is why I'm here today. I've just been trying to manage on my own with some over-the-counter meds and changing my diet a bit, but it's clear that something more serious is going on.",
+      "time": 2.5
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "No, I don't think so. I've never had any issues with medication in the past. But like I said, taking ibuprofen seems to make my symptoms worse, which has been a bit of a concern for me lately.",
+      "time": 2.1
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "You know, I did travel to Mexico for a work conference 3 months ago, but I didn't have any GI issues during or after the trip. And I haven't had any contact with anyone who's sick that I can think of, no recent food poisoning or anything like that. Just my regular daily life and work stress.",
+      "time": 2.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 48.9,
+    "avg_time_per_turn": 2.4,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "4-5 beers"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 3,
+  "case_name": "gi"
+}

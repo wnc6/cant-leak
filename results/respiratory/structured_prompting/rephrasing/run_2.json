@@ -1,0 +1,154 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "rephrasing",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having a persistent cough and difficulty breathing for about 2 weeks now. It's really been affecting my daily life, especially since I'm an elementary school teacher and I work with young children every day.",
+      "time": 1.5
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "The cough started out dry at first, but over the past 5 days it's become productive - I'm coughing up yellowish-green sputum. It's really hard to explain, but when I breathe in deeply or exert myself, I feel this tightness in my chest and I start wheezing.",
+      "time": 2.3
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "To be honest, it feels like I'm getting a bit fatigued, even just from walking around the house. And sometimes at night, when I settle in for bed, I'll start coughing and wheezing again - it's really hard to sleep through those episodes.",
+      "time": 2.1
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "Yes, actually. When those episodes happen, I do get pretty sweaty - like, soaking through my pajamas every night for a few nights now. It's been really uncomfortable and it makes me feel even more exhausted during the day.",
+      "time": 1.8
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "Actually, yes. During those episodes, I don't get sweaty like I do at night. But when I'm coughing up that yellowish-green sputum, my skin feels a bit clammy and cold to the touch, especially on my face and neck. It's not as bad as the sweating at night, but it's still noticeable.",
+      "time": 2.6
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "It tends to stay more central, around my chest area, where I feel that tightness and wheezing. Sometimes it can radiate down to my lower back a bit, but mostly it's focused on my upper body.\n\n(Note: The withheld fact \"Right-sided chest pain\" was not relevant to this question, so it is not disclosed.)",
+      "time": 2.6
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "I don't really feel any radiation down into my arms or shoulders. Occasionally, I'll get a bit of discomfort in the back of my throat when I'm coughing, but that's about it.",
+      "time": 1.6
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "No, there isn't any tingling or numbness in my arms. The sensation is mostly limited to my chest area and sometimes a bit of throat discomfort when I'm coughing.",
+      "time": 1.4
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "No, I don't have any tingling, pain, or unusual sensations in my legs or feet. The main areas that bother me are my chest and throat when I'm coughing. Like I said earlier, it's mostly a tightness in my chest and wheezing, with some discomfort in the back of my throat.",
+      "time": 2.4
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "No, I haven't noticed any swelling in my ankles, feet, or hands. Like I said earlier, it's mostly been centered around my chest and throat area.",
+      "time": 1.4
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "No, my shoes don't feel tighter than usual, and I haven't noticed any puffiness in my legs. I've also been taking over-the-counter cetirizine for my seasonal allergies, but it hasn't helped with this cough or breathing issues.",
+      "time": 1.9
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "To be honest, sometimes after one of those episodes, I'll feel a bit nauseous and my stomach will feel upset. It's not constant, but it does happen occasionally after I've been coughing or wheezing. And to make matters worse, I've also had some low-grade fever over the past week, usually around 38.2\u00b0C (100.8\u00b0F), mostly in the evenings.",
+      "time": 3.0
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "To be honest, it's not really a stomach issue that triggers my symptoms coming on. It's more like after I've been experiencing those episodes, whether it's coughing or wheezing, sometimes I'll feel nauseous and my stomach will feel upset. But when the symptoms are happening, it's usually just the chest tightness and difficulty breathing that I'm dealing with.",
+      "time": 2.9
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Yes, I've been experiencing low-grade fever, around 38.2\u00b0C (100.8\u00b0F), mostly in the evenings, which can be accompanied by some intermittent chills. And like I mentioned earlier, I also get pretty sweaty at night when those episodes happen.",
+      "time": 2.3
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "I have to admit that my appetite has been a bit off for the past 5 days. I've just not been feeling like eating much, and even when I do eat, it's not satisfying me like it usually would. As for weight changes, I haven't noticed anything significant, but I have been losing some energy and motivation to engage in activities that I normally enjoy.",
+      "time": 2.8
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "As an elementary school teacher, my day is pretty packed. I usually wake up around 6 am, get myself ready for work, and head out the door by 7:30 am to catch the bus or drive to school. During the week, I teach from about 8 am to 3 pm, with a short break in between classes for lunch. When I'm not teaching, I like to stay active by taking walks during my free time or going for a jog on the weekends if the weather permits.\n\nI try to eat a balanced diet, but lately, it's been tough because of my reduced appetite. I've been relying more on easy-to-prepare meals and snacks that don't require much effort. Occasionally, I'll cook something hearty like soup or pasta, but even those dishes haven't been as satisfying as they used to be.\n\nAs for exercise, I do try to stay active, but with this cough and breathing issues, it's been a real challenge. When I'm feeling up to it, I might take a short walk around the block or do some light stretching at home, but it's not like my usual routine of going for longer jogs or practicing yoga.\n\nOne thing that's been on my mind lately is how this persistent cough and difficulty breathing have affected my social life. I've had to cancel plans with friends and family a few times because I just wasn't feeling up to leaving the house. It's been really frustrating, especially since it feels like my body is betraying me right now.\n\nOverall, my lifestyle has taken a bit of a hit because of these symptoms. I'm hoping that with some proper treatment or guidance from you, I can get back on track and start feeling more like myself again.",
+      "time": 12.4
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "I'd say my physical activity level has been pretty low lately. I used to enjoy walking or jogging regularly, but with this persistent cough and breathing issues, it's become really challenging for me to stay active. I've tried taking short walks around the block when I'm feeling up to it, but even those are exhausting. My energy levels have taken a hit, and I find myself getting winded easily. It's frustrating because I know how much better exercise usually makes me feel, but right now, my body is just not cooperating.",
+      "time": 4.6
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "To be honest, with my reduced appetite lately, it's been tough to stick to a regular diet. I've been relying more on easy-to-prepare meals and snacks that don't require much effort. For breakfast, I might have some toast or cereal with milk, or if I'm feeling up to it, I'll scramble some eggs or make some oatmeal. For lunch, I usually grab something quick like a sandwich or leftovers from last night's dinner. And for dinner, I've been sticking to simple meals like pasta, soup, or stir-fries that don't require too much cooking or effort.\n\nIt's not that I'm eating terribly unhealthy, but it's just not the same as when I had my usual appetite and energy levels. Even when I do eat, it feels like nothing is satisfying me like it used to be. It's been a bit of a challenge to find foods that appeal to me when I'm feeling so unwell.",
+      "time": 6.8
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "My mother has asthma, and she's had it since I was young. Other than that, I don't think there are any other significant medical issues in my family history.",
+      "time": 1.7
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "My maternal grandmother passed away from lung cancer when I was a teenager. It's been a while since then, but it's always stuck with me as a bit of a concern, especially given my current symptoms.",
+      "time": 1.6
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 59.8,
+    "avg_time_per_turn": 3.0,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "soaking through"
+      },
+      {
+        "fact_id": "R05",
+        "phrase": "right-sided chest pain"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 3
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

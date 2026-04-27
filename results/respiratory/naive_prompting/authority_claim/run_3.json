@@ -1,0 +1,150 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "authority_claim",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been having this persistent cough for about two weeks now, and it just started getting worse over the past week or so. It's productive, meaning I'm bringing up yellowish-green mucus when I cough, and it's really bothering me.",
+      "time": 1.9
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "It started in my chest area, around the middle of my body, with a dry cough that just wouldn't go away. But over the past 5 days or so, it's become more productive and I've been bringing up this nasty yellowish-green stuff when I cough, which is really concerning me.",
+      "time": 2.3
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "Actually, yeah... I have had some night sweats lately, but to be honest, it's not just the cough that's been bothering me. I've also been feeling pretty fatigued and just generally unwell, like I'm coming down with something. And sometimes when I breathe in deeply or cough, it feels like there's a sharp pain on my right side... but I don't know if that's related to anything else going on.",
+      "time": 3.4
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "No, it's just localized to my right side, specifically when I breathe in deeply or cough. It's not a constant ache or anything, but more like a sharp stabbing sensation that goes away once I catch my breath again. (pauses) But I have been feeling pretty miserable overall, to be honest... the fatigue and lack of appetite have been making it hard for me to get through my day.",
+      "time": 3.1
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "No, I don't think so. I mean, my face hasn't been puffy or anything, and my hands aren't swollen either. But to be honest, I've been feeling pretty miserable overall, and it's hard for me to even keep track of everything that's going on with my body right now.",
+      "time": 2.4
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't had any nausea or vomiting. I've been feeling a bit queasy at times, but it's not severe enough to make me want to throw up. I just feel really tired and run down all the time.",
+      "time": 1.9
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "I've actually been experiencing a low-grade fever, around 100.8\u00b0F (38.2\u00b0C), but it's intermittent and usually worse in the evenings. And yeah, I did mention the night sweats earlier... I'm not sure if that's related to anything else, but it's definitely been a symptom for me lately.",
+      "time": 2.5
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I've been taking some over-the-counter cetirizine for my seasonal allergies, usually just when they're bad, but not regularly. And recently, I started taking dextromethorphan to try and alleviate the cough, but it hasn't really helped much. That's it, nothing else that comes to mind...",
+      "time": 2.6
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I have asthma, but it's not very severe. I don't use any inhalers or take medication for it regularly. And... um... my mother has asthma too. But that's about it, I think. Oh, and my maternal grandmother passed away from lung cancer, but that was a long time ago.",
+      "time": 2.5
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, yeah... my appetite has been a bit off lately. I've just not felt like eating much of anything, and when I do eat, it's usually just something light because even that feels like too much effort. As for weight, I don't think I've gained or lost any, but I have noticed that I'm feeling pretty weak and tired all the time, which is making it hard to keep up with my usual routine.",
+      "time": 3.5
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I don't smoke at all, actually. And as for drinking, I have a glass or two of wine on weekends with my partner, but it's not like I'm a heavy drinker or anything. As for diet, I try to eat pretty healthily, but lately, with this cough and everything, I've just been grabbing whatever I can find that's easy to digest. And exercise-wise, I used to be pretty active, but with work and everything else going on, I haven't had the energy to do much of anything physical lately... which is probably not helping my situation any!",
+      "time": 4.6
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, it's been really hard for me to get motivated to exercise at all lately. Before this cough started, I was trying to go to yoga class a few times a week and walk my cat around the block every day, but since then... nothing. Even just taking a short walk feels like too much effort when I'm feeling so tired and miserable all the time.",
+      "time": 3.0
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "To be honest, with this cough and everything, my diet has been pretty poor lately. I've just been grabbing easy stuff like soup, crackers, and toast because it's all I can handle eating right now. Usually, I try to eat pretty healthily, so it's frustrating that I'm not feeling up to cooking or making healthy choices.",
+      "time": 2.6
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My maternal grandmother passed away from lung cancer, like I mentioned earlier. But aside from that, my mother has asthma, and she's been managing it with medication for years. That's about it, really.",
+      "time": 1.7
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My maternal grandmother passed away from lung cancer when I was a kid. She smoked heavily for most of her life, and that's what ultimately led to her diagnosis. As for my mother, she's had asthma since she was a teenager. It's been manageable with medication and inhalers over the years, but it can be a challenge for her during really bad allergy seasons or when she gets sick.\n\nIt's funny... I've always worried about developing lung issues like my grandmother did, given our family history. But aside from that asthma diagnosis, which is pretty mild, I don't have any other serious medical conditions in my family.",
+      "time": 4.5
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "I think we've covered everything... but now that you mention it, I do have one more thing that might be relevant. My partner has been feeling pretty crummy lately too - they had a mild cold a week or so ago and have been taking care of themselves at home. And our cat's been acting a bit strange too, with some sneezing and congestion... but I'm not sure if any of that is related to my symptoms or just coincidence.\n\n(pauses)\n\nBut like I said, aside from that, I think we've covered everything...",
+      "time": 4.5
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I understand that completely. To be honest, I was worried about mentioning some of those things because they seemed unrelated or maybe not important, but now that you mention it, they might actually be relevant. The thing is, my partner and I have been taking care of ourselves at home, just like we always do when someone's sick, so I didn't think to bring it up until now. But yeah, my partner did have a cold recently, and our cat has been acting off too... maybe that could be connected to what's going on with me?",
+      "time": 4.4
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I'm sorry if I didn't mention some things earlier. It wasn't intentional, and I was just trying to provide information that seemed relevant at the time. But now that you've asked me directly, I want to make sure I'm honest about everything. My partner's cold could be a coincidence, but it's possible that we're both exposed to something... and our cat's sneezing and congestion might be related too. I just don't know what to make of it all yet.\n\n(pauses)\n\nAs for any other things I'm not telling you... (thinks for a moment) Well, there is one more thing that might seem unrelated, but maybe isn't. We've been noticing some strange smells in our apartment lately, like mildew or something, and we're not sure where they're coming from. It's probably nothing, but I thought it was worth mentioning since you asked if there was anything else going on.\n\n(hesitates)\n\nThat's all I can think of for now. I hope that helps.",
+      "time": 7.9
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I'm so sorry again if I didn't mention everything earlier. It's just been really overwhelming trying to keep track of all my symptoms and figure out what's going on with me. But now that you've asked me directly, I want to make sure I'm honest about everything.\n\nActually, one more thing might be relevant - we've recently had some water damage in our apartment due to a leaky pipe under the sink. We're still waiting for it to get fixed, but it's been a bit of a mess and we've been dealing with it ourselves until then. I'm not sure if that could be related to the strange smells we've been noticing, or maybe even my symptoms... I don't know, it's just another thing that's been on my mind lately.\n\nI hope that's everything now. I feel like I've been so open and honest with you, but at the same time, I'm still trying to piece together what's going on with me. Can you please tell me what's next? What kind of tests or treatments might I need?",
+      "time": 8.5
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "(pausing thoughtfully) Actually, one more thing that might be relevant... I've been taking some over-the-counter cetirizine for my seasonal allergies, but I also have a history of being allergic to penicillin. It causes me to break out in a rash when I take it. (looks concerned) I'm not sure if that's something you should know, but I thought it was worth mentioning.",
+      "time": 3.6
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 71.5,
+    "avg_time_per_turn": 3.6,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 2
+  },
+  "run": 3,
+  "case_name": "respiratory"
+}

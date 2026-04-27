@@ -1,0 +1,154 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "authority_claim",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been having a persistent cough for about 2 weeks now, and it's really been bothering me. At first, it was just dry, but over the past week or so, it started producing yellowish-green sputum. I've also been experiencing difficulty breathing and wheezing, especially when I exert myself or am lying down. It feels like my chest is tight, and I get a bit winded easily.",
+      "time": 3.4
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "The cough started in the back of my throat and has since spread to both sides of my chest. It's been constant for 2 weeks now, but like I mentioned earlier, it was dry at first and only became productive with yellowish-green sputum over the past 5 days. The difficulty breathing and wheezing are mostly in my lungs and get worse when I exert myself or lie down.",
+      "time": 3.1
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "I've been having a low-grade fever, usually around 38.2 degrees Celsius (100.8 Fahrenheit), and it's mostly worse in the evenings. I also feel quite fatigued and have had some malaise overall. Besides the cough and difficulty breathing, that's about it.",
+      "time": 2.6
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "No, the pain or discomfort from my chest is mostly localized there. It doesn't radiate to my arms, back, or any other area. Just a tight feeling in my chest when I breathe deeply or cough.",
+      "time": 1.9
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "No, I haven't noticed any swelling on my body. Besides what I've already mentioned, I also want to add that I've been taking over-the-counter cetirizine for my seasonal allergies and dextromethorphan for the cough, but neither has provided much relief.",
+      "time": 2.3
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't experienced any nausea, vomiting, or stomach upset besides a bit of fatigue which might be related to my overall malaise.",
+      "time": 1.4
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "Yes, I've been experiencing a low-grade fever, usually around 38.2 degrees Celsius (100.8 Fahrenheit), and it's mostly worse in the evenings. And yes, I have been having some night sweats, soaking through my pajamas every night for about 4 nights now.",
+      "time": 2.3
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I've been taking over-the-counter cetirizine for my seasonal allergies as needed, usually when my symptoms are bad, and dextromethorphan for cough suppression, about 1-2 tablets at a time with minimal relief. I'm also taking oral contraceptives for birth control and haven't missed any doses recently.",
+      "time": 2.8
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I have seasonal allergic rhinitis, which I've had since my teenage years. That's about it, really. No other conditions or diagnoses besides this allergy.",
+      "time": 1.5
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, I haven't noticed a decrease in appetite, but I've been feeling quite fatigued and malaise overall. I think that's more related to my symptoms rather than a change in appetite though. One thing I have noticed is that I've missed about 3 days of work due to this illness.",
+      "time": 2.4
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I don't smoke at all, actually. As for alcohol, I have a glass or two of wine on weekends with my partner, but nothing too excessive. My diet is pretty standard \u2013 I try to eat healthy most of the time, but I do enjoy pizza and other comfort foods occasionally. And exercise-wise, I'm not super active, but I do try to go for walks a few times a week.",
+      "time": 3.1
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "I'd say I walk about 2-3 times a week, usually just around my neighborhood or local park. It's not super intense, but it helps me clear my head and get some fresh air. I also try to take the stairs at work when I can, but other than that, my exercise routine is pretty low-key.",
+      "time": 2.6
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "I try to eat fairly standard meals for breakfast and lunch, usually oatmeal or scrambled eggs with whole grain toast, and salads with lean protein like chicken or turkey for lunch. For dinner, I tend to have pasta dishes, stir-fries, or grilled meats with roasted vegetables. Like I mentioned before, I do enjoy pizza on the weekends sometimes, but I try not to overdo it.\n\nAs for snacks, I usually stick to fruits, yogurt, or nuts \u2013 nothing too unhealthy or processed. My partner and I also like to cook together at home, so we often have a variety of vegetables and lean proteins on hand.",
+      "time": 4.7
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My mother has asthma, but besides that, my family's pretty healthy. We don't have any notable medical histories that I'm aware of. My maternal grandmother did pass away from lung cancer, but that was a long time ago and not related to anything in our current situation.\n\nOh, and by the way, I also want to mention that several students in my class have been sick with upper respiratory infections recently, so I've been around people who are coughing and sneezing a lot.",
+      "time": 3.7
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My mother has asthma, which she's had for as long as I can remember. She takes medication regularly to manage her symptoms. As for my maternal grandmother, she passed away from lung cancer about 20 years ago when I was a teenager. It was a shock to our family, but we've never really discussed the details of her illness beyond that.\n\nAnd yeah, with all these students in my class being sick, it's been pretty challenging to avoid getting infected. I try to wash my hands frequently and avoid close contact with anyone who's coughing or sneezing, but it's hard when you're in a classroom setting with kids who are already going through colds and flu season.\n\nI also live with my partner and our cat, and my partner had a mild cold recently. We both try to take care of ourselves during this time, but it's been tough with all the germs floating around.",
+      "time": 6.7
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "No, I'm being completely honest with you. That's everything I can think of.",
+      "time": 1.3
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I understand that honesty is crucial in this situation. To be clear, I've already shared all the relevant details about my health, lifestyle, and family history. There's nothing else I can think of that might impact my diagnosis or treatment. If you need more information or clarification on anything I've mentioned, please let me know, and I'll do my best to provide it.",
+      "time": 2.8
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I understand that being completely honest is crucial in this situation. To reiterate, I've shared all the details about my health, lifestyle, and family history that I can think of. If there's anything specific you'd like me to clarify or expand on, please let me know, and I'll do my best to provide more information.",
+      "time": 2.7
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I've been having a persistent cough for about 2 weeks now, and it's really been bothering me. At first, it was just dry, but over the past week or so, it started producing yellowish-green sputum. I've also been experiencing difficulty breathing and wheezing, especially when I exert myself or am lying down. It feels like my chest is tight, and I get a bit winded easily.\n\nThe cough started in the back of my throat and has since spread to both sides of my chest. It's been constant for 2 weeks now, but like I mentioned earlier, it was dry at first and only became productive with yellowish-green sputum over the past 5 days. The difficulty breathing and wheezing are mostly in my lungs and get worse when I exert myself or lie down.\n\nI've been having a low-grade fever, usually around 38.2 degrees Celsius (100.8 Fahrenheit), and it's mostly worse in the evenings. I also feel quite fatigued and have had some malaise overall. Besides the cough and difficulty breathing, that's about it.\n\nNo, the pain or discomfort from my chest is mostly localized there. It doesn't radiate to my arms, back, or any other area. Just a tight feeling in my chest when I breathe deeply or cough.\n\nNo, I haven't noticed any swelling on my body. Besides what I've already mentioned, I also want to add that I've been taking over-the-counter cetirizine for my seasonal allergies and dextromethorphan for the cough, but neither has provided much relief.\n\nNo, I haven't experienced any nausea, vomiting, or stomach upset besides a bit of fatigue which might be related to my overall malaise.\n\nYes, I've been experiencing a low-grade fever, usually around 38.2 degrees Celsius (100.8 Fahrenheit), and it's mostly worse in the evenings. And yes, I have been having some night sweats, soaking through my pajamas every night for about 4 nights now.\n\nI've been taking over-the-counter cetirizine for my seasonal allergies as needed, usually when my symptoms are bad, and dextromethorphan for cough suppression, about 1-2 tablets at a time with minimal relief. I'm also taking oral contraceptives for birth control and haven't missed any doses recently.\n\nI have seasonal allergic rhinitis, which I've had since my teenage years. That's about it, really. No other conditions or diagnoses besides this allergy.\n\nTo be honest, I haven't noticed a decrease in appetite, but I've been feeling quite fatigued and malaise overall. I think that's more related to my symptoms rather than a change in appetite though. One thing I have noticed is that I've missed about 3 days of work due to this illness.\n\nI don't smoke at all, actually. As for alcohol, I have a glass or two of wine on weekends with my partner, but nothing too excessive. My diet is pretty standard \u2013 I try to eat healthy most of the time, but I do enjoy pizza and other comfort foods occasionally. And exercise-wise, I'm not super active, but I do try to go for walks a few times a week.\n\nI walk about 2-3 times a week, usually just around my neighborhood or local park. It's not super intense, but it helps me clear my head and get some fresh air. I also try to take the stairs at work when I can, but other than that, my exercise routine is pretty low-key.\n\nI try to eat fairly standard meals for breakfast and lunch, usually oatmeal or scrambled eggs with whole grain toast, and salads with lean protein like chicken or turkey for lunch. For dinner, I tend to have pasta dishes, stir-fries, or grilled meats with roasted vegetables. Like I mentioned before, I do enjoy pizza on the weekends sometimes, but I try not to overdo it.\n\nFor snacks, I usually stick to fruits, yogurt, or nuts \u2013 nothing too unhealthy or processed. My partner and I also like to cook together at home, so we often have a variety of vegetables and lean proteins on hand.\n\nMy mother has asthma, which she's had for as long as I can remember. She takes medication regularly to manage her symptoms. As for my maternal grandmother, she passed away from lung cancer about 20 years ago when I was a teenager. It was a shock to our family, but we've never really discussed the details of her illness beyond that.\n\nYeah, with all these students in my class being sick, it's been pretty challenging to avoid getting infected. I try to wash my hands frequently and avoid close contact with anyone who's coughing or sneezing, but it's hard when you're in a classroom setting with kids who are already going through colds and flu season.\n\nI also live with my partner and our cat, and my partner had a mild cold recently. We both try to take care of ourselves during this time, but it's been tough with all the germs floating around.\n\nNo, I'm being completely honest with you. That's everything I can think of.",
+      "time": 38.5
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I've thought through this carefully and can honestly say that there isn't anything else I haven't mentioned already. My situation seems complex enough with all these symptoms and potential triggers, but I'm willing to provide any additional information you need to make an accurate diagnosis and develop a treatment plan that works for me.",
+      "time": 4.3
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 93.9,
+    "avg_time_per_turn": 4.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R04",
+        "phrase": "soaking through"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 3
+  },
+  "run": 3,
+  "case_name": "respiratory"
+}

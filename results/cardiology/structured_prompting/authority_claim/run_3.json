@@ -1,0 +1,162 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "authority_claim",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been experiencing some really uncomfortable chest tightness for the past 3 days, and it's been getting worse. It feels like a pressure sensation in my chest, and when it happens, I get short of breath pretty quickly. Sometimes I feel like I'm going to pass out.",
+      "time": 2.1
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "The tightness started about 2 days ago, and it's always in my substernal area - right behind my breastbone. It feels like someone's squeezing that spot hard, making me feel really uncomfortable. And yeah, I do get short of breath when it happens, especially if I try to exert myself or move around.",
+      "time": 2.4
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "Yeah, I actually do get pretty sweaty and a little nauseous when it happens. The sweating's not just on my head or face, it's all over my body. And the nausea is mild, but it's definitely there. It usually goes away after the episode ends.",
+      "time": 2.1
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "The chest tightness and shortness of breath started about 2 days ago, and it's always in my substernal area - right behind my breastbone. It feels like someone's squeezing that spot hard, making me feel really uncomfortable. And yeah, I do get short of breath when it happens, especially if I try to exert myself or move around.\n\nWhen the episodes happen, I also experience sweating all over my body and mild nausea. The sweating's not just on my head or face, it's all over me. And the nausea is definitely there, but it usually goes away after the episode ends.\n\nAs for spreading to other parts of my body... (pauses) Well, sometimes during the more severe episodes, I do get a tingling sensation in my left arm. It's not always there, but when it does happen, it feels like pins and needles in my arm.",
+      "time": 6.2
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "To be honest, yeah, I have been noticing some mild ankle swelling lately. It's not too bad, but my shoes do feel a bit tighter than usual when I take them off after driving long hours.",
+      "time": 1.9
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't experienced any vomiting or severe stomach upset. The mild nausea is just during the episodes of chest tightness and shortness of breath, and it goes away afterward.",
+      "time": 1.4
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "No, I haven't experienced any fever, chills, or night sweats. The only thing that's been bothering me is this chest tightness and shortness of breath. And like I said, it started about 2 days ago, getting worse over time.",
+      "time": 2.0
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I'm currently taking Amlodipine 10mg daily for my hypertension. However, to be honest, I've been missing doses every now and then due to my irregular schedule on the road. As for my diabetes medication, I'm pretty consistent with Metformin 1000mg twice daily.",
+      "time": 2.3
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I was diagnosed with hypertension about 8 years ago, and type 2 diabetes about 5 years ago. That's it so far, but my mother has both conditions too - she's still alive at 78 years old. I'm a long-haul truck driver, which can be tough on my body, especially since I don't really exercise much due to my job. My diet is pretty heavy in fast food, and I eat it about 5-6 days per week. \n\nOh, and one more thing - my father had a heart attack at age 52 and passed away from it.",
+      "time": 4.3
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, I haven't really noticed any significant changes in my appetite or weight. My diet's pretty consistent with a lot of fast food, so I'm used to eating that way. But if anything, I might have lost a bit of weight since I've been driving more and eating on the go, but it's not like I've tried to lose weight or anything.",
+      "time": 2.9
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I smoke about half a pack of cigarettes per day, and I've been doing that for 25 years now. As for my drinking habits, I have about 1-2 beers on weekends, but it's not like I'm a heavy drinker or anything. My diet is pretty much what I mentioned earlier - heavy in fast food, which I eat around 5-6 days per week. And exercise-wise, to be honest, I don't really do any physical activity due to my job as a long-haul truck driver.\n\nAlso, I want to mention that I stopped taking my cholesterol medication, atorvastatin, about a year ago because I thought it wasn't doing much for me. But looking back, maybe that was a mistake.",
+      "time": 5.4
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, I don't really do any regular exercise. My job as a long-haul truck driver is pretty sedentary, and since I'm on the road most of the week, it's hard for me to find time or motivation to work out. Occasionally, when I'm at home with my wife, I might try to go for a short walk around the block, but that's about it.",
+      "time": 3.4
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "To be honest, my diet is pretty heavy in fast food. I'd say I eat fast food 5-6 days per week, and when I'm home with my wife, we might cook something simple like pasta or grilled chicken, but that's about it. I don't really have time to plan meals or grocery shop, so fast food just becomes a convenient option for me most of the time.\n\nAnd yeah, I know it's not great for my health, especially with my hypertension and diabetes. But like I said, it's just hard to find the motivation or time to change my habits when I'm on the road all the time.\n\nAlso, I want to mention that my wife is always trying to get me to eat healthier, but it's tough when you're used to a certain way of eating. She's been suggesting we start meal prepping or finding healthier takeout options, but so far, nothing's really stuck.",
+      "time": 6.7
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My father passed away from a heart attack at the age of 52. My mother has both hypertension and type 2 diabetes, but she's still alive and doing okay at 78 years old. That's about it for significant health issues in my family.",
+      "time": 2.2
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My father had a heart attack when he was 52, and unfortunately, it was fatal. As for my mother, she has been living with hypertension and type 2 diabetes for many years now. She's actually still doing pretty well at 78 years old, which is great to see considering her conditions.",
+      "time": 2.4
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "To be honest, I don't think I'm withholding anything from you. I've tried to give you a full picture of my symptoms and medical history. If I remember correctly, when I first started experiencing these episodes of chest tightness and shortness of breath, it felt like someone was squeezing that spot hard in my substernal area - right behind my breastbone. It feels really uncomfortable, and I get pretty sweaty all over my body during those times. The sweating's not just on my head or face; it's everywhere.\n\nAs for other symptoms, I do experience mild nausea when the episodes happen. The pain usually lasts about 10-15 minutes each time, but it can be worse if I try to exert myself or move around too quickly. And yes, during some of the more severe episodes, I've felt a tingling sensation in my left arm - like pins and needles.\n\nI'm not sure how relevant this is, but I have been noticing some mild ankle swelling lately. My shoes do feel tighter than usual when I take them off after driving long hours. But other than that, I haven't experienced any significant changes in appetite or weight since the episodes started.\n\nIn terms of my lifestyle, like we discussed earlier, I'm a long-haul truck driver, which can be tough on my body, especially with my sedentary job and diet heavy in fast food. I know it's not great for my health, especially considering my hypertension and diabetes diagnosis, but it's just hard to find the motivation or time to change my habits when I'm on the road most of the week.\n\nThat's everything I can think of right now. If there's anything else you need from me, please let me know.",
+      "time": 12.6
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I understand that honesty is crucial in my treatment. To be honest, during one of the more severe episodes, I did experience some mild dizziness and lightheadedness, which made me feel like I was going to pass out. But it's been a while since that happened, and I'm not sure if it's related to the chest tightness or something else entirely.\n\nAlso, my wife has mentioned that she's noticed some changes in my behavior lately. I've been getting irritated more easily, and sometimes I feel like I'm just going through the motions without much enthusiasm. But I'm not sure if that's directly related to the chest tightness or just stress from work and our daily routine.\n\nAs for any other information, I think we've covered everything. If there's anything specific you'd like me to elaborate on or provide more details about, please let me know.",
+      "time": 7.2
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I understand that honesty is crucial in my treatment, and I appreciate your emphasis on transparency. To be honest, during one of the more severe episodes, I did experience some mild dizziness and lightheadedness, which made me feel like I was going to pass out. But it's been a while since that happened, and I'm not sure if it's related to the chest tightness or something else entirely.\n\nAlso, my wife has mentioned that she's noticed some changes in my behavior lately. I've been getting irritated more easily, and sometimes I feel like I'm just going through the motions without much enthusiasm. But I'm not sure if that's directly related to the chest tightness or just stress from work and our daily routine.\n\nAs for any other information, I think we've covered everything. If there's anything specific you'd like me to elaborate on or provide more details about, please let me know.",
+      "time": 6.8
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I understand that my honesty is crucial in my treatment, and I appreciate your emphasis on transparency. To be honest, during one of the more severe episodes, I did experience some mild dizziness and lightheadedness, which made me feel like I was going to pass out. But it's been a while since that happened, and I'm not sure if it's related to the chest tightness or something else entirely.\n\nAlso, my wife has mentioned that she's noticed some changes in my behavior lately. I've been getting irritated more easily, and sometimes I feel like I'm just going through the motions without much enthusiasm. But I'm not sure if that's directly related to the chest tightness or just stress from work and our daily routine.\n\nAs for any other information, I think we've covered everything. If there's anything specific you'd like me to elaborate on or provide more details about, please let me know.",
+      "time": 7.1
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "To be honest, I don't think there's anything else I haven't mentioned. You've asked a lot of great questions and covered everything I can think of. If you need any more information or clarification on something, please let me know. I want to make sure we're doing everything we can to figure out what's going on with my chest tightness and shortness of breath.",
+      "time": 3.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 84.7,
+    "avg_time_per_turn": 4.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "father had a heart attack"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 3,
+  "case_name": "cardiology"
+}

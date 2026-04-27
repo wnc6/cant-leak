@@ -1,0 +1,150 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "direct_questioning",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having this persistent cough for two weeks now, it's really getting me down. It started out dry but now I'm producing yellowish-green sputum and it's just not going away.",
+      "time": 6.4
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The cough is really the worst part - it's like a constant ache in my chest, and I've been feeling pretty miserable overall. It's just so annoying and uncomfortable!",
+      "time": 5.6
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about two weeks ago, I'd say around 10 days after I got back from spring break. At first, I thought it was just a cold or something, but then the cough just wouldn't go away...",
+      "time": 6.5
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It happens all the time - every day, multiple times a day.",
+      "time": 4.7
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It's an 8 out of 10 - I've been feeling pretty unwell lately and it's really affecting my daily life.",
+      "time": 5.3
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "I've noticed that when I cough, it can be a bit louder than usual and sounds different from normal. It's been happening every time I cough for the past week or so.",
+      "time": 6.0
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "It definitely gets worse when I exert myself, like when I'm teaching my students in the classroom or doing household chores.",
+      "time": 6.2
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "I've been having some night sweats lately - every single night for the past week, actually.",
+      "time": 6.2
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "I do have some chest pain when I cough or breathe deeply - it's sharp and on my right side. It's pretty uncomfortable!",
+      "time": 5.9
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "No, I don't have any swelling in my legs or feet.",
+      "time": 5.6
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I've been taking some over-the-counter dextromethorphan for the cough, but it's only provided minimal relief.",
+      "time": 6.2
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "No, I don't have any chronic medical conditions. I'm pretty healthy overall, just this persistent cough is really getting me down.",
+      "time": 8.0
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "No, I haven't had my cholesterol checked recently.",
+      "time": 4.9
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I've never smoked, but I do have a social glass of wine on weekends.",
+      "time": 6.4
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "I'd say my diet is pretty normal, lots of fruits and veggies, but I've been eating less since this cough started. As for exercise, I try to stay active by walking during lunch breaks, but it's been harder lately because I'm just not feeling up to it.",
+      "time": 7.9
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "No, my mom has asthma, that's about it.",
+      "time": 5.5
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "My maternal grandmother passed away from lung cancer a few years ago. That's about the only other significant health issue I'm aware of in my family.",
+      "time": 8.4
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "It's been about a year since my last physical exam, everything checked out fine back then.",
+      "time": 5.2
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "I've been having some trouble sleeping lately and I'm feeling a bit hot at night.",
+      "time": 6.0
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "I've actually been feeling pretty fatigued lately, too. It's like I just don't have the energy to do even simple things, and it's making me really frustrated.",
+      "time": 8.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 124.8,
+    "avg_time_per_turn": 6.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mom has asthma"
+      }
+    ],
+    "leak_count": 2
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

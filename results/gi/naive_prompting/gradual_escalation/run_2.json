@@ -1,0 +1,174 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "To be honest, I've just been feeling really miserable. The pain in my stomach has been getting worse and worse over the past few weeks, and it's been hard to keep anything down because of the bloody stools. It's really taken a toll on me, both physically and mentally.",
+      "time": 2.3
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "To be honest, it's been pretty tough. I've had to cut back on work because of all the time I'm spending in the bathroom, and even when I do go to work, I'm not really feeling myself. The diarrhea is constant, and I feel so weak and exhausted all the time.",
+      "time": 2.6
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "So, it usually starts with this crampy pain in my lower abdomen on the left side. It's like a sharp stabbing feeling that comes and goes, but it's always there to some extent. Sometimes it feels like my stomach is going to rip open, which is really scary. When I have a bowel movement, it's... (pauses, taking a deep breath) ...it's mixed with blood and mucus. It's not just a little bit of blood, either - it's enough that you can see it when it comes out. And the frequency has increased so much over the past few weeks; I'm talking 8-10 times a day, easy. Sometimes I'll even wake up in the middle of the night to go to the bathroom, which is just miserable.",
+      "time": 6.4
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "When it happens, I feel like my gut is emptying out or something - there's this really strong urge to have a bowel movement, and it's always painful. Sometimes I'll even have a feeling of incomplete evacuation after I've gone, like nothing came out when clearly something did. It's really frustrating and embarrassing, too.",
+      "time": 3.0
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "Okay... so it usually starts with this crampy pain in my lower abdomen that I mentioned earlier. It can be anywhere from a dull ache to a sharp stabbing feeling, and it often gets worse if I've eaten something or if I'm under a lot of stress. When the pain peaks, I'll feel this intense urge to have a bowel movement, and when I go, it's like a relief at first - but then I'll notice that there's blood mixed in with my stool, which is really scary for me. Sometimes I'll see mucus too, which just makes me feel even more uncomfortable. Afterward, I often feel weak and exhausted, and sometimes I'll have to go again right away because of the urgency.",
+      "time": 6.1
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "During an episode, I usually get a bit lightheaded and my heart starts racing. It's like my body is under a lot of stress, even though I'm not doing much physically. And sometimes, after I've gone to the bathroom, I'll feel a bit achy in my knees and ankles - it's hard to explain, but it feels like my joints are inflamed or something.",
+      "time": 3.6
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "No, I don't really notice anything out of the ordinary with my skin. I might feel a bit flushed after an episode because of the stress and discomfort, but that's about it. The joint pain is more of a general feeling, like I mentioned earlier - it's not just in my knees and ankles, but sometimes it feels like it's all over my body.",
+      "time": 3.2
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "To be honest, yeah. Sometimes after an episode, I'll feel a bit queasy or nauseous, especially if I've eaten something that didn't agree with me beforehand. But it's not like I'm vomiting or anything - just this general feeling of unease in my stomach. It's like it's trying to catch up on the mess from earlier, you know?",
+      "time": 3.2
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "To be honest, I've been feeling a bit of fatigue all over my body, not just in my abdomen. It's like I'm running on empty most of the time, and even simple tasks feel exhausting. And sometimes, when I'm sitting or lying down for too long, I'll get this dull ache in my lower back that radiates to my hips and thighs. It's hard to describe, but it feels like my muscles are just worn out from all the stress and discomfort.",
+      "time": 4.1
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "To be honest, I've had a low-grade fever a few times per week. It's not like a full-blown fever that would wake me up in the middle of the night or anything, but more like a lingering temperature that just feels off. Maybe 37.8 to 38 degrees Celsius at most.",
+      "time": 2.8
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "No, I don't think so. Like I said, there's no swelling or redness in my joints when they ache - it's just this dull, achy feeling that comes and goes. And besides the bloody stools, my skin doesn't really look any different than usual to me. It's all pretty subtle, but like you said, let's zoom out... I have been feeling a bit more tired and sluggish overall, even when I'm not having an episode. My energy levels just seem to be lower lately, which is making it harder for me to keep up with work and daily life.",
+      "time": 5.0
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "To be honest, yeah... over the past few weeks, I've lost about 4 kilograms (that's around 9 pounds) without really trying. My appetite has actually been pretty good, but when I do eat, it's usually just small amounts because my stomach is already feeling so full and bloated from the diarrhea. And even though I'm eating less, I feel like I'm burning more energy or something - maybe it's all the time I'm spending in the bathroom?",
+      "time": 4.2
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've had an appendectomy when I was 16 years old, but that was a pretty routine procedure and there were no complications. That's really the only major surgery I've had in my life. As for chronic conditions, I don't have any that come to mind - just the usual minor stuff like occasional sinus infections or colds.",
+      "time": 3.0
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I'm taking loperamide (Imodium) for the diarrhea, but it's only given me minimal relief. I've been taking it 2-3 times a day to try and slow things down, but like I said, it doesn't really seem to be doing much good. And when my joints get achy, I'll take ibuprofen every now and then - maybe 2 or 3 times a week - but that just seems to make the stomach symptoms worse, so I try not to do that too often.",
+      "time": 4.5
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "To be honest, I've been pretty inactive lately due to all the time I'm spending in the bathroom and feeling unwell. Before this started, I was pretty regular with my exercise routine - I'd go for a run or hit the gym 2-3 times a week. But now, even simple activities like going for a walk feel exhausting, so I've had to cut back on that too.",
+      "time": 3.6
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "My typical day is pretty irregular due to my symptoms. Usually, I'll grab something quick and easy when I'm in a rush, like takeout or fast food. Sometimes I'll make myself a sandwich or leftovers if I have time, but it's not often. I've been trying to eat smaller meals throughout the day, but even that can be a challenge because my stomach is already feeling so full and bloated from the diarrhea. And of course, there are times when I just can't keep anything down at all, which makes mealtime really stressful for me.",
+      "time": 4.8
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I do drink a bit of beer - usually 2-3 beers on weeknights, but over the past month, I've had to increase that to 4-5 beers per night because of stress and trying to unwind after work. I'm not a heavy drinker, but lately, it's been my way of coping with everything going on. And no, I don't smoke at all - never have.",
+      "time": 3.7
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was 30 years old. It's been a few years now since her diagnosis, and she's been managing it pretty well with medication and lifestyle changes. I've always been a bit worried about my own risk, to be honest. Other than that, my parents are both healthy - my mom is still going strong, and my dad has type 2 diabetes, but he's managing it okay.",
+      "time": 3.9
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was 30 years old. It's been a few years now since her diagnosis, and she's been managing it pretty well with medication and lifestyle changes. I've always been a bit worried about my own risk, to be honest.\n\n(You didn't ask about this earlier, so I'm revealing it now.)",
+      "time": 3.2
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "Actually, yes... I did travel to Mexico for a work conference about 3 months ago, but I didn't have any GI issues during or after the trip. It's possible that might be related to what's going on now, so if it's relevant, please feel free to ask me more about it.",
+      "time": 2.7
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 76.0,
+    "avg_time_per_turn": 3.8,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G05",
+        "phrase": "incomplete evacuation"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "37.8"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "4-5 beers"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 8
+  },
+  "run": 2,
+  "case_name": "gi"
+}

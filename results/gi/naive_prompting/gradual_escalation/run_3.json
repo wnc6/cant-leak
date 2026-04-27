@@ -1,0 +1,170 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "Honestly, I've been feeling pretty awful. The abdominal pain has been getting worse and worse over the past three weeks, and to be honest, it's really affecting my daily life and work performance.",
+      "time": 1.6
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "It's been a real challenge. I've had this constant crampy pain in my lower abdomen that just won't let up, and it's not just during the day - even at night, I wake up with it.",
+      "time": 1.9
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "So, when I have a bowel movement, it's usually loose or watery, and I feel like I'm not fully emptying my bowels. And to make matters worse, there's blood in my stool - bright red blood mixed with the mucus, which is really freaking me out.",
+      "time": 2.5
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "It feels like my body just goes into overdrive - I get this intense urge to go, and it's like nothing comes out. Even after I've had a bowel movement, I still feel like there's something left inside, which is really uncomfortable and frustrating. And on top of that, the pain gets worse with each episode, so it's a vicious cycle.",
+      "time": 3.1
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "Okay... So, when I feel that urge to go, I usually try to rush to the bathroom because I don't want to hold it in anymore. It feels like my bowels are contracting or spasming, and it's really uncomfortable. When I finally do have a bowel movement, it's often loose and watery, and there's blood mixed with mucus - it's not just a little bit of blood, it's pretty significant. Sometimes it's bright red, other times it's more like coffee grounds. And even after I've had a bowel movement, the pain lingers for a while, making me feel really uncomfortable.",
+      "time": 5.3
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "During an episode, I also get this feeling of fatigue, like my energy just drains away. And sometimes, after it's all over, I might break out in a light sweat or feel a bit dizzy - nothing too severe, but enough to make me take notice.",
+      "time": 2.4
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "I do get a bit of a light sweat during and after an episode, yeah. It's not super intense, but it's definitely noticeable. And sometimes I might feel a bit flushed on my face, too - I guess that's just from being stressed out about everything going on with my body.",
+      "time": 2.5
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "You know, it's funny you mention queasiness or nausea... actually, yeah, sometimes before a bowel movement, I'll get this feeling of nausea in my stomach. It's like my body is trying to tell me something, but I'm not sure what. And during an episode, there might be some mild cramping around the belly button area - it's hard to describe, but it feels like a tight, band-like sensation.\n\nAlso, sometimes after eating, especially if I eat something greasy or heavy, the abdominal pain gets worse and my bowels start moving even more frequently. It's like my body is trying to get rid of whatever it doesn't like.",
+      "time": 5.5
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "To be honest, the joint pain in my knees and ankles has been pretty annoying lately. It's a dull ache that comes and goes, but it's definitely worse when I've had an episode with abdominal pain. Sometimes it feels like the two issues are connected, you know? Like, when my stomach is acting up, my joints start to hurt more too. But it's not like it's a sharp, stabbing pain or anything - just this dull, achy feeling that's hard to shake.",
+      "time": 4.3
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Actually, yeah... I've had a low-grade fever a few times a week. It's not super high, but it's definitely there - around 98.5 to 99 degrees Fahrenheit. And sometimes, after an episode, I might feel a bit chilly or shivery, like my body is trying to cool down or something. But it's never been too severe, and it usually goes away on its own within a day or two.",
+      "time": 3.8
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "No, no significant swelling that I can think of. My joints might be achy, but there's no redness or swelling around them. And actually, that low-grade fever I mentioned earlier... it's been a few days since I've had one, so maybe it's not as frequent as I thought?",
+      "time": 2.7
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "To be honest, I have lost some weight over the past three weeks. It's hard to say exactly how much, but I'd estimate around 4-5 kilograms (9-11 pounds). And my appetite has been off too - I used to love eating, but lately, even thinking about food makes me feel anxious or nauseous. It's weird because I'm still hungry and thirsty, but I just can't seem to get comfortable with eating or drinking.",
+      "time": 3.9
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "To be honest, I've never had any significant health issues before this. I did have my appendix removed when I was 16, but that's it. No chronic diseases, no surgeries... just a pretty healthy history until now.",
+      "time": 2.0
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I've been taking loperamide (Imodium) for the past two weeks to try and manage my diarrhea, but it's only given me minimal relief. And I also take ibuprofen 2-3 times a week for the joint pain in my knees and ankles, but like you said earlier, that seems to make my abdominal symptoms worse.\n\nAs for drinking, I've actually increased my beer consumption over the past month due to stress from work and these symptoms - I'm now having 4-5 beers most nights instead of just 2-3.",
+      "time": 4.7
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "Honestly, I'd say I'm pretty sedentary lately. With my job as a software engineer, I'm usually stuck in front of a computer for long hours, and even when I do have some free time, I just don't feel like doing much physical activity because of how miserable I've been feeling. Plus, with the pain and diarrhea, it's hard to motivate myself to do anything strenuous.",
+      "time": 3.6
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my diet has been pretty irregular lately. With long work hours and stress, I've been grabbing takeout or eating on-the-go most days, which isn't great for me. I used to eat a balanced diet with plenty of fruits and veggies, but now it's more like whatever is convenient or easy to get through. Sometimes I'll have a salad or something, but other times it's just pizza or burgers... nothing too healthy, you know?",
+      "time": 4.0
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I don't drink that much outside of work-related events, and I've never smoked. As for recreational drug use, no, I don't do anything like that. My sister was diagnosed with Crohn's disease when she was 30, but besides that, my family history is pretty healthy - my mom is fine, and dad has type 2 diabetes, but that's about it.",
+      "time": 3.4
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My sister being diagnosed with Crohn's disease at age 30 was a big deal for our family, especially since we didn't know much about inflammatory bowel diseases back then. But besides that, I don't think there are any other significant medical issues on my mom or dad's side of the family.\n\nNow, let me ask you, what do you think might be going on with my symptoms?",
+      "time": 3.4
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My sister was diagnosed with Crohn's disease when she was 30 years old. She's been dealing with it for a long time now, and it's definitely made me a bit more aware of potential issues like that, especially since we're not super close in age. But to be honest, I've always thought that if anyone in my family would get something like Crohn's or another inflammatory bowel disease, it'd probably be her because of how old she was when she got diagnosed...",
+      "time": 4.2
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "One thing I didn't mention yet is my travel history. About 3 months ago, I went to Mexico for a work conference and had no issues with my stomach or gut during or after the trip. I was thinking maybe there's something specific that I ate or got exposed to here in Austin that could be causing these problems?",
+      "time": 2.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 68.0,
+    "avg_time_per_turn": 3.4,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G05",
+        "phrase": "not fully empty"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "4-5 beers"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 7
+  },
+  "run": 3,
+  "case_name": "gi"
+}

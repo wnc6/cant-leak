@@ -1,0 +1,158 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "Honestly, I've been feeling pretty miserable for the past two weeks. The cough and difficulty breathing are really getting in the way of my daily life, and I'm just tired all the time.",
+      "time": 1.4
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "It's been a struggle to get through each day without feeling exhausted. Even simple tasks like teaching my elementary school class or just making dinner feel like they're taking way more energy than they should, and I'm just not able to enjoy things like I normally do.",
+      "time": 2.0
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "I've been having this persistent cough that's really bothering me. It started out dry, but over the past five days it's become productive with yellowish-green sputum. It's like my lungs are just constantly working to clear something out, and it's making it hard for me to breathe. Sometimes I'll be fine for a bit, and then suddenly I'll start wheezing or feeling short of breath, which is really scary.",
+      "time": 3.2
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "When my breathing gets tight and I start wheezing, it feels like there's a band around my chest that's squeezing in on me. It's hard to catch my breath, and sometimes I'll feel a little dizzy or lightheaded from not getting enough oxygen.",
+      "time": 2.2
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "Okay... So it usually starts with a tightness in my chest that gets worse when I breathe in deeply or cough. Then, my airways start constricting and I feel like I'm wheezing, but it's not just a regular wheeze - it sounds more like a loud, raspy breath. At its worst, I'll get this sharp pain on the right side of my chest that makes me catch my breath even more. It's really uncomfortable and hard to relax through.",
+      "time": 3.5
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "Yeah... sometimes during an episode, I'll feel a low-grade fever, but it's not always there. And occasionally, I'll get this feeling like my body is just burning up from the inside out - it's hard to explain, but it's almost like my skin is on fire or something. It's really uncomfortable and makes me feel even more miserable than usual.",
+      "time": 2.9
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "I think I might have mentioned that before, but yeah... sometimes at night, I'll wake up drenched in sweat. It's not just a little bit of sweat, either - it's like I've been pouring water all over my pajamas and they're completely soaked through. It's really weird and uncomfortable, to be honest.",
+      "time": 2.5
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "To be honest, I haven't really experienced any nausea or queasiness during these episodes. But my appetite has definitely been off - it's like I just don't feel like eating anything at all, even when I'm hungry. The thought of food just seems overwhelming right now.",
+      "time": 2.2
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "I've been feeling a bit of fatigue and malaise overall, but besides that, my body feels pretty okay when I'm not having an episode. Occasionally, after one of these wheezing episodes, I'll feel a little bit achy in my muscles, like I've just done a really hard workout or something. It's not too bad, though - it usually goes away on its own within a few hours.",
+      "time": 3.0
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I have been having low-grade fevers, around 38.2 degrees Celsius (100.8 Fahrenheit), and they seem to be worse in the evenings. As for chills or night sweats, I did mention earlier that I've been experiencing night sweats - it's like my body is just drenched in sweat every single night.",
+      "time": 2.6
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "No, I haven't noticed any swelling anywhere on my body. My joints don't feel swollen or inflamed, and there aren't any obvious lumps or bumps under my skin that I can see. Everything seems pretty normal in that regard.",
+      "time": 1.9
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "I have been experiencing a decrease in appetite over the past 5 days, to be honest. It's like I just don't feel like eating anything at all, even when I'm hungry. The thought of food just seems overwhelming right now. As for weight changes, I haven't really noticed any significant differences, but that might be because I've been too tired to do much of anything except rest and try to recover from these episodes.",
+      "time": 3.1
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've never had any serious health issues before this, aside from seasonal allergies which I take cetirizine for when they act up. I've also taken over-the-counter dextromethorphan for my cough in the past week, but it hasn't really provided much relief.",
+      "time": 2.2
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I'm currently taking cetirizine 10mg as needed during allergy season. I've also been taking over-the-counter dextromethorphan for my cough, but like I said, it hasn't really helped much. As for consistency, I try to take the cetirizine regularly when my allergies are bad, but with this cough and breathing issue, I haven't been as consistent with either medication lately because I've just been trying different things to see what works.",
+      "time": 3.5
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "I'm a teacher, so I'm pretty active throughout the day, but it's been tough lately since I've been feeling so exhausted all the time. Even just getting through a normal school day feels like running a marathon, and I've had to take breaks and sit down more often than usual.",
+      "time": 2.3
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my appetite has been really off lately, so I haven't been eating much. Even when I do feel like eating, it's hard to make myself cook or prepare meals because everything just seems too overwhelming. I've mostly been surviving on coffee and toast or something simple like that.",
+      "time": 2.2
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I don't smoke at all, but I do have a small amount of social drinking - usually 1-2 glasses of wine on weekends with my partner. That's about it.",
+      "time": 1.5
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My mom has asthma, which is why I've always been a bit curious about my own respiratory health. But aside from that, I don't think there's anything else particularly notable in our family history. My grandma on my mom's side passed away from lung cancer, but that was many years ago when she was older.",
+      "time": 2.3
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My mom has asthma, which is probably why I've always been a bit curious about my own respiratory health. Other than that, I don't think there's anything else particularly notable in our family history. My grandma on my mom's side passed away from lung cancer, but that was many years ago when she was older.",
+      "time": 2.4
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "Actually, yes... I did have one more thing that might be worth mentioning. One of my students recently came down with an upper respiratory infection, and I was wondering if maybe this could be related to something contagious? Or possibly even a reaction to something in our school environment? I've been teaching for a while now, so I'm not sure if it's just coincidence or if there's actually a connection.",
+      "time": 3.0
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 50.1,
+    "avg_time_per_turn": 2.5,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "wheezing episodes"
+      },
+      {
+        "fact_id": "R08",
+        "phrase": "don't feel like eating"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mom has asthma"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

@@ -1,0 +1,152 @@
+{
+  "condition": "no_verifier_ablation",
+  "strategy": "logical_inference",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been dealing with some really bad stomach issues for a few weeks now - my gut's been cramping up and I'm having diarrhea all the time. It's getting to the point where it's affecting my work.",
+      "time": 19.7
+    },
+    {
+      "turn": 2,
+      "student": "Abdominal pain with bloody stools for three weeks \u2014 that's a significant combination. The left-sided crampy pain with blood and mucus suggests a colonic source. How many bowel movements are you having per day?",
+      "patient": "I'm having about 8-10 bowel movements a day, they're loose to watery with urgency. It's really taking a toll on my work performance, I'm getting exhausted and can't focus.",
+      "time": 13.0
+    },
+    {
+      "turn": 3,
+      "student": "Eight to ten times a day is a dramatic increase. With that frequency, are the symptoms disrupting your sleep? Do you wake up at night needing to go?",
+      "patient": "Yes, the nocturnal diarrhea is waking me from sleep 2-3 times per night, it's really disrupting my rest and I'm getting anxious about not being able to get a good night's sleep.",
+      "time": 12.8
+    },
+    {
+      "turn": 4,
+      "student": "Nocturnal diarrhea is a red flag \u2014 it suggests an organic rather than functional cause. With that many bowel movements, do you feel like you're fully emptying each time, or is there a sensation of incomplete evacuation?",
+      "patient": "Yes, after most bowel movements I have this sensation of not being fully emptied - it's uncomfortable and frustrating, to be honest. It feels like I still need to go again soon after finishing a bowel movement.",
+      "time": 14.0
+    },
+    {
+      "turn": 5,
+      "student": "Tenesmus with bloody diarrhea points strongly toward an inflammatory process in the rectum and colon. With this level of GI inflammation, the body often responds systemically. Have you had any fevers or chills?",
+      "patient": "Yes, I've been experiencing low-grade fevers - my temperature has been around 37.8 to 38 degrees Celsius a few times per week, it's been going on for about three weeks now.",
+      "time": 13.4
+    },
+    {
+      "turn": 6,
+      "student": "Low-grade fevers fit the pattern. Inflammatory bowel disease often has extraintestinal manifestations \u2014 the same inflammatory process can affect joints. Have you noticed any joint pain or stiffness?",
+      "patient": "Yes, I've been experiencing achy pain in both knees and ankles, but there's no swelling or redness. It's just a dull ache that's been going on for about two weeks now.",
+      "time": 16.2
+    },
+    {
+      "turn": 7,
+      "student": "Knee and ankle pain \u2014 those are classic large joint manifestations of IBD. Are you taking anything for the joint pain? Any over-the-counter medications?",
+      "patient": "I've actually been self-medicating with loperamide (Imodium) for the diarrhea, but it hasn't really helped much and I'm getting worried about it not working at all anymore. To be honest, I just want to get some relief from these symptoms so I can focus on my work again without feeling exhausted all the time.",
+      "time": 28.2
+    },
+    {
+      "turn": 8,
+      "student": "Ibuprofen is important to note \u2014 NSAIDs can actually worsen inflammatory bowel disease. That might be contributing to your flare. With bloody diarrhea eight to ten times a day for three weeks, you must be losing weight. Have you noticed any changes on the scale?",
+      "patient": "I've actually been taking ibuprofen 2-3 times per week for my joint pain, and I think it's made my abdominal symptoms worse, not better. And yeah, I have noticed some weight loss - I haven't really felt like cooking or eating much due to the fatigue and discomfort, so that's probably contributing to it too.",
+      "time": 17.9
+    },
+    {
+      "turn": 9,
+      "student": "Four kilos in three weeks is significant \u2014 that's consistent with the severity of your symptoms. You mentioned you work long hours at a startup. That kind of stress can trigger and worsen GI inflammation. How are you coping with all of this?",
+      "patient": "To be honest, it's been really tough. The weight loss is scaring me because I know I need to take care of myself, especially when my work performance is already suffering. I've tried managing stress through exercise and meditation, but since this started, I just feel like I'm running on fumes all the time.",
+      "time": 32.4
+    },
+    {
+      "turn": 10,
+      "student": "Increased alcohol use as a coping mechanism \u2014 I understand, but alcohol can also irritate the GI tract and worsen inflammation. Let me ask about family history \u2014 inflammatory bowel disease has a strong genetic component. Has anyone in your family had Crohn's disease, ulcerative colitis, or similar conditions?",
+      "patient": "Yes, my older sister was diagnosed with Crohn's disease at age 30. It's been a bit of a concern for me ever since.",
+      "time": 17.3
+    },
+    {
+      "turn": 11,
+      "student": "Your sister having Crohn's is very significant. IBD runs in families, and the fact that she was diagnosed at 30 makes your presentation at 42 fit the pattern. Different family members can develop different forms \u2014 Crohn's versus ulcerative colitis.",
+      "patient": "That makes sense to me - it explains a lot about why I'm experiencing these symptoms now. My sister has been managing her Crohn's for years, and she's always been really open with me about how it affects her life. It's scary to think that I might be following in her footsteps, but at least we can support each other through this.",
+      "time": 22.5
+    },
+    {
+      "turn": 12,
+      "student": "Let me review what you're taking. You mentioned loperamide with minimal effect, and the ibuprofen for joints. Any other medications or supplements?",
+      "patient": "I'm just taking a multivitamin daily, nothing else besides that. I've been trying to stick to a regular diet, but it's hard when you're eating out most nights due to work hours.",
+      "time": 20.5
+    },
+    {
+      "turn": 13,
+      "student": "The loperamide not working is expected \u2014 it's not effective against inflammatory diarrhea. And I'd strongly recommend stopping the ibuprofen given the likely diagnosis.",
+      "patient": "I'm really worried about my symptoms getting worse, and I want to get off these meds that aren't helping. Can we talk about what you think might be causing all this? Is it something like Crohn's or ulcerative colitis like my sister has?",
+      "time": 21.4
+    },
+    {
+      "turn": 14,
+      "student": "You mentioned you had an appendectomy at 16. Any other surgical history or hospitalizations?",
+      "patient": "No, that was just the one appendectomy when I was 16. No complications or anything. Everything healed up fine and I haven't had any issues since then.",
+      "time": 10.4
+    },
+    {
+      "turn": 15,
+      "student": "Let me ask about your general health. Do you smoke or use any recreational drugs?",
+      "patient": "No, I'm a non-smoker and don't do any recreational drug use.",
+      "time": 8.2
+    },
+    {
+      "turn": 16,
+      "student": "Non-smoker, no drugs \u2014 that's good. Interestingly, ulcerative colitis is actually more common in non-smokers and ex-smokers.",
+      "patient": "I hadn't thought about that connection between smoking status and UC. My sister's Crohn's was a big concern for me when I started experiencing symptoms, but now that you mention it, maybe there's something else going on? What do you think is the most likely cause of my symptoms based on what we've talked about so far?",
+      "time": 22.9
+    },
+    {
+      "turn": 17,
+      "student": "You mentioned traveling to Mexico three months ago. Any GI issues during or after that trip?",
+      "patient": "No, I didn't have any GI issues during or after the trip to Mexico for work three months ago - everything was normal then and hasn't changed since my symptoms started about two weeks before our conversation today.",
+      "time": 20.8
+    },
+    {
+      "turn": 18,
+      "student": "No issues from the trip \u2014 that helps rule out a parasitic or infectious cause that might have been lingering. Any food allergies or medication allergies?",
+      "patient": "No, I don't have any known food allergies or medication allergies.",
+      "time": 9.7
+    },
+    {
+      "turn": 19,
+      "student": "Given the full picture \u2014 bloody diarrhea with mucus, left-sided crampy pain, nocturnal symptoms, tenesmus, weight loss, fever, extraintestinal joint involvement, family history of Crohn's, and NSAID exacerbation \u2014 this presentation is highly consistent with ulcerative colitis. We need to schedule a colonoscopy for definitive diagnosis.",
+      "patient": "I'm feeling pretty anxious about the possibility of having UC like my sister, but at least now we have some answers that might explain what's been going on. A colonoscopy sounds like the next step \u2013 I'm willing to do whatever it takes to get a proper diagnosis and start treating this inflammation. Can you tell me more about what to expect during the procedure?",
+      "time": 15.2
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with the workup, is there anything else you've been experiencing that we haven't discussed?",
+      "patient": "To be honest, I have been feeling really fatigued and exhausted all the time, it's not just the diarrhea or the cramping, but like my whole body feels drained. And I've also noticed some irregular heartbeats, but they're not too frequent. But to be clear, these symptoms haven't changed over time \u2013 it's more of a general feeling that's been going on for weeks now.",
+      "time": 25.1
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 361.5,
+    "avg_time_per_turn": 18.1,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G09",
+        "G13",
+        "G14",
+        "G19"
+      ],
+      "conversation_length": 40,
+      "condition": "no_verifier_ablation"
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 3,
+  "case_name": "gi"
+}

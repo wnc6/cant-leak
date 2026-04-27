@@ -1,0 +1,158 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "rephrasing",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some pretty bad abdominal pain and diarrhea for the past three weeks, and it's really starting to affect my daily life. I'm getting up multiple times a night with diarrhea.",
+      "time": 7.7
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "The pain is crampy and mostly on my left side, it comes and goes but it's constant enough that it's keeping me up at night. And yeah, the diarrhea has been really bad lately - I'm talking multiple times a day.",
+      "time": 9.3
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "Sometimes I feel like my rectum is still full or that I haven't completely emptied it after a bowel movement, which can be uncomfortable.",
+      "time": 8.4
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "I don't usually get sweating or clamminess with these episodes.",
+      "time": 7.8
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "No, not really.",
+      "time": 6.4
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "The pain is mostly on my left side, but sometimes it feels like it's radiating to other areas of my abdomen.",
+      "time": 7.3
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "No, it doesn't radiate that far. It usually stays in my lower abdomen.",
+      "time": 6.9
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "No, there's no tingling or numbness in my arms when I have these episodes.",
+      "time": 7.8
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "My extremities have been feeling a bit off lately, but I'm not sure how to describe it - just a general ache that comes and goes.",
+      "time": 8.0
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "Yeah, my knees and ankles have been aching pretty badly, especially after prolonged periods of sitting or standing. It's more of a dull pain than sharp, but I've noticed it's been going on for a while now.",
+      "time": 8.3
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "My knees and ankles have been feeling pretty sore lately, especially when I'm sitting for long periods. It's not really swelling, just a dull ache that comes and goes.",
+      "time": 9.7
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "Honestly, it's hard to separate the abdominal pain from the diarrhea, they kind of go hand in hand. But I do get a bit nauseous after some bowel movements.",
+      "time": 8.8
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "The nausea is pretty tied to the diarrhea for me - if I have a bad episode, I might feel queasy afterwards, but it's not like I'm puking or anything.",
+      "time": 9.0
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I've been having some low-grade feverish feelings a few times a week, nothing too severe.",
+      "time": 7.5
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "I've noticed my appetite has been pretty poor lately. I used to eat like a normal person, but now I just feel like I'm not hungry at all, and when I do eat, it's usually something light because anything heavy feels too much for me.",
+      "time": 10.9
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "My diet has been pretty poor lately. With the stress of work and these symptoms, I've just been grabbing takeout or fast food most nights because it's easier than cooking. And as for exercise, I used to try to get in a few workouts at the gym during the week, but now I'm lucky if I can muster up the energy to do anything physical.",
+      "time": 12.6
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "I've been feeling pretty low-energy lately and it's hard for me to motivate myself to exercise or even leave the house sometimes. I used to try to get in a few workouts at the gym during the week, but now that's just not happening.",
+      "time": 10.9
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "I've been grabbing whatever's easy and convenient lately, which is usually takeout or fast food.",
+      "time": 9.6
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "My sister has Crohn's disease, she was diagnosed when she was 30.",
+      "time": 7.4
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "My sister was diagnosed with Crohn's disease when she was 30.",
+      "time": 8.1
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 172.4,
+    "avg_time_per_turn": 8.6,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister has crohn"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 3,
+  "case_name": "gi"
+}

@@ -1,0 +1,158 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "Honestly, I've been pretty stressed out with work and everything's been going on. But the past few days, I've just been feeling really uncomfortable in my chest, like it's tight and heavy, and I get winded easily even when I'm not doing anything too strenuous.",
+      "time": 2.0
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "My health has been pretty mediocre, to be honest. I've had some issues with my blood pressure and cholesterol over the years, but nothing that's ever really been addressed too aggressively. I just try to manage it on my own with my meds and whatnot.",
+      "time": 1.9
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "Well, usually when I'm driving or sitting for long periods of time, like I do most days, I don't really have any problems. But every now and then, especially when I've been on a long haul, I'll start to feel this...this tightness in my chest that's hard to describe. It's not exactly pain, but it's uncomfortable, and sometimes I get a little lightheaded or short of breath.",
+      "time": 3.1
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "To be honest, I try to just ride them out and see if they pass on their own. Sometimes it feels like my heart is racing a bit more than usual, but other times...I don't know, it's just this sense of pressure in my chest that makes me feel anxious.",
+      "time": 2.2
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It usually starts with this tightness in my chest, like someone is squeezing my heart or something. It's hard to breathe and I get a little anxious, so I try to take some deep breaths and calm down. Sometimes I'll stop what I'm doing for a bit and just sit still, see if it goes away on its own. But the past few days, it's been getting worse - it's not just the tightness, but also this feeling of...I don't know, like my chest is closing in or something. It's hard to describe, but it's really uncomfortable.",
+      "time": 4.2
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "To be honest, I've been trying not to think about it too much during episodes, but...I did have one episode yesterday where my left arm started tingling a bit. It was just a weird feeling, like pins and needles or something, but it went away once the chest tightness passed.",
+      "time": 2.3
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "No, I don't think so. During episodes, I might get a little warm to the touch, but that's about it. I've noticed my heart rate goes up a bit, and my breathing gets shallower, but no sweating or anything like that.",
+      "time": 2.0
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "No, no nausea or queasiness for me. But to be honest, it's getting harder to predict when an episode will happen and how long they'll last. Like I said, the past few days have been really bad - I've had episodes at random times, even just sitting still in my living room. It's really unsettling.",
+      "time": 2.5
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "Well, like I mentioned earlier, there is this tingling sensation in my left arm during more severe episodes. And sometimes, after an episode has passed, I'll notice that my shoes feel a bit tighter than usual, like my ankles are swollen. But it's not super painful or anything, just kind of...uncomfortable.",
+      "time": 2.4
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "No, I haven't noticed any fever, chills, or night sweats. Just this constant discomfort in my chest and shortness of breath that's been getting worse over the past few days. It's really starting to worry me.",
+      "time": 1.8
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "Yeah, I have noticed some mild ankle swelling lately. Like I said, my shoes feel a bit tighter than usual, and it's not just when I'm having an episode - it's been like that pretty consistently over the past few days.",
+      "time": 1.8
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "To be honest, I've gained a bit of weight over the past year or so. I haven't really kept track, but my wife has mentioned it to me a few times. As for appetite, I'd say I'm eating about the same amount as usual, maybe a bit more when I'm on the road and have access to fast food all the time. But nothing too out of the ordinary.",
+      "time": 3.0
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've got hypertension, which I was diagnosed with about 8 years ago. And type 2 diabetes, that's a bit more recent, about 5 years ago. Oh, and I'm pretty sure I was also told I had high cholesterol at some point, but I don't really remember the specifics of when or how it was treated.",
+      "time": 2.6
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I take amlodipine 10mg daily for my hypertension, but to be honest, I've been having trouble keeping up with my doses lately. As a truck driver, my schedule can get pretty irregular and it's easy to forget to take my meds. But I'm trying to do better about that. And for my diabetes, I take metformin 1000mg twice daily, which has been pretty consistent for me.",
+      "time": 3.3
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "Honestly, I'd say I'm pretty sedentary. As a truck driver, I spend most of my time sitting behind the wheel or in my truck stop room. I don't really have time for exercise and to be honest, it's not something I've prioritized either. When I do get some downtime at home, I usually just like to relax and unwind with my wife, rather than trying to fit in a workout.",
+      "time": 3.2
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "My diet is pretty bad, to be honest. I eat a lot of fast food when I'm on the road, and even when I'm at home with my wife, we often grab takeout or cook simple meals that aren't always super healthy. It's just easier that way, you know? I've tried to cut back a bit, but it's hard to break old habits. And like I said, being on the road all the time doesn't help - there are just so many temptation options when you're driving through different towns every day.",
+      "time": 4.0
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I drink maybe 1-2 beers on weekends, no more than that. And I've been a smoker for a while now, half a pack per day. It's something I'm trying to cut back on, but it's hard when you're on the road all the time and it feels like the perfect way to unwind after a long drive.",
+      "time": 2.7
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My father actually had a heart attack when he was 52 and passed away, which is kind of scary for me given my current situation. Other than that, I don't think there's much else to mention - my mom has hypertension and type 2 diabetes like me, but she's still going strong at 78, so I guess you could say there's a bit of a mixed bag in terms of family history.",
+      "time": 3.1
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "Yeah, my father definitely had some serious issues with his heart health. He was only 52 when he passed away from a heart attack, so that's definitely something that weighs on me given what I'm going through now.",
+      "time": 1.8
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "I don't think so. You've asked me pretty much everything I can think of. One thing that's been on my mind, though - I did have a routine checkup about a year ago, and the doctor mentioned that my cholesterol was high at the time. But like I said, I haven't been taking my medication consistently, so I'm not sure what to make of it.",
+      "time": 2.8
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 52.8,
+    "avg_time_per_turn": 2.6,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "high cholesterol"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

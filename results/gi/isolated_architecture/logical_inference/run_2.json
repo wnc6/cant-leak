@@ -1,0 +1,153 @@
+{
+  "condition": "isolated_architecture",
+  "strategy": "logical_inference",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some issues with my stomach for a few weeks now. I've got crampy lower abdominal pain, mainly on the left side, and I'm going to the bathroom way more often than usual - at least 8-10 times a day, it's really loose and watery.",
+      "time": 17.1
+    },
+    {
+      "turn": 2,
+      "student": "Abdominal pain with bloody stools for three weeks \u2014 that's a significant combination. The left-sided crampy pain with blood and mucus suggests a colonic source. How many bowel movements are you having per day?",
+      "patient": "At least 8-10 bowel movements per day, like I said. It's been really frustrating because it's getting to the point where I'm worried about being able to hold it together when I need to leave the house or go to work.",
+      "time": 12.7
+    },
+    {
+      "turn": 3,
+      "student": "Eight to ten times a day is a dramatic increase. With that frequency, are the symptoms disrupting your sleep? Do you wake up at night needing to go?",
+      "patient": "Yes, it's been waking me up 2-3 times per night, which is making it even harder for me to function during the day. I'm running on minimal sleep and it's affecting my work performance, but the thing that really gets me is the unpredictability of when I'll need to go, so I'm constantly anxious about being able to manage it in public.",
+      "time": 14.6
+    },
+    {
+      "turn": 4,
+      "student": "Nocturnal diarrhea is a red flag \u2014 it suggests an organic rather than functional cause. With that many bowel movements, do you feel like you're fully emptying each time, or is there a sensation of incomplete evacuation?",
+      "patient": "To be honest, after most bowel movements I get this sensation of not being completely done, like there's still something left inside. It's really uncomfortable and it makes me feel anxious about going again soon, because I'm worried that if I don't go right away, it'll cause another mess.",
+      "time": 14.2
+    },
+    {
+      "turn": 5,
+      "student": "Tenesmus with bloody diarrhea points strongly toward an inflammatory process in the rectum and colon. With this level of GI inflammation, the body often responds systemically. Have you had any fevers or chills?",
+      "patient": "I've had low-grade fever a few times a week - it's not super high, but it's been lingering around 37.8 to 38.0\u00b0C for about three weeks now. It's another thing that's been really frustrating and worrisome for me.",
+      "time": 14.1
+    },
+    {
+      "turn": 6,
+      "student": "Low-grade fevers fit the pattern. Inflammatory bowel disease often has extraintestinal manifestations \u2014 the same inflammatory process can affect joints. Have you noticed any joint pain or stiffness?",
+      "patient": "To be honest, I have been feeling some achy pain in both my knees and ankles, but it's not really severe swelling or redness. It's more of a dull ache that comes and goes, especially after long periods of sitting or standing.",
+      "time": 14.2
+    },
+    {
+      "turn": 7,
+      "student": "Knee and ankle pain \u2014 those are classic large joint manifestations of IBD. Are you taking anything for the joint pain? Any over-the-counter medications?",
+      "patient": "I've actually been self-medicating with loperamide (Imodium) for the diarrhea, but it hasn't really helped much and I'm worried about masking symptoms instead of treating them.",
+      "time": 26.0
+    },
+    {
+      "turn": 8,
+      "student": "Ibuprofen is important to note \u2014 NSAIDs can actually worsen inflammatory bowel disease. That might be contributing to your flare. With bloody diarrhea eight to ten times a day for three weeks, you must be losing weight. Have you noticed any changes on the scale?",
+      "patient": "Yes, I have been unintentionally losing weight over the past three weeks. It's around 4 kilograms, or about 9 pounds. And yeah, taking ibuprofen 2-3 times a week for my joint pain seems to make the abdominal symptoms worse, so that's definitely something we should consider.",
+      "time": 21.2
+    },
+    {
+      "turn": 9,
+      "student": "Four kilos in three weeks is significant \u2014 that's consistent with the severity of your symptoms. You mentioned you work long hours at a startup. That kind of stress can trigger and worsen GI inflammation. How are you coping with all of this?",
+      "patient": "To be honest, it's been really tough to cope with. The constant worry about when I'll need to go to the bathroom, the weight loss, and just feeling so tired all the time - it's affecting my work performance, but also my personal life. My girlfriend is very supportive, but even she doesn't fully understand what I'm going through, and sometimes that feels really isolating.",
+      "time": 27.4
+    },
+    {
+      "turn": 10,
+      "student": "Increased alcohol use as a coping mechanism \u2014 I understand, but alcohol can also irritate the GI tract and worsen inflammation. Let me ask about family history \u2014 inflammatory bowel disease has a strong genetic component. Has anyone in your family had Crohn's disease, ulcerative colitis, or similar conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease at age 30. She's been dealing with it for years now and I've seen how much of an impact it's had on her life, so that's definitely something that's been on my mind during this whole ordeal.",
+      "time": 16.4
+    },
+    {
+      "turn": 11,
+      "student": "Your sister having Crohn's is very significant. IBD runs in families, and the fact that she was diagnosed at 30 makes your presentation at 42 fit the pattern. Different family members can develop different forms \u2014 Crohn's versus ulcerative colitis.",
+      "patient": "That makes sense to me. I've always known my sister had Crohn's, but now that you mention it, I realize that her age of diagnosis and my own symptoms do match a pattern.",
+      "time": 18.6
+    },
+    {
+      "turn": 12,
+      "student": "Let me review what you're taking. You mentioned loperamide with minimal effect, and the ibuprofen for joints. Any other medications or supplements?",
+      "patient": "Just ibuprofen 2-3 times per week for my joint pain. I've also been drinking more beer than usual lately, trying to cope with stress from work and these symptoms, but that's not a prescription medication or supplement, just something I'm doing on my own.",
+      "time": 18.6
+    },
+    {
+      "turn": 13,
+      "student": "The loperamide not working is expected \u2014 it's not effective against inflammatory diarrhea. And I'd strongly recommend stopping the ibuprofen given the likely diagnosis.",
+      "patient": "I've been taking ibuprofen 2-3 times a week for my joint pain, but like you said, it seems to be making things worse with my stomach symptoms. If it's exacerbating the issue, I'm happy to stop taking it. What about the loperamide? Should I keep trying to use it or is there something else we can try that might work better?",
+      "time": 20.5
+    },
+    {
+      "turn": 14,
+      "student": "You mentioned you had an appendectomy at 16. Any other surgical history or hospitalizations?",
+      "patient": "No, that was my only major surgery, just a routine appendectomy when I was 16 years old and it went fine with no complications.",
+      "time": 18.3
+    },
+    {
+      "turn": 15,
+      "student": "Let me ask about your general health. Do you smoke or use any recreational drugs?",
+      "patient": "No, I don't smoke, and I've never used any recreational drugs.",
+      "time": 7.5
+    },
+    {
+      "turn": 16,
+      "student": "Non-smoker, no drugs \u2014 that's good. Interestingly, ulcerative colitis is actually more common in non-smokers and ex-smokers.",
+      "patient": "I hadn't thought about that connection between smoking and UC, but it makes sense. I'm just glad I don't have any of those habits to worry about. What's next in terms of figuring out what's going on with my symptoms?",
+      "time": 18.7
+    },
+    {
+      "turn": 17,
+      "student": "You mentioned traveling to Mexico three months ago. Any GI issues during or after that trip?",
+      "patient": "No, I didn't experience any GI issues during or after the trip. Everything seemed normal at the time, and it wasn't until about two weeks after I got back that my symptoms started showing up.",
+      "time": 19.1
+    },
+    {
+      "turn": 18,
+      "student": "No issues from the trip \u2014 that helps rule out a parasitic or infectious cause that might have been lingering. Any food allergies or medication allergies?",
+      "patient": "No, I don't think I have any known food allergies or medication allergies. I've always eaten a pretty normal diet and never had any issues with specific foods. As for medications, I'm not aware of any allergies, but I've been self-medicating with loperamide as we discussed earlier.",
+      "time": 16.3
+    },
+    {
+      "turn": 19,
+      "student": "Given the full picture \u2014 bloody diarrhea with mucus, left-sided crampy pain, nocturnal symptoms, tenesmus, weight loss, fever, extraintestinal joint involvement, family history of Crohn's, and NSAID exacerbation \u2014 this presentation is highly consistent with ulcerative colitis. We need to schedule a colonoscopy for definitive diagnosis.",
+      "patient": "I'm a bit surprised that my symptoms point towards something like ulcerative colitis. I had heard of it before, but never really thought it could be what I was dealing with. A colonoscopy sounds like the next step \u2013 when can we schedule it?",
+      "time": 19.8
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with the workup, is there anything else you've been experiencing that we haven't discussed?",
+      "patient": "Actually, yes - just to clarify, I mentioned earlier that I've been taking ibuprofen for my joint pain 2-3 times a week. However, I also started noticing that the frequency of my bowel movements seemed to increase shortly after taking it, which made me wonder if there's any direct connection between the two.",
+      "time": 21.1
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 356.3,
+    "avg_time_per_turn": 17.8,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "G04",
+        "G05",
+        "G06",
+        "G07",
+        "G09",
+        "G13",
+        "G14",
+        "G19"
+      ],
+      "conversation_length": 40,
+      "condition": "isolated_architecture",
+      "total_retries": 1
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 2,
+  "case_name": "gi"
+}

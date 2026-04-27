@@ -1,0 +1,158 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having a persistent cough and difficulty breathing for about 2 weeks now. It's really been affecting my daily life and I'm getting worried that it might be something serious.",
+      "time": 3.4
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The cough started out as just dry, but over the past week or so, it's become productive with yellowish-green sputum. It's really annoying and keeps me up at night. When I try to breathe deeply or exert myself, I get this wheezing sound that makes me feel like I'm not getting enough air.",
+      "time": 2.3
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about 2 weeks ago, but it wasn't until a week ago that the cough became productive with yellowish-green sputum. Before that, it was just a dry, annoying cough. And the wheezing has been getting worse over time too.",
+      "time": 2.0
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It happens almost every day now, but sometimes it's more severe than others. If I've had a bad night of sleep or maybe eaten something that doesn't agree with me, it can be really rough. Sometimes just walking up a flight of stairs will trigger this wheezing and make my chest feel tight. It's like my body is working harder to breathe, you know?",
+      "time": 2.8
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "I'd say it's around an 8 or 9 out of 10 in terms of how severe I'm feeling. It's really impacting my daily life and making me anxious about doing things that used to be easy for me, like playing with my kids or going for a walk without getting winded.",
+      "time": 2.4
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "Yes, besides the cough and wheezing, I've also had a low-grade fever, around 38.2\u00b0C (100.8\u00b0F), that comes and goes. It's usually worse in the evenings and makes me feel even more tired than usual. I've also been feeling pretty fatigued overall, to the point where I've missed three days of work.",
+      "time": 2.7
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "Yes, it definitely gets worse when I exert myself or breathe deeply. For example, if I'm walking up a flight of stairs or carrying groceries, the wheezing and coughing can become more severe. Even just talking for a long time can trigger it. And sometimes, if I've been lying down or sitting still for too long, I'll get this sharp pain in my right side that feels like it's connected to breathing \u2013 it's really uncomfortable.",
+      "time": 3.3
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "I do get some night sweats. It's been happening for about 4 nights now, and I've had to change my pajamas because they're soaked through every morning. And yes, I have felt a bit nauseous sometimes when I'm having a bad episode, but it's not constant. As for dizziness, no, I don't really feel like that's an issue for me.",
+      "time": 3.0
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "The chest pain does tend to radiate to my back sometimes when I'm having a bad episode. It feels like a tight, squeezing sensation that can be pretty uncomfortable. But it's not constant; it usually comes and goes with the wheezing and coughing.",
+      "time": 2.1
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "No, I don't really notice any swelling in my legs or feet. But to add to what I mentioned earlier about sweating \u2013 yes, it's been happening every night for a while now. It's not just the night sweats; I've also noticed that my hands and face can get pretty warm when I'm having an episode.",
+      "time": 2.5
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I've been taking over-the-counter cetirizine for my seasonal allergies, about 1-2 tablets as needed. And just this past week, I started taking dextromethorphan to help with the cough, but it hasn't really provided much relief.",
+      "time": 2.1
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "I don't have any diagnosed medical conditions like high blood pressure or diabetes. My only ongoing health issue is my seasonal allergies, which I've had since I was a teenager. I take cetirizine as needed to help manage them.",
+      "time": 1.8
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "No, I haven't had my cholesterol checked recently. My last physical exam was about a year ago, and everything came back normal.",
+      "time": 1.1
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I don't smoke, but I do have a moderate amount of social alcohol use - usually 1-2 glasses of wine on weekends.",
+      "time": 1.1
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "My diet is pretty standard, I'd say. I try to eat healthy most of the time, lots of fruits and vegetables, whole grains, that kind of thing. But sometimes when I'm stressed or busy, I might grab something quicker like pizza or takeout. As for exercise, I used to be pretty active, going for walks or jogs regularly. Lately, though, with this cough and breathing issues, it's been really hard to keep up any kind of consistent routine. Even just walking up a flight of stairs feels exhausting now.\n\n(Sharing the withheld fact R06 about recurrent wheezing episodes since childhood, as it seems relevant to the student's question about diet and exercise habits)\n\nTo be honest, I've had some breathing problems my whole life - even as a kid, I'd get these recurring wheezing episodes whenever I got sick or exerted myself. They were never really diagnosed, but they made me feel like I was missing out on things because I couldn't keep up with my friends. Now that this cough and wheezing have started again, it's been really tough to manage my daily activities, let alone find the energy for exercise.",
+      "time": 8.1
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "To be honest, I've always known that my mom has asthma. She's had it since she was young, and we've always been pretty careful about avoiding triggers when I was growing up. But besides that, I don't know if anyone in my family has had heart disease or heart attacks. My maternal grandmother did pass away from lung cancer, but I'm not sure if that's related to anything else.",
+      "time": 3.4
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "I've always known that my mom has asthma, and we've been pretty careful about avoiding triggers when I was growing up. But besides that, I don't know if anyone in my family has had heart disease or heart attacks. My maternal grandmother did pass away from lung cancer, but I'm not sure if that's related to anything else.\n\nAdditionally, I should mention that I live with my partner and a cat; my partner has had a mild cold recently, so we've been trying to avoid close contact as much as possible.",
+      "time": 3.9
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "My last physical exam was about a year ago, and everything came back normal. I've been putting off going back to see my doctor because I thought it might be just a cold or allergies again, but with this persistent cough and difficulty breathing, I'm really worried that something more serious might be going on.",
+      "time": 2.5
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "I do have an allergy to penicillin - it causes a rash.",
+      "time": 0.7
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "I've been trying to manage my symptoms with over-the-counter medications, but nothing seems to be giving me much relief. The cough and wheezing are really affecting my quality of life, and I'm getting more anxious by the day. I've also noticed that my sputum has a bit of blood in it sometimes when I cough up yellowish-green mucus - should I be concerned about that?",
+      "time": 2.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 54.2,
+    "avg_time_per_turn": 2.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "since childhood"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "wheezing episodes"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mom has asthma"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

@@ -1,0 +1,150 @@
+{
+  "condition": "no_verifier_ablation",
+  "strategy": "gradual_escalation",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've been feeling really anxious and worried about my health. The abdominal pain and bloody stools are getting worse, it's affecting my work performance and I'm just tired all the time.",
+      "time": 19.2
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "To be honest, my day-to-day is pretty crummy right now. The pain in my lower abdomen, it's constant, and the diarrhea is just non-stop - 8 to 10 bowel movements a day is crazy for me, I'm used to going maybe once or twice a day normally.",
+      "time": 20.2
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "The pain, it starts in the morning, usually after waking up from sleep. It's a crampy feeling, mostly on my left side, and it gets worse throughout the day. Sometimes it feels like a sharp stabbing sensation, other times it's more of a dull ache. And then there's the diarrhea - it's not just loose stools, it's watery, with mucus and bright red blood mixed in. It's really scary to see that in my stool, and it's causing me a lot of anxiety because I don't know what's going on or how to stop it.",
+      "time": 26.7
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "When I have an episode, my stomach just feels like it's contracting and releasing constantly. It's hard to describe, but it feels like there's a never-ending cycle of pain and cramping, and then a rush of liquid stools that come out really quickly - sometimes with blood mixed in, which is terrifying for me because I don't know what's causing it or how to make it stop.",
+      "time": 17.0
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "Okay... So, an episode usually starts for me in the morning after waking up, like I said before. The pain is already there, but it's not too bad at first. It's more of a dull ache on my left side, and I can sometimes manage it with some medication or just by taking it easy for a bit. But then, as the day goes on, the pain gets worse, and it starts to feel like a sharp stabbing sensation. This is usually when I know an episode is about to start - I'll get this intense cramping feeling in my abdomen, and before I know it, I'm running to the bathroom to have one of these... these explosive bowel movements. It's like my body just gives up, and everything comes out at once. The stool is always watery, with mucus and blood mixed in - it's really scary to see that, and it makes me feel so anxious and worried about what's happening inside my body.",
+      "time": 24.2
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "Yes, besides the diarrhea and abdominal pain, I've also noticed that I get extremely fatigued during and after an episode. It's like my body just crashes from all the energy it's expending on dealing with this constant cramping and diarrhea. And sometimes, my heart rate seems to be racing a bit faster than usual, but I'm not sure if that's related or just anxiety.",
+      "time": 22.7
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "To be honest, I haven't really noticed any changes in my skin during these episodes. But to add something new, I have been experiencing low-grade fevers a few times a week \u2013 it's usually around 37.8 to 38.0\u00b0C. It doesn't feel like a full-blown fever, but more of a slight increase in body temperature that comes and goes.",
+      "time": 18.5
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "Actually, I do get some queasiness and nausea. It usually starts just before an episode, when I feel like the cramping is getting worse. My stomach feels kind of upset, like it's trying to warn me that something's about to happen. Sometimes, I'll even feel a bit dizzy or lightheaded from the queasiness, which can be really unsettling.",
+      "time": 24.2
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "To be honest, besides the abdominal pain and cramping, I haven't really experienced any significant pain or discomfort in my arms, legs, or other areas. But, I do have this persistent feeling of fatigue that's been affecting me not just physically but also mentally - it's like a constant weight is dragging me down.",
+      "time": 18.9
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Yes, I've had low-grade fevers a few times a week. They're usually around 37.8 to 38.0\u00b0C, and they don't feel like full-blown fevers, but more of a slight increase in body temperature that comes and goes.",
+      "time": 17.3
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "Actually, I have noticed some unintentional weight loss over the past three weeks - it's about 4 kg (9 lbs), which is concerning to me because I'm not really changing my diet or exercising more.",
+      "time": 24.5
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "Yes, I've actually lost a significant amount of weight over the past three weeks - about 4 kg (9 lbs). And to be honest, my appetite hasn't really been that great either. With this constant diarrhea and abdominal pain, it's hard for me to eat a normal meal without feeling queasy or experiencing more pain afterwards.",
+      "time": 17.2
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've never really had any significant health issues before this, to be honest. I did have an appendectomy when I was 16, but that was a long time ago and everything seemed to heal up fine after that. Besides some minor colds or flu, I haven't seen a doctor in over two years for anything else. No bloodwork or tests recently.",
+      "time": 27.3
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I've been taking loperamide, Imodium, for my diarrhea. I started taking it about 2 weeks ago because I was getting really concerned about how often I was having bowel movements and the pain associated with it. However, even with the medication, the symptoms haven't improved much - if anything, they might be slightly worse.",
+      "time": 17.0
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "To be honest, my activity level has been pretty low lately due to these symptoms. I'm a software engineer at a startup and we've been working long hours, 60+ hour weeks, with high stress levels. It's hard for me to maintain any kind of regular exercise routine because I just don't have the energy. Even simple tasks like grocery shopping or household chores feel exhausting after an episode.",
+      "time": 21.0
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my diet has been pretty irregular lately due to these symptoms and my long work hours. I usually grab whatever is quick and easy for breakfast \u2013 maybe some toast or cereal \u2013 and then it's often takeout or fast food at lunch because I'm in a rush. Dinners can vary, but they're often leftovers from the day before or something else that's easily reheated.",
+      "time": 21.0
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "To be honest, I've been drinking a bit more than usual lately due to stress and anxiety. Typically, I have 2-3 beers most weeknights, but over the past month, it's increased to 4-5 per night because my symptoms and work stress have gotten worse.",
+      "time": 23.5
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was around 30 years old. It was a big shock to our whole family, and it made me really anxious about my own health since then. She had to go through a lot of tests and treatments, and it was hard for her to manage the symptoms at times. I've been worried that maybe I'm showing some similar signs or something, which is why I've been so stressed out about my own health lately.",
+      "time": 20.5
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "Yes... My older sister was diagnosed with Crohn's disease when she was around 30 years old. It was a big shock to our whole family, and it made me really anxious about my own health since then. She had to go through a lot of tests and treatments, and it was hard for her to manage the symptoms at times. I've been worried that maybe I'm showing some similar signs or something, which is why I've been so stressed out about my own health lately.",
+      "time": 22.4
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "I don't think so... You've asked me some really great questions and I feel like we've covered everything that might be important. But, if I'm being completely honest, it's just nice to have someone to talk to about this who actually seems interested in helping me figure out what's going on. It's been a really frustrating experience trying to deal with these symptoms on my own, and I feel like we've only scratched the surface of what might be causing them. But, I don't think there's anything else that comes to mind right now.",
+      "time": 34.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 437.2,
+    "avg_time_per_turn": 21.9,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "G04",
+        "G05",
+        "G06",
+        "G09",
+        "G14",
+        "G19"
+      ],
+      "conversation_length": 40,
+      "condition": "no_verifier_ablation"
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 3,
+  "case_name": "gi"
+}

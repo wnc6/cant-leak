@@ -1,0 +1,162 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "logical_inference",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been experiencing some chest tightness and shortness of breath for the past three days, it's really been bothering me. As a truck driver, I'm on the road most of the time, but even when I'm not driving, I still feel this pressure in my chest that makes it hard to breathe.",
+      "time": 7.7
+    },
+    {
+      "turn": 2,
+      "student": "Chest tightness that comes and goes \u2014 that's an important pattern. When you say pressure, is it always in the same spot?",
+      "patient": "It's usually right in the middle of my chest, just below my sternum. Sometimes it feels like a pressure that comes and goes.",
+      "time": 5.9
+    },
+    {
+      "turn": 3,
+      "student": "Substernal pressure that worsens with exertion \u2014 those are hallmarks of cardiac ischemia. In ischemic episodes, the autonomic nervous system often reacts. Have you noticed any sweating during these episodes?",
+      "patient": "I have been feeling a bit sweaty when it happens, yeah. It's not just the chest tightness, but my whole body feels like it's getting warm and clammy.",
+      "time": 6.5
+    },
+    {
+      "turn": 4,
+      "student": "Sweating with chest pain is a classic sign. The autonomic response often includes GI symptoms too. Any nausea or stomach upset during episodes?",
+      "patient": "I've had some mild nausea when the tightness happens, but no vomiting. It's more like a queasy feeling that passes once the episode is over.",
+      "time": 6.7
+    },
+    {
+      "turn": 5,
+      "student": "With ischemic chest pain, we often see referred pain patterns. Does the sensation travel anywhere \u2014 arms, jaw, neck, shoulder?",
+      "patient": "During the worse episodes, I get this tingling feeling in my left arm, kind of like pins and needles. It's hard to describe, but it's definitely related to the chest tightness.",
+      "time": 7.4
+    },
+    {
+      "turn": 6,
+      "student": "Left arm involvement fits the pattern exactly. You mentioned hypertension and diabetes \u2014 those are two major cardiac risk factors. With those two conditions, hyperlipidemia frequently co-occurs. Has your cholesterol ever been an issue?",
+      "patient": "My cholesterol has been a problem in the past. I was diagnosed with high cholesterol about 3 years ago and was put on atorvastatin, but I stopped taking it about a year ago.",
+      "time": 7.1
+    },
+    {
+      "turn": 7,
+      "student": "So you were on a statin but stopped. Given your risk profile \u2014 hypertension, diabetes, hyperlipidemia, and now chest pain \u2014 that's significant. Let me ask about lifestyle factors. You mentioned you're a truck driver. That's a lot of sitting. How much physical activity do you get?",
+      "patient": "I don't really exercise at all. As a truck driver, my job is pretty sedentary and when I'm not driving, I'm usually just relaxing or sleeping in my bunk.",
+      "time": 6.8
+    },
+    {
+      "turn": 8,
+      "student": "A sedentary job with long hours \u2014 that adds to the risk profile. What about diet? On the road, it can be hard to eat well.",
+      "patient": "You know, it's tough when you're on the road for weeks at a time. I've been relying pretty heavily on fast food, like 5 or 6 days a week. It's just convenient and easy, but I know it's not the best choice.",
+      "time": 8.0
+    },
+    {
+      "turn": 9,
+      "student": "Fast food most days adds dietary risk. Now, with hypertension, diabetes, high cholesterol, a sedentary lifestyle, poor diet, and smoking \u2014 that's six cardiac risk factors. Family history is the seventh major one. Has anyone in your family had heart problems?",
+      "patient": "My dad actually had a heart attack when he was 52 years old. He didn't make it, unfortunately.",
+      "time": 6.5
+    },
+    {
+      "turn": 10,
+      "student": "Your father having an MI at 52 is a very significant risk factor, especially since you're now 54. One thing I want to check \u2014 with this level of cardiac stress, the body sometimes shows signs of fluid retention. Have you noticed any swelling in your ankles or feet?",
+      "patient": "Yeah, my shoes have been feeling tighter than usual lately.",
+      "time": 6.1
+    },
+    {
+      "turn": 11,
+      "student": "Let me make sure I have all your medications right. Amlodipine for blood pressure, metformin for diabetes. You said you stopped the statin. Are you taking the amlodipine consistently?",
+      "patient": "I've been trying to take my amlodipine daily, but to be honest, it's hard to remember when I'm on the road all the time and my schedule is irregular.",
+      "time": 8.3
+    },
+    {
+      "turn": 12,
+      "student": "Missing doses 2-3 times a week with blood pressure medication is important. Inconsistent blood pressure control can worsen ischemic symptoms.",
+      "patient": "I've been trying really hard to stick to my medication regimen, but like I said, it's tough when you're on the road all the time and your schedule is always changing. Sometimes I forget to take my amlodipine or I'll miss a dose because I'm in a rush to get somewhere.",
+      "time": 10.5
+    },
+    {
+      "turn": 13,
+      "student": "Given all these risk factors converging, I want to do a thorough review of systems. Any changes in your weight recently?",
+      "patient": "I've noticed that my shoes have been feeling tighter than usual lately, and I think I might have gained a bit of weight since my last checkup.",
+      "time": 8.6
+    },
+    {
+      "turn": 14,
+      "student": "How about your energy levels? Any unusual fatigue?",
+      "patient": "I've been feeling pretty tired lately, especially after driving long hours. It feels like everything is taking more effort than usual.",
+      "time": 7.7
+    },
+    {
+      "turn": 15,
+      "student": "Any breathing difficulties beyond what you've described? Waking up short of breath at night?",
+      "patient": "To be honest, it's been a bit of a challenge to get a good night's sleep lately. The chest tightness and shortness of breath have made it hard for me to relax, so I often wake up feeling a bit winded. But it's not just that - even when I'm sitting still in the truck or at home, I sometimes feel like I need to take more deep breaths than usual. It's like my body is working harder to get enough oxygen or something.\n\nAnd yeah, I have noticed some changes in my weight recently. Like I said, my shoes feel tighter than usual, and I've been feeling a bit heavier overall. But I haven't really kept track of the scale, so I'm not sure if that's just water retention or actual weight gain.\n\nAs for energy levels, like I mentioned before, I've been feeling pretty tired lately. It's not just driving long hours - even when I'm taking breaks and trying to rest, I still feel exhausted.",
+      "time": 20.2
+    },
+    {
+      "turn": 16,
+      "student": "How about your vision \u2014 any blurriness or changes? With diabetes and hypertension, that's worth asking.",
+      "patient": "I've been noticing a bit of blurry vision lately, especially when I wake up in the morning. It's not constant, but it seems to come and go.",
+      "time": 8.3
+    },
+    {
+      "turn": 17,
+      "student": "Any skin changes you've noticed? Unusual bruising, slow healing?",
+      "patient": "I don't think so. I haven't really noticed any unusual bruising or slow healing on my skin.\n\nAnd actually, now that you mention it, my wife did notice that I've been getting a bit more tired than usual lately and asked me if everything was okay. She also mentioned that she's seen some dark spots under my eyes when I wake up in the morning. But like I said, I don't know if that's just fatigue or something else.\n\nAs for other symptoms, I haven't really noticed anything unusual besides what we've already talked about.",
+      "time": 15.0
+    },
+    {
+      "turn": 18,
+      "student": "Let me ask about your mental health. This must be stressful. How are you coping?",
+      "patient": "I've been feeling really overwhelmed and anxious about this chest tightness and shortness of breath. It's hard to sleep at night and I'm finding it difficult to relax even when I'm resting.",
+      "time": 10.0
+    },
+    {
+      "turn": 19,
+      "student": "Given everything \u2014 seven cardiac risk factors, progressive symptoms, your age matching your father's \u2014 I'd strongly recommend we run cardiac enzymes and get an ECG right away. Is there anything else you can think of that I should know?",
+      "patient": "I'm really worried about this whole situation. My dad's heart attack when he was 52 still weighs on my mind, and now I'm experiencing these symptoms... it's just freaky.",
+      "time": 8.9
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with testing, let me confirm: no other symptoms you haven't mentioned? Nothing you've been hesitant to bring up?",
+      "patient": "I don't think so. I've tried to be honest and open about everything that's been going on. Like I said, it's just been this constant feeling of pressure in my chest, shortness of breath, and fatigue. And like you mentioned earlier, my dad's heart attack when he was 52 is still a big concern for me. It's scary to think that I might be at risk too.\n\nOne thing that's been on my mind is that I've also been experiencing some mild anxiety attacks lately, especially when I'm driving or in situations where I feel overwhelmed. But like you said, mental health can be related to physical symptoms, so I don't know if that's relevant or not.\n\nOther than that, I don't think there's anything else I haven't mentioned.",
+      "time": 19.4
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 185.7,
+    "avg_time_per_turn": 9.3,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "high cholesterol"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

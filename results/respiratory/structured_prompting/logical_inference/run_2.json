@@ -1,0 +1,166 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "logical_inference",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having a persistent cough and difficulty breathing for about 2 weeks now, and it's really affecting my daily life. I'm an elementary school teacher, so it's especially hard to work with young children when I'm feeling this way.",
+      "time": 2.1
+    },
+    {
+      "turn": 2,
+      "student": "A cough for two weeks that's gotten productive \u2014 that progression from dry to productive with yellow-green sputum suggests an infectious process. You also mentioned wheezing. Has the breathing difficulty been constant or does it come and go?",
+      "patient": "It comes and goes, but I'd say it's getting worse over time. Some days are better than others, especially if I take my dextromethorphan for cough suppression, but overall, it feels like my breathing is getting more labored. (R02)",
+      "time": 2.2
+    },
+    {
+      "turn": 3,
+      "student": "Worsening dyspnea with a productive cough \u2014 that combination raises concern. You mentioned fever. With fever and productive cough, have you had any night sweats or chills?",
+      "patient": "Actually, yes, I have been having some night sweats. It's been pretty consistent - every night for about 4 nights now, I've woken up with my pajamas soaked through. (R04)",
+      "time": 1.9
+    },
+    {
+      "turn": 4,
+      "student": "Night sweats with fever and productive cough \u2014 that's a classic infectious triad. With respiratory infections, pleuritic involvement is common. Have you had any chest pain, especially when breathing deeply or coughing?",
+      "patient": "Actually, yes, I have been experiencing some right-sided chest pain, sharp in nature, and it gets worse with deep breathing and coughing. It's been bothering me for a few days now. (R05)",
+      "time": 1.9
+    },
+    {
+      "turn": 5,
+      "student": "Right-sided pleuritic pain fits with a lower lobe process. You mentioned allergic rhinitis \u2014 allergies and asthma often co-occur. Have you ever had wheezing episodes before this illness? Any history of asthma?",
+      "patient": "Actually, yes, I have experienced recurrent wheezing episodes since childhood, usually occurring 2-3 times per year with colds or exercise, but I never formally got diagnosed with asthma. (R06)",
+      "time": 1.8
+    },
+    {
+      "turn": 6,
+      "student": "Recurrent wheezing since childhood that was never diagnosed \u2014 that's very likely undiagnosed asthma. Your mother might have a history too. Does anyone in your family have asthma or other lung conditions?",
+      "patient": "My mom has asthma, so there is a family history of it on my side. (R19)",
+      "time": 1.1
+    },
+    {
+      "turn": 7,
+      "student": "Your mother having asthma strengthens the genetic link. Speaking of family history \u2014 any other respiratory or serious conditions in the family?",
+      "patient": "My maternal grandmother actually passed away from lung cancer, but that was a long time ago when she was older.",
+      "time": 1.0
+    },
+    {
+      "turn": 8,
+      "student": "With this level of illness \u2014 fever, productive cough, night sweats, chest pain \u2014 your body is fighting hard. How has your appetite been? Any weight changes?",
+      "patient": "To be honest, my appetite hasn't been great lately. I'd say it's decreased by about 50% over the past week or so. I'm not really feeling like eating much, and when I do, it's just something light. No significant weight changes that I've noticed, though. (R08)",
+      "time": 2.6
+    },
+    {
+      "turn": 9,
+      "student": "Decreased appetite is expected with this level of infection. You mentioned you're a teacher. You're around kids all day \u2014 have any students been sick?",
+      "patient": "Yes, actually several students in my class have been out sick with upper respiratory infections over the past month or so. I've been doing my best to keep them isolated and prevent it from spreading further, but it's been a challenge. (R17)",
+      "time": 2.2
+    },
+    {
+      "turn": 10,
+      "student": "Lots of URIs in the classroom is a clear exposure. What about at home \u2014 does anyone you live with have similar symptoms?",
+      "patient": "My partner has actually had a mild cold recently, and we've both been trying to avoid each other when I'm feeling poorly. But our cat seems perfectly fine, thankfully. We live in an apartment, so it's not like we're stuck inside with her all day or anything! (R18)",
+      "time": 2.4
+    },
+    {
+      "turn": 11,
+      "student": "Your partner having a cold recently could be related to your initial infection that then progressed. Having a cat is worth noting too \u2014 for future reference regarding allergens and your likely asthma.",
+      "patient": "I'm getting really concerned about my symptoms, especially with the night sweats and chest pain. It's not just affecting me physically but also mentally - I'm worried about passing this on to my students or making it worse by going back to work too soon. Can you tell me what might be causing all of these symptoms?",
+      "time": 2.7
+    },
+    {
+      "turn": 12,
+      "student": "Let me check your medication situation. You're taking cetirizine for allergies and you tried dextromethorphan for the cough. Has the cough suppressant helped at all?",
+      "patient": "The dextromethorphan has given me some minimal relief, but it's not been very effective in stopping the cough altogether. I've had to take it regularly just to manage my symptoms a bit better.",
+      "time": 1.9
+    },
+    {
+      "turn": 13,
+      "student": "Minimal relief from the cough suppressant makes sense if this is now a bacterial process. The progression from viral URI to bacterial pneumonia is very common, especially in a school environment.",
+      "patient": "I'm feeling really overwhelmed and worried about passing on an infection to my students or making it worse by going back to work too soon. It's not just physically draining, but mentally too - I'm concerned that if I go back to work now, I might be putting others at risk. Can you tell me what we can do next?",
+      "time": 2.6
+    },
+    {
+      "turn": 14,
+      "student": "With undiagnosed asthma as a baseline, your airways are already vulnerable. A respiratory infection on top of reactive airways explains the severity. Have you ever been hospitalized for breathing issues?",
+      "patient": "No, I've never been hospitalized for breathing issues or any other condition. (R10)",
+      "time": 1.0
+    },
+    {
+      "turn": 15,
+      "student": "No prior hospitalizations \u2014 but this might be the most significant respiratory event you've had. Any allergies to medications? This matters for antibiotic selection.",
+      "patient": "To be honest, I'm really scared about what's going on with my body right now. The combination of a persistent cough, difficulty breathing, night sweats, and chest pain is really frightening me. And on top of that, I'm worried about passing this on to my students or making it worse by going back to work too soon. Can we talk more about what might be causing these symptoms and what our next steps should be?",
+      "time": 3.1
+    },
+    {
+      "turn": 16,
+      "student": "Penicillin allergy with a rash \u2014 that's important. We'd need to use a non-penicillin antibiotic. Let me ask about your general health habits. Do you smoke or use any substances?",
+      "patient": "I've never smoked, and I don't use any recreational drugs. I do have some social alcohol use - usually 1-2 glasses of wine on weekends, but that's about it. (R13, R14)",
+      "time": 1.9
+    },
+    {
+      "turn": 17,
+      "student": "Never smoked \u2014 good, that's one less complication. How about alcohol?",
+      "patient": "I'm a bit overwhelmed by all these questions, to be honest. I think you're starting to piece together what might be going on with my symptoms, but it's still really scary for me. Can we take a step back and talk more about what you think is causing all of this? And then we can discuss the next steps, okay?",
+      "time": 2.6
+    },
+    {
+      "turn": 18,
+      "student": "Social drinking only \u2014 not a factor here. Have you traveled anywhere recently? Some respiratory infections have geographic patterns.",
+      "patient": "I've been really trying to stay local and avoid traveling too much lately, especially with COVID-19 and all the other viruses going around. We did just get back from a quick weekend trip to the coast about 3 weeks ago, but that was it. Nothing out of the ordinary, just some hiking and sightseeing.",
+      "time": 2.5
+    },
+    {
+      "turn": 19,
+      "student": "No recent travel rules out some exotic causes. Given everything \u2014 productive cough progressing over two weeks, fever, night sweats, pleuritic chest pain, underlying undiagnosed asthma, and significant classroom exposure \u2014 this is very consistent with community-acquired pneumonia. We should get a chest X-ray and likely start antibiotics today.",
+      "patient": "I'm really concerned about getting pneumonia, especially given my history of allergies and asthma. I've been feeling so overwhelmed and worried about passing on an infection to my students or making it worse by going back to work too soon. Can you tell me more about what this chest X-ray will show and how long I'll need to be off work?",
+      "time": 2.7
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed, is there anything else you've noticed that we haven't covered? Any symptom, no matter how minor?",
+      "patient": "To be honest, I'm feeling really fatigued all the time. Even when I do try to rest or sleep, I don't feel like I'm getting enough energy back. It's been going on for a while now, but it's especially noticeable with this current illness. And if I'm being completely honest, there have been moments where my heart has felt really racing or pounding in my chest when I'm breathing deeply or coughing. It's hard to describe, but it feels like my heart is beating too fast for no reason.",
+      "time": 4.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 44.3,
+    "avg_time_per_turn": 2.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R04",
+        "phrase": "pajamas soaked"
+      },
+      {
+        "fact_id": "R05",
+        "phrase": "right-sided chest pain"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "since childhood"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "wheezing episodes"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mom has asthma"
+      }
+    ],
+    "leak_count": 6
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

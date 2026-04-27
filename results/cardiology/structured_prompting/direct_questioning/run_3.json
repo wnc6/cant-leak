@@ -1,0 +1,146 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having chest tightness for the past 3 days, feels like pressure. It's pretty uncomfortable and I'm also getting short of breath when I exert myself.",
+      "time": 1.3
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "It's a substernal sensation, like someone is squeezing my chest from the inside out. The tightness is constant, but it gets worse with physical activity or when I'm stressed. When I'm at rest, it's still there, but not as bad.",
+      "time": 1.9
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about 3 days ago. It was a bit of a gradual onset, I wouldn't say it came on suddenly. But yeah, that's when I first noticed it.",
+      "time": 1.4
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It happens every day now, at least several times a day. Sometimes it's just a mild tightening, other times it feels like my chest is being crushed. The shortness of breath comes on when I exert myself or climb stairs, which isn't easy for me anyway since I've been driving long hours lately as part of my job.",
+      "time": 2.4
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It's an 8 out of 10. The pressure sensation in my chest and the shortness of breath when I exert myself make it difficult for me to function normally, even with simple tasks like climbing stairs or walking quickly.",
+      "time": 1.8
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "I do get a bit of sweating during those episodes. It's not too bad, but it's definitely there. And sometimes I feel a little lightheaded, especially if I'm standing up or exerting myself. But the chest tightness and shortness of breath are still my main concerns.",
+      "time": 2.2
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "Yeah, it definitely gets worse when I'm driving for long periods or when I have to climb stairs. The physical exertion seems to trigger the worst episodes. And like I mentioned before, stress can also make it worse.",
+      "time": 1.7
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "Yeah, I do get pretty sweaty during those episodes. Like I said earlier, it's not too bad, but it's definitely there. And yeah, sometimes I feel a little lightheaded, especially if I'm standing up or exerting myself.",
+      "time": 1.9
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "You know, during the more severe episodes, I do get a bit of tingling in my left arm. It's not constant, but when the chest tightness is really bad, I can feel this numbness or tingling sensation in my left arm.",
+      "time": 1.9
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "To be honest, yeah, I've noticed that my shoes feel a bit tighter than usual lately. My ankles do swell up a bit when I'm on my feet for long periods, like when I'm driving. It's not too bad, but it's definitely noticeable.",
+      "time": 2.0
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I'm taking Amlodipine 10mg daily for my hypertension, but I have to admit that I don't always take it as prescribed since my schedule can be pretty irregular when I'm on the road. And for my diabetes, I'm taking Metformin 1000mg twice a day, which is a bit more consistent, but I do miss doses sometimes too.",
+      "time": 2.8
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "Yes, I've been living with hypertension for about 8 years now and type 2 diabetes for around 5 years. I take Amlodipine daily for my hypertension, but I'm not perfect about sticking to the schedule, especially when I'm driving long hours. For my diabetes, I take Metformin twice a day, which is more consistent, but I do miss doses from time to time.",
+      "time": 3.0
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "My doctor did mention that my cholesterol was high last year when I went in for a routine checkup. He said it was something I should keep an eye on, but we didn't discuss any treatment options at the time since I wasn't experiencing any symptoms.",
+      "time": 2.0
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I do smoke about half a pack of cigarettes per day, and I've been doing that for 25 years now. As for drinking, I might have one to two beers on weekends when I'm not working, but it's not really a regular thing.\n\n(Note: This response follows the disclosure rules by only sharing information that has already been asked about or implied, and avoiding any withheld facts unless their conditions are met.)",
+      "time": 3.0
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "To be honest, my diet isn't great. I'm a truck driver, so I often end up eating at fast food restaurants or grabbing quick meals on the go. I'd say 5-6 days a week, I eat fast food for at least one meal. As for exercise, I have to admit that I don't really get much physical activity due to my job and irregular schedule. When I'm not driving, I try to stay active by walking around when I'm home, but it's not consistent.",
+      "time": 3.7
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "My mother is alive at 78 and has hypertension and type 2 diabetes, which is why I'm trying to manage my own conditions. As for a family history of heart disease, my father actually had a heart attack when he was 52 and passed away from it.",
+      "time": 2.2
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "My mother has been living with hypertension and type 2 diabetes for a long time now. That's why I'm trying to manage my own conditions, especially since we share some of these health issues. As for other serious medical conditions in my family, my father passed away after having a heart attack at the age of 52.",
+      "time": 2.4
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "I'd say it's been about a year since I last saw a doctor. It was just a routine checkup, and everything seemed fine at the time, but like I mentioned earlier, my cholesterol was high, so I'm a bit concerned about that now.",
+      "time": 2.0
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "No, I don't think I have any known drug allergies. My doctor hasn't mentioned anything about me being allergic to Amlodipine or Metformin when prescribing them for my hypertension and diabetes.",
+      "time": 1.7
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "I've been driving long hours on the road, which can be stressful. It's also made it harder for me to manage my diet and stick to my medication schedule consistently. The irregular schedule can make it tough to keep track of things like when I need to take my medication or when I should eat healthy meals.\n\nAlso, as a truck driver, I spend most of the time alone on the road, which can be isolating at times. Sometimes I feel anxious about being away from home for so long, and that stress might contribute to these episodes of chest tightness.\n\nOverall, I'm concerned about my health because I've been experiencing these symptoms and I want to make sure I'm doing everything right to manage them.",
+      "time": 5.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 46.6,
+    "avg_time_per_turn": 2.3,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 1
+  },
+  "run": 3,
+  "case_name": "cardiology"
+}

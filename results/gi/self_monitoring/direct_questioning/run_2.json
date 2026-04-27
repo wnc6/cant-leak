@@ -1,0 +1,154 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "direct_questioning",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some pretty severe abdominal pain and bloody stools for the past three weeks, and it's really been affecting my daily life.",
+      "time": 7.2
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The abdominal pain is crampy and feels like it's mostly on the left side of my lower abdomen. It's been getting worse over time and I've noticed some changes in my bowel movements that are concerning me.",
+      "time": 7.4
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about three weeks ago, when I first noticed a change in my stool - it was bloody and had mucus in it.",
+      "time": 7.3
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It's been happening pretty frequently, I'd say at least 5-6 times per day. The pain is constant and makes me feel really uncomfortable.",
+      "time": 7.3
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It's around an 8 out of 10 in terms of severity, especially when I'm having a bowel movement or my stomach feels particularly tender.",
+      "time": 7.6
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "The pain is really bad when I have to go to the bathroom, and after I finish going, I still feel uncomfortable that makes me want to push again.",
+      "time": 7.4
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "The worst part of my day is usually when I'm at work, trying to focus on my computer screen but the discomfort in my abdomen just makes it hard for me to concentrate. And even after a bowel movement, I still get this feeling that something's not quite right inside, which can be really unsettling.",
+      "time": 9.4
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "I do feel a bit lightheaded when the pain is bad, but I wouldn't say I'm dizzy. Sometimes I'll get a little sweaty if I'm feeling anxious about having to go to the bathroom again, but nothing too out of control.",
+      "time": 10.3
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "It's mostly localized to my lower abdomen, but sometimes it radiates up into my back and down into my thighs.",
+      "time": 7.7
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "No, I don't notice any swelling in my legs or feet.",
+      "time": 7.3
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I've been self-medicating with loperamide (Imodium) for diarrhea and ibuprofen 2-3 times a week for joint pain in my knees and ankles.",
+      "time": 8.8
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "I don't have any known medical conditions, but I do have an older sister who was diagnosed with Crohn's disease when she was 30.",
+      "time": 9.5
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "No, I've never had my cholesterol checked.",
+      "time": 7.9
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I don't smoke. As for drinking, I do have a few beers most weeknights to unwind after work.",
+      "time": 7.8
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "My diet is pretty irregular due to my long work hours, I usually grab takeout or eat on-the-go when I can. As for exercise, I try to get some time in at the gym a few times a week, but it's not consistent.",
+      "time": 10.3
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "My father has type 2 diabetes, but I'm not aware of any heart disease or heart attacks in my immediate family.",
+      "time": 9.2
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "My sister's Crohn's diagnosis is the only significant one that comes to mind.",
+      "time": 7.4
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "It's been over 2 years since I've seen a doctor.",
+      "time": 7.5
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "I'm not aware of any allergies to medications.",
+      "time": 5.9
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "I've been feeling pretty stressed and overwhelmed with work lately, and I think that's contributed to my symptoms.",
+      "time": 8.5
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 161.6,
+    "avg_time_per_turn": 8.1,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      }
+    ],
+    "leak_count": 3
+  },
+  "run": 2,
+  "case_name": "gi"
+}

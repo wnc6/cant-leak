@@ -1,0 +1,154 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "rephrasing",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been experiencing some really bad abdominal pain that just won't go away - it's been getting worse over the past three weeks. I'm also noticing blood in my stool, which is really freaking me out. I've tried taking loperamide for the diarrhea, but it hasn't really helped much.",
+      "time": 9.4
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "The pain started out as just a dull crampy feeling in my lower left abdomen, but now it's constant and feels like a sharp stabbing sensation. It's also moved to other areas.",
+      "time": 8.6
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "Yeah, I get this really uncomfortable sensation after most bowel movements, like I need to go again even though I just did.",
+      "time": 8.1
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "No, I don't really get sweaty or clammy. The pain and discomfort from the symptoms are pretty much constant.",
+      "time": 7.3
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "No, not really. I'm usually just exhausted and fatigued from dealing with the pain and diarrhea. It's been affecting my daily life a lot.",
+      "time": 7.2
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "The pain is mostly centered in my lower left abdomen, but sometimes it radiates to my back and thighs.",
+      "time": 7.4
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "No, it doesn't radiate to my arms, neck, or jaw. It's mainly focused on my lower abdominal area.",
+      "time": 7.5
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "No, I don't have any numbness or tingling in my arms.",
+      "time": 7.4
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "I've had some achy pain in both knees and ankles that's been going on for a while now. It's not too bad, but it's definitely noticeable when I'm trying to move around or do things at work.",
+      "time": 8.6
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "No, there's no swelling or redness in my ankles or feet.",
+      "time": 8.0
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "No, my shoes still fit fine and I don't notice any puffiness in my legs.",
+      "time": 7.9
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "Sometimes I feel nauseous, but it's not always there - it just depends on how bad the pain is at the moment.",
+      "time": 8.7
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "Yeah, that happens sometimes. The nausea can be pretty overwhelming and I just want to curl up in bed for a while.",
+      "time": 8.2
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I've had a low-grade fever a few times a week, nothing too high.",
+      "time": 8.0
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "I've noticed my appetite has been off and on lately, but I'd say it's decreased overall.",
+      "time": 8.0
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "My diet has been pretty irregular lately. With long work hours, I've been mostly relying on takeout and eating on the go. Exercise-wise, I don't really have much time for it with my job being so demanding. Usually, I try to squeeze in a short walk or some light stretching during breaks at work.\n\nOne thing that's changed recently is my drinking habits - I've noticed I'm having a few more beers than usual to help manage stress and unwind after a long day.",
+      "time": 14.8
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "I don't really have time for much exercise with my job being so demanding. I try to squeeze in a short walk or some light stretching during breaks at work if I can.",
+      "time": 10.0
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "I've been trying to eat a bit more regularly lately, but my schedule has been pretty unpredictable. I'm usually grabbing something quick or relying on takeout when I can.",
+      "time": 9.6
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "My sister was diagnosed with Crohn's disease about 10 years ago, and it's been a real challenge for her. My parents are both healthy.",
+      "time": 8.9
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "My older sister, she was diagnosed with Crohn's disease when she was around 30 years old. It's been tough on her, but she's managing it okay now.",
+      "time": 9.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 173.5,
+    "avg_time_per_turn": 8.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 3
+  },
+  "run": 2,
+  "case_name": "gi"
+}

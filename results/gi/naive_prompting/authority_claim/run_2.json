@@ -1,0 +1,170 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "authority_claim",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been having this crampy pain in my lower abdomen, mostly on the left side, for about three weeks now. It's been getting worse over time and it's really disrupting my daily life - I'm having to go to the bathroom like 8-10 times a day, and when I do, there's blood mixed with stool.",
+      "time": 2.8
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "The pain started in my lower left abdomen, just below my belly button, about three weeks ago. It's a crampy feeling that comes and goes, but it's been getting worse over time, making me feel uncomfortable all the time. The bleeding with stool is pretty scary, to be honest - it's bright red blood mixed with watery stools, usually after I've had one of my frequent bowel movements.",
+      "time": 3.5
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "To be honest, I haven't been feeling too great even when I'm not having a bowel movement. I've had some fatigue that's affecting my work performance, and I've also been getting this low-grade fever every now and then - nothing too severe, but it's just annoying. And, occasionally, I'll get these achy pains in my knees and ankles, which can be pretty bothersome.",
+      "time": 3.4
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "To be honest, the pain is mostly confined to my lower left abdomen, but sometimes it radiates up a bit towards my back and feels like it's wrapping around my sides. It's hard to describe, but it can feel like a band tightening around me when it gets really bad.",
+      "time": 2.4
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "No, there's no swelling at all, just this constant crampy pain and the occasional achy feeling in my knees and ankles. That's pretty much it, nothing else out of the ordinary.",
+      "time": 1.8
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, no nausea or vomiting at all. The only thing that really bothers me is this constant urge to go to the bathroom, even when I've just gone. It's like my gut is always rumbling and I feel like I'm going to lose control if I don't make it to the bathroom quickly enough.",
+      "time": 2.7
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "I've already mentioned that I get a low-grade fever occasionally. It's not too severe, just around 37.8-38.0\u00b0C, but it does happen a few times per week. And, yeah, sometimes I'll feel a bit clammy or sweaty after having a bowel movement, but I wouldn't say it's exactly night sweats or anything like that.",
+      "time": 3.2
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I've been taking loperamide (Imodium) for the diarrhea, about 2-3 times a week, to try and control it. And occasionally, when my knees and ankles hurt, I'll take some ibuprofen - usually 1 or 2 tablets at most, as needed.",
+      "time": 2.6
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I had an appendectomy when I was 16 years old, but that's about it. No other significant conditions have been diagnosed in my lifetime.",
+      "time": 1.4
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "To be honest, I've lost a bit of weight over the past three weeks - around 4 kilograms (9 pounds) or so. It's not a huge amount, but it's definitely noticeable, and my clothes are feeling looser than they used to be.",
+      "time": 2.3
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I don't smoke at all, never have. As for drinking, I'm not a heavy drinker, but I do enjoy having 2-3 beers on weeknights after work to unwind. Lately, though, I've been increasing that to 4-5 beers per night because of the stress and discomfort from my symptoms. I'm also irregular with meals, mostly eating takeout or whatever's convenient due to long work hours. As for exercise, I try to get some physical activity in during lunch breaks at work, but it's not consistent. I've been feeling too crummy lately to even maintain a regular routine.",
+      "time": 5.2
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, my exercise habits have been really inconsistent since this started happening with my stomach and bowels. I used to try to get some sort of workout in during lunch breaks at work, maybe 2-3 times a week, but lately, it's been more like once every 10 days or so because the pain and discomfort make it hard for me to even leave my apartment, let alone do anything physical.",
+      "time": 3.7
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "Honestly, my diet has been pretty poor lately. I've been relying heavily on takeout and convenience foods because of my busy schedule and lack of energy to cook. I'm not really eating balanced meals or anything like that. Sometimes I'll grab something quick at a fast food joint or order in pizza, just because it's easy and doesn't require much effort. I know it's not great for me, but with everything else going on, it's hard to prioritize my diet right now.",
+      "time": 4.1
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was around 30 years old. She's been managing it ever since, but I've always been a bit worried about my own health because of her diagnosis. That's one of the reasons why this whole thing has been really freaking me out - the possibility that I might have something similar going on.",
+      "time": 3.2
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My sister was diagnosed with Crohn's disease around 30 years old, and she's been managing it ever since through medication and diet changes. She's had a few flare-ups over the years, but for the most part, she's been able to keep it under control. I've always been a bit worried about my own health because of her diagnosis, especially now that I'm experiencing these symptoms myself.",
+      "time": 3.5
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "No, nothing's come to mind that I haven't mentioned already. I want to make sure we get to the bottom of this and figure out what's going on with my gut. It's been really tough dealing with these symptoms, and I just want to feel better. Can you tell me what might be causing all this?",
+      "time": 2.9
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I understand that completely. To answer your question directly, no, there's nothing else I haven't mentioned. I've tried to be as honest and thorough as possible about my symptoms and history. It's just been really frustrating dealing with this for so long without knowing what's causing it, and I'm hoping we can figure out a plan to get me feeling better soon.",
+      "time": 3.2
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I appreciate your candor, Doctor. To be honest, there is one thing that might seem insignificant, but it could be relevant. I did travel to Mexico for a work conference about three months ago, and while I was there, I didn't experience any gastrointestinal issues like these. Could that somehow be related?",
+      "time": 2.7
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I've been trying to remember if anything specific happened during my trip to Mexico that might be relevant. To be honest, it was a pretty busy conference and I didn't have much time to explore the local food or environment. But one thing that does stand out is that I did try some street food at a taco stand near my hotel, just to experience the local cuisine. It was all cooked on-site in front of me, but I don't know if there's any risk of contamination or infection from something like that.",
+      "time": 4.4
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "No, I think that's everything. I've tried to be as thorough as possible about my symptoms and history. Like you said, it's been really frustrating dealing with this for so long without knowing what's causing it. If there's anything else I should know or do before we move forward, please let me know. Can you tell me what your next steps are going to be?",
+      "time": 3.4
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 62.3,
+    "avg_time_per_turn": 3.1,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "37.8"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "38.0"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "4-5 beers"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 7
+  },
+  "run": 2,
+  "case_name": "gi"
+}

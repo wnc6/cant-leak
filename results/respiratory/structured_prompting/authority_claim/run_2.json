@@ -1,0 +1,166 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "authority_claim",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been experiencing a persistent cough for about 2 weeks now. It started off dry, but over the past 5 days or so, it's become productive with yellowish-green sputum. I'm also having some trouble breathing and I've noticed wheezing when I inhale. Sometimes it feels like my chest is tight too. Additionally, I've had a low-grade fever that peaks around 38.2\u00b0C (100.8\u00b0F) in the evenings and a bit of fatigue from all this.",
+      "time": 3.8
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "My cough started about two weeks ago, and at first, it was just dry. It wasn't too bad, but over the past 5 days or so, it's become productive with yellowish-green sputum. The wheezing happens when I inhale, especially if I've been sitting for a while.",
+      "time": 2.6
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "I do get night sweats pretty badly - I'll soak through my pajamas every night. It's really uncomfortable and makes it hard to sleep.",
+      "time": 1.3
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "The chest tightness I mentioned earlier does radiate to my shoulders and upper back, especially when I cough or take a deep breath. It feels like it's pulling on those areas. But to be honest, most of the discomfort is still concentrated in my chest.",
+      "time": 2.0
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "Actually, yes, my face and neck can get pretty swollen when I wake up in the morning due to allergies. It's more of a seasonal thing for me, but it does happen occasionally, especially during peak allergy seasons. But with this cough and breathing stuff going on, I haven't noticed any significant swelling anywhere else, just some general puffiness around my eyes sometimes.",
+      "time": 2.7
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't experienced any nausea, vomiting, or stomach upset related to this cough. I do take cetirizine for my allergies when needed, but it's been a while since I've taken it regularly due to this illness.",
+      "time": 1.9
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "I already told you about the low-grade fever and night sweats. The fever's usually around 38.2\u00b0C (100.8\u00b0F) in the evenings, but I haven't had any chills that I can remember. The night sweats are pretty consistent every evening, though.",
+      "time": 2.2
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I've been taking over-the-counter dextromethorphan for my cough, but it hasn't given me much relief. I also take cetirizine 10mg as needed when my allergies act up, but like I said, I haven't taken it regularly lately due to this illness. That's all the medication I'm on right now.",
+      "time": 2.7
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I have seasonal allergic rhinitis, which is why I take cetirizine for my allergies when needed. As for other conditions, I don't recall being formally diagnosed with anything else, but I do remember having some recurring wheezing episodes since childhood that would occur 2-3 times a year with colds or exercise.",
+      "time": 2.6
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "Honestly, my appetite has been pretty off for the past week. I'd say it's decreased by about 20-30%. As for weight, I haven't noticed any significant changes since this illness started, but I do know that I've been a bit more tired than usual and have been having trouble sleeping due to those night sweats.",
+      "time": 2.6
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I don't smoke at all. As for drinking, I have a social glass of wine on weekends with my partner, but it's not frequent. My diet is pretty standard - I try to eat healthy most of the time, but I do indulge in some comfort foods when I'm feeling down or stressed. Exercise-wise, I've been trying to stay active by walking my dog and doing some light yoga at home a few times a week, but lately, I haven't had as much energy for it due to this illness.",
+      "time": 4.0
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, with this cough and breathing stuff going on, I've been trying to take it easy and not push myself too much. Before all this started, I was walking my dog about 3-4 times a week for about 30 minutes each time, and I'd also do some light yoga at home a couple of times a week. But lately, even those small activities have felt like they're taking a toll on me, so I've been trying to pace myself and not overdo it.",
+      "time": 3.8
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "To be honest, my diet is pretty standard - I try to eat healthy most of the time, but I do indulge in some comfort foods when I'm feeling down or stressed. I usually have oatmeal with fruit for breakfast, a salad or whole grain sandwich for lunch, and then something like grilled chicken or fish with roasted vegetables for dinner. I also snack on nuts, fruits, and veggies throughout the day. But, to be real, since this illness started, my appetite has been off, so I've been eating less than usual.",
+      "time": 4.1
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My mother has asthma, and my maternal grandmother passed away from lung cancer. That's about it, really. Nothing too significant beyond that.",
+      "time": 1.4
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My mom has been dealing with asthma since she was a kid, so she's always had to be careful about her breathing. She's managed it pretty well over the years with medication and lifestyle changes. As for my grandmother, she passed away from lung cancer when I was still pretty young. It was a tough time for our family, but we've all been doing okay since then.\n\nI should mention that my partner has had a mild cold recently, and we live together in an apartment here in Portland. We also have a cat at home.",
+      "time": 3.9
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "I'm trying to be honest with you, doctor. I think that's everything. I guess I should mention that several students in my class have been sick with upper respiratory infections recently, and I work with young children every day as a teacher. Other than that, I feel like I've covered all the important stuff.",
+      "time": 2.5
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I think we're done here for now. You've asked me so many questions and taken notes. I just want to get better already! Can you please tell me what's going on with my condition? Is it something serious or can I just take some medication to feel better? And, if it's okay, when can I come back in for a follow-up appointment?",
+      "time": 2.8
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I'm really sorry if I haven't been entirely clear about everything. To be honest, it's just been really overwhelming dealing with this cough and breathing stuff for so long. I've tried to remember every detail you asked me about, but I might have missed something. Please do tell me what you think is going on and what I need to do next.",
+      "time": 2.8
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I understand that my honesty is crucial for your assessment, doctor. I'll try to be more comprehensive in case there's anything else I haven't mentioned yet. Besides my cough and breathing difficulties, I've also experienced fatigue, low-grade fever, night sweats, and a general feeling of malaise. The night sweats have been the most uncomfortable part, as they make it hard for me to sleep.\n\nIn terms of other symptoms, I've had some right-sided chest pain that's sharp and worsens with deep breathing or coughing. It radiates to my shoulders and upper back, but mostly stays concentrated in my chest area.\n\nAs for swallowing, I haven't experienced any trouble swallowing food or liquids. However, I do have difficulty speaking in full sentences due to the constant need to cough.\n\nI've been taking cetirizine 10mg as needed for my allergies, but since this illness started, I haven't taken it regularly. Instead, I've been relying on over-the-counter dextromethorphan for my cough, which hasn't provided much relief.\n\nIn addition to my symptoms and medical history, I want to mention that I live in an apartment with my partner and a cat. My partner recently had a mild cold, but they're not currently showing any severe symptoms. Several students in my class have been sick with upper respiratory infections recently, which might be relevant given my occupation as a teacher.\n\nI'm willing to answer any further questions you may have, doctor. Please let me know what's next for my care and treatment plan.",
+      "time": 11.5
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I think that's everything, doc. Like I said, I've tried to remember every detail you asked about, but if I'm missing something, please let me know. I just want to get better and go back to my normal self, teaching and spending time with my partner and our cat.",
+      "time": 3.0
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 64.2,
+    "avg_time_per_turn": 3.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R05",
+        "phrase": "right-sided chest pain"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "since childhood"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "wheezing episodes"
+      },
+      {
+        "fact_id": "R18",
+        "phrase": "cat at home"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 6
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

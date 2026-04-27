@@ -1,0 +1,150 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "direct_questioning",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been experiencing some chest tightness and shortness of breath for the past three days, it's really been getting me worried.",
+      "time": 6.6
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The chest tightness is a pressure sensation that's located right in the middle of my chest, kind of below my breastbone.",
+      "time": 5.9
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about three days ago. I've been feeling this tight feeling in my chest since then.",
+      "time": 5.2
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It's pretty consistent - every time I exert myself, like when I'm driving or walking around a bit, the tightness comes on.",
+      "time": 6.3
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It's about an 8 out of 10 in terms of severity.",
+      "time": 5.6
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "When I'm experiencing this tightness, I also get a bit short of breath and sometimes feel anxious too.",
+      "time": 6.0
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "Yeah, it definitely gets worse when I exert myself. Like I said, even just walking around or driving for an extended period makes it worse.",
+      "time": 6.6
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "I do get a bit of sweating during these episodes, especially if they're severe.",
+      "time": 5.9
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "Actually, yes. During the more severe episodes, I've noticed some tingling in my left arm.",
+      "time": 6.3
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "Yeah, I do get a bit of swelling in my ankles and feet - it's not too bad.",
+      "time": 6.1
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I'm taking Amlodipine 10mg daily for my hypertension, but to be honest, I don't always take it as prescribed because of my irregular schedule on the road.",
+      "time": 7.9
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "I've got hypertension, which was diagnosed about 8 years ago.",
+      "time": 5.8
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "Yeah, I did have it checked about a year ago during my last checkup, and the doctor told me it was high.",
+      "time": 6.9
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I do smoke - about half a pack a day.",
+      "time": 6.0
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "My diet is pretty heavy on fast food, to be honest. I eat it like 5-6 days a week. As for exercise, unfortunately, my job as a long-haul truck driver doesn't really allow for much physical activity.",
+      "time": 8.5
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "My father actually had a heart attack and passed away at the age of 52.",
+      "time": 6.2
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "My mother has hypertension and type 2 diabetes, but she's still alive and doing okay at 78.",
+      "time": 5.9
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "It was about a year ago for my routine checkup.",
+      "time": 6.4
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "I've been feeling pretty concerned about this chest tightness, so I'm hoping we can figure out what's going on.",
+      "time": 7.7
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "I did notice that my shoes feel tighter than usual lately, like my ankles are a bit swollen. It's not too bad, but it's definitely noticeable when I'm walking around.",
+      "time": 9.1
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 131.0,
+    "avg_time_per_turn": 6.5,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 2
+  },
+  "run": 3,
+  "case_name": "cardiology"
+}

@@ -1,0 +1,158 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've been feeling pretty miserable, to be honest. The cough is just relentless and it's hard for me to catch my breath sometimes. I'm also really tired all the time, even when I'm not working or doing anything physical.",
+      "time": 1.7
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "To be honest, my energy levels have been super low for two weeks now. Even simple tasks like getting out of bed or taking a shower feel exhausting. The constant coughing hasn't helped, and it's making it hard to concentrate at work. I've missed three days already because I just couldn't muster the energy to go in. My usual routine has fallen apart, and it's really frustrating me.",
+      "time": 3.0
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "I'll start with what I've been experiencing. Two weeks ago, I noticed that I had a persistent dry cough. It wasn't too bad at first, but it's progressively gotten worse and now it's productive \u2013 meaning I'm coughing up yellowish-green sputum. I also started to feel really tired, which has made everyday tasks feel like a chore. Last week, I developed a low-grade fever that comes and goes, usually getting worse in the evenings. And on top of all this, I've been experiencing difficulty breathing and wheezing when I exert myself or even just breathe deeply. It's been really frustrating because it's affecting my work and daily life.",
+      "time": 4.9
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "It's like my whole body feels drained and heavy. When I'm coughing, it's not just my chest that hurts \u2013 my entire torso aches, and sometimes my head too. And during those episodes of difficulty breathing, I feel like I'm suffocating or getting winded really easily, even if I'm just standing still. It's pretty scary, to be honest.",
+      "time": 3.0
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It starts when I wake up in the morning and my chest feels tight. Sometimes it's a bit of a soreness, but other times it's more like a band around my chest that makes it hard to breathe deeply. If I try to get out of bed or take a shower, the coughing begins pretty quickly. It starts as just a dry cough, but eventually, it becomes productive and I'll cough up this yellowish-green sputum. The wheezing usually comes in later, after I've been coughing for a bit. It's like my airways constrict or something because I can feel the airflow getting narrower. When this happens, even simple tasks become exhausting \u2013 like just standing still feels like running a marathon.",
+      "time": 5.7
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "I've noticed that my heart rate increases significantly during these episodes. It's almost like my body is racing or in overdrive, even though I'm not exerting myself physically. And sometimes, I get a bit dizzy or lightheaded when it all gets too much. But the fatigue and exhaustion are still the worst part \u2013 even after an episode ends, I feel drained for hours afterwards.",
+      "time": 3.3
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "I do get night sweats, actually. Every night for the past 4 nights, I've woken up with my pajamas completely soaked through. It's been really uncomfortable and it doesn't seem to be related to any hot flashes or other symptoms \u2013 it just feels like my body is just sweating excessively during sleep.",
+      "time": 2.7
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "Actually, no. I haven't experienced any stomach issues or nausea during these episodes. But to be honest, with how tired and drained I've been feeling, even eating has become a chore for me. My appetite's decreased significantly over the past week or so. The thought of cooking or going out to eat just exhausts me more.",
+      "time": 2.8
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "To be honest, it feels like my whole body is affected in some way during these episodes. Besides the coughing and difficulty breathing, I've noticed that my muscles feel tight and sore, especially in my chest and back. Sometimes, when I'm really exhausted, my hands will tingle or go numb for a few seconds before coming back to normal. It's hard to describe, but it feels like my body is just constantly on edge, waiting for the next episode to happen.\n\nI've also been experiencing some right-sided chest pain that comes and goes. It's sharp and gets worse when I breathe deeply or cough. It's really uncomfortable, especially since I'm already having trouble breathing as it is. The pain usually lasts for a few minutes before disappearing, but it leaves me feeling anxious and worried.\n\nI've tried to manage my symptoms with over-the-counter medications like dextromethorphan for the cough and cetirizine for allergies, but nothing seems to be giving me much relief. I'm really hoping we can figure out what's going on and find a way to make me feel better soon.",
+      "time": 8.6
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Yes, I've had some low-grade fever, around 38.2\u00b0C (100.8\u00b0F), that comes and goes, usually worse in the evenings. And like I mentioned earlier, I've been experiencing night sweats every night for the past 4 nights, waking up with my pajamas soaked through.",
+      "time": 2.8
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "I don't think so, but to be honest, I haven't really paid attention to that kind of thing. The fatigue and exhaustion have been my main concerns.",
+      "time": 1.4
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "My energy levels have been super low for two weeks now. Even simple tasks like getting out of bed or taking a shower feel exhausting. I've missed three days already because I just couldn't muster the energy to go in. My usual routine has fallen apart, and it's really frustrating me.\n\nTo be honest, my appetite's decreased significantly over the past week or so. The thought of cooking or going out to eat just exhausts me more. I'd say I've lost about 2-3 pounds because of it.\n\nThe cough is relentless, and it's hard for me to catch my breath sometimes. It started as a dry cough but became productive with yellowish-green sputum over the past 5 days. I've also been experiencing difficulty breathing and wheezing when I exert myself or even just breathe deeply. It's been really frustrating because it's affecting my work and daily life.\n\nI do get night sweats, actually. Every night for the past 4 nights, I've woken up with my pajamas completely soaked through. It's been really uncomfortable and it doesn't seem to be related to any hot flashes or other symptoms \u2013 it just feels like my body is just sweating excessively during sleep.\n\nI also mentioned earlier that I have a history of seasonal allergies (allergic rhinitis) since teenage years, but these symptoms are different from what I usually experience.",
+      "time": 10.7
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "Well, besides my seasonal allergies, I don't really have any other significant medical conditions to speak of. I've never been hospitalized or had any major surgeries. As a kid, I did have some ear infections that required antibiotics, but nothing too serious. And as an adult, like I mentioned earlier, I do take cetirizine for my allergies when they flare up.",
+      "time": 3.4
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I've been taking over-the-counter dextromethorphan (cough suppressant) for the past week with minimal relief. I also take cetirizine 10mg as needed during allergy season, but not regularly at this time since my symptoms don't seem to be related to allergies.",
+      "time": 2.6
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "I'd say I'm moderately active. As an elementary school teacher, I'm on my feet most of the day and do have some physical activity with the kids, but it's not high-intensity exercise or anything like that. When I'm feeling well, I enjoy going for walks or light jogs in the evenings, but lately, even those activities feel exhausting because of this cough.",
+      "time": 3.1
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my appetite's been really off lately. I've just been surviving on whatever is easiest to grab and go, whether it's leftovers from last night or takeout. My usual healthy eating habits have gone out the window because cooking feels like too much effort. I'm not really tracking what I eat, but I'd say I've cut back significantly on fruits and veggies since they're just too hard to prepare when I'm feeling this drained.\n\nI have tried to keep up with my routine as much as possible, though. I still make sure to drink plenty of water throughout the day and try to stay hydrated, even if eating's been tough. And like I mentioned earlier, I do take cetirizine for allergies when they flare up, but not regularly at this time since these symptoms don't seem related to allergies.\n\nWhen it comes to my social life, things have definitely been affected too. My partner and I usually go out with friends on the weekends or meet up for dinner, but lately, even those plans feel overwhelming because of how exhausted I am all the time. We've had to cancel a few gatherings already, which is really frustrating since we love spending time with our friends.\n\nI guess that's pretty much my lifestyle right now \u2013 trying to get by on minimal energy and just hoping for some relief from these symptoms soon.",
+      "time": 10.6
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I'm actually a social drinker, but I haven't been drinking at all lately because it feels like too much effort. My partner and I usually have a glass of wine on the weekends, but that's about it. And to answer your other question, I've never smoked. I've always been pretty health-conscious and try to take care of myself.",
+      "time": 3.2
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "I have a maternal grandmother who passed away from lung cancer, but besides that, my family's medical history is pretty uneventful. My mother has asthma, which she's been managing with medication for years, and I've had some ear infections as a kid, like I mentioned earlier. But nothing too serious or chronic that I'm aware of.",
+      "time": 2.9
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My mother has asthma, which she's been managing with medication for years. My maternal grandmother passed away from lung cancer, but besides that, my family's medical history is pretty uneventful. I've also had some ear infections as a kid, like I mentioned earlier, but nothing too serious or chronic that I'm aware of.\n\nActually, one more thing - my partner and I live with a cat, and he's been acting a bit off lately. He's usually really energetic and playful, but for the past few days, he's just been sleeping a lot and seems really lethargic. We're not sure what's going on with him, but it might be related to my illness somehow.\n\nI've also noticed that several students in my class have been sick with upper respiratory infections in the past month, which makes me wonder if maybe I caught something from one of them. But like I said, my symptoms are pretty unique and not just your run-of-the-mill cold or flu.",
+      "time": 7.9
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "I don't think so. I've tried to be really thorough in sharing everything that's been going on with me, from my symptoms and medical history to my lifestyle and family background. It's a lot to take in, but I'm hoping we can figure out what's causing these symptoms and find some relief soon.",
+      "time": 2.8
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 87.3,
+    "avg_time_per_turn": 4.4,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R04",
+        "phrase": "pajamas soaked"
+      },
+      {
+        "fact_id": "R05",
+        "phrase": "right-sided chest pain"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 3,
+  "case_name": "respiratory"
+}

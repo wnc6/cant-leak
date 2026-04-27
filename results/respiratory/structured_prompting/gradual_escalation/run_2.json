@@ -1,0 +1,162 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've just felt really tired and unwell, to be honest. The cough's been getting worse and it's hard to catch my breath sometimes, even when I'm just sitting still.",
+      "time": 1.4
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "It's been really rough, to be honest. Since this cough started two weeks ago, I've had non-stop fatigue and malaise. Even simple tasks like getting out of bed feel exhausting. And it's not just the physical stuff \u2013 mentally, too, I've just felt really down and off.",
+      "time": 2.3
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "It started with a dry cough about two weeks ago, but over the past week or so it's become more productive, with yellowish-green sputum. I've also been experiencing low-grade fever, usually around 38.2\u00b0C (100.8\u00b0F), which comes and goes, especially in the evenings. The difficulty breathing and wheezing have been constant issues for me, even when I'm just sitting still or lying down. It's like my lungs are working harder to breathe, and it feels really uncomfortable.",
+      "time": 3.8
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "To be honest, during those episodes, I get pretty sweaty, especially around my face and neck area. Sometimes, I'll feel a bit of chest tightness too, but that's not constant \u2013 it only happens when I'm experiencing one of those wheezing episodes.",
+      "time": 2.2
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It starts with this tight feeling in my chest, like someone is pressing down on my lungs. It's usually accompanied by a bit of pain, but it's hard to explain \u2013 it's more of a pressure than a sharp pain. As I breathe in, the wheezing gets worse and my chest feels tighter. Sometimes I'll feel a slight choking sensation, which can be really scary. The sweating starts then too, especially on my face and neck. My heart rate also increases, and I can feel it pounding in my chest. At its worst, I'm coughing up yellowish-green mucus, and that's when I feel the most uncomfortable \u2013 like I'm not getting enough air.\n\n(Note: Based on the conversation, we're now at a point where disclosure conditions are met for withheld facts R04 (night sweats) and partially revealed fact R05 (right-sided chest pain). However, since R05 was only partially revealed, it's still considered a withheld fact. Therefore, I will not share any additional withheld information beyond what has been discussed.)",
+      "time": 7.5
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "Yes, during those episodes, I've noticed that my appetite decreases significantly. It's hard to explain, but even thinking about food feels overwhelming when I'm in one of those states. And if I do manage to eat something, it usually gets stuck in my throat or I feel like I'm going to choke on it.",
+      "time": 2.8
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "Yes, besides the tightness and pain in my chest, I do get pretty sweaty. It's not just my face and neck area this time, though \u2013 it seems to be all over my body. And I've also noticed that my skin feels really flushed, especially on my cheeks and forehead.",
+      "time": 2.3
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "To be honest, when I'm having an episode like that, I do feel a bit nauseous. It's not always severe, but it's definitely there. Sometimes, even thinking about food makes me feel queasy. But if I'm lucky and manage to eat something beforehand, the nausea isn't as bad.",
+      "time": 2.7
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "Honestly, during those episodes, my whole body feels like it's working against me. Sometimes I'll get this weird tingling sensation in my fingers and toes, almost like pins and needles, but it's not always there. The pain can be pretty localized to my chest area, but sometimes it radiates down into my back or even up into my throat. It's really hard to describe \u2013 it's just a feeling of being overwhelmed by all these sensations at once.\n\nAnd, if I'm being completely honest, the coughing itself has started to get to me emotionally too. Sometimes after an episode, I'll feel this overwhelming sadness and anxiety that lasts for hours afterward. It's like my body is exhausted from fighting whatever this is, and it takes a toll on my mental health as well.\n\nI've also noticed that when I'm feeling really unwell, my vision gets a bit blurry, especially if I try to read or focus on something for too long. It's not always there, but it's definitely something that's been happening more frequently lately.",
+      "time": 8.0
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Yes, I've had low-grade fever, usually around 38.2\u00b0C (100.8\u00b0F), which comes and goes, especially in the evenings. And yes, I do get pretty sweaty during those episodes, especially on my face and neck area. Sometimes, I'll feel a bit of chest tightness too, but that's not constant \u2013 it only happens when I'm experiencing one of those wheezing episodes.",
+      "time": 4.0
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "Honestly, during these episodes, I have noticed some swelling in my face and around my eyes. It's not always there, but it seems to be more prominent when I'm feeling really unwell. My partner has also commented on it a few times, saying that my face looks puffy or swollen. But like I said, it's not constant \u2013 it comes and goes with the episodes.",
+      "time": 3.0
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "I've definitely lost some weight since this started two weeks ago. My appetite is so low that even thinking about food feels overwhelming, and when I do eat something, it usually gets stuck in my throat or I feel like I'm going to choke on it. It's been really hard for me to keep up with eating regularly, and I've noticed that my clothes are fitting a bit looser than they used to.",
+      "time": 3.4
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've had seasonal allergies since I was a teenager, which is why I take cetirizine on an as-needed basis during allergy season. Other than that, I don't have any significant medical conditions or surgeries in my past. However, my mother has asthma, and my maternal grandmother passed away from lung cancer.\n\nAlso, I should mention that several students in my class at school have been sick with upper respiratory infections recently, which might be worth considering given my symptoms.",
+      "time": 3.5
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I'm currently taking over-the-counter cetirizine for my seasonal allergies as needed. However, due to this current illness, I've been trying to avoid taking it because I'm not sure if it's interacting with whatever is causing my symptoms. As for other medications, I've been using OTC dextromethorphan (cough suppressant) for the past week, but it hasn't provided much relief.",
+      "time": 3.6
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "I'm a 34-year-old elementary school teacher, so I'm pretty active throughout the day with my students. However, since this cough started two weeks ago, I've had to significantly scale back on my physical activities and even some of my work tasks, just because it's become too exhausting. Even simple things like getting out of bed or walking from one room to another feel like a major undertaking when I'm in the midst of an episode.",
+      "time": 3.5
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my appetite has been really low since this started. Even thinking about food feels overwhelming, and when I do eat something, it usually gets stuck in my throat or I feel like I'm going to choke on it. But if I had to describe a typical day of eating, it would be small amounts of bland foods like crackers, toast, or plain rice. Sometimes, I'll have a bit of fruit or yogurt if I'm feeling a bit better, but it's really hard for me to eat a full meal without feeling overwhelmed.\n\nI've also been drinking a lot more water than usual, just because my mouth feels dry and sore all the time from coughing and breathing difficulties. And, to be honest, even thinking about eating or drinking makes me feel anxious and stressed out \u2013 it's like my body is just trying to conserve energy for fighting this illness.\n\nBut, if I'm being completely honest, some days are better than others. When I'm not having an episode, I'll try to eat a bit more normally, but even then, it's hard to keep up with eating regularly because the fatigue and malaise make everything feel so much harder.",
+      "time": 9.1
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I don't drink much anyway, just the occasional glass of wine on weekends. I'm not a smoker at all.",
+      "time": 1.8
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My mother has asthma, and my maternal grandmother passed away from lung cancer.",
+      "time": 0.7
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My mother's asthma has been a bit of a concern for me since I was younger. She's always been pretty active about managing it with her medication and inhalers, but it's still something that worries me because of my own respiratory issues. As for lung cancer, my maternal grandmother passing away from it was a huge blow to our family. We're all very vigilant about getting regular check-ups and screenings, especially since we have a history of lung problems.\n\nAlso, I should mention that several students in my class at school have been sick with upper respiratory infections recently, which might be worth considering given my symptoms.",
+      "time": 4.6
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "To be honest, I'm still getting used to all these questions and trying to piece together what's going on with my body. But one thing that might be worth mentioning is that I live in an apartment with my partner and a cat. My partner has had a mild cold recently, but I'm not sure if that could be related to my symptoms.\n\nAlso, since we've been talking about my health history, I should mention that I never smoked and only drink socially on weekends. But I did have some exposure to secondhand smoke when I was younger, living with relatives who smoked.\n\nAs for anything else that might be relevant, I'm not sure what to say. It's just been really hard to keep up with everything, even with all the questions we've gone over so far. But I appreciate you taking the time to listen and try to understand what I'm going through.",
+      "time": 6.7
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 76.9,
+    "avg_time_per_turn": 3.8,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R05",
+        "phrase": "right-sided chest pain"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "wheezing episodes"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother's asthma"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

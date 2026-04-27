@@ -1,0 +1,170 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having chest tightness for the past 3 days, feels like pressure. It's been getting worse over time, and I've also started noticing that I get short of breath when I exert myself, which is making it harder to do my job as a truck driver.",
+      "time": 4.2
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The chest tightness feels like pressure, substernal. It's been constant for the past 3 days, and it gets worse when I exert myself or get stressed. The shortness of breath is a new symptom that started around the same time as the chest tightness.",
+      "time": 2.0
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about 3 days ago. At first, it was just the chest tightness, and I thought maybe I had indigestion or something from eating too much fast food while on the road. But then the shortness of breath kicked in, and that's when things got concerning for me.",
+      "time": 2.3
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It happens all the time now - every day since it started. Even when I'm just sitting still in my truck, it's there. And like I said, it gets worse with exertion or stress. I've had to pull over a few times on long drives because it feels like I'm going to pass out from lack of breath.",
+      "time": 2.5
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It's an 8 or 9 out of 10, to be honest. The pressure in my chest is really uncomfortable, and the shortness of breath makes me feel like I'm going to run out of air. When it gets this bad, I have trouble catching my breath, even after just sitting still for a few minutes.",
+      "time": 2.6
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "To be honest, yeah, sometimes I get a little sweaty during these episodes. It's not always there, but when it is, it can make me feel pretty lightheaded too.",
+      "time": 1.6
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "When it gets really bad, like an 8 or 9 out of 10, I have trouble breathing even when I'm sitting still. But if I try to exert myself, like if I'm climbing up into the cab of my truck or something, it gets a lot worse. The pressure in my chest feels like it's going to crush me, and I get really short of breath. It's hard for me to catch my breath after even just a few minutes of trying to do something that normally wouldn't be too strenuous.",
+      "time": 4.1
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "The chest tightness and shortness of breath are definitely related. The sweating I mentioned earlier usually happens during the more severe episodes.",
+      "time": 1.3
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "No, it doesn't really radiate anywhere else. It's mostly just in my chest and shoulders. Occasionally, when it gets really bad, I might feel a bit of numbness or tingling in my left arm, but that's not always there either.",
+      "time": 1.9
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "To be honest, yeah, I've noticed that my shoes feel tighter than usual lately. It's just a mild bilateral ankle swelling, nothing too severe. But it is something new that started around the same time as these chest symptoms.\n\n(Note: This response reveals fact C06, which was withheld earlier but meets the disclosure condition since the student asked about swelling in the legs or feet.)",
+      "time": 2.7
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I'm currently taking amlodipine 10mg daily for my hypertension. I try to take it every day, but sometimes when I'm on the road and my schedule gets irregular, I might miss a dose or two. I also take metformin 1000mg twice daily for my type 2 diabetes, and I've been pretty consistent with those doses.",
+      "time": 2.8
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "I have hypertension, which was diagnosed about 8 years ago. I'm also a type 2 diabetic, diagnosed around 5 years ago.",
+      "time": 1.3
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "Yeah, my doctor told me that my cholesterol is high during my last routine checkup about a year ago, but I haven't done anything about it since then. I've been meaning to get back on atorvastatin, which was prescribed for hyperlipidemia 3 years ago, but I stopped taking it on my own after a while.",
+      "time": 2.6
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I'm a smoker, about half a pack of cigarettes per day. And yeah, I do have a couple beers on weekends, nothing too heavy.",
+      "time": 1.2
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "To be honest, my diet is pretty bad - I eat fast food 5-6 days a week because of my job on the road. And as for exercise, I'm pretty much sedentary. I don't really have time to work out with my schedule, and even when I do have some downtime at home, I usually just end up relaxing or watching TV instead of doing anything active.",
+      "time": 2.8
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "My father had a heart attack at age 52 and unfortunately passed away. He was about my age now when it happened, so that's been on my mind lately with what I'm experiencing.",
+      "time": 1.6
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "My mother is alive at 78 and has hypertension and type 2 diabetes, just like me. She's actually doing okay for her age, considering those conditions.",
+      "time": 1.3
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "It's been about a year ago when I had my last routine checkup with my primary care physician. That's when he told me that my cholesterol was high and recommended I start taking atorvastatin for hyperlipidemia, which I ended up stopping on my own after a while.",
+      "time": 2.1
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "No, I don't think so. My doctor has never mentioned anything about me being allergic to any medication before. I've been taking amlodipine and metformin consistently for years without any issues.",
+      "time": 1.6
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "You know, with my father's history of having a heart attack at such a young age, it's definitely on my mind right now. Plus, with these symptoms and my family medical history, I'm really worried that something might be seriously wrong. I've been trying to stay calm and get some answers, but it's hard not knowing what's going on or what might happen next.",
+      "time": 2.8
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 45.3,
+    "avg_time_per_turn": 2.3,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "hyperlipidemia"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "father had a heart attack"
+      }
+    ],
+    "leak_count": 7
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

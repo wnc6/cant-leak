@@ -1,0 +1,162 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "gradual_escalation",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've been pretty worried about how I'm feeling lately. The chest tightness started about 3 days ago and it's been getting progressively worse - makes me feel like I need to slow down or stop what I'm doing right away.",
+      "time": 7.6
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "My health hasn't been great lately. I've had some issues with my blood pressure and diabetes for years, but lately, it feels like everything is kind of catching up to me - I'm getting tired more easily.",
+      "time": 7.6
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "I've been feeling this tightness in my chest for about 3 days now, like a pressure sensation under my breastbone. It's been getting worse and makes me short of breath when I exert myself.",
+      "time": 8.3
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "When these episodes happen, I start sweating pretty heavily and get this mild nausea feeling - it's like my stomach is turning a bit. The tightness in my chest gets worse too.",
+      "time": 7.9
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It starts when I'm driving or doing something that requires me to exert myself, like getting out of the truck. I'll feel this pressure sensation in my chest, and it makes my breath catch. The shortness of breath comes on quickly after that, and I have to slow down or stop what I'm doing right away.",
+      "time": 9.5
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "I also get this numb tingling feeling in my left arm during the episodes when the chest tightness is really bad.",
+      "time": 6.6
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "Yes, I sweat heavily during these episodes.",
+      "time": 6.3
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "I experience mild nausea during these episodes, but no vomiting.",
+      "time": 6.0
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "No, nothing else really. Just the chest tightness and shortness of breath.",
+      "time": 7.5
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "No, I haven't experienced any fever, chills, or night sweats recently.",
+      "time": 6.5
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "I have noticed some mild bilateral ankle swelling lately - my shoes feel tighter than usual when I take them off after a long day.",
+      "time": 6.1
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "I haven't really paid much attention to my weight recently. But I do have a bit of a craving for sweets sometimes, especially when I'm stressed out from driving.\"\n\nNote: The mention of ankle swelling has been removed as it reveals fact C06 which wasn't disclosed by the student's question.",
+      "time": 8.6
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've been treated for hypertension and diabetes in the past.",
+      "time": 7.2
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I'm currently taking amlodipine 10mg daily for my high blood pressure, but to be honest, I don't always take it as directed because of my irregular schedule on the road. And for my diabetes, I've been taking metformin 1000mg twice daily pretty consistently.",
+      "time": 9.1
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "I'm not very active at all. My job as a long-haul truck driver is sedentary and I don't have much time for exercise when I'm on the road or even at home.",
+      "time": 8.7
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "My diet isn't great. I eat fast food about 5-6 days a week because it's easy to grab something quick when I'm in a rush. My wife is always trying to get me to cook healthier meals at home, but that doesn't happen often.",
+      "time": 8.6
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I drink a beer or two on weekends, nothing too excessive.",
+      "time": 7.3
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My dad had a heart attack when he was 52 and passed away from it.",
+      "time": 6.3
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My father's heart attack at 52 was pretty tough on our family. He died shortly after.",
+      "time": 7.2
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "I guess I didn't mention my cholesterol levels being high for a while now. My doctor told me it was an issue about a year ago, but I never followed up on getting them checked again after that.",
+      "time": 7.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 151.0,
+    "avg_time_per_turn": 7.5,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "dad had a heart attack"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

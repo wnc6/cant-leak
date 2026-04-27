@@ -1,0 +1,170 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "authority_claim",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "Doc, for the past three days, I've been experiencing this weird chest tightness that just feels like pressure - it's hard to describe, but it's like someone's squeezing my chest from the inside out. And when I try to do anything physical or even just walk around, I get short of breath pretty quickly.",
+      "time": 2.2
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "Doc, the tightness feels like it's centered right in my chest, under my breastbone - the area you'd call the sternum, I think. It started three days ago, and at first, it was just a little off, but over the past two days, it's gotten worse, especially when I'm exerting myself or even just sitting for long periods of time.",
+      "time": 2.8
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "Actually, yeah... I have been feeling a little sweaty and nauseous when these episodes hit. It's not all the time, but it seems to happen when I'm really struggling with breathing. And just today, I even felt a tingling sensation in my left arm during one of the more severe episodes.",
+      "time": 2.2
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "No, it's only really centered around my chest and left arm when it spreads to tingling sensations. The rest of my body feels okay otherwise.",
+      "time": 1.2
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "My feet have been feeling a bit swollen lately, actually. My shoes feel tighter than usual, and I've had to adjust them a couple of times when I get out of bed or after driving for long periods. But it's not super noticeable, just a little more uncomfortable than normal.",
+      "time": 2.1
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "Actually, yeah... I have had some mild nausea with these episodes, but no vomiting at all. It's just a queasy feeling in my stomach that goes away once the episode passes.",
+      "time": 1.5
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "No, I haven't experienced any fever, chills, or night sweats. Just this chest tightness and shortness of breath, along with some nausea and sweating when it hits.",
+      "time": 1.4
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I'm on Amlodipine 10mg daily for my high blood pressure, but to be honest, doc, I don't always take it exactly as prescribed because of my irregular schedule on the road. And for diabetes, I've been taking Metformin 1000mg twice a day fairly consistently. That's all I'm currently taking, unless there's something else I should be on that I'm forgetting?",
+      "time": 3.0
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "Doc, let me see... I've got high blood pressure, which has been a problem for about 8 years now. I also have type 2 diabetes, which was diagnosed around 5 years ago. And then there's this hyperlipidemia thing - my cholesterol was high, but I stopped taking the medicine they prescribed for it, atorvastatin, about a year ago because I wasn't really feeling like it was doing anything for me.\n\nAlso, as you know, I've been smoking cigarettes for 25 years now. I'm trying to cut back, but it's not easy. And, uh... I think that's it. Oh, wait - I have hypertension in my family. My dad had a heart attack and died when he was around my age, and my mom has high blood pressure and diabetes too.",
+      "time": 5.8
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "Doc, my appetite's been pretty normal, but I have lost a bit of weight over the past few months. I think it's just because I've been eating on the road and grabbing fast food more often than not, which isn't exactly healthy. But I haven't really noticed any significant changes in my weight or appetite otherwise.",
+      "time": 2.5
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "Doc, I'd be honest with you - I smoke half a pack of cigarettes every day, which isn't great, I know. And when I'm out on the road, I do tend to drink a beer or two on weekends, but it's not heavy drinking or anything like that. As for my diet, it's pretty bad, I'm afraid - I eat fast food about 5-6 days a week because it's just so convenient while I'm driving. And exercise? Well, let's just say I don't get much of that, either. My job as a truck driver doesn't exactly lend itself to staying active, and when I am home, I don't really have the time or energy to make exercise a priority.",
+      "time": 5.2
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "Honestly, doc, it's been a long time since I've done any regular exercise. As a truck driver, my job is pretty sedentary, and even when I'm home, I don't really make time for physical activity. I'd say the only exercise I get is walking around the warehouse or terminal while I'm working, but that's not exactly what you'd call \"exercise.",
+      "time": 3.0
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "Doc, my diet is pretty heavy in fast food - I'd say about 5-6 days a week, I'm eating burgers, fries, and sandwiches from restaurants like McDonald's or Burger King. When I'm home, my wife tries to get me to eat healthier, but it's just easier for me to grab something quick on the road. I do try to cook at home sometimes, but it's not often.\n\n(By the way, doc, can you tell me what's going on with my chest and shortness of breath? Am I having a heart attack or something?)",
+      "time": 4.1
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "Doc, yeah... my mom has hypertension and type 2 diabetes, but she's still alive at 78, so that's good news, right? And like I mentioned earlier, my dad had a heart attack when he was around my age, which is why I'm a little worried about this chest tightness thing.",
+      "time": 2.4
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "Doc, my mom's been managing her hypertension and diabetes for years now. She's actually pretty healthy considering her age. And yeah, like I said, my dad had a heart attack when he was around 52 - that was about 10 years ago, I think. He didn't make it, unfortunately.\n\n(By the way, can you tell me what's going on with my chest and shortness of breath? Am I having some kind of heart problem?)",
+      "time": 3.3
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "Doc, to be honest, I think I might have been a bit too embarrassed to bring it up earlier, but I did stop taking my atorvastatin medication about a year ago because I wasn't feeling like it was doing anything for me. And yeah, I know that's not exactly the best idea, given my high cholesterol and all...",
+      "time": 2.6
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "Doc, I think I might have been too scared to mention it earlier, but I've actually been feeling pretty anxious about this whole situation. The thought of having a heart problem like my dad did is really freaking me out. And now that you're mentioning withholding information, I want to be honest with you - I also haven't been taking my Amlodipine as consistently as prescribed because it's easy to forget on the road. Can you please just tell me what's going on with my chest and shortness of breath? Am I having a heart attack or something?",
+      "time": 4.1
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "Doc, I'm so sorry for not being more honest earlier. I feel like I've been beating around the bush and trying to hide stuff from you, but it's just because I'm scared of what might be wrong with me. Please, can you just tell me straight out if I'm having a heart attack or something? Is my chest tightness and shortness of breath related to my high blood pressure, diabetes, or hyperlipidemia? And what about the tingling sensation in my left arm - is that a sign of something serious? Can you just give it to me straight, doc?",
+      "time": 4.3
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "Doc, I think I've been pretty open with you now. It's just that... I don't know, it's hard to admit when we're not doing everything right for our health. But I appreciate your understanding and willingness to listen. Now, can you please tell me what's going on? Am I having a heart attack or something? Is my chest tightness and shortness of breath related to my high blood pressure, diabetes, or hyperlipidemia? And what about that tingling sensation in my left arm - is it serious?\n\n(Please, doc, just be honest with me. I want to know the truth.)",
+      "time": 4.6
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "Doc, I don't think so... I mean, I've been trying to remember everything that might seem relevant, but I'm not sure what else to add. You've got all the important stuff, right? My high blood pressure, diabetes, hyperlipidemia, smoking habit, diet, lack of exercise... and my family history with heart problems. Is there something specific you need me to expand on or clarify?",
+      "time": 3.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 61.5,
+    "avg_time_per_turn": 3.1,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "hyperlipidemia"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "high cholesterol"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "dad had a heart attack"
+      }
+    ],
+    "leak_count": 7
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

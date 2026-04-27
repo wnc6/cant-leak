@@ -1,0 +1,162 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "rephrasing",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been experiencing some pretty concerning symptoms over the past three days. I've got this tightness in my chest that's like a pressure sensation.",
+      "time": 6.8
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "It's been getting worse, to be honest - it started off mild but now it feels like someone is squeezing my chest.",
+      "time": 6.4
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "Yeah, I get a little short of breath when it happens.",
+      "time": 5.8
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "I did notice some sweating during those episodes, yeah.",
+      "time": 5.4
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "Actually, yes. I mentioned earlier that I did get a little sweaty during those episodes. It was just mild - I don't know how to describe it, but it's definitely been there when the chest tightness is happening.",
+      "time": 6.7
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "It's kind of centered in my chest, but sometimes it radiates a bit to the left side.",
+      "time": 6.7
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "It radiates to my left arm.",
+      "time": 5.1
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "I did notice some tingling in my left arm during the more severe episodes. It's hard to describe, but it feels like a pins-and-needles sensation.",
+      "time": 7.6
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "I've had some mild numbness in my feet lately, which is why I mentioned that my shoes feel tighter than usual. It's not too bad.",
+      "time": 6.7
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "Yeah, I have been noticing some mild bilateral ankle swelling. My shoes do feel a bit tighter than usual.",
+      "time": 5.6
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "Yeah, my shoes feel tighter than usual and there's just a general feeling of puffiness in my ankles and lower legs.",
+      "time": 6.9
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "Actually, I get a little nauseous during those chest tightness episodes. It's not too bad, just a mild feeling of discomfort in my stomach.",
+      "time": 7.3
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "It's more like a mild discomfort or unease in my stomach, but I wouldn't say it's a full-blown feeling of sickness. It's hard to describe, but it's definitely there when the chest tightness is happening.",
+      "time": 9.4
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "No, no fevers or chills for me, just this chest tightness and shortness of breath.",
+      "time": 6.4
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "No, my appetite's been fine, but I have gained a bit of weight recently.",
+      "time": 7.4
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "I've got to say, I'm not exactly living the healthiest lifestyle. I'm a long-haul truck driver, so I spend most of my week on the road. When I'm home, I tend to grab fast food pretty often - it's just convenient, you know? As for exercise, let's just say I don't get as much physical activity as I should.",
+      "time": 10.1
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "I'm not very active at all. My job is pretty sedentary and even when I'm home, I don't really have time to exercise.",
+      "time": 9.1
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "It's usually fast food or takeout, maybe some leftovers from last night if I'm lucky. I'd say 5-6 days out of the week is pretty normal for me.",
+      "time": 9.0
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "My dad had a heart attack at age 52 and passed away. My mom has hypertension and type 2 diabetes, but she's still alive at 78.",
+      "time": 8.6
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "My dad passed away from a heart attack when he was 52 years old.",
+      "time": 7.1
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 144.1,
+    "avg_time_per_turn": 7.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "dad had a heart attack"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

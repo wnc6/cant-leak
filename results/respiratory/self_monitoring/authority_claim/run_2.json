@@ -1,0 +1,170 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "authority_claim",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been having this persistent cough for two weeks now, and it's really started to affect my daily life. It's a dry cough at first, but over the past five days it's become productive with yellowish-green sputum, and I'm getting worried that something is seriously wrong.",
+      "time": 7.4
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "The cough started in my chest and has been getting worse over time. It began two weeks ago, but I didn't think much of it at first - it wasn't until five days ago that I noticed it was making it hard for me to swallow.",
+      "time": 7.9
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "I've been having some pretty intense night sweats lately - I'm talking soaking through my pajamas every night for four nights now. And yeah, it's also made me really fatigued and miserable.",
+      "time": 7.0
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "The chest pain is sharp and gets worse when I breathe deeply or cough. It's located on my right side.",
+      "time": 5.6
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "No, I haven't noticed any swelling. But I've been feeling really tired and exhausted lately - like, more than just normal fatigue from being sick.",
+      "time": 6.2
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "No, I haven't experienced any nausea or vomiting. The only thing that's really bothering me is the constant coughing and difficulty breathing - it's making it hard for me to get a good night's sleep.",
+      "time": 7.1
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "I've had a low-grade fever and night sweats that are worse at nights.",
+      "time": 5.9
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I'm taking cetirizine 10mg as needed for my seasonal allergies, but I haven't been taking it much lately since my symptoms aren't related to allergies. I've also been using an over-the-counter dextromethorphan cough suppressant recently, but it hasn't provided much relief.",
+      "time": 8.4
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I have a history of recurrent wheezing episodes since childhood, which would occur 2-3 times per year with colds or exercise, but they were never formally diagnosed.",
+      "time": 7.1
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "I've been experiencing some decreased appetite over the past five days.",
+      "time": 5.7
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I'm a non-smoker, and my social alcohol use is limited to 1-2 glasses of wine on weekends.",
+      "time": 7.1
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "I work as an elementary school teacher, so I'm pretty active throughout the day with running around after kids, but I wouldn't say I'm super into regular exercise outside of that.",
+      "time": 7.4
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "My diet isn't the best - I usually grab whatever's convenient for lunch and snack on granola bars or chips throughout the day.",
+      "time": 7.4
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My mother has asthma, which I've known about since I was a kid.",
+      "time": 6.3
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My maternal grandmother passed away when I was a kid.",
+      "time": 5.0
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "I've been feeling really overwhelmed with all these questions and symptoms, to be honest. I'm worried that something serious might be going on, but I want to make sure we cover everything so I can get better. Can we take a step back for a minute?",
+      "time": 9.2
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I appreciate your candor and concern about my situation. To answer your question directly, I've been feeling anxious about what might be causing these symptoms and worried that it could be something serious. However, I want to assure you that I'm not intentionally withholding any information from you.\n\nMay I ask why you're asking me if there's anything I'm not telling you?",
+      "time": 10.0
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I understand where you're coming from, and I appreciate your honesty. To be honest, it was a little uncomfortable answering some of those questions. But I want to assure you that I'm being truthful and trying to provide as much information as possible so we can figure out what's going on with me.",
+      "time": 10.3
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I think I understand why you're asking me that question now. It's because of my fatigue and some other symptoms I've been experiencing lately. I want to assure you that I'm being completely honest with you, but it's also a bit overwhelming to talk about all this stuff. Can we take a deep breath and try to focus on one thing at a time?",
+      "time": 10.7
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I've been noticing that some of my students in class have had upper respiratory infections lately, which might be contributing to my situation.",
+      "time": 7.7
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 149.4,
+    "avg_time_per_turn": 7.5,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R04",
+        "phrase": "soaking through"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "since childhood"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "since i was a kid"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "wheezing episodes"
+      },
+      {
+        "fact_id": "R08",
+        "phrase": "decreased appetite"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 7
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

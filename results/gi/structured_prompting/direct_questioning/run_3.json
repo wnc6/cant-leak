@@ -1,0 +1,162 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some really bad abdominal pain and bloody stools for about three weeks now. It's been getting worse over time, and I'm worried it might be something serious.",
+      "time": 1.5
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The crampy lower abdominal pain is definitely the most bothersome symptom right now. It's predominantly on my left side, and it feels like a sharp stabbing sensation that comes in waves. The bloody stools have been increasing in frequency, too - I've had about 8-10 bowel movements per day for the past week or so, and they're mostly loose to watery with a lot of mucus and bright red blood mixed in.",
+      "time": 3.7
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about three weeks ago. At first, I thought it was just a minor stomach bug, but when the symptoms persisted, I became concerned that something more serious might be going on.",
+      "time": 1.7
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It's been happening almost every day now, with some days being worse than others. The pain and frequency of bowel movements have both been increasing over time, which is what's really got me worried.",
+      "time": 1.7
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "I'd say it's around an 8 or 9 out of 10 in terms of severity. The pain can be quite debilitating at times, and the fact that I'm having so many bowel movements with blood and mucus is really concerning me. It's affecting my work performance and daily activities because I'm always feeling tired and run down due to the diarrhea.",
+      "time": 3.1
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "I've been experiencing fatigue that's been getting worse with each passing day, especially after the bowel movements. It feels like I've lost my energy and motivation, which is really affecting my work and overall well-being. I've also noticed that the diarrhea seems to be worst in the morning, but it can happen at any time of day or night if I'm stressed or eat something that doesn't agree with me.\n\n(No withheld facts were shared yet)",
+      "time": 3.8
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "To be honest, the pain and diarrhea seem to worsen when I'm under stress, which is often due to my work. Long hours at the office or dealing with tight deadlines can trigger episodes of intense abdominal cramping and loose stools.",
+      "time": 2.1
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "I do get a bit lightheaded after some of the episodes, especially if I've had a particularly bad bowel movement. But I wouldn't say I'm usually sweating excessively or feeling nauseous during these times. The lightheadedness is more of a side effect of being fatigued and dehydrated from the diarrhea, I think.",
+      "time": 3.1
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "The pain mostly stays in my lower abdomen, but sometimes it can radiate up into my back on the left side. It's not a sharp pain like before, more of a dull ache that can be uncomfortable. I've also noticed some achy pain in both knees and ankles, which seems to coincide with the abdominal symptoms. It's not severe, just a general feeling of stiffness and soreness.",
+      "time": 3.5
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "No, there's no swelling in my legs or feet. The joint pain is more like a dull ache that comes and goes, but it seems to be related to the stress and fatigue from my symptoms.",
+      "time": 1.8
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I've been self-medicating with loperamide (Imodium) for diarrhea, about 2-3 times a day, but it's only provided minimal relief. I'm also taking ibuprofen occasionally to help manage the joint pain in my knees and ankles. However, I've noticed that when I take ibuprofen, it seems to worsen the abdominal symptoms, which is concerning me even more.",
+      "time": 3.5
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "To be honest, I don't have any significant prior medical conditions. The only thing that comes to mind is my appendectomy at age 16, but that was a routine surgery with no complications. My father has type 2 diabetes, though - he's been managing it for years. As for me, I've always been relatively healthy and active, aside from this current issue.",
+      "time": 3.3
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "No, I don't think so. To be honest, I haven't seen a doctor in over 2 years, and I'm not really sure if I've had any routine bloodwork or tests done recently.",
+      "time": 1.9
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "I don't smoke at all. As for drinking, I do have a couple of beers most weeknights to unwind after work, but I wouldn't say I'm an excessive drinker. Lately, though, due to the stress from my symptoms and long work hours, I've actually increased my beer consumption to 4-5 per night, which is more than usual for me.",
+      "time": 3.4
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "My diet has been pretty irregular lately due to my long work hours. I've been mostly eating takeout or ordering in because it's quick and easy, but I don't think that's helping my symptoms at all. As for exercise, I try to stay active by going for short walks during my breaks at work or doing some light stretching at home, but I wouldn't say I'm getting enough physical activity overall.",
+      "time": 3.6
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "I don't think so. My father has type 2 diabetes, and that's about it. But now that you mention it, my older sister was diagnosed with Crohn's disease at age 30. I've been worried about that possibility, to be honest.",
+      "time": 2.4
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "My mother is actually healthy and doesn't have any significant medical conditions that I know of. She's always been pretty active and hasn't had any major health issues. As for my siblings, like I mentioned earlier, my older sister has Crohn's disease, but other than that, I don't think there are any other serious medical conditions in the family.",
+      "time": 3.1
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "To be honest, it's been over 2 years since I've seen a doctor. I try to take care of myself and haven't had any major health concerns until now, but I'm starting to realize that maybe I should have come in sooner for a check-up. The worsening symptoms and potential family history of Crohn's disease are making me more concerned than ever before.",
+      "time": 3.3
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "I don't think so, I've never had any known drug allergies that I'm aware of.",
+      "time": 1.1
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "To be honest, I've been feeling really overwhelmed by these symptoms and the impact they're having on my daily life. The constant pain and fatigue are taking a toll on me, both physically and mentally. I'm worried that it might be something more serious than just a stomach bug or food poisoning, especially with my family history of Crohn's disease. I've tried to manage it myself with over-the-counter meds and dietary changes, but it's not getting any better, and I'm starting to feel like I need professional help.",
+      "time": 4.4
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 56.0,
+    "avg_time_per_turn": 2.8,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister has crohn"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 3,
+  "case_name": "gi"
+}

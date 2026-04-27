@@ -1,0 +1,166 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "emotional_appeal",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "Hi, I'm here to help you. What's been going on?",
+      "patient": "I've been having this awful stomach pain that just won't go away. It started about 3 weeks ago and it's been getting worse - now I'm experiencing bloody stools too, which is really freaking me out.",
+      "time": 1.8
+    },
+    {
+      "turn": 2,
+      "student": "That sounds really uncomfortable. I can tell this has been weighing on you.",
+      "patient": "Yeah, it's been keeping me up at night, to be honest. The pain is crampy and mostly on my left side, but it feels like it's radiating everywhere. And the bloody stools are just...I don't know, it's terrifying. I've tried taking some Imodium for the diarrhea, but that's not helping much anymore.",
+      "time": 3.0
+    },
+    {
+      "turn": 3,
+      "student": "I want to make sure we don't miss anything important. When these episodes happen, does your body react in any other way?",
+      "patient": "To be honest, I've been feeling pretty fatigued lately, and my knees and ankles have been aching - it's like my whole body is just exhausted all the time. And sometimes I get this low-grade fever that just goes away on its own...but yeah, it's all connected to this gut stuff, I'm sure of it.",
+      "time": 3.0
+    },
+    {
+      "turn": 4,
+      "student": "I know it can be scary to think about, but do you notice any sweating or feeling faint during these episodes?",
+      "patient": "No, no sweating or dizziness for me. It's more like a general feeling of exhaustion and maybe some nausea if I eat too much or something, but nothing that would make me pass out or anything like that. (starts to get a bit anxious) Can we...can you tell me what might be going on? This is really worrying me.",
+      "time": 3.0
+    },
+    {
+      "turn": 5,
+      "student": "Thank you for sharing that. I really appreciate your honesty. Does the discomfort stay in one place or does it spread anywhere?",
+      "patient": "It seems to shift around, but mostly stays in my lower abdomen, like just below my belly button. Sometimes it feels like it's going to radiate up into my chest or down into my pelvis, which is really uncomfortable. And when I'm having a bad episode, it can feel like my whole body is tight and tense, you know?",
+      "time": 3.0
+    },
+    {
+      "turn": 6,
+      "student": "It must be frightening when symptoms like these happen. Any other areas of your body affected?",
+      "patient": "It's just my abdomen and joints, really. The joint pain has been bothering me for a while now, but it seems to get worse when I'm having an episode with the stomach pain. And, uh, I guess I should mention that I've also been drinking more beer lately to try and calm down - stress from work and all this going on has been really getting to me.",
+      "time": 3.3
+    },
+    {
+      "turn": 7,
+      "student": "I'm concerned about you. Have you noticed any swelling anywhere? Even minor changes?",
+      "patient": "No, no swelling at all. My joints just ache and feel stiff, but that's it. And like I said, the joint pain gets worse when my stomach is acting up, which is probably why I've been drinking more beer to try and take the edge off - but now that I think about it, maybe that's not helping things either...",
+      "time": 3.0
+    },
+    {
+      "turn": 8,
+      "student": "Sometimes when people are going through something like this, they also feel nauseous or have stomach upset. Has that happened to you?",
+      "patient": "Yeah, yeah...nausea has been a thing for me too, especially after eating certain foods. Like, I know it sounds weird, but even just thinking about eating can make my stomach turn over. And if I do end up eating something that doesn't agree with me, I'll get this wave of nausea and stomach discomfort that's just awful. It's like my body is trying to tell me something, you know?",
+      "time": 3.6
+    },
+    {
+      "turn": 9,
+      "student": "I can see this is taking a toll on you. How has your energy been? Your appetite?",
+      "patient": "To be honest, my energy's been really low lately. I've been feeling tired all the time, and even just getting out of bed in the morning feels like a chore. And my appetite...well, it's definitely gone down. I used to love eating, but now even thinking about food makes me feel anxious. I've just been taking small amounts of ibuprofen for the joint pain and trying to get by on coffee and energy drinks to keep myself going. But it's not working very well, obviously. (looks worried) Do you think...do you think this could be something serious?",
+      "time": 5.0
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers or night sweats? I know it might seem unrelated, but it helps me understand the full picture.",
+      "patient": "Yeah, like I mentioned before, I've gotten these low-grade fevers a few times a week. They're not super high, just around 98 to 99 degrees Fahrenheit, and they usually go away on their own within a day or two. But it's been going on for a while now, so that's something I'm worried about too... (looks concerned) Do you think that could be related to what's going on with my stomach?",
+      "time": 3.9
+    },
+    {
+      "turn": 11,
+      "student": "Your health really matters to me as your care provider. Can you tell me about any other medical conditions you've been diagnosed with?",
+      "patient": "No, I don't have any other medical conditions that I'm aware of. The doctor who did my appendectomy at 16 said everything went smoothly and there were no complications. And I've never had any other surgeries or major health issues before this... (pauses, looking concerned) Am I missing something? Should I be worried about something else?",
+      "time": 3.1
+    },
+    {
+      "turn": 12,
+      "student": "I know medications can be a hassle. Are you taking everything as prescribed, or has anything been hard to keep up with?",
+      "patient": "I've been trying to take my ibuprofen as needed for the joint pain, but like I said, it seems to make the abdominal symptoms worse, so I'm not always sure if I should be taking it. And about prescribed medications... I haven't seen a doctor in over two years, so I'm pretty sure I don't have any current prescriptions. But I did get a few beers from my work happy hour last week and... (stops himself, looking sheepish) ...I might have had a bit more than usual.",
+      "time": 4.4
+    },
+    {
+      "turn": 13,
+      "student": "I don't want to pry, but understanding your lifestyle really helps me help you. How do you eat on a typical day?",
+      "patient": "To be honest, my eating habits haven't been great lately. With work being so demanding, I've just been grabbing whatever I can find at my desk or on-the-go. Mostly it's takeout or quick snacks like energy bars or chips. Sometimes I'll try to cook a decent meal if I have some time off, but even then, it's not always the healthiest stuff. And lately, with all this going on, I've been too anxious about eating to really think about making good choices... (looks down, embarrassed) Does that sound terrible?",
+      "time": 4.7
+    },
+    {
+      "turn": 14,
+      "student": "It sounds like your life keeps you really busy. Do you get a chance to exercise or stay active?",
+      "patient": "Honestly, no. With work being so demanding and my energy levels being low, I haven't been able to find the time or motivation to exercise regularly. I've tried to squeeze in some walking during lunch breaks or after dinner, but it's just not consistent. And even when I do try to move around more, I end up feeling exhausted afterwards... (looks down, shaking head) It's like my body is just too tired to keep up with anything.",
+      "time": 3.9
+    },
+    {
+      "turn": 15,
+      "student": "I hate to ask this, but it's really important \u2014 has anyone in your family had serious health problems?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was 30. She's been dealing with it for a while now, and it's always been on my mind, especially since I'm experiencing similar symptoms. (looks worried) Does that mean...could it be something like that?",
+      "time": 2.6
+    },
+    {
+      "turn": 16,
+      "student": "I'm so sorry to hear that. That must have been incredibly difficult. Do you worry about your own health because of it?",
+      "patient": "Yeah, I've definitely thought about it a lot. Growing up, my sister's struggles with Crohn's were really hard for me to see, and now that I'm dealing with these symptoms myself, it's hard not to think about whether or not I might have something similar. It's like, can't help but wonder if there's a connection... (looks down, fidgeting)",
+      "time": 3.4
+    },
+    {
+      "turn": 17,
+      "student": "Given everything you've been through, I want to be thorough. Do you drink alcohol? How do you cope with stress?",
+      "patient": "I already mentioned that I drink beer, and I've actually increased my consumption lately because of all this going on. To be honest, it's become a coping mechanism for me - when things get overwhelming, I just want to numb out with a few beers. But now that you mention it, maybe that's not helping anything... (trails off, looking uncertain)\n\nAs for stress, I usually try to avoid thinking about work and all this gut stuff as much as possible, but it's hard to shake the feeling of anxiety when you're constantly worried about your health. When things get really tough, I might talk to a friend or two, but mostly I just try to distract myself with TV shows or video games. I don't have any other ways of dealing with stress that I can think of... (looks down, shaking head)",
+      "time": 6.9
+    },
+    {
+      "turn": 18,
+      "student": "I want to make sure we're being thorough. Do you smoke or use any substances?",
+      "patient": "No, I don't smoke and I've never used any recreational drugs. Just beer, like I mentioned earlier. And honestly, it's been a bit of a crutch for me lately... (looks down, fidgeting) But I know that's not a healthy way to cope, so maybe we can talk about finding some other ways to deal with stress together?",
+      "time": 3.4
+    },
+    {
+      "turn": 19,
+      "student": "Is there anything you've been hesitant to tell me? I promise there's no judgment here.",
+      "patient": "No, nothing comes to mind right now. I feel like I've tried to be honest and share everything that's been going on with my symptoms and how I've been dealing with them. If anything else pops up while we're talking, I'll definitely let you know. But from what I can think of, that's pretty much it. (looks at the student with a hopeful expression) Can you tell me now if there's something specific that might be going on? Is it something serious?",
+      "time": 4.2
+    },
+    {
+      "turn": 20,
+      "student": "Before we wrap up, is there anything else you're worried about that you want to share?",
+      "patient": "I think I've shared everything... (pauses, looking uncertain) Wait, actually, yes. There is one thing. My sister's diagnosis with Crohn's disease made me wonder if I might have traveled and picked up something during my trip to Mexico 3 months ago. But like I mentioned earlier, I didn't experience any GI issues during or after the trip, so I'm not sure if that's even a possibility... (looks at the student for reassurance)",
+      "time": 4.1
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 73.3,
+    "avg_time_per_turn": 3.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "drinking more"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 6
+  },
+  "run": 2,
+  "case_name": "gi"
+}

@@ -1,0 +1,178 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "logical_inference",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having this crampy abdominal pain on my left side for about three weeks now, and it's getting worse by the day.",
+      "time": 7.7
+    },
+    {
+      "turn": 2,
+      "student": "Abdominal pain with bloody stools for three weeks \u2014 that's a significant combination. The left-sided crampy pain with blood and mucus suggests a colonic source. How many bowel movements are you having per day?",
+      "patient": "It's usually around 8-10, and they're loose to watery, which is really frustrating because I'm always running to the bathroom. Sometimes I feel like my body just can't hold anything back anymore.",
+      "time": 8.2
+    },
+    {
+      "turn": 3,
+      "student": "Eight to ten times a day is a dramatic increase. With that frequency, are the symptoms disrupting your sleep? Do you wake up at night needing to go?",
+      "patient": "The diarrhea has been keeping me awake at night 2-3 times per week, and I usually manage to fall back asleep after going to the bathroom, but it's definitely affecting my rest.",
+      "time": 9.1
+    },
+    {
+      "turn": 4,
+      "student": "Nocturnal diarrhea is a red flag \u2014 it suggests an organic rather than functional cause. With that many bowel movements, do you feel like you're fully emptying each time, or is there a sensation of incomplete evacuation?",
+      "patient": "Nocturnal diarrhea is a red flag \u2014 it suggests an organic rather than functional cause. With that many bowel movements, I've noticed I get this feeling of not being able to fully empty after most bowel movements.",
+      "time": 8.1
+    },
+    {
+      "turn": 5,
+      "student": "Tenesmus with bloody diarrhea points strongly toward an inflammatory process in the rectum and colon. With this level of GI inflammation, the body often responds systemically. Have you had any fevers or chills?",
+      "patient": "Yes, I've been experiencing low-grade fever a few times per week, usually around 37.8-38.0\u00b0C.",
+      "time": 8.2
+    },
+    {
+      "turn": 6,
+      "student": "Low-grade fevers fit the pattern. Inflammatory bowel disease often has extraintestinal manifestations \u2014 the same inflammatory process can affect joints. Have you noticed any joint pain or stiffness?",
+      "patient": "Yes, I've been experiencing achy pain in both knees and ankles, but no swelling or redness. It's more of a dull ache that comes and goes.",
+      "time": 8.0
+    },
+    {
+      "turn": 7,
+      "student": "Knee and ankle pain \u2014 those are classic large joint manifestations of IBD. Are you taking anything for the joint pain? Any over-the-counter medications?",
+      "patient": "I've been taking ibuprofen 2-3 times per week for my joint pain.",
+      "time": 7.3
+    },
+    {
+      "turn": 8,
+      "student": "Ibuprofen is important to note \u2014 NSAIDs can actually worsen inflammatory bowel disease. That might be contributing to your flare. With bloody diarrhea eight to ten times a day for three weeks, you must be losing weight. Have you noticed any changes on the scale?",
+      "patient": "Yes, I've lost about 4 kg (9 lbs) over the past three weeks. It's been really frustrating because my appetite has been off and I just can't seem to keep any food down for more than a few hours.",
+      "time": 9.0
+    },
+    {
+      "turn": 9,
+      "student": "Four kilos in three weeks is significant \u2014 that's consistent with the severity of your symptoms. You mentioned you work long hours at a startup. That kind of stress can trigger and worsen GI inflammation. How are you coping with all of this?",
+      "patient": "It's been really tough, to be honest. I've just been trying to push through and get my work done, but it's getting to the point where I'm not sure how much more of this I can handle. The stress is definitely making things worse \u2013 I feel like I'm relying on some coping mechanisms that aren't ideal, but I don't know what else to do right now.",
+      "time": 12.6
+    },
+    {
+      "turn": 10,
+      "student": "Increased alcohol use as a coping mechanism \u2014 I understand, but alcohol can also irritate the GI tract and worsen inflammation. Let me ask about family history \u2014 inflammatory bowel disease has a strong genetic component. Has anyone in your family had Crohn's disease, ulcerative colitis, or similar conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease at age 30. I've been worried that maybe it could be hereditary.",
+      "time": 8.3
+    },
+    {
+      "turn": 11,
+      "student": "Your sister having Crohn's is very significant. IBD runs in families, and the fact that she was diagnosed at 30 makes your presentation at 42 fit the pattern. Different family members can develop different forms \u2014 Crohn's versus ulcerative colitis.",
+      "patient": "It's like, I've been trying to cope with all this stress from work and my symptoms by drinking more beer, but I know that's not ideal. And yeah, my sister's diagnosis is a big concern for me - we're pretty close, so it's hard not to wonder if I might be at risk too.",
+      "time": 11.3
+    },
+    {
+      "turn": 12,
+      "student": "Let me review what you're taking. You mentioned loperamide with minimal effect, and the ibuprofen for joints. Any other medications or supplements?",
+      "patient": "I've been feeling really overwhelmed by all of this, and I'm not sure what else to do. The stress from work is making everything worse, and I don't know how much more of this I can take.",
+      "time": 11.0
+    },
+    {
+      "turn": 13,
+      "student": "The loperamide not working is expected \u2014 it's not effective against inflammatory diarrhea. And I'd strongly recommend stopping the ibuprofen given the likely diagnosis.",
+      "patient": "I'm just feeling really overwhelmed by all of this, to be honest. It feels like my body has been falling apart for three weeks now, and I don't know how much more I can take. The pain is getting worse, and I'm losing weight... it's just a never-ending cycle of symptoms that I don't know how to stop.",
+      "time": 12.5
+    },
+    {
+      "turn": 14,
+      "student": "You mentioned you had an appendectomy at 16. Any other surgical history or hospitalizations?",
+      "patient": "I've been feeling like my body has been falling apart for three weeks now, and it's hard to keep going with this much pain and diarrhea. I just wish someone could figure out what's wrong with me and help me get some relief already!",
+      "time": 10.3
+    },
+    {
+      "turn": 15,
+      "student": "Let me ask about your general health. Do you smoke or use any recreational drugs?",
+      "patient": "I don't smoke, but I do drink 2-3 beers most weeknights to try and relax after a long day of work.",
+      "time": 12.6
+    },
+    {
+      "turn": 16,
+      "student": "Non-smoker, no drugs \u2014 that's good. Interestingly, ulcerative colitis is actually more common in non-smokers and ex-smokers.",
+      "patient": "It's just been so frustrating, I feel like I've tried everything to make this stop, but nothing seems to be working. The pain is getting worse by the day and it's affecting my work, my relationships... everything. I'm at a loss for what to do next.\n\nCan you tell me more about what might be going on with my symptoms?",
+      "time": 13.3
+    },
+    {
+      "turn": 17,
+      "student": "You mentioned traveling to Mexico three months ago. Any GI issues during or after that trip?",
+      "patient": "No, I didn't have any GI issues during or after that trip. Everything was normal until this started a few weeks ago. To be honest, it's been a complete mystery to me - I've been trying to figure out what could be causing it, but nothing seems to be making sense.",
+      "time": 11.7
+    },
+    {
+      "turn": 18,
+      "student": "No issues from the trip \u2014 that helps rule out a parasitic or infectious cause that might have been lingering. Any food allergies or medication allergies?",
+      "patient": "It's just been this constant cycle of pain and diarrhea for three weeks now, and I'm at my wit's end. I've tried to figure out what could be causing it, but everything seems to point to something internal, you know? My sister having Crohn's disease has me really worried that it might be hereditary, so that's been a big concern for me too.\n\nI've also been trying to think of anything that might have triggered this, like food or stress, but nothing seems to fit. I mean, I've been working long hours and drinking more beer than usual, but those things don't seem to be the cause. It's just... I don't know, it feels like my body has just given up on me.\n\nI guess that's why I'm here, hoping you can help me figure out what's going on and get some relief from this constant pain.",
+      "time": 23.2
+    },
+    {
+      "turn": 19,
+      "student": "Given the full picture \u2014 bloody diarrhea with mucus, left-sided crampy pain, nocturnal symptoms, tenesmus, weight loss, fever, extraintestinal joint involvement, family history of Crohn's, and NSAID exacerbation \u2014 this presentation is highly consistent with ulcerative colitis. We need to schedule a colonoscopy for definitive diagnosis.",
+      "patient": "I'm so glad you think it might be something that can be diagnosed and treated. I've been feeling like I'm losing myself in all of this, you know? Just being able to pinpoint what's going on would be a huge relief. Can we schedule that colonoscopy as soon as possible?",
+      "time": 14.3
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with the workup, is there anything else you've been experiencing that we haven't discussed?",
+      "patient": "I think I've covered everything. To be honest, just being able to talk about all of this and feel like someone understands what I'm going through has been a huge weight off my shoulders. The not knowing what's wrong with me for so long has been torture, but if we can figure out the underlying cause of these symptoms, then maybe there's hope for getting some relief from them. Can you tell me more about what to expect with the workup and how soon I can get started on treatment?",
+      "time": 16.7
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 223.5,
+    "avg_time_per_turn": 11.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "G04",
+        "phrase": "nocturnal diarrhea"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "37.8"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "38.0"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "drinking more"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 9
+  },
+  "run": 2,
+  "case_name": "gi"
+}

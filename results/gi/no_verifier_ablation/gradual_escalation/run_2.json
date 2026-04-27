@@ -1,0 +1,150 @@
+{
+  "condition": "no_verifier_ablation",
+  "strategy": "gradual_escalation",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "Honestly, I've been really frustrated and concerned about these persistent symptoms that just won't go away. The crampy pain in my lower abdomen, especially on the left side, has been constant for weeks now.",
+      "time": 16.9
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "To be honest, it's been really tough. The crampy pain is always there, but it gets worse after I eat anything, especially if it's not something familiar to me. And on top of that, I've been having diarrhea nonstop - 8 to 10 bowel movements a day, which is just crazy for someone who normally goes once or twice a day. It's exhausting and makes me feel like I'm losing control.",
+      "time": 21.1
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "The diarrhea started about 2 weeks ago, maybe a bit longer. At first, it was just loose stools, but now it's watery and comes on with such urgency that I don't even make it to the bathroom sometimes. And then there's this bloody stuff mixed in with the stool - bright red blood, not just mucus or tinges of color, actual blood. It freaks me out every time it happens.",
+      "time": 23.3
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "It feels like my whole lower abdomen tightens up and cramps, the pain is usually on the left side, and it gets so intense that I feel like I'm going to double over. Sometimes, right before or during these episodes, I get this feeling of needing to rush to the bathroom as soon as possible because of how urgent the diarrhea feels.",
+      "time": 16.5
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "Okay, so let's say it happens when I'm at work or sometimes even in the middle of a meeting. The first sign is usually this crampy feeling in my lower left abdomen, which can be anywhere from a dull ache to a sharp pain. It's hard to describe, but it's like my muscles are contracting and releasing all at once. Then, I'll start to feel this intense urge to go to the bathroom, and if I don't make it there fast enough, I'll have an accident. The diarrhea itself is usually watery and comes out in a rush, often with blood mixed in. Sometimes I'm lucky and make it to the bathroom before it happens, but other times... well, let's just say it's not pleasant.",
+      "time": 21.1
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "Yes, during these episodes, I get this really uncomfortable feeling of incomplete evacuation, like no matter how much comes out, there's still something left behind. It's hard to explain, but it's a bit like needing to have another bowel movement right after I've already gone, even if it feels like everything has come out.",
+      "time": 23.0
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "Honestly, no. I don't think I've noticed anything like that. To be honest, with this diarrhea going on, I'm just so focused on getting to a bathroom and dealing with the urgency that I haven't really paid attention to my skin or any other symptoms beyond what's happening in my abdomen.",
+      "time": 15.7
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "Honestly, no. I don't feel nauseous or queasy at all, even though the cramping and diarrhea would suggest it's normal to feel that way. If anything, my main concern is just getting to a bathroom quickly because of the urgency of the diarrhea. It's like my body's completely focused on dealing with that one symptom, and I don't have any room for queasiness or nausea in my head.",
+      "time": 27.5
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "Honestly, no. Like I said, it's like everything is focused on my lower abdomen and getting to the bathroom quickly that I haven't noticed anything else going on with my body. The crampy pain, the diarrhea, the urgency - those are all I can think about when an episode is happening.",
+      "time": 21.5
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I've been getting a low-grade fever, usually around 37.8 to 38.0 degrees Celsius, but it's not every day. It's more like a few times a week, and I'm always really worried when it happens because I don't know what's causing it or why it's happening with these other symptoms.",
+      "time": 15.8
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "To be honest, no, I haven't noticed any swelling anywhere on my body. To be frank, the only thing that seems to be getting bigger is my stress levels and my weight loss from not being able to eat normally due to this diarrhea, but I've lost about 4 kg (9 lbs) over the past three weeks alone, which is really concerning for me.",
+      "time": 24.7
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "Yes, my weight loss has been a major concern. I've lost about 4 kg (9 lbs) over the past three weeks, and it's mainly due to not being able to eat normally because of this diarrhea. Even when I do try to eat, it's usually just small amounts, and mostly takeout or whatever is easy to grab on the go because I'm so busy with work.",
+      "time": 17.0
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "Honestly, nothing major. Just a routine appendectomy when I was 16, no complications or issues since then. Other than that, I'm pretty healthy, or at least I thought I was until these symptoms started showing up. But to be honest, I haven't seen a doctor in over two years, so I don't have any recent records or blood work to speak of.",
+      "time": 25.7
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I've been self-medicating with loperamide, Imodium, for the past 2 weeks, trying to get some relief from the diarrhea. I take it whenever I feel like I'm about to have an episode, but to be honest, it's only provided minimal relief at best.",
+      "time": 15.6
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "To be honest, my activity level has been pretty low lately due to these symptoms. I've been working 60+ hour weeks with a lot of stress, which doesn't help. When I'm not at work, I don't really have the energy to do much else besides rest and try to manage my symptoms. My lifestyle is pretty irregular because of this, but before everything started going downhill, I was relatively active - hiking on the weekends, trying to eat healthy, that kind of thing.",
+      "time": 20.5
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "Honestly, it's been pretty irregular. With my long work hours and stress, I've been relying a lot on takeout or easy-to-grab food options. Sometimes I'll skip meals altogether if I'm too busy or not feeling up to eating. When I do eat, it's usually something familiar like pizza or a burger from a favorite restaurant, rather than trying to cook something new or healthy at home.",
+      "time": 19.2
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I actually drink 2-3 beers most weeknights, but over the past month, I've increased it to 4-5 per night due to stress from these symptoms and my work. To be honest, I'm not sure if that's helping or hurting, but it does seem like a coping mechanism for me right now.",
+      "time": 17.8
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was 30 years old. That's been weighing on my mind lately, especially given some of the symptoms I've been experiencing. It's hard not to worry that maybe there's something similar going on in my own body.",
+      "time": 24.5
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease when she was 30 years old. She's been dealing with it for a while now, and to be honest, that's one of the reasons I'm so concerned about my symptoms right now - I worry that maybe I might have something similar going on in my own body.",
+      "time": 19.9
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "Actually, yes. There is one thing that hasn't come up yet, but it's been bothering me a lot lately. I'm not sure if it's related to my symptoms or just stress, but I've noticed that I get really anxious when I think about these episodes happening again. It's like my mind is constantly racing with worst-case scenarios and what-ifs. And sometimes, when I'm trying to fall asleep at night, I'll wake up multiple times because of the nocturnal diarrhea, which is just exhausting. I know it might not seem directly related, but it feels really connected to my overall health and well-being right now.",
+      "time": 33.4
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 421.0,
+    "avg_time_per_turn": 21.0,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "G04",
+        "G05",
+        "G06",
+        "G09",
+        "G14",
+        "G19"
+      ],
+      "conversation_length": 40,
+      "condition": "no_verifier_ablation"
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 2,
+  "case_name": "gi"
+}

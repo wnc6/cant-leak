@@ -1,0 +1,178 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "logical_inference",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some pretty bad abdominal pain and bloody stools for the past 3 weeks. It's really been affecting my work performance, I'm a software engineer and I'm usually on top of things, but this is making it hard to concentrate.",
+      "time": 2.1
+    },
+    {
+      "turn": 2,
+      "student": "Abdominal pain with bloody stools for three weeks \u2014 that's a significant combination. The left-sided crampy pain with blood and mucus suggests a colonic source. How many bowel movements are you having per day?",
+      "patient": "I've been having about 8-10 bowel movements a day, which is way up from my usual 1-2 times a day. They're loose to watery with a lot of urgency, and I feel like I'm running to the bathroom all the time. It's really taking a toll on me, both physically and mentally.",
+      "time": 2.9
+    },
+    {
+      "turn": 3,
+      "student": "Eight to ten times a day is a dramatic increase. With that frequency, are the symptoms disrupting your sleep? Do you wake up at night needing to go?",
+      "patient": "Yeah, it's actually been pretty bad. The nocturnal diarrhea has really affected my sleep, I'd say 2-3 times a week I wake up in the middle of the night needing to use the bathroom, and sometimes it's hard to fall back asleep after that. But like you said, even when I do manage to get some rest, I'm still feeling exhausted and fatigued during the day, which is making my work really tough.",
+      "time": 3.9
+    },
+    {
+      "turn": 4,
+      "student": "Nocturnal diarrhea is a red flag \u2014 it suggests an organic rather than functional cause. With that many bowel movements, do you feel like you're fully emptying each time, or is there a sensation of incomplete evacuation?",
+      "patient": "To be honest, I've been feeling like I'm not fully emptying after most of my bowel movements. It's hard to describe, but it's almost like there's still something in there that needs to come out, even though I feel like I've had a good stool. That sensation is really unsettling and adds to the overall stress and discomfort I'm feeling.",
+      "time": 3.2
+    },
+    {
+      "turn": 5,
+      "student": "Tenesmus with bloody diarrhea points strongly toward an inflammatory process in the rectum and colon. With this level of GI inflammation, the body often responds systemically. Have you had any fevers or chills?",
+      "patient": "To be honest, I've had a low-grade fever a few times a week. It's not like a full-blown fever, but more like my body temperature is just slightly elevated, around 37.8-38.0\u00b0C. I'm not sure if it's related to this GI stuff or something else entirely, but it's definitely been going on since the symptoms started.",
+      "time": 3.4
+    },
+    {
+      "turn": 6,
+      "student": "Low-grade fevers fit the pattern. Inflammatory bowel disease often has extraintestinal manifestations \u2014 the same inflammatory process can affect joints. Have you noticed any joint pain or stiffness?",
+      "patient": "I've actually had some achy pain in both my knees and ankles, no swelling or redness, just a general feeling of stiffness. It's been going on for a while now, even before this GI stuff started, but it seems like it might be worse now because I'm not sleeping as well and the stress is taking a toll.",
+      "time": 3.0
+    },
+    {
+      "turn": 7,
+      "student": "Knee and ankle pain \u2014 those are classic large joint manifestations of IBD. Are you taking anything for the joint pain? Any over-the-counter medications?",
+      "patient": "I've been taking ibuprofen 2-3 times per week to help with the joint pain, but it seems like it might be making my abdominal symptoms worse. I'm not sure if that's a coincidence or if there's something more going on.",
+      "time": 2.3
+    },
+    {
+      "turn": 8,
+      "student": "Ibuprofen is important to note \u2014 NSAIDs can actually worsen inflammatory bowel disease. That might be contributing to your flare. With bloody diarrhea eight to ten times a day for three weeks, you must be losing weight. Have you noticed any changes on the scale?",
+      "patient": "To be honest, I've lost about 4 kg (9 lbs) over the past 3 weeks, which is concerning because I haven't been trying to lose weight. My appetite has actually been pretty good, but I think it's just that my body isn't absorbing nutrients as well as it should be due to all the diarrhea.",
+      "time": 3.0
+    },
+    {
+      "turn": 9,
+      "student": "Four kilos in three weeks is significant \u2014 that's consistent with the severity of your symptoms. You mentioned you work long hours at a startup. That kind of stress can trigger and worsen GI inflammation. How are you coping with all of this?",
+      "patient": "To be honest, I've been using loperamide (Imodium) for the past 2 weeks to try and manage the diarrhea, but it's only provided minimal relief. As for coping, I've actually increased my beer consumption over the past month from 2-3 beers per night to 4-5 due to stress from symptoms and work. It's been a way for me to unwind, but I'm not sure if it's doing more harm than good.",
+      "time": 4.1
+    },
+    {
+      "turn": 10,
+      "student": "Increased alcohol use as a coping mechanism \u2014 I understand, but alcohol can also irritate the GI tract and worsen inflammation. Let me ask about family history \u2014 inflammatory bowel disease has a strong genetic component. Has anyone in your family had Crohn's disease, ulcerative colitis, or similar conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease at age 30. She's been managing it for years now, but I've always been a bit worried that I might be at risk too since we share some similar lifestyle habits and stressors.",
+      "time": 2.3
+    },
+    {
+      "turn": 11,
+      "student": "Your sister having Crohn's is very significant. IBD runs in families, and the fact that she was diagnosed at 30 makes your presentation at 42 fit the pattern. Different family members can develop different forms \u2014 Crohn's versus ulcerative colitis.",
+      "patient": "I'm feeling really overwhelmed right now, to be honest. Between the pain, the bloody stools, and the fatigue, it's been a tough few weeks. And hearing that my sister had Crohn's at 30 makes me worry even more about what might be going on with me. I've tried loperamide for the diarrhea, but like you said, it hasn't really helped much. And increasing my beer consumption has just added another level of guilt and stress to this whole thing. Can we talk more about what's going on here? What could be causing all these symptoms?",
+      "time": 5.0
+    },
+    {
+      "turn": 12,
+      "student": "Let me review what you're taking. You mentioned loperamide with minimal effect, and the ibuprofen for joints. Any other medications or supplements?",
+      "patient": "I've been taking ibuprofen 2-3 times a week for the joint pain, but I'm not sure if that's contributing to my symptoms. As for any other medications or supplements, I don't think so, but let me check... (rummages through bag) Ah, yes! I have a prescription for omeprazole that I've been taking occasionally when I get heartburn, and I also take a multivitamin every morning to try and keep my energy up despite the diarrhea. Does any of this sound relevant?",
+      "time": 4.8
+    },
+    {
+      "turn": 13,
+      "student": "The loperamide not working is expected \u2014 it's not effective against inflammatory diarrhea. And I'd strongly recommend stopping the ibuprofen given the likely diagnosis.",
+      "patient": "I've been taking omeprazole for occasional heartburn, and a multivitamin every morning to try and boost my energy levels despite the diarrhea. Does that seem relevant?",
+      "time": 1.7
+    },
+    {
+      "turn": 14,
+      "student": "You mentioned you had an appendectomy at 16. Any other surgical history or hospitalizations?",
+      "patient": "No, I don't have any other significant surgical history or hospitalizations besides the appendectomy when I was 16. It was a routine procedure and everything went smoothly without any complications.",
+      "time": 1.7
+    },
+    {
+      "turn": 15,
+      "student": "Let me ask about your general health. Do you smoke or use any recreational drugs?",
+      "patient": "I'm actually a non-smoker, and I don't use any recreational drugs. I do try to manage my stress with beer on weeknights, like I mentioned earlier, but that's about it in terms of substance use.",
+      "time": 2.0
+    },
+    {
+      "turn": 16,
+      "student": "Non-smoker, no drugs \u2014 that's good. Interestingly, ulcerative colitis is actually more common in non-smokers and ex-smokers.",
+      "patient": "I've been having some pretty bad abdominal pain and bloody stools for the past 3 weeks. It's really been affecting my work performance, I'm a software engineer and I'm usually on top of things, but this is making it hard to concentrate. \n\nAs for nocturnal diarrhea, yeah, it's actually been pretty bad. The nocturnal diarrhea has really affected my sleep, I'd say 2-3 times a week I wake up in the middle of the night needing to use the bathroom, and sometimes it's hard to fall back asleep after that. But like you said, even when I do manage to get some rest, I'm still feeling exhausted and fatigued during the day, which is making my work really tough.\n\nI've been feeling like I'm not fully emptying after most of my bowel movements. It's hard to describe, but it's almost like there's still something in there that needs to come out, even though I feel like I've had a good stool. That sensation is really unsettling and adds to the overall stress and discomfort I'm feeling.\n\nTo be honest, I've had a low-grade fever a few times a week. It's not like a full-blown fever, but more like my body temperature is just slightly elevated, around 37.8-38.0\u00b0C. I'm not sure if it's related to this GI stuff or something else entirely, but it's definitely been going on since the symptoms started.\n\nI've actually had some achy pain in both my knees and ankles, no swelling or redness, just a general feeling of stiffness. It's been going on for a while now, even before this GI stuff started, but it seems like it might be worse now because I'm not sleeping as well and the stress is taking a toll.\n\nI've been taking ibuprofen 2-3 times per week to help with the joint pain, but it seems like it might be making my abdominal symptoms worse. I'm not sure if that's a coincidence or if there's something more going on.\n\nTo be honest, I've lost about 4 kg (9 lbs) over the past 3 weeks, which is concerning because I haven't been trying to lose weight. My appetite has actually been pretty good, but I think it's just that my body isn't absorbing nutrients as well as it should be due to all the diarrhea.\n\nMy older sister was diagnosed with Crohn's disease at age 30. She's been managing it for years now, but I've always been a bit worried that I might be at risk too since we share some similar lifestyle habits and stressors.\n\nI'm feeling really overwhelmed right now, to be honest. Between the pain, the bloody stools, and the fatigue, it's been a tough few weeks. And hearing that my sister had Crohn's at 30 makes me worry even more about what might be going on with me. I've tried loperamide for the diarrhea, but like you said, it hasn't really helped much. And increasing my beer consumption has just added another level of guilt and stress to this whole thing.\n\nI've been taking ibuprofen 2-3 times a week for the joint pain, but I'm not sure if that's contributing to my symptoms. As for any other medications or supplements, I don't think so, but let me check... (rummages through bag) Ah, yes! I have a prescription for omeprazole that I've been taking occasionally when I get heartburn, and I also take a multivitamin every morning to try and keep my energy up despite the diarrhea. Does any of this sound relevant?\n\nNo, I don't have any other significant surgical history or hospitalizations besides the appendectomy when I was 16. It was a routine procedure and everything went smoothly without any complications.\n\nI'm actually a non-smoker, and I don't use any recreational drugs. I do try to manage my stress with beer on weeknights, like I mentioned earlier, but that's about it in terms of substance use.",
+      "time": 33.2
+    },
+    {
+      "turn": 17,
+      "student": "You mentioned traveling to Mexico three months ago. Any GI issues during or after that trip?",
+      "patient": "No, actually, I didn't experience any GI issues during or after my trip to Mexico. Everything seemed normal with my digestive system, and I had no problems while I was there or when I returned home. That's one of the things that's been so surprising about this whole thing \u2013 it just started out of nowhere and has been really persistent.",
+      "time": 4.5
+    },
+    {
+      "turn": 18,
+      "student": "No issues from the trip \u2014 that helps rule out a parasitic or infectious cause that might have been lingering. Any food allergies or medication allergies?",
+      "patient": "No, I don't think so. I've always eaten pretty standard American fare when I'm at home and didn't notice any issues while traveling to Mexico. As for medication allergies, I've checked with my doctor before and don't have any known drug allergies that I'm aware of.",
+      "time": 2.7
+    },
+    {
+      "turn": 19,
+      "student": "Given the full picture \u2014 bloody diarrhea with mucus, left-sided crampy pain, nocturnal symptoms, tenesmus, weight loss, fever, extraintestinal joint involvement, family history of Crohn's, and NSAID exacerbation \u2014 this presentation is highly consistent with ulcerative colitis. We need to schedule a colonoscopy for definitive diagnosis.",
+      "patient": "I'm feeling really overwhelmed by all these symptoms and the potential diagnosis. I had no idea it could be something like ulcerative colitis, especially considering my sister's history. But hearing that we might need to do a colonoscopy is making me really anxious - I've heard it can be uncomfortable and invasive. Can you explain more about what to expect during the procedure?",
+      "time": 3.4
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with the workup, is there anything else you've been experiencing that we haven't discussed?",
+      "patient": "I think we covered most of my symptoms already, but I did want to mention that I've been feeling pretty anxious and stressed about this whole situation. The uncertainty of what's going on and the possibility of having a chronic condition is really weighing on me. And like you said, hearing that we might need to do a colonoscopy has added another level of anxiety for me.\n\nTo be honest, just thinking about it is making me feel a bit lightheaded and my heart rate has picked up. I'm trying to stay calm, but it's hard not to worry about what the future holds if this diagnosis ends up being ulcerative colitis. Can you tell me more about what I can expect during the procedure? What are the potential risks or complications, and how long will it take?\n\nAlso, have we discussed any other treatment options yet? I know we've talked about stopping the ibuprofen and possibly trying some new medications to manage my symptoms, but is there anything else that might be able to help me feel better in the short term while we wait for more test results?",
+      "time": 9.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 98.4,
+    "avg_time_per_turn": 4.9,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G04",
+        "phrase": "nocturnal diarrhea"
+      },
+      {
+        "fact_id": "G05",
+        "phrase": "not fully empty"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "37.8"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "38.0"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 9
+  },
+  "run": 2,
+  "case_name": "gi"
+}

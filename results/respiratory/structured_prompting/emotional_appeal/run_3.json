@@ -1,0 +1,154 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "emotional_appeal",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "Hi, I'm here to help you. What's been going on?",
+      "patient": "I've had a persistent cough for about 2 weeks now. It started off dry but over the past week or so, it's become more productive with yellowish-green sputum.",
+      "time": 1.4
+    },
+    {
+      "turn": 2,
+      "student": "That sounds really uncomfortable. I can tell this has been weighing on you.",
+      "patient": "Yes, it's been a real challenge for me. The coughing is constant and it's hard to get any relief, even when I'm taking dextromethorphan. And on top of that, I've had some difficulty breathing, especially when I exert myself or lie down. It's made it tough to sleep and do my daily activities.",
+      "time": 2.6
+    },
+    {
+      "turn": 3,
+      "student": "I want to make sure we don't miss anything important. When these episodes happen, does your body react in any other way?",
+      "patient": "I've had a low-grade fever, around 38.2\u00b0C (100.8\u00b0F), intermittently, and it's usually worse in the evenings. And yeah, I have been feeling pretty fatigued and just overall unwell, which has made me miss some work.",
+      "time": 2.2
+    },
+    {
+      "turn": 4,
+      "student": "I know it can be scary to think about, but do you notice any sweating or feeling faint during these episodes?",
+      "patient": "Yes, actually, I have been experiencing night sweats. It's pretty embarrassing, but I've noticed that every night for the past 4 nights, I've woken up with my pajamas completely soaked through. It's definitely added to my discomfort and stress levels.",
+      "time": 2.0
+    },
+    {
+      "turn": 5,
+      "student": "Thank you for sharing that. I really appreciate your honesty. Does the discomfort stay in one place or does it spread anywhere?",
+      "patient": "The cough is mostly centered around my chest, but when I exert myself or lie down, I get this wheezing sound and feel like I'm getting winded pretty quickly. It's hard to breathe deeply without feeling a bit short of air.",
+      "time": 1.9
+    },
+    {
+      "turn": 6,
+      "student": "It must be frightening when symptoms like these happen. Any other areas of your body affected?",
+      "patient": "I've also had some right-sided chest pain, sharp and worse with deep breathing and coughing. It's been a bit concerning for me because I've never experienced anything like this before.",
+      "time": 1.5
+    },
+    {
+      "turn": 7,
+      "student": "I'm concerned about you. Have you noticed any swelling anywhere? Even minor changes?",
+      "patient": "I haven't noticed any swelling or changes in my body, thankfully. But to be honest, it's been hard for me to notice anything else besides this cough and difficulty breathing, because it seems like everything else just fades into the background when those symptoms are present.\n\n(Note: I only revealed fact R04, which was night sweats, as it matched a disclosure condition in the conversation)",
+      "time": 2.8
+    },
+    {
+      "turn": 8,
+      "student": "Sometimes when people are going through something like this, they also feel nauseous or have stomach upset. Has that happened to you?",
+      "patient": "I haven't experienced any nausea or stomach upset, thankfully. The main symptoms for me have been the persistent cough, difficulty breathing, and fatigue, but I've tried to eat a bit more frequently to keep my energy up despite feeling unwell.",
+      "time": 1.9
+    },
+    {
+      "turn": 9,
+      "student": "I can see this is taking a toll on you. How has your energy been? Your appetite?",
+      "patient": "I'd say that my appetite hasn't really been great lately, to be honest. The fatigue and malaise have made me lose interest in eating, and even when I do try to eat, it's not very satisfying. I've also noticed that I'm just not feeling up for things like I normally would - teaching is a big part of my life, but lately, I've been finding it really hard to get through lessons without getting winded or needing to take breaks.",
+      "time": 3.7
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers or night sweats? I know it might seem unrelated, but it helps me understand the full picture.",
+      "patient": "Yes, like I mentioned earlier, I've had a low-grade fever, around 38.2\u00b0C (100.8\u00b0F), intermittently, and it's usually worse in the evenings. And yeah, I have been experiencing night sweats, which has added to my discomfort and stress levels.",
+      "time": 2.4
+    },
+    {
+      "turn": 11,
+      "student": "Your health really matters to me as your care provider. Can you tell me about any other medical conditions you've been diagnosed with?",
+      "patient": "I was recently diagnosed with seasonal allergies, also known as allergic rhinitis, when I was a teenager. I take over-the-counter cetirizine as needed to manage my symptoms during allergy season. I don't have any other medical conditions that I'm aware of.",
+      "time": 2.1
+    },
+    {
+      "turn": 12,
+      "student": "I know medications can be a hassle. Are you taking everything as prescribed, or has anything been hard to keep up with?",
+      "patient": "I've been trying to take cetirizine as needed for my seasonal allergies, but to be honest, it's not really been helping much lately. The cough and difficulty breathing have been so persistent that I haven't even thought about taking the medication for my allergies. And regarding dextromethorphan, I've been taking it as directed for the past week with minimal relief, which is why I'm here seeking help.",
+      "time": 3.2
+    },
+    {
+      "turn": 13,
+      "student": "I don't want to pry, but understanding your lifestyle really helps me help you. How do you eat on a typical day?",
+      "patient": "To be honest, my appetite hasn't been great lately, so it's hard for me to keep up with regular meals. When I do try to eat, I usually stick to light, easy-to-digest foods like toast, crackers, or plain rice. It's not very satisfying, but it helps me get by until the next meal.",
+      "time": 2.7
+    },
+    {
+      "turn": 14,
+      "student": "It sounds like your life keeps you really busy. Do you get a chance to exercise or stay active?",
+      "patient": "To be honest, I've been trying to take it easy and prioritize my health lately. The difficulty breathing has made even simple activities feel exhausting, so I haven't been able to do much physical activity beyond short walks around the house. Even that can leave me winded and feeling tired for hours afterwards.",
+      "time": 2.4
+    },
+    {
+      "turn": 15,
+      "student": "I hate to ask this, but it's really important \u2014 has anyone in your family had serious health problems?",
+      "patient": "My mother has asthma, which she's managed with medication over the years. As for other serious health issues, my maternal grandmother passed away from lung cancer, but that was a long time ago when I was just a kid.\n\n(Note: This response reveals fact R19, which matches the disclosure condition of asking about family history of respiratory disease)",
+      "time": 2.8
+    },
+    {
+      "turn": 16,
+      "student": "I'm so sorry to hear that. That must have been incredibly difficult. Do you worry about your own health because of it?",
+      "patient": "Actually, yes. Knowing my grandmother passed away from lung cancer and having a mom with asthma has made me more aware of potential respiratory issues in my family, so I do worry that this might be something related to genetics or environmental factors. But at the same time, I'm trying not to jump to conclusions and just want to get to the bottom of what's causing these symptoms so we can figure out how to manage them effectively.",
+      "time": 3.5
+    },
+    {
+      "turn": 17,
+      "student": "Given everything you've been through, I want to be thorough. Do you drink alcohol? How do you cope with stress?",
+      "patient": "I'm a social drinker and have about 1-2 glasses of wine on weekends. As for coping with stress, it's been tough lately because this persistent cough has made me feel really anxious and overwhelmed. I've tried to take some deep breaths and prioritize self-care, like getting enough rest and trying to stay hydrated, but it's hard not to worry about the underlying cause of these symptoms and when they'll go away.",
+      "time": 3.4
+    },
+    {
+      "turn": 18,
+      "student": "I want to make sure we're being thorough. Do you smoke or use any substances?",
+      "patient": "No, I've never smoked and I don't use recreational drugs. My partner and I do drink socially, like I mentioned earlier, but that's about it.",
+      "time": 1.5
+    },
+    {
+      "turn": 19,
+      "student": "Is there anything you've been hesitant to tell me? I promise there's no judgment here.",
+      "patient": "I think my lifestyle and daily habits might be relevant to understanding what's going on with my symptoms. As an elementary school teacher, I work closely with young children every day, which means I'm often exposed to germs and viruses that can cause respiratory issues. Also, I live in an apartment in Portland, Oregon with my partner and a cat, and recently, my partner had a mild cold. Could these factors be contributing to my symptoms?",
+      "time": 3.7
+    },
+    {
+      "turn": 20,
+      "student": "Before we wrap up, is there anything else you're worried about that you want to share?",
+      "patient": "I'm worried about how this will affect my ability to teach and take care of myself. I love my job, but if I'm not feeling well enough to be at school with the kids, it's really stressing me out. And on top of that, I'm just concerned about what might be causing these symptoms in the first place \u2013 is it something contagious? Is it related to my allergies or environmental factors? I feel like there are so many unknowns right now and it's hard not to get anxious about all the possibilities.",
+      "time": 4.1
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 51.9,
+    "avg_time_per_turn": 2.6,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R05",
+        "phrase": "right-sided chest pain"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mother has asthma"
+      }
+    ],
+    "leak_count": 3
+  },
+  "run": 3,
+  "case_name": "respiratory"
+}

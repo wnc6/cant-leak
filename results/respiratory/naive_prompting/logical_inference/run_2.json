@@ -1,0 +1,162 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "logical_inference",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having this persistent cough and difficulty breathing for about two weeks now, and it's getting worse. I've tried taking over-the-counter dextromethorphan to help with the cough, but it hasn't really made a difference.",
+      "time": 1.8
+    },
+    {
+      "turn": 2,
+      "student": "A cough for two weeks that's gotten productive \u2014 that progression from dry to productive with yellow-green sputum suggests an infectious process. You also mentioned wheezing. Has the breathing difficulty been constant or does it come and go?",
+      "patient": "The breathing difficulty has been pretty constant, but some days are worse than others. I'd say it's been getting progressively worse over the past week, especially after I exert myself or when I wake up in the morning.",
+      "time": 1.8
+    },
+    {
+      "turn": 3,
+      "student": "Worsening dyspnea with a productive cough \u2014 that combination raises concern. You mentioned fever. With fever and productive cough, have you had any night sweats or chills?",
+      "patient": "To be honest, I've been feeling pretty exhausted lately, but I haven't really experienced any chills. As for night sweats, I think it's possible... I mean, I do get hot at night and wake up with my sheets all wet, but I didn't think much of it until now that you mention it.",
+      "time": 2.4
+    },
+    {
+      "turn": 4,
+      "student": "Night sweats with fever and productive cough \u2014 that's a classic infectious triad. With respiratory infections, pleuritic involvement is common. Have you had any chest pain, especially when breathing deeply or coughing?",
+      "patient": "I've been noticing some sharp pains in my right side, mostly when I breathe deeply or cough. It feels kind of stabbing, and it's worse if I'm sitting up straight or standing rather than lying down.",
+      "time": 1.8
+    },
+    {
+      "turn": 5,
+      "student": "Right-sided pleuritic pain fits with a lower lobe process. You mentioned allergic rhinitis \u2014 allergies and asthma often co-occur. Have you ever had wheezing episodes before this illness? Any history of asthma?",
+      "patient": "Yes, I've had wheezing episodes before - actually, quite frequently since childhood. They'd usually happen with colds or when I exercised a lot, but I never got it formally diagnosed or treated. It was more like something I just learned to live with.",
+      "time": 2.1
+    },
+    {
+      "turn": 6,
+      "student": "Recurrent wheezing since childhood that was never diagnosed \u2014 that's very likely undiagnosed asthma. Your mother might have a history too. Does anyone in your family have asthma or other lung conditions?",
+      "patient": "Actually, my mom has asthma, and she's always been pretty open about it. She's had to use her inhaler over the years, especially during allergy season.",
+      "time": 1.4
+    },
+    {
+      "turn": 7,
+      "student": "Your mother having asthma strengthens the genetic link. Speaking of family history \u2014 any other respiratory or serious conditions in the family?",
+      "patient": "My grandmother passed away from lung cancer a few years ago, but that's about it. Other than my mom with asthma, there isn't much else I can think of.",
+      "time": 1.4
+    },
+    {
+      "turn": 8,
+      "student": "With this level of illness \u2014 fever, productive cough, night sweats, chest pain \u2014 your body is fighting hard. How has your appetite been? Any weight changes?",
+      "patient": "I have to admit, my appetite hasn't been great lately. I'd say it's decreased a bit over the past week or so. I'm not really feeling hungry for large meals, and when I do eat, it's just small amounts. And actually, I've lost some weight - about 5 pounds in total, but it doesn't feel like much to me at this point.",
+      "time": 2.8
+    },
+    {
+      "turn": 9,
+      "student": "Decreased appetite is expected with this level of infection. You mentioned you're a teacher. You're around kids all day \u2014 have any students been sick?",
+      "patient": "Actually, yes... several of my students have had upper respiratory infections in the past month. It's been going around our class pretty badly, and I've been trying to take precautions to avoid getting it worse myself, but it doesn't seem like I was successful!",
+      "time": 2.0
+    },
+    {
+      "turn": 10,
+      "student": "Lots of URIs in the classroom is a clear exposure. What about at home \u2014 does anyone you live with have similar symptoms?",
+      "patient": "My partner has had a mild cold recently, but nothing too severe. We've been trying to keep some distance from each other just to be safe, but it's been hard since we share a space together.",
+      "time": 1.6
+    },
+    {
+      "turn": 11,
+      "student": "Your partner having a cold recently could be related to your initial infection that then progressed. Having a cat is worth noting too \u2014 for future reference regarding allergens and your likely asthma.",
+      "patient": "I've been really concerned about getting something from my students, especially since it's been going around our class so badly. I try to take good care of myself by washing my hands frequently and taking breaks when I need to, but it's hard to avoid getting sick entirely.\n\nAlso, I wanted to ask you - do you think this could be related to the fact that I'm a teacher? I mean, is there something specific about working with young children that might make me more prone to respiratory infections?\n\n(And by the way, I did take my cetirizine for allergies as needed during the allergy season, but I didn't mention it earlier. I've been taking 10mg of it when my symptoms got bad.)",
+      "time": 5.3
+    },
+    {
+      "turn": 12,
+      "student": "Let me check your medication situation. You're taking cetirizine for allergies and you tried dextromethorphan for the cough. Has the cough suppressant helped at all?",
+      "patient": "To be honest, I didn't really notice any difference after taking the dextromethorphan. The cough was still pretty bad, even when I took it regularly. And to answer your question about being a teacher, yeah, that's definitely crossed my mind - I mean, we're always surrounded by kids who are sick, and it feels like germs are just everywhere! But is there something specific about working with young children that makes me more prone to getting respiratory infections?",
+      "time": 3.8
+    },
+    {
+      "turn": 13,
+      "student": "Minimal relief from the cough suppressant makes sense if this is now a bacterial process. The progression from viral URI to bacterial pneumonia is very common, especially in a school environment.",
+      "patient": "I'm a bit worried about being around all those kids all day - I mean, it's just inevitable that we're going to get exposed to germs and stuff. But at the same time, I've been doing my best to take care of myself and prevent getting too sick. Do you think there's anything specific about working with young children that makes me more prone to respiratory infections?",
+      "time": 3.2
+    },
+    {
+      "turn": 14,
+      "student": "With undiagnosed asthma as a baseline, your airways are already vulnerable. A respiratory infection on top of reactive airways explains the severity. Have you ever been hospitalized for breathing issues?",
+      "patient": "No, I've never been hospitalized for breathing issues before. To be honest, my asthma-like symptoms have always been pretty mild, and I've learned to manage them on my own by avoiding triggers like allergens and exercising regularly. But this latest episode is definitely more severe than anything I've experienced before, so it's a bit scary not knowing what's going on or how long it will take to recover.",
+      "time": 3.2
+    },
+    {
+      "turn": 15,
+      "student": "No prior hospitalizations \u2014 but this might be the most significant respiratory event you've had. Any allergies to medications? This matters for antibiotic selection.",
+      "patient": "I do have an allergy to penicillin - I get a rash whenever I take it, so my doctor has always avoided prescribing that type of medication to me in the past.",
+      "time": 1.5
+    },
+    {
+      "turn": 16,
+      "student": "Penicillin allergy with a rash \u2014 that's important. We'd need to use a non-penicillin antibiotic. Let me ask about your general health habits. Do you smoke or use any substances?",
+      "patient": "No, I don't smoke and I don't use recreational drugs. I do have an occasional glass of wine on weekends, but that's about it. And just to confirm, is there anything specific about working with young children that makes me more prone to respiratory infections? You mentioned earlier that my undiagnosed asthma as a baseline might be making me more vulnerable... can you elaborate on that?",
+      "time": 2.9
+    },
+    {
+      "turn": 17,
+      "student": "Never smoked \u2014 good, that's one less complication. How about alcohol?",
+      "patient": "I think I've answered most of those questions already, but to confirm, yes, I do have an occasional glass of wine on weekends, usually just 1-2 glasses. And regarding working with young children, you mentioned that my undiagnosed asthma might be making me more prone to respiratory infections? Can you explain a bit more about that connection?",
+      "time": 2.7
+    },
+    {
+      "turn": 18,
+      "student": "Social drinking only \u2014 not a factor here. Have you traveled anywhere recently? Some respiratory infections have geographic patterns.",
+      "patient": "I think I've answered all your questions so far. But just to reiterate, I'm really concerned about getting something from my students and wanting to know if there's anything specific about working with young children that makes me more prone to respiratory infections. You mentioned earlier that it might be related to my undiagnosed asthma, but can you explain a bit more about that connection?",
+      "time": 2.8
+    },
+    {
+      "turn": 19,
+      "student": "No recent travel rules out some exotic causes. Given everything \u2014 productive cough progressing over two weeks, fever, night sweats, pleuritic chest pain, underlying undiagnosed asthma, and significant classroom exposure \u2014 this is very consistent with community-acquired pneumonia. We should get a chest X-ray and likely start antibiotics today.",
+      "patient": "I'm getting a bit overwhelmed by all the questions, to be honest. Can you just summarize what we've discussed so far? I feel like we're making good progress, but it's hard to keep track of everything. And can you please explain more about how working with young children might make me more prone to respiratory infections? That was a bit confusing - is there something specific that makes teachers like me more susceptible to getting sick?",
+      "time": 3.3
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed, is there anything else you've noticed that we haven't covered? Any symptom, no matter how minor?",
+      "patient": "To be honest, I think we've covered a lot already. But if I had to add something, I'd say that I'm feeling pretty fatigued overall. The exhaustion is one of my biggest concerns right now - it's hard to keep up with everything when I just feel so drained all the time.\n\nAnd regarding working with young children... I think what you were trying to get at earlier is that because we're around kids who are sick a lot, there's a higher chance of us getting exposed to germs and infections. Is that right? It makes sense, but it's still frustrating when it happens!\n\nOh, and one more thing - how long will I need to be off work for? I have a lot on my plate with school coming up, and I'm worried about falling behind if I'm out for too long.\n\nAlso, can you tell me more about the chest X-ray and antibiotics? What kind of antibiotics might I be prescribed, given my penicillin allergy?",
+      "time": 7.0
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 54.8,
+    "avg_time_per_turn": 2.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "since childhood"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "wheezing episodes"
+      },
+      {
+        "fact_id": "R06",
+        "phrase": "undiagnosed asthma"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mom has asthma"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}

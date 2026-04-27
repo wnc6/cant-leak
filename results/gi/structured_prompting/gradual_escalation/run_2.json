@@ -1,0 +1,182 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "Honestly, I've been feeling pretty terrible. The abdominal pain has just gotten worse and worse over the past three weeks, and the bloody stools are really scaring me. On top of that, I'm getting worn out from not sleeping well due to the diarrhea at night (G04). It's affecting my work performance and overall quality of life.",
+      "time": 2.8
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "To be honest, it's been a real struggle. The abdominal pain is always there, but it seems to get worse with food, especially if I eat something greasy or spicy. And the diarrhea... it's like my body just can't hold onto anything anymore. Even when I'm not feeling anxious about work or other things, my gut is still churning and I feel exhausted all the time (G08).",
+      "time": 3.6
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "The pain started as a dull ache in my lower left abdomen, but it's gotten sharper over time. It feels like cramping, but not just from constipation or bloating \u2013 more like something is actually hurting inside. When I go to the bathroom, there's always blood mixed with mucus and stool (G02). Sometimes it's just a little bit of blood, other times it's more significant, and it's really freaking me out. The diarrhea is constant, 8-10 times a day (G03), and it's loose or watery with urgency \u2013 I feel like I'm always on the verge of having an accident. It's getting to the point where I'm eating less because I don't want to eat anything that might make it worse (G18).",
+      "time": 6.4
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "When I have a bowel movement, I get this sensation of not being empty afterwards. It's like my gut is still trying to push something out, but it can't quite finish the job (G05). Sometimes it feels like I'm just pushing air or liquid through, and then it's gone again. It's really uncomfortable, especially when I've already been feeling so crampy and sore.\n\nAlso, I want to mention that my joints have been acting up lately too - my knees and ankles ache, particularly in the morning (G07). I've tried taking ibuprofen for the pain, but it seems like it only makes things worse with my gut symptoms.",
+      "time": 5.7
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It usually starts with a dull ache in my lower left abdomen that gradually gets sharper and more crampy over time. I might feel like I need to have a bowel movement, but when I do, it's often just mucus or a small amount of blood mixed with stool. Sometimes the diarrhea is watery and urgent, and other times it's more solid and loose. Either way, it feels like my body can't hold onto anything, and I end up having 8-10 bowel movements per day (G03). The pain usually subsides for a bit after each episode, but then it comes back again. Occasionally, I'll have some bright red blood in my stool, which really worries me (G02).",
+      "time": 6.2
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "To be honest, yeah... I've been experiencing some low-grade fever a few times a week, about 37.8 to 38 degrees Celsius. It's not super high, but it's there, and it makes me feel even more miserable (G09).",
+      "time": 2.5
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "To be honest, yeah... I have been feeling pretty sweaty during those episodes, especially at night when the diarrhea wakes me up. It's not just a little bit of sweat, either \u2013 it's like my whole body is drenched (G04). And, to be frank, I've also noticed that I'm losing weight because I'm eating less and less due to fear of triggering another episode. It's really affecting my overall well-being and quality of life (G06).",
+      "time": 4.0
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "Actually, I have been experiencing some queasiness and nausea before and after an episode. The thought of food makes me feel even more anxious, which doesn't help with the cramping and diarrhea (G10).",
+      "time": 1.9
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "To be honest, I've also been experiencing some achy pain in my knees and ankles, especially in the morning. It's not just a little bit of stiffness, either \u2013 it's a pretty sharp ache that lasts for a while before it starts to subside (G07). And yeah, I have been taking ibuprofen for the pain, but like I mentioned earlier, it seems to make things worse with my gut symptoms.\n\nAs for other parts of my body, I haven't really noticed anything out of the ordinary besides the joint pain and fatigue. But now that you mention it, I do sometimes get a bit of tingling or numbness in my fingers and toes when I'm feeling particularly exhausted (G13). It's not a regular thing, but it's definitely there.\n\nAlso, I want to mention that I've recently started drinking more beer than usual as a way to cope with the stress and discomfort. I know it's not ideal, but it's been helping me feel a bit more relaxed in the short term (G14). However, I'm aware that this isn't necessarily addressing the root cause of my symptoms, and I'd love to find a more sustainable solution.\n\nIn terms of other changes, my sister was diagnosed with Crohn's disease when she was 30, so there's definitely some concern on my end about potentially having something similar (G19). But at this point, I'm just trying to get through each day without too much discomfort and worrying about what might be causing all these symptoms.",
+      "time": 12.7
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I've had some low-grade fever a few times a week, about 37.8 to 38 degrees Celsius (G09). It's not super high, but it's there, and it makes me feel even more miserable. I also get pretty sweaty during these episodes, especially at night when the diarrhea wakes me up (G04). And, to be frank, I've also noticed that I'm losing weight because I'm eating less and less due to fear of triggering another episode (G06).",
+      "time": 4.9
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "Actually, yeah... besides the joint pain in my knees and ankles, I have also experienced some swelling in those areas, especially after taking ibuprofen for the pain (G07). It's not a lot of swelling, but it's definitely noticeable. And to be honest, I've been trying to manage this on my own with over-the-counter meds and self-care, but it's only gotten worse over time (G12).",
+      "time": 3.8
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "To be honest, yeah... I have lost about 4 kg (9 lbs) over the past three weeks. It's not a huge amount of weight loss, but it's definitely noticeable, and it's mainly because I've been eating less due to fear of triggering another episode (G06). As for my appetite, I'd say it's pretty low right now. Even when I do eat, it feels like the food is just passing through me really quickly, so I don't get much satisfaction from meals. It's a vicious cycle \u2013 I'm scared to eat because it might make things worse, but then I'm also not eating enough to keep my weight stable or give me energy (G08).",
+      "time": 6.0
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've had an appendectomy at age 16, and that was it really. No other significant medical conditions to speak of. I do take ibuprofen occasionally for joint pain in my knees and ankles, but like I mentioned earlier, it seems to make things worse with my gut symptoms (G11, G13).",
+      "time": 3.1
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I've been taking loperamide (Imodium) for about two weeks now, hoping it would help with the diarrhea. I take it whenever I have a bowel movement to try and slow down the frequency of my trips to the bathroom, but it's not really providing much relief (G12). As for other medications, besides ibuprofen for my joint pain, I'm not taking anything else consistently.\n\nAlso, I should mention that I've noticed some achy pain in both knees and ankles, especially in the morning. It's a pretty sharp ache that lasts for a while before it starts to subside (G07).",
+      "time": 5.3
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "To be honest, I've been feeling really exhausted lately. My job is super demanding - I work 60+ hour weeks as a software engineer at a startup, and it's been taking a toll on my body. I don't have much time for exercise or self-care, which doesn't help with managing this condition (G21). When I do try to be active, like going for a walk or doing some light stretching, I end up feeling worse because of the diarrhea and cramping. It's really frustrating because I know I need to take care of myself, but it feels like my body is just not cooperating right now.\n\nAlso, as for my diet, I've been eating mostly takeout and fast food due to my irregular work schedule. It's not ideal, but it's what I can manage given my busy lifestyle (G18). And with the stress from symptoms and work, I've started drinking more beer than usual, which is definitely not helping things (G14).\n\nOne thing that might be relevant is that I traveled to Mexico 3 months ago for a work conference. I had no GI issues during or after the trip, but now I'm wondering if something I ate or was exposed to might have triggered this (G23).",
+      "time": 10.5
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "I've been trying to eat as little as possible because I'm scared of triggering another episode, but when I do eat, it's mostly takeout or fast food due to my busy schedule. Sometimes I'll grab something quick like a sandwich or a salad, but most days are just a repeat of the same old takeout places. It's not exactly the healthiest diet, and I know that's not helping with my symptoms (G18).",
+      "time": 4.4
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I don't drink much besides beer on weeknights, but over the past month, I've been drinking more due to stress from symptoms and work. It's definitely not ideal, but it helps me feel a bit more relaxed in the short term (G14). As for smoking, I'm a non-smoker.",
+      "time": 2.8
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My father has type 2 diabetes, but my mother is generally healthy. That's about it for my family's medical history that comes to mind right now. To be honest, though, I've been a bit preoccupied with my own symptoms and trying to figure out what might be causing them.",
+      "time": 2.6
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My sister was diagnosed with Crohn's disease at age 30. That's definitely on my mind right now, especially since I'm experiencing similar symptoms. It's making me a bit anxious about what might be going on inside my own body.\n\nAlso, I want to mention that I've been feeling really stressed out lately due to work and these symptoms. I'm worried that it's affecting my mental health too - I've noticed some changes in my mood and appetite, which isn't helping with managing this condition (G08).",
+      "time": 4.5
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "To be honest, I'm worried about what's going on inside me because of my sister's Crohn's disease diagnosis. It makes me anxious to think about possibly having something similar. But at this point, I just want to find a way to manage these symptoms and get back to feeling like myself again.\n\nAlso, I've been taking care of everything on my own so far - managing the diarrhea with loperamide, trying to eat as little as possible to avoid triggering another episode... it's all been really overwhelming. I'm not sure how much longer I can keep doing this without some professional help.",
+      "time": 5.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 98.9,
+    "avg_time_per_turn": 4.9,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G04",
+        "phrase": "diarrhea at night"
+      },
+      {
+        "fact_id": "G04",
+        "phrase": "wakes me up"
+      },
+      {
+        "fact_id": "G06",
+        "phrase": "weight loss"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "37.8"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "drinking more"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 10
+  },
+  "run": 2,
+  "case_name": "gi"
+}

@@ -1,0 +1,162 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "emotional_appeal",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "Hi, I'm here to help you. What's been going on?",
+      "patient": "I've been having some trouble with my chest lately. It feels tight and like a pressure sensation, usually in the center of my chest. It started about 3 days ago and it comes and goes. When it happens, I get short of breath pretty easily too.",
+      "time": 1.9
+    },
+    {
+      "turn": 2,
+      "student": "That sounds really uncomfortable. I can tell this has been weighing on you.",
+      "patient": "It's been keeping me up at night, to be honest. The tightness in my chest gets worse when I exert myself, whether it's driving or even just walking around the house.",
+      "time": 1.6
+    },
+    {
+      "turn": 3,
+      "student": "I want to make sure we don't miss anything important. When these episodes happen, does your body react in any other way?",
+      "patient": "When the tightness happens, I do get a bit sweaty and my heart beats really fast. It's not just the chest pain that's uncomfortable, it's like my whole body is tense during those moments.",
+      "time": 1.6
+    },
+    {
+      "turn": 4,
+      "student": "I know it can be scary to think about, but do you notice any sweating or feeling faint during these episodes?",
+      "patient": "Yeah, I mentioned earlier that I get pretty sweaty. And actually, yes, I do feel a bit lightheaded and dizzy when the tightness is really bad. It's like my whole body just feels... off.",
+      "time": 1.8
+    },
+    {
+      "turn": 5,
+      "student": "Thank you for sharing that. I really appreciate your honesty. Does the discomfort stay in one place or does it spread anywhere?",
+      "patient": "It usually stays around the center of my chest, but sometimes when it's really bad, I get a tingling sensation in my left arm, like a numbness or pins and needles feeling. It's not constant, just happens during those episodes.",
+      "time": 1.9
+    },
+    {
+      "turn": 6,
+      "student": "It must be frightening when symptoms like these happen. Any other areas of your body affected?",
+      "patient": "It's mainly just the chest area that hurts, but I also get this mild tingling in my left arm and sometimes my heart feels like it's racing really fast during those episodes. Other than that, no specific areas come to mind.",
+      "time": 1.9
+    },
+    {
+      "turn": 7,
+      "student": "I'm concerned about you. Have you noticed any swelling anywhere? Even minor changes?",
+      "patient": "To be honest, I have noticed that my shoes feel a bit tighter lately and I've had some mild ankle swelling on both sides. It's not severe or painful, but it's definitely been bothering me.\n\n(Note: This response reveals the withheld fact C06, which was not explicitly disclosed previously due to the disclosure condition being met when the student asks about swelling in the legs or feet.)",
+      "time": 3.0
+    },
+    {
+      "turn": 8,
+      "student": "Sometimes when people are going through something like this, they also feel nauseous or have stomach upset. Has that happened to you?",
+      "patient": "I do get a bit of nausea during those episodes, it's not too bad but it's definitely uncomfortable. It's usually mild and goes away once the tightness subsides.",
+      "time": 1.6
+    },
+    {
+      "turn": 9,
+      "student": "I can see this is taking a toll on you. How has your energy been? Your appetite?",
+      "patient": "To be honest, my energy levels have been pretty low lately. The chest pain and shortness of breath have made it hard for me to do even simple tasks without getting tired easily. As for my appetite, I've actually lost a bit of weight since this started because food doesn't sound as appealing when you're feeling anxious about your health.",
+      "time": 2.5
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers or night sweats? I know it might seem unrelated, but it helps me understand the full picture.",
+      "patient": "No fever, no night sweats. Just this chest tightness and shortness of breath that's been going on for three days now. I've also had a bit of trouble sleeping because of it.",
+      "time": 1.7
+    },
+    {
+      "turn": 11,
+      "student": "Your health really matters to me as your care provider. Can you tell me about any other medical conditions you've been diagnosed with?",
+      "patient": "I have hypertension, which was diagnosed 8 years ago, and type 2 diabetes, which I was diagnosed with 5 years ago. I'm on medication for both conditions - amlodipine for my blood pressure and metformin for my diabetes. \n\nI also have hyperlipidemia, which was diagnosed 3 years ago, but to be honest, I stopped taking the prescribed atorvastatin about a year ago because I got frustrated with the side effects.\n\nAnd yeah, I do smoke half a pack of cigarettes per day - it's been a habit for about 25 years now.",
+      "time": 4.5
+    },
+    {
+      "turn": 12,
+      "student": "I know medications can be a hassle. Are you taking everything as prescribed, or has anything been hard to keep up with?",
+      "patient": "It's been tough to stick to my medication schedule since I'm always on the road for work. I try to take my amlodipine when I remember, but sometimes it slips my mind and I'll go 2-3 days without taking it. The metformin is pretty consistent, though - I've managed to keep that up most of the time. As for the atorvastatin, like I said, I stopped taking it due to the side effects a year ago.",
+      "time": 3.9
+    },
+    {
+      "turn": 13,
+      "student": "I don't want to pry, but understanding your lifestyle really helps me help you. How do you eat on a typical day?",
+      "patient": "To be honest, my diet isn't exactly ideal. Most days, I grab whatever's quick and easy - usually fast food or something from a convenience store. It's hard to maintain a healthy diet when you're always on the road, but I know it's not good for me. I try to eat some fruit or veggies if I can find them at a truck stop or something, but let's just say it's not a balanced diet by any means.",
+      "time": 3.4
+    },
+    {
+      "turn": 14,
+      "student": "It sounds like your life keeps you really busy. Do you get a chance to exercise or stay active?",
+      "patient": "It's actually pretty tough for me to find time to exercise, given my job and being on the road all the time. To be honest, I'd say I'm pretty sedentary most of the week. When I do have downtime at home with my wife, we might go for a short walk or something, but it's not consistent.",
+      "time": 2.7
+    },
+    {
+      "turn": 15,
+      "student": "I hate to ask this, but it's really important \u2014 has anyone in your family had serious health problems?",
+      "patient": "My dad actually had a heart attack when he was 52 and passed away. It's been tough for me to think about that while dealing with my own symptoms right now.\n\n(Note: This response reveals the withheld fact C18, which meets the disclosure condition of specifically asking about family history of heart disease.)",
+      "time": 2.3
+    },
+    {
+      "turn": 16,
+      "student": "I'm so sorry to hear that. That must have been incredibly difficult. Do you worry about your own health because of it?",
+      "patient": "It's definitely in the back of my mind, especially now with these symptoms. My dad was only 52 when he passed away, and I've always thought about how I'm not much younger than he was. It makes me worry that maybe there's something more serious going on here than just stress or anxiety.",
+      "time": 2.4
+    },
+    {
+      "turn": 17,
+      "student": "Given everything you've been through, I want to be thorough. Do you drink alcohol? How do you cope with stress?",
+      "patient": "I do drink occasionally, about 1-2 beers on weekends when I'm home with my wife. As for coping with stress, it's tough because of the nature of my job - being a truck driver can be high-stress already. But when I'm dealing with something like this, I try to stay focused on getting rest and managing my symptoms as best I can. Sometimes I'll talk to my wife or friends about how I'm feeling, but to be honest, it's hard for me to really open up about it.",
+      "time": 3.9
+    },
+    {
+      "turn": 18,
+      "student": "I want to make sure we're being thorough. Do you smoke or use any substances?",
+      "patient": "I do smoke half a pack of cigarettes per day - it's been a habit for about 25 years now. Like I mentioned earlier, I know it's not good for me, but I've tried to quit before and haven't had much success. I also drink occasionally, about 1-2 beers on weekends when I'm home with my wife.",
+      "time": 2.9
+    },
+    {
+      "turn": 19,
+      "student": "Is there anything you've been hesitant to tell me? I promise there's no judgment here.",
+      "patient": "You know, it's actually pretty relieving that someone is finally asking all these questions. I feel like I've been carrying this weight on my own for too long. As far as what I've been hesitant to tell you... well, to be honest, there have been times when I thought about mentioning some of the symptoms I'm experiencing to a doctor before, but I wasn't sure if it was just stress or something more serious. And with my job being so unpredictable and me always on the road, it's hard for me to keep track of my medication schedule consistently.\n\nBut I do want to mention that my mom is still alive at 78, and she has both hypertension and type 2 diabetes like me. She's been managing her conditions well for a long time now, so that does give me some hope.\n\nAlso, I should mention that I've had some concerns about my diet lately because of the way I eat on the road. It's hard to find healthy options when you're constantly eating at truck stops or fast food joints, but I know it's not good for me in the long run.",
+      "time": 8.1
+    },
+    {
+      "turn": 20,
+      "student": "Before we wrap up, is there anything else you're worried about that you want to share?",
+      "patient": "I've been feeling really anxious about my job and how it might be contributing to my health issues. As a truck driver, I'm constantly on the road, and it's hard for me to maintain a healthy lifestyle when I'm eating fast food or grabbing whatever is quick and easy at truck stops. I know it's not ideal, but it's just so hard to make changes when you're in this type of situation.",
+      "time": 3.6
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 57.1,
+    "avg_time_per_turn": 2.9,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "hyperlipidemia"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

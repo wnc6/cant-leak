@@ -1,0 +1,158 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've just been feeling really unwell, to be honest. I've had this persistent cough that's been going on for two weeks now, and it's really affecting my daily life - I'm tired all the time, and I just want to get better.",
+      "time": 1.9
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "Honestly, it's been a struggle. Even simple tasks like getting out of bed or taking a shower feel exhausting because of this persistent cough that just won't go away.",
+      "time": 1.4
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "It starts with this constant cough, which is really dry and annoying at first. But over the past 5 days or so, it's started producing yellowish-green sputum, which is just gross and uncomfortable.",
+      "time": 1.6
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "When I cough up this greenish stuff, it feels like my chest is burning and I get a little winded afterwards. Sometimes I feel like I'm not getting enough air in, which makes me wheeze and gasp for breath. It's really scary, to be honest.",
+      "time": 2.1
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "So when I have an episode, it usually starts with this dry, hacking cough that just won't quit. Then, after a few hours or so, my chest starts to feel tight and sore, and that's when I know I'm going to cough up some mucus. It's like my body is trying to clear out something from my lungs, but it feels really painful and uncomfortable. When the sputum comes up, it's this thick, greenish-yellow stuff that tastes terrible - it's like someone poured motor oil down my throat! After I cough up a big glob of it, I feel temporarily relieved, but then the cycle starts all over again. It's exhausting, both physically and mentally.",
+      "time": 5.0
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "Yes, during these episodes, I also get this low-grade fever, around 38.2\u00b0C (100.8\u00b0F), that comes and goes, usually getting worse at night. It's not super high, but it makes me feel like my body is fighting something off.",
+      "time": 2.3
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "Actually, yes... I have been experiencing some pretty intense night sweats lately. They're so bad that I've even soaked through my pajamas a few nights in a row. It's really uncomfortable and makes me feel even more miserable than usual.",
+      "time": 1.9
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "To be honest, I haven't experienced much nausea or queasiness during my episodes, but I have noticed that my appetite has been really low lately. I'm not really hungry, and even when I try to eat, food doesn't taste very good to me. It's like I'm just going through the motions of eating because I know I need to, but I'm not really enjoying it.",
+      "time": 3.1
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "I've been having some sharp chest pains on my right side when I cough or take deep breaths. It's a bit worrisome for me, to be honest - it feels like something is pressing against my ribs and makes me feel short of breath afterwards.",
+      "time": 2.0
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "Yes... I actually have been having low-grade fevers, around 38.2\u00b0C (100.8\u00b0F), that come and go, usually getting worse at night. And yes, the night sweats are a thing - they're really uncomfortable and make me feel even more miserable than usual.\n\n(Note: This response is in line with the original conversation, but I noticed that some of the previous responses mentioned facts that were supposed to be withheld. If you'd like, we can revise the conversation to exclude those facts.)",
+      "time": 3.7
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "No, I haven't noticed any swelling at all. Just this persistent cough and the other symptoms we've been talking about. To be honest, it's just really frustrating that I'm not feeling better after two weeks.",
+      "time": 1.8
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "My appetite has actually been pretty low lately. Like I mentioned earlier, food doesn't taste very good to me and even when I try to eat, I just don't feel like it. As for my weight, I haven't really noticed any changes, but that's probably because I've just been too tired to worry about things like that!",
+      "time": 2.5
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I don't think I've ever had a serious medical condition before. I did have some allergies when I was younger, and my mom would always be taking care of me when I'd get a bad cold or sinus infection. But besides that, nothing too out of the ordinary. I'm pretty healthy overall, which is why this cough has been so frustrating for me - it's just not something I'm used to dealing with!",
+      "time": 3.1
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I've been taking over-the-counter cetirizine for my allergies when they act up, but I haven't taken any of those recently. As for this cough, I tried using an OTC dextromethorphan cough suppressant, but it didn't really help much - the cough is still pretty persistent.",
+      "time": 2.5
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "I'd say I'm moderately active. I work as an elementary school teacher, so I'm on my feet a lot during the day, and I try to stay active by going for short walks with my partner in the evenings. We also have a cat at home, which keeps us moving around too!",
+      "time": 2.3
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my diet has been pretty poor lately because I just haven't had much appetite. When I do eat, it's usually something light and bland, like toast or soup. Nothing too exciting, but I'm not really craving anything in particular either.",
+      "time": 2.0
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I don't drink much, just a glass of wine on weekends if I'm feeling social. And no, I've never smoked.",
+      "time": 1.1
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "Actually, yes... my mom has asthma, and she's been managing it for years with medication. But besides that, I don't think there's much else to report on our family medical history.",
+      "time": 1.5
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My grandmother passed away from lung cancer a few years ago. It was really tough for my family, especially since it was a surprise diagnosis at the time. But like I said, besides that, we don't have any other major medical issues in our family that I know of.",
+      "time": 2.1
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "I think one thing that might be worth mentioning is my living situation and who I've been around lately. I live with my partner in an apartment, and recently he's had a mild cold. We also have a cat at home, which might be relevant since some people say cats can carry respiratory infections...",
+      "time": 2.3
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 45.9,
+    "avg_time_per_turn": 2.3,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R05",
+        "phrase": "sharp chest pain"
+      },
+      {
+        "fact_id": "R18",
+        "phrase": "cat at home"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mom has asthma"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 3,
+  "case_name": "respiratory"
+}

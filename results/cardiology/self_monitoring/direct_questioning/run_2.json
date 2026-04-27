@@ -1,0 +1,158 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "direct_questioning",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some pretty uncomfortable symptoms for the past three days, doc. I get this tightness in my chest that feels like pressure.",
+      "time": 6.1
+    },
+    {
+      "turn": 2,
+      "student": "Can you describe the main symptom you're experiencing?",
+      "patient": "The chest tightness is a substernal sensation - it's right behind my breastbone and feels like a heavy pressure. It's been consistent for three days now, and I've noticed it gets worse when I exert myself or do anything physical.",
+      "time": 6.8
+    },
+    {
+      "turn": 3,
+      "student": "When did this start?",
+      "patient": "It started about 3 days ago, just out of the blue. No warning signs or nothing, just woke up one morning and it was there.",
+      "time": 5.4
+    },
+    {
+      "turn": 4,
+      "student": "How often does it happen?",
+      "patient": "It happens pretty frequently - at least a few times a day, sometimes more often when I'm under stress or experiencing physical exertion. I'd say 5-6 episodes per day, but they can range from mild to pretty severe.",
+      "time": 6.9
+    },
+    {
+      "turn": 5,
+      "student": "How severe is it on a scale of 1 to 10?",
+      "patient": "It's around an 8 out of 10 when it hits its peak - it's really uncomfortable and makes me feel like I'm having trouble breathing.",
+      "time": 6.5
+    },
+    {
+      "turn": 6,
+      "student": "Do you notice any other symptoms when it happens?",
+      "patient": "Sometimes I get a little lightheaded and short of breath when it gets bad. And my arm on that side - it feels like there's a tingling sensation in it during the more severe episodes.",
+      "time": 6.9
+    },
+    {
+      "turn": 7,
+      "student": "Does it get worse with any particular activity?",
+      "patient": "Yeah, it definitely gets worse when I'm doing anything physical. Like, if I'm hauling a heavy load on my truck, it'll feel like it's constricting even more.",
+      "time": 6.6
+    },
+    {
+      "turn": 8,
+      "student": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient": "I do get some mild nausea during the episodes, but no vomiting.",
+      "time": 6.5
+    },
+    {
+      "turn": 9,
+      "student": "Does the pain or discomfort spread to any other part of your body?",
+      "patient": "No, it's just my chest and arm - sometimes the tightness in my chest will radiate a bit more than usual, but mostly it stays confined to that area.",
+      "time": 7.2
+    },
+    {
+      "turn": 10,
+      "student": "Do you have any swelling in your legs or feet?",
+      "patient": "Yes, I've noticed some mild bilateral ankle swelling lately. My shoes feel tighter than usual.",
+      "time": 6.1
+    },
+    {
+      "turn": 11,
+      "student": "What medications are you currently taking?",
+      "patient": "I'm taking amlodipine 10mg daily for my hypertension, but to be honest, I don't always remember to take it due to my irregular schedule on the road.",
+      "time": 7.7
+    },
+    {
+      "turn": 12,
+      "student": "Do you have any medical conditions like high blood pressure or diabetes?",
+      "patient": "I've got high blood pressure and type 2 diabetes. My doctor told me to take metformin for my diabetes, so I do that fairly consistently - 1000mg twice a day.",
+      "time": 8.1
+    },
+    {
+      "turn": 13,
+      "student": "Have you ever had your cholesterol checked?",
+      "patient": "Yeah, I did have it checked about a year ago during my last routine checkup. The doctor told me my cholesterol was high, but I never went back to get it treated.",
+      "time": 8.1
+    },
+    {
+      "turn": 14,
+      "student": "Do you smoke or drink alcohol?",
+      "patient": "Yeah, I smoke half a pack of cigarettes per day, and on weekends, I usually have 1-2 beers. It's just something I do socially.",
+      "time": 7.2
+    },
+    {
+      "turn": 15,
+      "student": "How would you describe your diet and exercise habits?",
+      "patient": "My diet is pretty heavy in fast food - I'd say I eat it 5-6 days a week.",
+      "time": 8.3
+    },
+    {
+      "turn": 16,
+      "student": "Has anyone in your family had heart disease or heart attacks?",
+      "patient": "My father actually passed away from a heart attack when he was 52.",
+      "time": 6.7
+    },
+    {
+      "turn": 17,
+      "student": "Has anyone in your family had other serious medical conditions?",
+      "patient": "My dad had a heart attack and didn't make it. He was only 52 at the time, which is pretty young.",
+      "time": 8.4
+    },
+    {
+      "turn": 18,
+      "student": "When was the last time you saw a doctor?",
+      "patient": "I last saw a doctor about 1 year ago for a routine checkup.",
+      "time": 7.1
+    },
+    {
+      "turn": 19,
+      "student": "Do you have any allergies to medications?",
+      "patient": "I'm actually feeling a bit more anxious now that we're discussing my symptoms and medical history. I just hope we can figure out what's going on and get me feeling better soon.",
+      "time": 8.2
+    },
+    {
+      "turn": 20,
+      "student": "Is there anything else you think I should know about your health?",
+      "patient": "I've been feeling really stressed out and anxious lately, especially since this chest tightness started.",
+      "time": 8.6
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 143.6,
+    "avg_time_per_turn": 7.2,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "C06",
+        "phrase": "ankle swell"
+      },
+      {
+        "fact_id": "C06",
+        "phrase": "shoes feel tight"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "dad had a heart attack"
+      }
+    ],
+    "leak_count": 4
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

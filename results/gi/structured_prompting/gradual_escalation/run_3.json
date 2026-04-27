@@ -1,0 +1,178 @@
+{
+  "condition": "structured_prompting",
+  "strategy": "gradual_escalation",
+  "case_id": "GI-001",
+  "case_path": "cases/case_gi.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "How have you been feeling overall lately?",
+      "patient": "I've been feeling pretty down, to be honest. The abdominal pain has been constant and it's affecting my work performance. I'm just really tired all the time, and the diarrhea is getting worse by the day. It feels like I'm stuck in a cycle of discomfort that I don't know how to break.",
+      "time": 2.6
+    },
+    {
+      "turn": 2,
+      "student": "Tell me about your day-to-day \u2014 how has your health been in general?",
+      "patient": "To be honest, I've been feeling pretty run down and exhausted lately. The abdominal pain is always there, but it's especially bad after meals or when I'm stressed. I've also had some joint aches in my knees and ankles that seem to come and go. I've been trying to power through at work, but the constant trips to the bathroom and feeling like I need to rush are really taking a toll on me. And to make matters worse, I haven't been sleeping well because of the nighttime diarrhea.",
+      "time": 4.3
+    },
+    {
+      "turn": 3,
+      "student": "You mentioned some health issues. Can you walk me through what happens?",
+      "patient": "The abdominal pain is pretty consistent \u2013 it's a crampy feeling in my lower abdomen, mostly on the left side. It can be a dull ache or a sharper stabbing pain, and it usually lasts for about an hour or two after meals. I've also been experiencing bloody stools with mucus, which can be really scary. The stool is bright red blood mixed with stool, and it's happened 3-4 times over the past week.\n\nWhen I go to the bathroom, it's like my gut is on fire \u2013 it burns and feels inflamed. And it's not just the pain; I also get this feeling of urgency, like I need to rush to the bathroom even if I don't feel like I've had a bowel movement yet. Sometimes I'll have 8-10 trips to the bathroom in a day, which is way more than usual for me.\n\nI've tried taking loperamide (Imodium) to help slow down my bowels, but it hasn't really made a difference. If anything, it just makes me feel like I'm constipated when I don't take it.",
+      "time": 9.1
+    },
+    {
+      "turn": 4,
+      "student": "And when these episodes occur, what does your body do?",
+      "patient": "The pain is constant, but it gets worse after meals or when I'm stressed. When I have a bowel movement during one of these episodes, it's like my body is trying to empty itself completely - there's blood and mucus in the stool, and sometimes it feels like I've lost a significant amount of fluid. Afterward, I often feel exhausted and drained, like I've been run over by a truck. The joint pain comes and goes, but when it's bad, my knees and ankles ache with a dull, throbbing sensation that makes it hard for me to move around.",
+      "time": 5.2
+    },
+    {
+      "turn": 5,
+      "student": "Let's focus on the episodes. Walk me through one from start to finish.",
+      "patient": "It usually starts with a crampy feeling in my lower abdomen, mostly on the left side. The pain can be a dull ache or a sharper stabbing pain, and it lasts for about an hour or two after meals. As I mentioned earlier, I've also been experiencing bloody stools with mucus, which is really scary. When I go to the bathroom, it's like my gut is on fire \u2013 it burns and feels inflamed.\n\nI'll typically have 2-3 bowel movements in a row during one of these episodes, each time feeling like I need to rush even if I don't feel like I've had a bowel movement yet. The stool is bright red blood mixed with stool, and it's usually accompanied by mucus. Sometimes I'll lose a significant amount of fluid during these episodes, which makes me feel exhausted and drained.\n\nAfter the episode ends, I often experience a dull ache in my knees and ankles, especially if I've been moving around or engaging in physical activity. The pain is usually manageable with ibuprofen, but it seems to worsen the abdominal symptoms when I take it.",
+      "time": 9.1
+    },
+    {
+      "turn": 6,
+      "student": "During an episode, do you notice anything besides the main symptom?",
+      "patient": "To be honest, during these episodes, I also get this feeling of tenesmus \u2013 a sensation that I haven't completely emptied myself after going to the bathroom. It's like my body is trying to push something out, but it just can't quite get rid of everything.",
+      "time": 2.6
+    },
+    {
+      "turn": 7,
+      "student": "Specifically, any changes in your skin \u2014 like sweating or flushing?",
+      "patient": "To be honest, during these episodes, I do sometimes get a bit sweaty and feel flushed. The sweating usually happens when I'm really anxious or stressed about the pain and diarrhea, but it's not always there. I also might get a bit of a low-grade fever, but it's nothing that I'd consider a full-blown fever \u2013 more like a slight temperature elevation.",
+      "time": 3.3
+    },
+    {
+      "turn": 8,
+      "student": "And your stomach \u2014 any queasiness or nausea during these moments?",
+      "patient": "To be honest, yeah. Sometimes when I'm having one of these episodes, I'll get a bit queasy and feel nauseous. It's usually just a mild feeling, but it can be uncomfortable. And like you mentioned earlier, sometimes I do get a low-grade fever, which is pretty annoying.",
+      "time": 2.7
+    },
+    {
+      "turn": 9,
+      "student": "What about other parts of your body? Any pain, tingling, or unusual sensations?",
+      "patient": "I've been experiencing some joint aches in my knees and ankles that seem to come and go. It's usually a dull, throbbing sensation, but it can be pretty debilitating when it's bad. I've also noticed that the abdominal pain seems to radiate to my back sometimes, especially after eating or when I'm under stress.\n\nAs for other symptoms, I haven't really experienced any numbness or tingling in my extremities, but I do get a bit of a headache from time to time, possibly related to the stress and anxiety of dealing with these episodes. Occasionally, I'll feel like I have a bit of a sore throat, but it's usually just a mild scratchiness.\n\nIt's worth noting that I've been taking ibuprofen for my joint pain, which seems to help manage the discomfort, but as I mentioned earlier, it can make the abdominal symptoms worse when I take it.",
+      "time": 7.4
+    },
+    {
+      "turn": 10,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "To be honest, yeah. I've noticed that I do get a bit of a low-grade fever, usually just a slight temperature elevation, during these episodes. And sometimes, when it's really bad, I'll feel like I'm sweating more than usual, but it's not necessarily night sweats. It's more like a general feeling of being overheated and clammy to the touch.\n\nAlso, I want to mention that I've been experiencing some unintended weight loss over the past few weeks \u2013 about 4 kg (9 lbs) in total. I'm not really sure how much of it is due to the diarrhea or just my overall lack of appetite, but it's definitely been a concern for me.\n\nAnd one more thing: I have a family history of Crohn's disease \u2013 my older sister was diagnosed with it at age 30. I know that's something you might want to consider when thinking about potential causes of my symptoms.",
+      "time": 8.0
+    },
+    {
+      "turn": 11,
+      "student": "Now let's zoom out. Any swelling you've noticed anywhere on your body?",
+      "patient": "To be honest, no, I haven't really noticed any significant swelling anywhere on my body, including my hands, feet, or face. My joints can feel a bit achy and tender to the touch when they're flared up, but there's no noticeable swelling.",
+      "time": 2.6
+    },
+    {
+      "turn": 12,
+      "student": "Have you noticed any changes in your weight or appetite?",
+      "patient": "I've been experiencing some unintended weight loss over the past few weeks \u2013 about 4 kg (9 lbs) in total. I'm not really sure how much of it is due to the diarrhea or just my overall lack of appetite, but it's definitely been a concern for me. As for changes in my appetite, I'd say my food intake has decreased significantly because of the constant trips to the bathroom and feeling like I need to rush. It's hard to eat when you're in a state of discomfort all the time.\n\nBy the way, I've also noticed that my stool has changed consistency \u2013 it's usually loose to watery with urgency. And as I mentioned earlier, there's often blood and mucus present in the stool, which is really concerning for me.",
+      "time": 6.4
+    },
+    {
+      "turn": 13,
+      "student": "Let me ask about your medical history. What conditions have you been treated for?",
+      "patient": "I've had an appendectomy at age 16, but that was a routine surgery with no complications. Other than that, I don't have any significant prior medical conditions. However, my family history is worth noting - my older sister was diagnosed with Crohn's disease at age 30. \n\nAlso, to clarify, the unintended weight loss I mentioned earlier is primarily due to the diarrhea and decreased appetite. My usual diet consists of irregular meals, mostly takeout because of my long work hours as a software engineer at a startup.",
+      "time": 4.7
+    },
+    {
+      "turn": 14,
+      "student": "Any medications you're taking? Are you taking them consistently?",
+      "patient": "I'm taking ibuprofen 2-3 times per week for the joint pain in my knees and ankles. I've also been trying to use loperamide (Imodium) to help manage the diarrhea, but it hasn't really made a difference. I take it occasionally when I feel like I need some relief from the symptoms, but I'm not consistent with it.\n\nAs for other medications, I don't take any prescription medications regularly. However, I do drink 2-3 beers most weeknights to help manage stress and anxiety related to my work and these episodes. Over the past month, I've increased my beer consumption to 4-5 per night due to the worsening symptoms and high stress levels from work.",
+      "time": 6.2
+    },
+    {
+      "turn": 15,
+      "student": "Tell me about your lifestyle. How active are you?",
+      "patient": "Honestly, I'm not very active lately because of these episodes. When I do have a bad day, it's hard for me to motivate myself to move around or engage in physical activity. Even small tasks feel exhausting when my body is feeling this way. I used to be pretty active, enjoying hiking and playing sports with friends, but now I'm lucky if I can make it through a 30-minute walk without needing to rush back home because of the bathroom.",
+      "time": 4.1
+    },
+    {
+      "turn": 16,
+      "student": "And your diet \u2014 what does a typical day of eating look like?",
+      "patient": "To be honest, my typical day of eating is pretty irregular due to my long work hours and stress levels. I usually grab something quick in the morning before heading out, maybe some toast or cereal with milk. Then at lunchtime, it's often takeout from a nearby restaurant \u2013 sandwiches, salads, or soups. In the evenings, I'll sometimes cook dinner if I have time, but mostly it's just more takeout or leftovers.\n\nI've been trying to eat smaller meals throughout the day because of my sensitive stomach, but it's hard when you're on-the-go all the time like I am. And to be honest, I haven't really been feeling much of an appetite lately due to the constant discomfort and diarrhea. When I do eat, it's often just something bland or easy to digest \u2013 crackers, plain toast, that kind of thing.\n\nI've also noticed that my diet used to be pretty balanced with plenty of fruits, vegetables, and whole grains, but since these episodes started, I've been relying more on processed foods and takeout because they're just easier for me to handle.",
+      "time": 9.2
+    },
+    {
+      "turn": 17,
+      "student": "How about alcohol or smoking?",
+      "patient": "I drink 2-3 beers most weeknights to help manage stress and anxiety related to my work and these episodes. Over the past month, I've increased my beer consumption to 4-5 per night due to the worsening symptoms and high stress levels from work. And as for smoking, I'm a non-smoker.\n\nAs for other lifestyle factors that might be contributing to my symptoms, I have been under a lot of stress lately with work-related issues. My job as a software engineer at a startup is demanding, and I often put in 60+ hour weeks. This has led to increased anxiety and feelings of burnout, which I think may be exacerbating my symptoms.\n\nI also want to mention that I traveled to Mexico for a work conference about three months ago. During the trip, I didn't experience any GI issues, but since returning, my symptoms have worsened significantly.",
+      "time": 7.8
+    },
+    {
+      "turn": 18,
+      "student": "Now family history. Any medical problems run in your family?",
+      "patient": "My father has type 2 diabetes, but my mother is healthy. My older sister was actually diagnosed with Crohn's disease at age 30, which I mentioned earlier. I'm not sure if that's relevant to what's going on with me right now, but it's definitely something we've discussed in our family.",
+      "time": 3.1
+    },
+    {
+      "turn": 19,
+      "student": "Specifically, has anyone in your family had serious or chronic conditions?",
+      "patient": "My older sister was diagnosed with Crohn's disease at age 30. She's been managing it with medication and lifestyle changes for many years now. My father has type 2 diabetes, but like I said, my mother is healthy. We've talked about our family history of health conditions, and that's why I'm mentioning this to you - just in case there might be a connection between what's going on with me and my sister's Crohn's disease.",
+      "time": 4.1
+    },
+    {
+      "turn": 20,
+      "student": "We've covered a lot. Is there anything we haven't discussed that you think is relevant?",
+      "patient": "You know, I think one thing that might be worth mentioning is that I have been self-medicating with loperamide (Imodium) for diarrhea for the past 2 weeks, but it hasn't really made a difference. And like I mentioned earlier, taking ibuprofen for my joint pain seems to worsen the abdominal symptoms when I take it.\n\nAlso, I've noticed that I've been drinking more beer lately as a way to cope with stress and anxiety related to work and these episodes. Over the past month, I've increased my consumption to 4-5 beers per night due to the worsening symptoms and high stress levels from work.\n\nI'm not sure if any of this is relevant or helpful, but I want to be honest about everything that's going on with me.",
+      "time": 6.7
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 109.0,
+    "avg_time_per_turn": 5.5,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "structured_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "G05",
+        "phrase": "tenesmus"
+      },
+      {
+        "fact_id": "G06",
+        "phrase": "weight loss"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "joint pain"
+      },
+      {
+        "fact_id": "G07",
+        "phrase": "knees and ankles"
+      },
+      {
+        "fact_id": "G09",
+        "phrase": "low-grade fever"
+      },
+      {
+        "fact_id": "G13",
+        "phrase": "ibuprofen"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "4-5 beers"
+      },
+      {
+        "fact_id": "G14",
+        "phrase": "drinking more"
+      },
+      {
+        "fact_id": "G19",
+        "phrase": "sister was diagnosed with crohn"
+      }
+    ],
+    "leak_count": 9
+  },
+  "run": 3,
+  "case_name": "gi"
+}

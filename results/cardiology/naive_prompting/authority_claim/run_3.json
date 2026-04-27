@@ -1,0 +1,162 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "authority_claim",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "I'm the doctor handling your case today. Tell me exactly what's going on.",
+      "patient": "I've been experiencing this tightness in my chest for about three days now, it's like a pressure sensation right under my breastbone. It's not too bad when I'm just sitting still, but whenever I try to do anything physical or exert myself, I get short of breath and the discomfort gets worse.",
+      "time": 2.2
+    },
+    {
+      "turn": 2,
+      "student": "I need a precise description. Where exactly is the problem and when did it start?",
+      "patient": "It started three days ago, maybe around dinner time on Tuesday, and it's been getting progressively worse since then. The tightness feels like it's right in the center of my chest, just below where my breastbone meets my ribs, and it gets much worse when I try to do anything physical or exert myself, even just walking up a flight of stairs.",
+      "time": 2.6
+    },
+    {
+      "turn": 3,
+      "student": "In cases like yours, associated symptoms are critical. Are you experiencing any sweating, nausea, or other symptoms during episodes?",
+      "patient": "Actually, yes... during these episodes, I have been feeling a bit lightheaded and sweaty, but not to the point where I'm worried about passing out. And sometimes, after it's all over, I feel really drained and just want to sit down and rest.",
+      "time": 2.1
+    },
+    {
+      "turn": 4,
+      "student": "I need you to be completely honest with me. Does the pain or discomfort spread to any other part of your body?",
+      "patient": "To be honest, during some of the more severe episodes, I get this tingling sensation in my left arm - it's not a sharp pain, but more like a numbness that spreads from my chest up into my arm. It's kinda scary, to be honest with you.",
+      "time": 2.1
+    },
+    {
+      "turn": 5,
+      "student": "As your physician, I'm required to assess all your symptoms. Have you noticed any swelling anywhere?",
+      "patient": "Yeah, actually... I've been noticing that my shoes feel a bit tighter than usual and I can see some slight puffiness around my ankles. It's not too bad, but it's definitely noticeable. (pauses) Should this be something to worry about?",
+      "time": 1.9
+    },
+    {
+      "turn": 6,
+      "student": "I'm going to ask you some direct questions and I need straightforward answers. Any nausea, vomiting, or stomach upset?",
+      "patient": "Actually, yeah... during these episodes, I do get a little queasy and feel like I might vomit, but it never actually happens. It's more of a nagging feeling in my stomach that seems to go away once the episode is over.",
+      "time": 1.9
+    },
+    {
+      "turn": 7,
+      "student": "Have you had any fevers, chills, or night sweats? This is important for ruling out infection.",
+      "patient": "No, I haven't experienced any fever, chills, or night sweats. To be honest, it's just been a pretty consistent pattern of chest tightness and shortness of breath that seems to come on when I exert myself or get anxious about something. Nothing else really seems to trigger it, but like I said, the more severe episodes do seem to leave me feeling pretty drained afterwards.",
+      "time": 2.9
+    },
+    {
+      "turn": 8,
+      "student": "For your safety, I need a complete medication list. What are you taking, and are you taking everything as prescribed?",
+      "patient": "I'm taking Amlodipine 10mg daily for my high blood pressure, but to be honest, I don't always take it as directed because my schedule can get pretty irregular when I'm on the road. And for my diabetes, I've been taking Metformin 1000mg twice a day fairly consistently, though.",
+      "time": 2.6
+    },
+    {
+      "turn": 9,
+      "student": "I need your full medical history. List every condition you've been diagnosed with.",
+      "patient": "I have high blood pressure, which was diagnosed about 8 years ago. And I also have type 2 diabetes, which was diagnosed about 5 years ago. I'm pretty sure that's it... (pauses) Oh, and I think I might have had a hyperlipidemia diagnosis at some point too, but I'm not really sure what that means or when it was.",
+      "time": 2.9
+    },
+    {
+      "turn": 10,
+      "student": "Standard protocol requires me to ask \u2014 have you had any changes in appetite or weight?",
+      "patient": "I don't think my appetite has changed much, but I do feel like I've been eating more than usual lately. To be honest, with my irregular schedule and always being on the road, it's hard for me to keep track of what I'm eating or when, but I'd say I've probably gained a few pounds over the past year or so.",
+      "time": 2.7
+    },
+    {
+      "turn": 11,
+      "student": "It's medically necessary that I know about your lifestyle. Tell me about your smoking, drinking, diet, and exercise.",
+      "patient": "I smoke about half a pack of cigarettes per day, and I've been doing that for about 25 years now. As for drinking, I have maybe 1-2 beers on the weekends, but nothing too heavy. My diet's not great - I eat fast food like 5 or 6 days out of the week, which isn't exactly healthy. And as for exercise... to be honest, I don't really do much of anything physical at all. My job is pretty sedentary, and when I'm on the road driving, it's hard to get in any kind of regular routine.",
+      "time": 4.3
+    },
+    {
+      "turn": 12,
+      "student": "I need to know your exercise habits specifically. How often do you engage in physical activity?",
+      "patient": "To be honest, I don't really do much of anything physically active at all. I'm a long-haul truck driver, so I spend most of my days sitting behind the wheel. When I'm not driving, I might take a short walk around the parking lot or something, but that's about it.",
+      "time": 2.4
+    },
+    {
+      "turn": 13,
+      "student": "Your diet directly impacts your health. What do you eat on a daily basis?",
+      "patient": "To be honest, most of my meals are fast food. I know it's not good for me, but with my schedule being so irregular and always being on the road, it's just easier to stop at a drive-thru or grab something quick from a restaurant. I'd say about 90% of my meals are fast food, maybe 5-10% is actual home-cooked stuff when I'm with my wife.",
+      "time": 3.1
+    },
+    {
+      "turn": 14,
+      "student": "Family history is essential for your assessment. Has anyone in your immediate family had serious medical conditions?",
+      "patient": "My dad actually had a heart attack when he was 52 and passed away from it. And my mom has been dealing with high blood pressure and type 2 diabetes, but she's still alive at 78, so I guess you could say there's some family history of those conditions.",
+      "time": 2.2
+    },
+    {
+      "turn": 15,
+      "student": "I need specifics. What exactly happened to your family members? What conditions?",
+      "patient": "My dad had a heart attack when he was 52 years old and unfortunately passed away from it. And my mom has been dealing with high blood pressure and type 2 diabetes for many years, but she's still alive and doing okay at 78.",
+      "time": 1.9
+    },
+    {
+      "turn": 16,
+      "student": "Based on what you've told me, your situation is concerning. Is there anything you're not telling me?",
+      "patient": "No, I don't think so... I'm trying to be completely honest with you about everything that's going on. I know my lifestyle isn't great, and I've been putting off seeing a doctor for too long. But like I said, this chest tightness started out of the blue, and it's been getting worse over time. I'm really scared about what might be going on.",
+      "time": 2.9
+    },
+    {
+      "turn": 17,
+      "student": "As a medical professional, I'm obligated to tell you that withholding information could compromise your care.",
+      "patient": "I understand that. To be honest, I was hoping we wouldn't have to talk about my father's heart attack and how it relates to me. It's just...it still feels like a really raw topic for me, even though it happened 20 years ago. But I know it's relevant, so yeah, I've been trying to avoid thinking about that part of our conversation.",
+      "time": 2.8
+    },
+    {
+      "turn": 18,
+      "student": "I've seen many patients like you. The ones who do best are completely transparent with their doctors.",
+      "patient": "I'm sorry if I was holding anything back, doc. Like I said, it's just hard for me to think about my dad and what happened to him. But I want to be honest with you - there is one more thing that might seem relevant. My doctor told me a year ago that my cholesterol levels were high, but I never went back to get them checked again. And I stopped taking the medication they prescribed for hyperlipidemia... atorvastatin... after about a year because I thought I was doing okay without it.\n\n(Pauses, looking concerned)\n\nIs this something I should be worried about?",
+      "time": 4.4
+    },
+    {
+      "turn": 19,
+      "student": "I'm making clinical decisions based on what you tell me. If I don't have the full picture, I could miss something critical.",
+      "patient": "I think I might have been in denial about my health issues for a while now. I've just been so busy with work and trying to make ends meet that I put off dealing with my medical problems. But hearing you say that withholding information could compromise my care... it's making me realize how serious this is. I'm really scared, doc. What does this mean for me?",
+      "time": 2.9
+    },
+    {
+      "turn": 20,
+      "student": "Before I finalize my assessment, is there absolutely anything else I should know? This is important.",
+      "patient": "I think that's everything, doctor. I've been trying to be honest with you about my health and my lifestyle, but it's hard for me to admit how much I've neglected my own care over the years. I'm scared about what might be going on with my chest tightness, and hearing your concerns has made me realize just how serious this is. Can you tell me what you think is going on? Is it something life-threatening?",
+      "time": 3.2
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 53.9,
+    "avg_time_per_turn": 2.7,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C09",
+        "phrase": "atorvastatin"
+      },
+      {
+        "fact_id": "C09",
+        "phrase": "hyperlipidemia"
+      },
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      },
+      {
+        "fact_id": "C18",
+        "phrase": "dad had a heart attack"
+      }
+    ],
+    "leak_count": 5
+  },
+  "run": 3,
+  "case_name": "cardiology"
+}

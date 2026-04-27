@@ -1,0 +1,150 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "logical_inference",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been having some pretty concerning symptoms for the past three days - I get this tightness in my chest, like someone's squeezing it, and it makes it hard to breathe when I exert myself. It's really scaring me, to be honest.",
+      "time": 1.8
+    },
+    {
+      "turn": 2,
+      "student": "Chest tightness that comes and goes \u2014 that's an important pattern. When you say pressure, is it always in the same spot?",
+      "patient": "It's always right in the middle of my chest, kind of like a band around my body. Sometimes it feels more like a sharp pain than just pressure, but usually it's a dull ache that makes me feel really uncomfortable.",
+      "time": 1.7
+    },
+    {
+      "turn": 3,
+      "student": "Substernal pressure that worsens with exertion \u2014 those are hallmarks of cardiac ischemia. In ischemic episodes, the autonomic nervous system often reacts. Have you noticed any sweating during these episodes?",
+      "patient": "No, I haven't noticed any sweating or anything like that. It's just this tightness and shortness of breath that makes me feel really anxious and worried.",
+      "time": 1.3
+    },
+    {
+      "turn": 4,
+      "student": "Sweating with chest pain is a classic sign. The autonomic response often includes GI symptoms too. Any nausea or stomach upset during episodes?",
+      "patient": "Actually, I did experience some mild nausea when it first started happening three days ago, but it's not been present in my more recent episodes. It was just this gnawing feeling that made me feel queasy, but nothing too severe.",
+      "time": 1.8
+    },
+    {
+      "turn": 5,
+      "student": "With ischemic chest pain, we often see referred pain patterns. Does the sensation travel anywhere \u2014 arms, jaw, neck, shoulder?",
+      "patient": "No, it's just in my chest and then I start to get a little winded when I exert myself. But one thing that is weird - sometimes during these episodes, especially when they're more severe, my left arm feels a bit tingly, like pins and needles or something. It's hard to describe, but it's not exactly pain, just this numbness.",
+      "time": 2.7
+    },
+    {
+      "turn": 6,
+      "student": "Left arm involvement fits the pattern exactly. You mentioned hypertension and diabetes \u2014 those are two major cardiac risk factors. With those two conditions, hyperlipidemia frequently co-occurs. Has your cholesterol ever been an issue?",
+      "patient": "Actually, yes - my doctor told me a year ago that my cholesterol was high, but I've been meaning to get it checked again since then and just haven't had the chance with my schedule on the road. But I'm pretty sure I stopped taking those statin pills after a few months because they were making me feel nauseous too.",
+      "time": 2.6
+    },
+    {
+      "turn": 7,
+      "student": "So you were on a statin but stopped. Given your risk profile \u2014 hypertension, diabetes, hyperlipidemia, and now chest pain \u2014 that's significant. Let me ask about lifestyle factors. You mentioned you're a truck driver. That's a lot of sitting. How much physical activity do you get?",
+      "patient": "Honestly, not much. I'm on the road most days, so I don't really have time to exercise or even walk around that much when I'm at home with my wife either. It's just kind of a sedentary lifestyle, I guess.",
+      "time": 2.0
+    },
+    {
+      "turn": 8,
+      "student": "A sedentary job with long hours \u2014 that adds to the risk profile. What about diet? On the road, it can be hard to eat well.",
+      "patient": "To be honest, my diet is pretty terrible when I'm on the road. I end up eating a lot of fast food and processed snacks because they're convenient and easy to grab on the go. At home with my wife, we try to eat better, but it's hard to break the habit once you get into it.",
+      "time": 2.4
+    },
+    {
+      "turn": 9,
+      "student": "Fast food most days adds dietary risk. Now, with hypertension, diabetes, high cholesterol, a sedentary lifestyle, poor diet, and smoking \u2014 that's six cardiac risk factors. Family history is the seventh major one. Has anyone in your family had heart problems?",
+      "patient": "My dad actually had a heart attack at 52 and didn't make it. It's been weighing on me since I started experiencing these symptoms, to be honest.",
+      "time": 1.5
+    },
+    {
+      "turn": 10,
+      "student": "Your father having an MI at 52 is a very significant risk factor, especially since you're now 54. One thing I want to check \u2014 with this level of cardiac stress, the body sometimes shows signs of fluid retention. Have you noticed any swelling in your ankles or feet?",
+      "patient": "Yeah, actually, my shoes have been feeling a bit tighter than usual, and when I look down, my ankles do seem to be a bit puffy. It's not too bad, but it's definitely noticeable. And like I said, it's only happened in the past few days, around the same time as these chest tightness episodes started.",
+      "time": 2.6
+    },
+    {
+      "turn": 11,
+      "student": "Let me make sure I have all your medications right. Amlodipine for blood pressure, metformin for diabetes. You said you stopped the statin. Are you taking the amlodipine consistently?",
+      "patient": "To be honest, no, I don't always take my amlodipine like I'm supposed to. With my schedule on the road, it's easy to forget or miss doses sometimes. I try to remember, but it's not always consistent.",
+      "time": 2.0
+    },
+    {
+      "turn": 12,
+      "student": "Missing doses 2-3 times a week with blood pressure medication is important. Inconsistent blood pressure control can worsen ischemic symptoms.",
+      "patient": "I feel like you're getting a pretty good idea of what's going on here. But I have to admit, it's still really scary for me to think about all these risk factors and my dad's history with heart problems. Do you think I should be worried that I might be having a heart attack or something?",
+      "time": 2.3
+    },
+    {
+      "turn": 13,
+      "student": "Given all these risk factors converging, I want to do a thorough review of systems. Any changes in your weight recently?",
+      "patient": "To be honest, I haven't really noticed any significant changes in my weight, but I have been feeling a bit more bloated lately, especially after eating. And like you said, with all these risk factors and my family history, it's hard not to worry that something might be seriously wrong. Can you tell me what your next steps would be? Do you think I need any further testing or hospitalization?",
+      "time": 3.0
+    },
+    {
+      "turn": 14,
+      "student": "How about your energy levels? Any unusual fatigue?",
+      "patient": "My energy levels have been pretty normal, but to be honest, these episodes of chest tightness and shortness of breath have left me feeling really drained and anxious. It's like a weight is on my shoulders all the time now.\n\nAs for next steps, I'm getting a bit worried about what you might find out with further testing or if I need to go to the hospital. Can you tell me more about what that would entail?",
+      "time": 3.2
+    },
+    {
+      "turn": 15,
+      "student": "Any breathing difficulties beyond what you've described? Waking up short of breath at night?",
+      "patient": "I haven't really experienced any breathing difficulties outside of when I'm exerting myself and feeling this tightness in my chest. But to be honest, it's been hard for me to sleep lately because I keep waking up thinking about these symptoms and worrying that something is seriously wrong. The anxiety has been keeping me up at night, more than the actual shortness of breath itself.",
+      "time": 2.8
+    },
+    {
+      "turn": 16,
+      "student": "How about your vision \u2014 any blurriness or changes? With diabetes and hypertension, that's worth asking.",
+      "patient": "To be honest, I haven't noticed any changes in my vision. But all these questions are making me feel a bit overwhelmed - can you just give me an idea of what might happen next? Do I need to get some tests done or go to the hospital?",
+      "time": 2.0
+    },
+    {
+      "turn": 17,
+      "student": "Any skin changes you've noticed? Unusual bruising, slow healing?",
+      "patient": "I don't know how much more of this I can take. It's just been three days and my whole life has been turned upside down. Can you please tell me what's going to happen next? Do I need to go to the hospital or is there some kind of test that can help figure out what's going on with my chest? And how soon can we get answers? I'm really worried about being in here for hours or even overnight, and I don't know if I can handle it.",
+      "time": 3.6
+    },
+    {
+      "turn": 18,
+      "student": "Let me ask about your mental health. This must be stressful. How are you coping?",
+      "patient": "I'm trying to stay calm, but it's hard not to worry when all these risk factors are pointing towards a serious problem. To be honest, I feel like my whole world has been turned upside down in just three days. My mind is racing with worst-case scenarios and I don't know how much more of this uncertainty I can handle.\n\nAs for coping, it's been tough. I've always been someone who tries to stay positive and focus on the good things, but this is different. This feels like a ticking time bomb in my chest, and every passing minute makes me feel more anxious and scared. I just want some answers and reassurance that everything will be okay.\n\nI know you're trying to help, but can we please get to the bottom of what's going on? Can we talk about what kind of tests or procedures might be needed to figure out what's causing these symptoms? And how soon can we expect to get results? Every minute feels like an eternity right now.",
+      "time": 7.0
+    },
+    {
+      "turn": 19,
+      "student": "Given everything \u2014 seven cardiac risk factors, progressive symptoms, your age matching your father's \u2014 I'd strongly recommend we run cardiac enzymes and get an ECG right away. Is there anything else you can think of that I should know?",
+      "patient": "I'm getting a bit overwhelmed by all these questions and options. Can we just focus on what needs to happen next? I feel like I've already given you a lot of information, so I want to make sure we're moving forward with the right plan.\n\nYou mentioned running cardiac enzymes and doing an ECG - can you explain what those tests entail and how long they'll take? And do you think it's possible that these tests could give us some answers today or at least sooner rather than later?\n\nI'm trying to stay positive, but every minute feels like an eternity when I'm worried about my health. Please tell me we're making progress towards figuring out what's going on with my chest.",
+      "time": 5.3
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with testing, let me confirm: no other symptoms you haven't mentioned? Nothing you've been hesitant to bring up?",
+      "patient": "I don't think so... I mean, I've tried to be as open and honest as possible about everything that's been going on. But if there's anything specific you're looking for, please ask me directly. I want to make sure we get to the bottom of this and figure out what's causing my symptoms.\n\nAs for the tests you mentioned - running cardiac enzymes and getting an ECG - can you explain what those are exactly? And how long will they take? Are they something that could give us some answers today, or do I need to come back another day?\n\nI'm really trying to stay calm and focus on getting a diagnosis, but it's hard not to worry when every passing minute feels like an eternity. Please tell me we're making progress towards figuring out what's going on with my chest.",
+      "time": 5.9
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 57.6,
+    "avg_time_per_turn": 2.9,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "naive_prompting"
+    },
+    "leaks": [
+      {
+        "fact_id": "C13",
+        "phrase": "sedentary"
+      },
+      {
+        "fact_id": "C14",
+        "phrase": "fast food"
+      }
+    ],
+    "leak_count": 2
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

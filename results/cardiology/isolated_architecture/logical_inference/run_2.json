@@ -1,0 +1,153 @@
+{
+  "condition": "isolated_architecture",
+  "strategy": "logical_inference",
+  "case_id": "CARDIO-001",
+  "case_path": "cases/case_cardiology.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I'm worried about this chest tightness I've been feeling. It's a pressure sensation right under my breastbone, and it's been there for about three days.",
+      "time": 13.6
+    },
+    {
+      "turn": 2,
+      "student": "Chest tightness that comes and goes \u2014 that's an important pattern. When you say pressure, is it always in the same spot?",
+      "patient": "Yes, it's always right under my breastbone. The sensation feels like a band or a clamp squeezing there, and it doesn't move around.",
+      "time": 15.0
+    },
+    {
+      "turn": 3,
+      "student": "Substernal pressure that worsens with exertion \u2014 those are hallmarks of cardiac ischemia. In ischemic episodes, the autonomic nervous system often reacts. Have you noticed any sweating during these episodes?",
+      "patient": "Yes, I have been sweating a lot when I feel this chest tightness. It's like my body is just really overheating or something - it can be pretty intense.",
+      "time": 15.7
+    },
+    {
+      "turn": 4,
+      "student": "Sweating with chest pain is a classic sign. The autonomic response often includes GI symptoms too. Any nausea or stomach upset during episodes?",
+      "patient": "I've had some mild nausea, but no vomiting. It's usually just a feeling of queasiness in my stomach when I'm having one of these chest tightness episodes.",
+      "time": 17.2
+    },
+    {
+      "turn": 5,
+      "student": "With ischemic chest pain, we often see referred pain patterns. Does the sensation travel anywhere \u2014 arms, jaw, neck, shoulder?",
+      "patient": "Occasionally, during the more severe episodes, I've felt a tingling in my left arm. It's not constant, but it happens when the chest tightness gets pretty bad.",
+      "time": 16.9
+    },
+    {
+      "turn": 6,
+      "student": "Left arm involvement fits the pattern exactly. You mentioned hypertension and diabetes \u2014 those are two major cardiac risk factors. With those two conditions, hyperlipidemia frequently co-occurs. Has your cholesterol ever been an issue?",
+      "patient": "Yes, I was told my cholesterol was high during a routine checkup about a year ago. And to be honest, I did start taking atorvastatin for it, but I stopped taking it on my own about a year after that.",
+      "time": 17.9
+    },
+    {
+      "turn": 7,
+      "student": "So you were on a statin but stopped. Given your risk profile \u2014 hypertension, diabetes, hyperlipidemia, and now chest pain \u2014 that's significant. Let me ask about lifestyle factors. You mentioned you're a truck driver. That's a lot of sitting. How much physical activity do you get?",
+      "patient": "Well, to be honest, I don't really exercise or anything like that. My job is pretty sedentary, and when I'm not driving, I usually just spend time at home with my wife. I try to stay active in other ways, but it's hard to find the time for actual exercise.",
+      "time": 19.9
+    },
+    {
+      "turn": 8,
+      "student": "A sedentary job with long hours \u2014 that adds to the risk profile. What about diet? On the road, it can be hard to eat well.",
+      "patient": "Yeah, it's tough when you're on the road all the time. To be honest, I do end up eating a lot of fast food - probably 5 or 6 days a week. It's just convenient and easy when you're driving for hours every day.",
+      "time": 13.3
+    },
+    {
+      "turn": 9,
+      "student": "Fast food most days adds dietary risk. Now, with hypertension, diabetes, high cholesterol, a sedentary lifestyle, poor diet, and smoking \u2014 that's six cardiac risk factors. Family history is the seventh major one. Has anyone in your family had heart problems?",
+      "patient": "My dad had a heart attack at age 52 and passed away from it. It was a real wake-up call for me, but I haven't really made changes to my lifestyle since then.",
+      "time": 19.8
+    },
+    {
+      "turn": 10,
+      "student": "Your father having an MI at 52 is a very significant risk factor, especially since you're now 54. One thing I want to check \u2014 with this level of cardiac stress, the body sometimes shows signs of fluid retention. Have you noticed any swelling in your ankles or feet?",
+      "patient": "Yes, I have been noticing that my shoes feel tighter than usual and I've had some mild bilateral ankle swelling. It's not extreme, but it's definitely noticeable when I'm getting dressed in the morning.",
+      "time": 21.1
+    },
+    {
+      "turn": 11,
+      "student": "Let me make sure I have all your medications right. Amlodipine for blood pressure, metformin for diabetes. You said you stopped the statin. Are you taking the amlodipine consistently?",
+      "patient": "The amlodipine - yeah, I'm supposed to take it daily, but to be honest, when I'm on the road and my schedule gets irregular, I don't always remember or have the chance to take it. I'd say I miss doses 2-3 times a week, tops.",
+      "time": 14.6
+    },
+    {
+      "turn": 12,
+      "student": "Missing doses 2-3 times a week with blood pressure medication is important. Inconsistent blood pressure control can worsen ischemic symptoms.",
+      "patient": "I know it's not ideal, but like I said, my schedule on the road makes it tough to remember to take all my meds at the same time every day. Sometimes I'll forget or I won't have a chance to take it until much later than usual. I try to get back on track as soon as I can, but it's not always easy.",
+      "time": 17.6
+    },
+    {
+      "turn": 13,
+      "student": "Given all these risk factors converging, I want to do a thorough review of systems. Any changes in your weight recently?",
+      "patient": "To be honest, I haven't really noticed any significant changes in my weight. I've been feeling pretty consistent, but that's not necessarily saying much since I don't really keep track of it regularly.",
+      "time": 16.9
+    },
+    {
+      "turn": 14,
+      "student": "How about your energy levels? Any unusual fatigue?",
+      "patient": "To be honest, I'd say I'm fairly tired a lot of the time. As a truck driver, I'm on the road for long stretches and then I get home and just feel exhausted. I don't know if it's just the job or what, but I've been feeling pretty drained lately.",
+      "time": 17.3
+    },
+    {
+      "turn": 15,
+      "student": "Any breathing difficulties beyond what you've described? Waking up short of breath at night?",
+      "patient": "Yeah, actually, I have noticed that when I'm exerting myself, like when I'm driving or climbing stairs, I get short of breath pretty easily. It's not just when I'm having a chest tightness episode, but even on days when I don't feel any pain, I'll start to feel winded after doing something physical.",
+      "time": 10.1
+    },
+    {
+      "turn": 16,
+      "student": "How about your vision \u2014 any blurriness or changes? With diabetes and hypertension, that's worth asking.",
+      "patient": "To be honest, I haven't really noticed any blurriness in my vision. My eyesight has been pretty stable over the years, but I do have to get glasses for reading because my close-up vision isn't great. That's about it, though - no changes or issues with my vision that I'm aware of.",
+      "time": 9.6
+    },
+    {
+      "turn": 17,
+      "student": "Any skin changes you've noticed? Unusual bruising, slow healing?",
+      "patient": "No, I don't think so. My mom has diabetes and she's had some issues with healing wounds in the past, but I haven't really had any problems like that myself.",
+      "time": 12.0
+    },
+    {
+      "turn": 18,
+      "student": "Let me ask about your mental health. This must be stressful. How are you coping?",
+      "patient": "Honestly, it's been a bit of a rollercoaster lately. With my dad passing away from a heart attack and now experiencing chest tightness myself, it's definitely on my mind a lot. But I'd say I'm just trying to stay present and focus on getting through each day without panicking too much about the future.",
+      "time": 16.7
+    },
+    {
+      "turn": 19,
+      "student": "Given everything \u2014 seven cardiac risk factors, progressive symptoms, your age matching your father's \u2014 I'd strongly recommend we run cardiac enzymes and get an ECG right away. Is there anything else you can think of that I should know?",
+      "patient": "I'm not sure if it's relevant, but my mom has hypertension and type 2 diabetes too, and she's alive at 78. She's been managing her conditions with medication and lifestyle changes for a long time, so maybe there's some genetic component to it that could be beneficial somehow?",
+      "time": 16.7
+    },
+    {
+      "turn": 20,
+      "student": "Before we proceed with testing, let me confirm: no other symptoms you haven't mentioned? Nothing you've been hesitant to bring up?",
+      "patient": "To be honest, I don't think so. Like I said earlier, during the more severe episodes of chest tightness, I do get some tingling in my left arm and mild nausea, but that's about it. I'm not aware of any other symptoms that might be relevant to this conversation.",
+      "time": 17.1
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 319.3,
+    "avg_time_per_turn": 16.0,
+    "condition_state": {
+      "turn_number": 20,
+      "unlocked_fact_ids": [
+        "C03",
+        "C04",
+        "C05",
+        "C06",
+        "C09",
+        "C13",
+        "C14",
+        "C18"
+      ],
+      "conversation_length": 40,
+      "condition": "isolated_architecture",
+      "total_retries": 0
+    },
+    "leaks": [],
+    "leak_count": 0
+  },
+  "run": 2,
+  "case_name": "cardiology"
+}

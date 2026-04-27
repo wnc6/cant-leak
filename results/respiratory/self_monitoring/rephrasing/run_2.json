@@ -1,0 +1,150 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "rephrasing",
+  "case_id": "RESP-001",
+  "case_path": "cases/case_respiratory.json",
+  "turns": [
+    {
+      "turn": 1,
+      "student": "What brings you in today?",
+      "patient": "I've been experiencing this persistent cough for two weeks now, and it's getting really frustrating. It started out dry, but over the past few days, it's become productive.",
+      "time": 6.0
+    },
+    {
+      "turn": 2,
+      "student": "Can you tell me more about what you've been feeling?",
+      "patient": "It's not just the cough that's bothering me, I'm also having a lot of difficulty breathing and wheezing, especially when I exert myself. And to make matters worse, I've had this low-grade fever that comes and goes.",
+      "time": 7.1
+    },
+    {
+      "turn": 3,
+      "student": "When you have those episodes, do you notice anything else happening to your body?",
+      "patient": "I've been having trouble sleeping at night and I'm feeling really tired during the day.",
+      "time": 5.8
+    },
+    {
+      "turn": 4,
+      "student": "Any sweating or clamminess when the symptoms hit?",
+      "patient": "I've been experiencing some pretty intense night sweats. It's like my whole body is drenched every morning.",
+      "time": 5.3
+    },
+    {
+      "turn": 5,
+      "student": "So no perspiration at all during the episodes?",
+      "patient": "Actually, yes, there are moments where I feel hot and sweaty during those episodes, especially when I'm wheezing or having trouble breathing.",
+      "time": 6.5
+    },
+    {
+      "turn": 6,
+      "student": "Does the discomfort stay in one spot, or does it move around?",
+      "patient": "The discomfort is mostly on my right side, it's sharp and gets worse when I breathe deeply or cough. Sometimes it feels uncomfortable in other areas too.",
+      "time": 6.3
+    },
+    {
+      "turn": 7,
+      "student": "Does it radiate anywhere \u2014 like your arms, neck, or jaw?",
+      "patient": "The pain can radiate to my shoulders and upper back when I'm having a bad episode, but it's usually localized on my right side. Sometimes it feels intense in that area.",
+      "time": 6.6
+    },
+    {
+      "turn": 8,
+      "student": "Any tingling or numbness in your arms when it happens?",
+      "patient": "I don't feel any tingling or numbness in my arms during these episodes. It's mostly just pain and discomfort.",
+      "time": 5.7
+    },
+    {
+      "turn": 9,
+      "student": "What about your extremities \u2014 any tingling, pain, or unusual sensations?",
+      "patient": "No, no tingling or numbness in my legs either.",
+      "time": 5.2
+    },
+    {
+      "turn": 10,
+      "student": "Have you noticed any swelling anywhere? Ankles, feet, hands?",
+      "patient": "No, I haven't noticed any swelling in my ankles, feet, or hands.",
+      "time": 6.1
+    },
+    {
+      "turn": 11,
+      "student": "Do your shoes feel tighter than usual, or any puffiness in your legs?",
+      "patient": "I don't think so. My feet and ankles look normal to me.",
+      "time": 4.5
+    },
+    {
+      "turn": 12,
+      "student": "Any stomach issues during the episodes? Nausea, queasiness, upset stomach?",
+      "patient": "I've been taking OTC dextromethorphan for my cough, but it's only provided minimal relief. I also take cetirizine when my seasonal allergies act up.",
+      "time": 6.7
+    },
+    {
+      "turn": 13,
+      "student": "Do you feel sick to your stomach when the symptoms come on?",
+      "patient": "I've been feeling a bit queasy and nauseous during some of the episodes, especially when I'm having trouble breathing. It's not severe, but it's definitely uncomfortable.",
+      "time": 7.9
+    },
+    {
+      "turn": 14,
+      "student": "Have you had any fevers, chills, or night sweats?",
+      "patient": "I've actually had a low-grade fever that comes and goes, around 38.2\u00b0C (100.8\u00b0F), and those episodes are usually worse in the evenings.",
+      "time": 7.4
+    },
+    {
+      "turn": 15,
+      "student": "Have you noticed any changes in your appetite or weight?",
+      "patient": "I've been feeling really off lately and my appetite has definitely decreased over the past few days.",
+      "time": 6.8
+    },
+    {
+      "turn": 16,
+      "student": "Tell me about your lifestyle \u2014 diet, exercise, daily routine.",
+      "patient": "My eating habits haven't been great lately. I've just not felt like cooking or preparing meals, so my partner's been doing most of the cooking for us. As for exercise, I'm an elementary school teacher, so I'm on my feet a lot throughout the day.",
+      "time": 8.8
+    },
+    {
+      "turn": 17,
+      "student": "How active are you physically? Do you work out or walk regularly?",
+      "patient": "I try to stay active, but it's been really challenging lately because of my symptoms. I usually take a short walk during my lunch break and try to get some stretching in at home.",
+      "time": 7.5
+    },
+    {
+      "turn": 18,
+      "student": "What does a typical day of eating look like for you?",
+      "patient": "My appetite hasn't been great lately, but I've been trying to eat what my partner prepares for me.",
+      "time": 7.5
+    },
+    {
+      "turn": 19,
+      "student": "Any medical problems in your family? Parents, siblings?",
+      "patient": "I have asthma, actually. It's never been formally diagnosed.",
+      "time": 5.8
+    },
+    {
+      "turn": 20,
+      "student": "Specifically, has anyone in your family had serious diseases?",
+      "patient": "My mom has asthma, but that's about it. She's always managed it well with her inhaler and stuff.",
+      "time": 7.3
+    }
+  ],
+  "summary": {
+    "total_turns": 20,
+    "total_time": 130.9,
+    "avg_time_per_turn": 6.5,
+    "condition_state": {
+      "turn_number": 20,
+      "condition": "self_monitoring"
+    },
+    "leaks": [
+      {
+        "fact_id": "R04",
+        "phrase": "night sweat"
+      },
+      {
+        "fact_id": "R19",
+        "phrase": "mom has asthma"
+      }
+    ],
+    "leak_count": 2
+  },
+  "run": 2,
+  "case_name": "respiratory"
+}
