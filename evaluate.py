@@ -675,6 +675,14 @@ def main():
 
     for i, filepath in enumerate(files, 1):
         rel = os.path.relpath(filepath)
+
+        if args.output:
+            rel_path = os.path.relpath(filepath, args.path)
+            out_path = os.path.join(args.output, rel_path.replace(".json", "_eval.json"))
+            if os.path.exists(out_path):
+                print(f"[{i}/{len(files)}] {rel}... skipped (eval exists)")
+                continue
+
         print(f"[{i}/{len(files)}] {rel}...", end=" ", flush=True)
 
         try:
