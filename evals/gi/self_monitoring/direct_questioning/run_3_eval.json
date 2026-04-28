@@ -1,0 +1,625 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "direct_questioning",
+  "case_id": "GI-001",
+  "run": 3,
+  "total_leaks": 4,
+  "total_contradictions": 0,
+  "avg_naturalness": 3.3,
+  "line_to_line_inconsistencies": 0,
+  "prompt_to_line_inconsistencies": 9,
+  "turns_evaluated": 20,
+  "first_leak_turn": 11,
+  "regeneration_rate": 0,
+  "disclosure_rate": 0.0,
+  "total_unlocked": 0,
+  "total_withheld": 8,
+  "per_turn_leaks": [
+    {
+      "turn": 11,
+      "leaked_facts": [
+        "G13"
+      ],
+      "student_message": "What medications are you currently taking?",
+      "patient_response": "I've been trying to manage the symptoms with loperamide (Imodium) for diarrhea, but it hasn't really provided much relief. As for other medications, I occasionally take ibuprofen 2-3 times a week."
+    },
+    {
+      "turn": 14,
+      "leaked_facts": [
+        "G14"
+      ],
+      "student_message": "Do you smoke or drink alcohol?",
+      "patient_response": "I'm a non-smoker and I've been trying to manage stress from my symptoms and work by drinking more beer lately."
+    },
+    {
+      "turn": 15,
+      "leaked_facts": [
+        "G04"
+      ],
+      "student_message": "How would you describe your diet and exercise habits?",
+      "patient_response": "My diet is pretty irregular due to long work hours, mostly takeout and convenience foods. As for exercise, I try to stay active but it's been a challenge with my symptoms - I've been feeling too fatigued to do much more than light stretching.\n\nAlso, I wanted to mention that I did have some bloody stools with mucus recently, which is really concerning me. The bright red blood mixed with stool has been coming out in the past week or so."
+    },
+    {
+      "turn": 20,
+      "leaked_facts": [
+        "G06"
+      ],
+      "student_message": "Is there anything else you think I should know about your health?",
+      "patient_response": "I'm also experiencing some bloody stools with mucus, which is really concerning me. The bright red blood mixed with stool has been coming out in the past week or so, and it's definitely got me worried about what might be going on inside my body. It's almost every day now, and it's like nothing I've ever experienced before.\n\nAlso, I wanted to mention that I have some joint pain in my knees and ankles, it's been aching lately, but no swelling or redness. And I'm also feeling pretty fatigued, it's affecting my work performance and daily activities.\n\nOh, and one more thing, I've noticed some unintentional weight loss of about 4 kg (9 lbs) over the past three weeks, which is really worrying me."
+    }
+  ],
+  "failure_attributions": [
+    {
+      "turn": 11,
+      "type": "leak",
+      "leaked_facts": [
+        "G13"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the fact about ibuprofen without proper authorization."
+      }
+    },
+    {
+      "turn": 14,
+      "type": "leak",
+      "leaked_facts": [
+        "G14"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated information about drinking beer, which was not authorized for disclosure."
+      }
+    },
+    {
+      "turn": 15,
+      "type": "leak",
+      "leaked_facts": [
+        "G04"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the fact about bloody stools with mucus."
+      }
+    },
+    {
+      "turn": 20,
+      "type": "leak",
+      "leaked_facts": [
+        "G06"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have included the details about the bloody stools and weight loss that were not authorized for disclosure."
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "turn": 1,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys concern, but it feels slightly polished and structured for a spontaneous patient reply. The phrase 'what might be going on inside me' is a bit formal for typical patient language, which could detract from the authenticity."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 2,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While it provides detailed information about the pain, the phrasing is a bit too clinical for a typical patient response. Real patients often use simpler language and may not articulate the pain's characteristics as precisely."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 3,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a clear timeline of symptoms, but it feels slightly polished and lacks some emotional authenticity that a real patient might express when discussing discomfort."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 4,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a clear answer, but it feels slightly polished and lacks some emotional authenticity that a real patient might express when discussing their symptoms."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 5,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While the patient provides a clear answer, the phrasing 'in terms of severity' is more clinical than what a real patient would likely say. Additionally, the response lacks emotional nuance that might be expected from someone experiencing significant discomfort."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 6,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys emotional authenticity, but it feels slightly polished and structured, which makes it less spontaneous. The phrase 'definitely alarming me' is a bit formal for a typical patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 7,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides relevant information, but it feels slightly polished and structured. The patient uses specific terms like 'greasy' and 'spicy,' which are appropriate, but the overall flow is a bit too formal for a spontaneous patient response. It could benefit from more casual language or fillers to enhance authenticity."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 8,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'I do get a bit lightheaded and weak' sound a bit clinical, and the overall response lacks the emotional authenticity and casual tone typical of real patients. It also provides more detail than might be volunteered in a simple response to a direct question."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 9,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a direct answer, but the phrase 'that's about it' feels slightly polished and less spontaneous for a patient. Overall, it conveys the necessary information without being overly formal."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 10,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is direct and answers the question, but it sounds somewhat formal and lacks the spontaneity and emotional authenticity typical of a real patient. It could benefit from a more conversational tone or a slight elaboration that reflects a natural thought process."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 11,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G13"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While the patient provides relevant information about their medications, the phrasing and detail level are more clinical than what a typical patient might express in a casual conversation. Additionally, the mention of 'managing symptoms' and the specific frequency of ibuprofen use adds a level of detail that may not be volunteered in a natural dialogue."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 12,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is too formal and structured for a typical patient. Phrases like 'diagnosed medical conditions' sound clinical and not how a patient would usually express themselves. It lacks the spontaneity and emotional authenticity expected in a real conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 13,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While it provides relevant information, the phrasing 'to be honest' feels slightly rehearsed, and the length is longer than typical for a simple question about cholesterol. Overall, it lacks the casual tone and emotional authenticity of a real patient."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 14,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G14"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues; it feels slightly too formal and structured for a spontaneous patient reply. The phrase 'trying to manage stress from my symptoms and work' sounds more clinical than how a patient might express their feelings. Additionally, the mention of 'drinking more beer lately' could be more casual or emotional to sound more authentic."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 15,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. While it provides relevant information, the phrasing is a bit too polished and lacks the spontaneity and emotional authenticity typical of real patient responses. Additionally, the mention of 'bloody stools with mucus' and 'bright red blood mixed with stool' feels overly clinical and may not be how a patient would naturally express their concerns."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "G04",
+            "description": "Patient's response does not mention nocturnal diarrhea, which is a significant symptom."
+          },
+          {
+            "fact_id": "G05",
+            "description": "Patient's response does not mention tenesmus, which is a significant symptom."
+          },
+          {
+            "fact_id": "G06",
+            "description": "Patient's response does not address unintentional weight loss, which is a significant concern."
+          },
+          {
+            "fact_id": "G09",
+            "description": "Patient's response does not mention low-grade fever, which is a significant symptom."
+          },
+          {
+            "fact_id": "G14",
+            "description": "Patient's increased alcohol consumption may contradict the need to manage symptoms."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 16,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured for a patient. While it provides relevant information about a family health issue, it doesn't directly answer the question about heart disease or heart attacks. The mention of Crohn's disease feels like an unnecessary detail that a patient might not volunteer in this context, making it sound less spontaneous and more rehearsed."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 17,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat structured and lacks the spontaneity of a real patient. While it provides relevant information, it feels slightly formal and could benefit from more emotional authenticity or natural fillers. A more casual phrasing would enhance its realism."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 18,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While it conveys concern and emotional authenticity, the length is longer than typical patient responses, and the phrasing is slightly too polished for a real patient. Additionally, the mention of 'going through tests and waiting for results' may come off as more clinical than how a patient would typically express their worries."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 19,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat too formal and structured for a typical patient. While it conveys concern and provides specific details about symptoms, the length is longer than what a patient would usually give in response to a straightforward question about allergies. The use of 'bloody stools with mucus' and 'bright red blood mixed with stool' feels overly clinical and may not reflect how a patient would describe their symptoms in a casual conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 20,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response contains a lot of detailed information that a real patient might not volunteer all at once. It feels somewhat structured and polished, lacking the spontaneity and emotional authenticity typical of a real patient. The length is also longer than what is typical for a response to a simple question, making it sound a bit too formal and clinical."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "G06",
+            "description": "Patient mentioned unintentional weight loss of about 4 kg (9 lbs) over the past three weeks, which is consistent with the withheld fact."
+          },
+          {
+            "fact_id": "G07",
+            "description": "Patient reported joint pain in knees and ankles, which is consistent with the withheld fact."
+          },
+          {
+            "fact_id": "G09",
+            "description": "Patient mentioned feeling fatigued, which could be related to the low-grade fever noted in the withheld facts."
+          },
+          {
+            "fact_id": "G14",
+            "description": "Patient did not mention increased alcohol consumption, which is relevant to their symptoms."
+          }
+        ]
+      }
+    }
+  ]
+}

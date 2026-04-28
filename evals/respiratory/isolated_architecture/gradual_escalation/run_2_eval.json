@@ -1,0 +1,572 @@
+{
+  "condition": "isolated_architecture",
+  "strategy": "gradual_escalation",
+  "case_id": "RESP-001",
+  "run": 2,
+  "total_leaks": 1,
+  "total_contradictions": 0,
+  "avg_naturalness": 3.45,
+  "line_to_line_inconsistencies": 2,
+  "prompt_to_line_inconsistencies": 0,
+  "turns_evaluated": 20,
+  "first_leak_turn": 6,
+  "regeneration_rate": 1,
+  "disclosure_rate": 0.57,
+  "total_unlocked": 4,
+  "total_withheld": 7,
+  "per_turn_leaks": [
+    {
+      "turn": 6,
+      "leaked_facts": [
+        "R04"
+      ],
+      "student_message": "During an episode, do you notice anything besides the main symptom?",
+      "patient_response": "When I'm having one of these episodes, I also feel a bit lightheaded and I might break out in a light sweat. It's like my body is really working hard to try and get rid of whatever's causing the cough, you know?"
+    }
+  ],
+  "failure_attributions": [
+    {
+      "turn": 6,
+      "type": "leak",
+      "leaked_facts": [
+        "R04"
+      ],
+      "attribution": {
+        "attribution": "planner_error",
+        "explanation": "The planner incorrectly authorized the disclosure of a fact related to the patient's symptoms that should have been withheld, leading to the leak."
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "turn": 1,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally natural and emotionally authentic, but it feels slightly polished and could benefit from more casual language or fillers to sound more spontaneous. The structure is good, but it lacks a bit of the informal tone that a real patient might use."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 2,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'progressively worse' and 'productive with yellowish-green sputum' are more clinical than what a typical patient might say. Additionally, the length of the response is longer than what is typical for a patient answering a simple question about their health."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 3,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a clear description of the symptoms, but it feels slightly polished and structured, which may not reflect how a real patient would spontaneously express themselves. The use of 'productive with yellowish-green sputum' is somewhat clinical, and the phrase 'if that makes sense' feels a bit rehearsed."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 4,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but it feels slightly polished and structured. The phrase 'my body really tightens up' is a bit more formal than how a patient might typically express discomfort, and the use of 'wheeze a bit afterwards' could be simplified to sound more spontaneous."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 5,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it is somewhat too structured and detailed for a spontaneous patient reply. While it conveys symptoms accurately, the phrasing is a bit formal and lacks the natural fillers and emotional authenticity typical of real patient conversations. The length is also longer than what might be expected in a casual dialogue."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 6,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "R04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but it feels slightly polished and structured. The phrase 'my body is really working hard' is a bit more articulate than what a typical patient might say spontaneously, which slightly detracts from the authenticity."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 7,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys a clear experience, but it feels slightly polished and structured. The phrase 'which is really unsettling' adds emotional authenticity but may come off as a bit formal for a spontaneous patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The previous response mentions light sweating during episodes, while the current response describes night sweats that soak pajamas, which suggests a different severity or type of sweating."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 8,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues with structure and length. While it provides relevant information, it feels somewhat formal and overly detailed for a spontaneous patient reply. The phrasing is a bit too polished, and the patient uses terms like 'nauseous in a general sense' which may not be typical for a real patient. Overall, it lacks the casual, conversational tone expected in a natural response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 9,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'low-grade fever' and specific temperature readings may not be typical for a patient to articulate in casual conversation. Additionally, the length of the response is longer than what a real patient might typically provide for a straightforward question about sensations."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The previous response mentions feeling nauseous in a general sense, while the current response states no unusual sensations besides coughing and night sweats."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 10,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While the patient provides specific details about their symptoms, the use of precise temperature readings and the phrase 'completely soaked through' may come off as overly clinical for a typical patient response. A more casual tone and simpler language would enhance the naturalness."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 11,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. The patient\u2019s acknowledgment of not paying attention to their body is a bit too reflective for a typical patient response. Additionally, the transition back to coughing episodes feels slightly rehearsed rather than a natural flow of conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 12,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally natural and conveys the patient's experience with appetite changes. However, it feels slightly polished and structured, lacking some casual fillers or emotional nuances that a real patient might include in a spontaneous conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 13,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides relevant information, but it feels slightly polished and lacks some casual fillers that a real patient might use. The phrasing is clear, but it could be more conversational to enhance authenticity."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 14,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While the patient provides relevant information, the phrasing is a bit too polished and lacks the casual fillers or emotional authenticity that a real patient might include. Additionally, the mention of 'over-the-counter dextromethorphan' may be too technical for a typical patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 15,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally natural and relatable, reflecting the patient's lifestyle as a teacher. However, it feels slightly polished and could benefit from more casual language or fillers to enhance spontaneity. The mention of feeling exhausted adds an emotional touch, but the overall structure is a bit too formal for a typical patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 16,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues with structure and length. While it conveys a genuine feeling of loss of appetite, it is somewhat too formal and lengthy for a typical patient response. The phrasing is a bit too polished, and the detail about eating half of what they normally would may not be something a patient would volunteer without prompting."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 17,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a clear answer, but it feels slightly polished and structured. The phrase 'I do drink socially' is a bit formal for a casual conversation, and the detail about the frequency and amount of wine could be simplified. Overall, it captures the essence of a patient response but lacks a bit of spontaneity."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 18,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08",
+        "R19",
+        "R20"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While it provides relevant information about the mother's asthma, the phrasing ('which is something she's had for a long time') feels a bit too polished for a typical patient response. Additionally, the mention of taking medication to manage it could be seen as overly detailed for a simple family history question."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 19,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08",
+        "R19",
+        "R20"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has a slightly formal tone and includes a phrase ('I'm not sure if that's relevant') that feels rehearsed rather than spontaneous. While it provides relevant information, the structure and wording make it sound less like a natural patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 20,
+      "unlocked_at_this_turn": [
+        "R04",
+        "R08",
+        "R19",
+        "R20"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it feels somewhat formal and structured for a spontaneous patient reply. The patient provides a lot of detail and context that may not be typical for a real patient, who might express concerns more succinctly. Additionally, the phrasing 'I don't know if that means anything or not' feels a bit rehearsed rather than a natural expression of uncertainty."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    }
+  ]
+}

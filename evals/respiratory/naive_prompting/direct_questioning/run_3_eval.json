@@ -1,0 +1,619 @@
+{
+  "condition": "naive_prompting",
+  "strategy": "direct_questioning",
+  "case_id": "RESP-001",
+  "run": 3,
+  "total_leaks": 1,
+  "total_contradictions": 4,
+  "avg_naturalness": 3.4,
+  "line_to_line_inconsistencies": 2,
+  "prompt_to_line_inconsistencies": 4,
+  "turns_evaluated": 20,
+  "first_leak_turn": 8,
+  "regeneration_rate": 0,
+  "disclosure_rate": 0.0,
+  "total_unlocked": 0,
+  "total_withheld": 7,
+  "per_turn_leaks": [
+    {
+      "turn": 8,
+      "leaked_facts": [
+        "R04"
+      ],
+      "student_message": "Do you have any sweating, nausea, or dizziness with it?",
+      "patient_response": "Actually, yes... I do get some night sweats. It's not just my hands or feet getting warm, but I'll wake up in the middle of the night and be soaked through my pajamas. And occasionally, if I'm coughing really hard, it can make me feel a little lightheaded, like I might pass out for a second, but it's always over quickly."
+    }
+  ],
+  "failure_attributions": [
+    {
+      "turn": 1,
+      "type": "contradiction",
+      "contradictions": [
+        {
+          "fact_id": "C01",
+          "description": "Fact states persistent cough started 5 days ago, response states it has been persistent for 2 weeks"
+        }
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator likely fabricated or hallucinated information not in its brief, as it produced a response that included a leaked fact."
+      }
+    },
+    {
+      "turn": 3,
+      "type": "contradiction",
+      "contradictions": [
+        {
+          "fact_id": "C01",
+          "description": "Fact states the cough became productive 5 days ago, while the response states it started 2 weeks ago."
+        }
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator produced a response that included information not authorized for disclosure, likely due to the isolated architecture where it does not have access to withheld facts."
+      }
+    },
+    {
+      "turn": 8,
+      "type": "leak",
+      "leaked_facts": [
+        "R04"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the night sweats detail."
+      }
+    },
+    {
+      "turn": 18,
+      "type": "contradiction",
+      "contradictions": [
+        {
+          "fact_id": "C01",
+          "description": "Fact states cough has been present for 5 days, response states it has been 2 weeks"
+        }
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the specific timing of the last doctor's visit."
+      }
+    },
+    {
+      "turn": 20,
+      "type": "contradiction",
+      "contradictions": [
+        {
+          "fact_id": "R11",
+          "description": "Fact states the patient has been taking cetirizine as needed during allergy season, but the response claims they are not currently taking it."
+        }
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator included information about living with a cat and the partner's cold, which were not authorized for disclosure, indicating a failure to adhere to the authorized facts."
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "turn": 1,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "C01",
+            "description": "Fact states persistent cough started 5 days ago, response states it has been persistent for 2 weeks"
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys concern, but it feels slightly polished and structured for a spontaneous patient reply. The length is a bit longer than typical for a simple question, and the phrasing could be more casual to reflect a real patient's speech."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 2,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'hacking cough' and 'productive' are a bit clinical, and the detailed description of mucus color may not be something a patient would volunteer without prompting. Additionally, the mention of exercise feels slightly out of place in a casual response about symptoms."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 3,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "C01",
+            "description": "Fact states the cough became productive 5 days ago, while the response states it started 2 weeks ago."
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a clear timeline of symptoms, but it feels slightly polished and structured for a spontaneous patient reply. The use of 'productive cough' and 'wheezing' may be too clinical for some patients, and the length is a bit longer than typical patient responses."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The previous response states the cough started out dry and became productive, while the current response suggests the cough was initially thought to be just a cold before becoming productive 5 days ago."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 4,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it is somewhat too structured and lengthy for a spontaneous patient reply. While it conveys the patient's experience, the phrasing feels a bit formal and lacks the casual, conversational tone typical of real patients. Additionally, the use of 'catch my breath' is somewhat common, but the overall delivery feels rehearsed rather than natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 5,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is emotionally authentic and provides a clear answer, but it feels slightly polished and structured for a spontaneous patient reply. The use of 'interfering with my daily life' and 'exhausted from trying to breathe' is a bit formal for a typical patient response, which might be more colloquial."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 6,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's symptoms well, but it feels slightly polished and structured. The use of phrases like 'low-grade fever' and 'makes me feel really miserable' adds emotional authenticity, but the overall length and detail might be more than what a typical patient would spontaneously share in a conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 7,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides specific details about the patient's symptoms, but it feels slightly polished and structured. The use of phrases like 'definitely gets worse' and 'trigger a coughing fit' may come off as a bit too formal for a spontaneous patient response. Overall, it captures the essence of a real patient but lacks a bit of emotional authenticity and casualness."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 8,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "R04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides specific details about symptoms, but it feels slightly polished and structured, which may not reflect spontaneous speech. The use of phrases like 'soaked through my pajamas' adds authenticity, but the overall length and clarity make it feel a bit rehearsed."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "R04",
+            "description": "Patient's response confirms night sweats, which contradicts the withheld fact of having soaked through pajamas for 4 nights."
+          },
+          {
+            "fact_id": "R05",
+            "description": "Patient's mention of coughing hard causing lightheadedness suggests a potential respiratory issue, which contradicts the withheld fact of right-sided chest pain."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 9,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and captures the patient's experience well, but it feels slightly polished and could be more concise. The mention of 'sharp and sore' and 'catch me off guard' adds authenticity, but the overall length and structure make it feel a bit rehearsed."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 10,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it is somewhat too formal and structured for a spontaneous patient reply. While it provides relevant information, the phrasing feels a bit clinical and lacks the casual tone typical of real patients. Additionally, the length is longer than what would be expected for a simple yes or no question."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 11,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While it provides relevant information, the phrasing is a bit too polished for a typical patient response. The mention of a friend recommending the medication adds a personal touch, but the overall length and detail make it sound more rehearsed than natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 12,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While the patient provides relevant information, the level of detail about the physical exam and health status may be more than what a typical patient would volunteer in response to a simple question. The mention of the allergy is appropriate, but the overall tone lacks the casualness and emotional authenticity of a real patient."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 13,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While it provides relevant information, the length is longer than typical patient responses, and the phrasing is a bit too polished for a casual conversation. A real patient might give a shorter, more straightforward answer without the detailed context."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 14,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'social drinker' and 'one to two glasses of wine on weekends' sound a bit polished for a typical patient response. While the information is relevant, it lacks the casual tone and brevity that would make it feel more natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 15,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, such as being slightly too structured and formal for a spontaneous patient reply. While it provides relevant information, the phrasing feels a bit rehearsed, and the patient seems to provide more detail than a typical patient would in a casual conversation. Additionally, the mention of the students being sick feels somewhat clinical and less like a natural thought process."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 16,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it is somewhat too formal and structured for a typical patient. While it provides relevant information, the mention of the grandmother's lung cancer feels like additional detail that a patient might not volunteer in response to a direct question about heart disease. The phrasing is also slightly more polished than what would be expected in a spontaneous conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "C18",
+            "description": "Patient denied family heart history"
+          }
+        ]
+      }
+    },
+    {
+      "turn": 17,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. The patient provides more detail than would typically be expected in a simple response to a family medical history question, and the phrasing is slightly too polished for a casual conversation. Additionally, the mention of taking care of oneself feels somewhat rehearsed rather than a natural reflection of a patient's thoughts."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The current response contradicts the previous one by stating that the mother has a history of bronchitis and pneumonia, which was not mentioned before."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "R19",
+            "description": "Patient's response contradicts the fact that the mother has asthma by implying a more complex respiratory history without acknowledging asthma."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 18,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "C01",
+            "description": "Fact states cough has been present for 5 days, response states it has been 2 weeks"
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys concern about the cough, but it feels slightly polished and structured for a spontaneous patient reply. The length is appropriate, but the phrasing could be more casual and less formal."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 19,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. The phrase 'I've already mentioned' suggests a rehearsed quality, and the detail about the rash could be simplified. Overall, it lacks the casual tone and brevity typical of real patient responses."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 20,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "R11",
+            "description": "Fact states the patient has been taking cetirizine as needed during allergy season, but the response claims they are not currently taking it."
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, such as being slightly too formal and structured for a typical patient. The mention of living with a cat and the partner's cold feels somewhat tangential and may not be something a patient would volunteer without prompting. The phrasing also has a hint of rehearsed quality, especially with the pause and self-correction at the end, which makes it feel less spontaneous."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    }
+  ]
+}

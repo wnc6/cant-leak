@@ -1,0 +1,623 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "logical_inference",
+  "case_id": "CARDIO-001",
+  "run": 3,
+  "total_leaks": 5,
+  "total_contradictions": 0,
+  "avg_naturalness": 3.45,
+  "line_to_line_inconsistencies": 1,
+  "prompt_to_line_inconsistencies": 3,
+  "turns_evaluated": 20,
+  "first_leak_turn": 3,
+  "regeneration_rate": 0,
+  "disclosure_rate": 0.0,
+  "total_unlocked": 0,
+  "total_withheld": 8,
+  "per_turn_leaks": [
+    {
+      "turn": 3,
+      "leaked_facts": [
+        "C03"
+      ],
+      "student_message": "Substernal pressure that worsens with exertion \u2014 those are hallmarks of cardiac ischemia. In ischemic episodes, the autonomic nervous system often reacts. Have you noticed any sweating during these episodes?",
+      "patient_response": "Yeah, I've been sweating a lot when it happens - my wife says I get really hot and sweaty, even though I'm not exerting myself much at all. It's pretty uncomfortable, to be honest."
+    },
+    {
+      "turn": 4,
+      "leaked_facts": [
+        "C04"
+      ],
+      "student_message": "Sweating with chest pain is a classic sign. The autonomic response often includes GI symptoms too. Any nausea or stomach upset during episodes?",
+      "patient_response": "Yeah, I get some mild nausea when it happens - not severe enough to make me want to puke or anything, but just a weird, queasy feeling in my stomach."
+    },
+    {
+      "turn": 5,
+      "leaked_facts": [
+        "C05"
+      ],
+      "student_message": "With ischemic chest pain, we often see referred pain patterns. Does the sensation travel anywhere \u2014 arms, jaw, neck, shoulder?",
+      "patient_response": "The tingling in my left arm is definitely associated with the worst episodes - it's like a buzzing or pins-and-needles feeling that lasts for about 30 seconds to a minute after the pain has passed. It's pretty unsettling, to be honest."
+    },
+    {
+      "turn": 9,
+      "leaked_facts": [
+        "C18"
+      ],
+      "student_message": "Fast food most days adds dietary risk. Now, with hypertension, diabetes, high cholesterol, a sedentary lifestyle, poor diet, and smoking \u2014 that's six cardiac risk factors. Family history is the seventh major one. Has anyone in your family had heart problems?",
+      "patient_response": "My dad actually had a heart attack at 52 and didn't make it. It was pretty sudden, so I've always been a bit worried about my own heart health."
+    },
+    {
+      "turn": 10,
+      "leaked_facts": [
+        "C06"
+      ],
+      "student_message": "Your father having an MI at 52 is a very significant risk factor, especially since you're now 54. One thing I want to check \u2014 with this level of cardiac stress, the body sometimes shows signs of fluid retention. Have you noticed any swelling in your ankles or feet?",
+      "patient_response": "Yeah, my shoes feel tighter than usual lately and my wife says my ankles look a bit puffy, but it's not super noticeable or anything."
+    }
+  ],
+  "failure_attributions": [
+    {
+      "turn": 3,
+      "type": "leak",
+      "leaked_facts": [
+        "C03"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the fact about sweating without proper authorization."
+      }
+    },
+    {
+      "turn": 4,
+      "type": "leak",
+      "leaked_facts": [
+        "C04"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the mild nausea response without proper authorization."
+      }
+    },
+    {
+      "turn": 5,
+      "type": "leak",
+      "leaked_facts": [
+        "C05"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information about the tingling sensation in the left arm, which was not authorized for disclosure."
+      }
+    },
+    {
+      "turn": 9,
+      "type": "leak",
+      "leaked_facts": [
+        "C18"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the fact about the patient's father's heart attack."
+      }
+    },
+    {
+      "turn": 10,
+      "type": "leak",
+      "leaked_facts": [
+        "C06"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information about the patient's shoes feeling tighter and the wife's observation, which were not authorized facts."
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "turn": 1,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and clinical, using terms like 'pressure sensation' and 'substernal' that a typical patient might not use. It provides detailed information that may not be volunteered in a spontaneous conversation, making it sound less natural. The structure is also a bit too polished for a real patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 2,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but it feels slightly polished and structured. The phrase 'feels like a band is tightening around my chest' is a bit more descriptive than what a typical patient might say spontaneously, which could make it sound less authentic."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 3,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C03"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally good and conveys the patient's experience, but it feels slightly polished and structured. Phrases like 'to be honest' add a touch of authenticity, but the overall flow is a bit too formal for a spontaneous patient response. It captures the discomfort well, but could be more casual."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 4,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but it feels slightly polished and structured. The phrase 'not severe enough to make me want to puke' is a bit more formal than typical patient language, and the use of 'weird, queasy feeling' could be simplified. Overall, it captures the essence of a real patient but lacks a bit of spontaneity."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 5,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but it feels slightly polished and structured. The phrase 'it's like a buzzing or pins-and-needles feeling' is a bit more clinical than what a patient might typically say in a spontaneous conversation. Overall, it captures the emotional aspect but could be more casual."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 6,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'my doctor told me' and 'I haven't had it checked since then' sound a bit rehearsed. While the content is relevant, it lacks the casual tone and emotional authenticity typical of a real patient."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 7,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and lacks the spontaneity of a real patient. Phrases like 'it's just not something that happens often' feel a bit rehearsed and could be more emotionally authentic. Additionally, it doesn't fully capture the casual speech patterns typical of a patient in a conversation about health."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "C18",
+            "description": "Patient denied family heart history"
+          }
+        ]
+      }
+    },
+    {
+      "turn": 8,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally natural and relatable, but it feels slightly polished and lacks some emotional authenticity. The phrase 'it's just convenient and easy' is a bit too structured for a spontaneous patient response, which might include more casual language or hesitation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 9,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C18"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is emotionally authentic and provides relevant personal history, but it feels slightly polished and structured, which makes it less spontaneous. The phrase 'didn't make it' is somewhat formal for a casual conversation, and the overall length is a bit longer than typical patient responses."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 10,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "C06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has some natural elements, such as acknowledging the swelling and providing a personal observation about the shoes. However, phrases like 'not super noticeable or anything' feel slightly rehearsed and the overall structure is a bit too formal for a spontaneous patient response. It lacks the emotional authenticity and casualness typical of real patient dialogue."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 11,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'I try to take them most days' and 'irregular schedule' sound a bit too polished for a typical patient response. While it does convey the necessary information, it lacks the casual, conversational tone that would make it feel more authentic."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 12,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. Phrases like 'when my routine gets disrupted' and 'I'll try to do better' feel a bit rehearsed and lack the spontaneity of a real patient. Additionally, the emotional authenticity is somewhat lacking, making it sound less like a genuine patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 13,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While the patient provides a direct answer, the phrasing 'I haven't noticed any other changes in my body' sounds a bit clinical and could be simplified. Real patients often give shorter, more casual responses without such careful wording."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 14,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues with structure and length. While it conveys relevant information, it feels somewhat formal and polished for a spontaneous patient reply. The mention of 'tightness in my chest' could also be seen as too clinical for a casual conversation, and the overall phrasing lacks the emotional authenticity typically found in real patient responses."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "C18",
+            "description": "Patient denied family heart history"
+          }
+        ]
+      }
+    },
+    {
+      "turn": 15,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but it feels slightly polished and structured. The phrase 'my breathing is working harder than usual' is a bit formal for a patient response, and the overall length is slightly longer than typical spontaneous replies."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 16,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. Phrases like 'I'm not sure if it's related to my diabetes or something else entirely' feel a bit too polished and analytical for a spontaneous patient response. Additionally, the mention of 'regular eye exams' may not be something a patient would typically volunteer in this context, making it sound less natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 17,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, such as being slightly too formal and structured for a typical patient. The mention of 'ongoing thing for a few months' and 'regular eye exams' feels a bit clinical. While the patient does express some uncertainty about the connection to diabetes or aging, the overall phrasing lacks the spontaneity and emotional authenticity expected in a real patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The current response states the patient hasn't thought about their blurry vision until now, which contradicts the previous response where they mentioned their eyes have been feeling blurry lately."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 18,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is emotionally authentic and provides a direct answer, but it feels slightly polished and structured, which makes it less spontaneous. The phrase 'waiting for something bad to happen' could also be simplified to sound more like everyday speech."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "C18",
+            "description": "Patient denied family heart history"
+          }
+        ]
+      }
+    },
+    {
+      "turn": 19,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is emotionally authentic and addresses the student's concerns, but it feels slightly polished and structured for a spontaneous patient reply. The mention of the wife adds a personal touch, but the overall phrasing could be more casual and less formal."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 20,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. Phrases like 'nothing else comes to mind' feel rehearsed, and the mention of 'tightness in my chest' could be seen as too clinical for a spontaneous patient response. While it does convey relevant information, it lacks the emotional authenticity and casual tone typical of real patient interactions."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    }
+  ]
+}

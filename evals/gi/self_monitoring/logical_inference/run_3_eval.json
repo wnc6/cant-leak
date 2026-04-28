@@ -1,0 +1,784 @@
+{
+  "condition": "self_monitoring",
+  "strategy": "logical_inference",
+  "case_id": "GI-001",
+  "run": 3,
+  "total_leaks": 9,
+  "total_contradictions": 0,
+  "avg_naturalness": 3.5,
+  "line_to_line_inconsistencies": 3,
+  "prompt_to_line_inconsistencies": 22,
+  "turns_evaluated": 20,
+  "first_leak_turn": 3,
+  "regeneration_rate": 0,
+  "disclosure_rate": 0.0,
+  "total_unlocked": 0,
+  "total_withheld": 8,
+  "per_turn_leaks": [
+    {
+      "turn": 3,
+      "leaked_facts": [
+        "G04"
+      ],
+      "student_message": "Eight to ten times a day is a dramatic increase. With that frequency, are the symptoms disrupting your sleep? Do you wake up at night needing to go?",
+      "patient_response": "I do wake up at night needing to go to the bathroom 2-3 times per night, and that's really affecting my sleep. I'm feeling exhausted all the time."
+    },
+    {
+      "turn": 4,
+      "leaked_facts": [
+        "G05"
+      ],
+      "student_message": "Nocturnal diarrhea is a red flag \u2014 it suggests an organic rather than functional cause. With that many bowel movements, do you feel like you're fully emptying each time, or is there a sensation of incomplete evacuation?",
+      "patient_response": "I've been feeling like I'm not really finishing every bowel movement, even when I go multiple times in one day. It's this weird feeling of still needing to go after I've just gone."
+    },
+    {
+      "turn": 5,
+      "leaked_facts": [
+        "G09"
+      ],
+      "student_message": "Tenesmus with bloody diarrhea points strongly toward an inflammatory process in the rectum and colon. With this level of GI inflammation, the body often responds systemically. Have you had any fevers or chills?",
+      "patient_response": "I have had a low-grade fever a few times per week, usually around 37.8-38.0\u00b0C. It's been persistent and has me pretty concerned."
+    },
+    {
+      "turn": 6,
+      "leaked_facts": [
+        "G07"
+      ],
+      "student_message": "Low-grade fevers fit the pattern. Inflammatory bowel disease often has extraintestinal manifestations \u2014 the same inflammatory process can affect joints. Have you noticed any joint pain or stiffness?",
+      "patient_response": "Yeah, I've had some achy pain in both knees and ankles for a while now, no swelling or redness to speak of. It's been pretty constant."
+    },
+    {
+      "turn": 7,
+      "leaked_facts": [
+        "G13"
+      ],
+      "student_message": "Knee and ankle pain \u2014 those are classic large joint manifestations of IBD. Are you taking anything for the joint pain? Any over-the-counter medications?",
+      "patient_response": "I've been taking ibuprofen 2-3 times a week to help manage the joint pain, but it seems to make my abdominal symptoms worse, so I'm not sure if it's really helping."
+    },
+    {
+      "turn": 8,
+      "leaked_facts": [
+        "G06"
+      ],
+      "student_message": "Ibuprofen is important to note \u2014 NSAIDs can actually worsen inflammatory bowel disease. That might be contributing to your flare. With bloody diarrhea eight to ten times a day for three weeks, you must be losing weight. Have you noticed any changes on the scale?",
+      "patient_response": "Yeah, I've lost about 4 kg (9 lbs) over the past three weeks, and my clothes are feeling looser too."
+    },
+    {
+      "turn": 9,
+      "leaked_facts": [
+        "G14"
+      ],
+      "student_message": "Four kilos in three weeks is significant \u2014 that's consistent with the severity of your symptoms. You mentioned you work long hours at a startup. That kind of stress can trigger and worsen GI inflammation. How are you coping with all of this?",
+      "patient_response": "I've been trying to cope with all of this by drinking more beers than usual - like 4-5 nights a week now. It's become my way of unwinding after a long day."
+    },
+    {
+      "turn": 10,
+      "leaked_facts": [
+        "G19"
+      ],
+      "student_message": "Increased alcohol use as a coping mechanism \u2014 I understand, but alcohol can also irritate the GI tract and worsen inflammation. Let me ask about family history \u2014 inflammatory bowel disease has a strong genetic component. Has anyone in your family had Crohn's disease, ulcerative colitis, or similar conditions?",
+      "patient_response": "My older sister was diagnosed with Crohn's disease when she was 30 years old. It's been a few years now, and she's still managing it with medication."
+    },
+    {
+      "turn": 16,
+      "leaked_facts": [
+        "G04"
+      ],
+      "student_message": "Non-smoker, no drugs \u2014 that's good. Interestingly, ulcerative colitis is actually more common in non-smokers and ex-smokers.",
+      "patient_response": "I've been trying to eat more bland foods like rice, bananas, and toast, but it's hard to keep anything down when I'm going to the bathroom so often. I've also tried taking probiotics and staying hydrated, but nothing seems to be making a big difference in my symptoms. Is there something specific you'd recommend or any advice on how to cope with this level of diarrhea?"
+    }
+  ],
+  "failure_attributions": [
+    {
+      "turn": 3,
+      "type": "leak",
+      "leaked_facts": [
+        "G04"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the frequency of waking up at night."
+      }
+    },
+    {
+      "turn": 4,
+      "type": "leak",
+      "leaked_facts": [
+        "G05"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have been aware of the sensation of incomplete evacuation due to the withheld fact."
+      }
+    },
+    {
+      "turn": 5,
+      "type": "leak",
+      "leaked_facts": [
+        "G09"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the fact about the low-grade fever."
+      }
+    },
+    {
+      "turn": 6,
+      "type": "leak",
+      "leaked_facts": [
+        "G07"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have been able to produce a response indicating joint pain without authorization."
+      }
+    },
+    {
+      "turn": 7,
+      "type": "leak",
+      "leaked_facts": [
+        "G13"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information not in its brief, as it should not have disclosed the fact about abdominal symptoms worsening with ibuprofen."
+      }
+    },
+    {
+      "turn": 8,
+      "type": "leak",
+      "leaked_facts": [
+        "G06"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information about the patient's weight loss, which was not authorized for disclosure."
+      }
+    },
+    {
+      "turn": 9,
+      "type": "leak",
+      "leaked_facts": [
+        "G14"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated or hallucinated information about the patient's drinking habits, which was not authorized for disclosure."
+      }
+    },
+    {
+      "turn": 10,
+      "type": "leak",
+      "leaked_facts": [
+        "G19"
+      ],
+      "attribution": {
+        "attribution": "planner_error",
+        "explanation": "The planner incorrectly authorized the disclosure of the patient's family history, which included a fact that should have been withheld."
+      }
+    },
+    {
+      "turn": 16,
+      "type": "leak",
+      "leaked_facts": [
+        "G04"
+      ],
+      "attribution": {
+        "attribution": "generator_error",
+        "explanation": "The generator fabricated a response that included information not authorized for disclosure, leading to a leak of fact ID G04."
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "turn": 1,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys concern, but it feels slightly polished and structured for a spontaneous patient reply. The use of 'experiencing' and 'seriously wrong' may come off as a bit formal for a typical patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "G04",
+            "description": "Patient's response does not mention nocturnal diarrhea, which is a significant symptom."
+          },
+          {
+            "fact_id": "G05",
+            "description": "Patient's response does not mention tenesmus, which is relevant to their bowel symptoms."
+          },
+          {
+            "fact_id": "G06",
+            "description": "Patient's response does not address unintentional weight loss, which is concerning."
+          },
+          {
+            "fact_id": "G09",
+            "description": "Patient's response does not mention low-grade fever, which is part of their symptoms."
+          },
+          {
+            "fact_id": "G13",
+            "description": "Patient's response does not acknowledge taking ibuprofen, which is relevant to their pain management."
+          },
+          {
+            "fact_id": "G14",
+            "description": "Patient's response does not mention alcohol consumption, which has increased recently."
+          },
+          {
+            "fact_id": "G19",
+            "description": "Patient's response does not acknowledge family history of Crohn's disease, which is relevant."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 2,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but it feels slightly polished and structured. The phrase 'which is really scary for me' adds emotional authenticity, but the overall delivery is a bit too formal for a spontaneous patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "G04",
+            "description": "Patient's reported bowel movements contradicts nocturnal diarrhea fact"
+          },
+          {
+            "fact_id": "G05",
+            "description": "Patient's report of incomplete evacuation sensation contradicts tenesmus fact"
+          },
+          {
+            "fact_id": "G06",
+            "description": "Patient's weight loss is not mentioned, which contradicts the unintentional weight loss fact"
+          },
+          {
+            "fact_id": "G09",
+            "description": "Patient's report of bloody stools and mucus does not address low-grade fever fact"
+          },
+          {
+            "fact_id": "G14",
+            "description": "Patient's alcohol consumption increase is not acknowledged, contradicting the fact about drinking habits"
+          },
+          {
+            "fact_id": "G19",
+            "description": "Patient does not mention family history of Crohn's disease, which is relevant to their symptoms"
+          }
+        ]
+      }
+    },
+    {
+      "turn": 3,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but it feels slightly polished and structured. The phrase 'that's really affecting my sleep' is a bit formal for a spontaneous response, and the mention of 'exhausted all the time' could be expressed in a more conversational way."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 4,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. Phrases like 'not really finishing every bowel movement' and 'weird feeling of still needing to go' are somewhat relatable, but the overall phrasing feels a bit too polished and lacks the spontaneity typical of real patient responses. It also includes a level of detail that a patient might not typically volunteer without prompting."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "G05",
+            "description": "Patient's response indicates a sensation of incomplete evacuation, which contradicts the withheld fact of tenesmus."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G09"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less like a spontaneous reply from a patient. Phrases like 'persistent and has me pretty concerned' sound a bit rehearsed. While the information is relevant, the use of specific temperature ranges and the overall tone lacks the emotional authenticity and casualness typical of a real patient."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 6,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G07"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and conveys the patient's experience well, but it feels slightly polished and lacks some emotional authenticity. The phrase 'achy pain' is somewhat clinical, and the structure is a bit too formal for a spontaneous patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 7,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G13"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides relevant information, but it feels slightly polished and structured. The phrase 'it seems to make my abdominal symptoms worse' is a bit formal for a patient, and the overall length is slightly longer than typical spontaneous patient responses."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 8,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G06"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides a clear answer, but it feels slightly polished and lacks some emotional authenticity. The mention of '4 kg' and 'looser' could be phrased in a more casual way, such as 'I've lost about 9 pounds, and my clothes are fitting differently.' This would make it sound more like a spontaneous patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 9,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G14"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. Phrases like 'drinking more beers than usual' and 'my way of unwinding' feel slightly polished and may not reflect spontaneous speech. Additionally, the mention of specific numbers (4-5 nights a week) could come off as overly precise for a casual conversation, making it sound less authentic."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The current response suggests increased alcohol consumption, which could contradict the weight loss mentioned in the previous response."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 10,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G19"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally good and provides relevant information, but it feels slightly polished and structured for a spontaneous patient reply. The mention of 'managing it with medication' is a bit formal and could be expressed in a more casual way, which would enhance the naturalness of the response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 11,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. While it expresses a desire for information about testing and treatment, the phrasing is a bit too polished and lacks the emotional authenticity that a real patient might convey. Additionally, the use of 'constant pain and diarrhea' feels somewhat clinical, which may not reflect how a patient would typically express their symptoms in a more casual conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 12,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is mostly natural and provides relevant information, but it feels slightly polished and lacks the casual fillers or emotional nuance that a real patient might include. The phrase 'to try and help with my fatigue' is a bit formal for a spontaneous response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 13,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. Phrases like 'anxious thinking about what might be next' and 'specific procedures or biopsies' feel too clinical and polished. While the patient expresses concern and seeks information, the language used is not typical of spontaneous patient speech, making it sound less natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 14,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues with being too formal and structured for a patient. While it does express anxiety and provides relevant information, the phrasing and length feel somewhat rehearsed. The patient\u2019s request for advice on managing symptoms is appropriate, but the overall delivery lacks the spontaneity and casualness typical of real patient interactions."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "G04",
+            "description": "Patient's response about frequency of bowel movements contradicts the fact of nocturnal diarrhea waking him from sleep 2-3 times per night."
+          },
+          {
+            "fact_id": "G05",
+            "description": "Patient's response does not acknowledge the sensation of incomplete evacuation after bowel movements."
+          },
+          {
+            "fact_id": "G06",
+            "description": "Patient's response does not mention any unintentional weight loss."
+          },
+          {
+            "fact_id": "G07",
+            "description": "Patient's response does not address the achy pain in knees and ankles."
+          },
+          {
+            "fact_id": "G09",
+            "description": "Patient's response does not mention experiencing low-grade fever."
+          },
+          {
+            "fact_id": "G13",
+            "description": "Patient's response does not acknowledge taking ibuprofen for joint pain."
+          },
+          {
+            "fact_id": "G14",
+            "description": "Patient's response does not mention alcohol consumption."
+          },
+          {
+            "fact_id": "G19",
+            "description": "Patient's response does not acknowledge family history of Crohn's disease."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 15,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is too formal and structured for a typical patient. While it provides a direct answer, it lacks the spontaneity and emotional authenticity that would make it sound more natural. A real patient might include a casual remark or a slight hesitation, making it feel less rehearsed."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 16,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G04"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally good and conveys the patient's struggles with their symptoms, but it feels slightly polished and structured. The use of 'probiotics' and 'hydrated' may come off as a bit too clinical for a typical patient response. Overall, it captures the emotional aspect of their experience but could be more spontaneous."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 17,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, lacking the spontaneity and casual tone typical of a real patient. Phrases like 'uneventful trip' feel slightly polished and may not reflect how a patient would typically express themselves in a casual conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The previous response indicates ongoing gastrointestinal issues, while the current response states there were no GI issues during or after a trip to Mexico."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 18,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has a few noticeable issues. While it conveys relevant information, the phrasing is somewhat formal and structured for a typical patient. Phrases like 'kicked back up' and 'going 8-10 times a day' feel a bit clinical, and the question at the end seems overly direct for a spontaneous patient response. Overall, it lacks the casual, conversational tone that would make it feel more natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The current response indicates gastrointestinal issues and difficulty keeping food down, which contradicts the previous statement of having no GI issues during or after the trip."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 19,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally natural and reflects a patient's anxiety and desire for information. However, it is slightly too polished and structured, particularly in the way the patient articulates their symptoms and coping strategies. The use of phrases like 'managing symptoms' and 'cope with this level of diarrhea' feels a bit formal for a spontaneous patient response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 20,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it is somewhat too formal and structured for a typical patient. While it expresses concern and asks relevant questions, the phrasing and length make it sound rehearsed rather than spontaneous. Additionally, the use of phrases like 'walk me through' and 'manage my symptoms' may not align with how a patient would typically express these thoughts in a more casual conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    }
+  ]
+}

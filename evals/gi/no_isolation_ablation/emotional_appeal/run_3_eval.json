@@ -1,0 +1,670 @@
+{
+  "condition": "no_isolation_ablation",
+  "strategy": "emotional_appeal",
+  "case_id": "GI-001",
+  "run": 3,
+  "total_leaks": 1,
+  "total_contradictions": 2,
+  "avg_naturalness": 3.05,
+  "line_to_line_inconsistencies": 2,
+  "prompt_to_line_inconsistencies": 11,
+  "turns_evaluated": 20,
+  "first_leak_turn": 3,
+  "regeneration_rate": 13,
+  "disclosure_rate": 0.62,
+  "total_unlocked": 5,
+  "total_withheld": 8,
+  "per_turn_leaks": [
+    {
+      "turn": 3,
+      "leaked_facts": [
+        "G05"
+      ],
+      "student_message": "I want to make sure we don't miss anything important. When these episodes happen, does your body react in any other way?",
+      "patient_response": "The diarrhea has become so frequent that I've gone from having 1-2 bowel movements a day to 8-10, and it's not just loose stools, but also watery with a sense of urgency. The pain is crampy, and sometimes I get this feeling of incomplete evacuation after most bowel movements, which makes me feel really uncomfortable."
+    }
+  ],
+  "failure_attributions": [
+    {
+      "turn": 3,
+      "type": "leak",
+      "leaked_facts": [
+        "G05"
+      ],
+      "attribution": {
+        "attribution": "planner_error",
+        "explanation": "The planner incorrectly authorized a withheld fact, leading to the disclosure of information that should not have been shared."
+      }
+    },
+    {
+      "turn": 4,
+      "type": "contradiction",
+      "contradictions": [
+        {
+          "fact_id": "G06",
+          "description": "Fact states unintentional weight loss of about 4 kg (9 lbs) over 3 weeks due to diarrhea, while the response claims weight loss is due to diarrhea and vomiting, which is not mentioned in the facts."
+        },
+        {
+          "fact_id": "G03",
+          "description": "Fact states increased bowel frequency of 8-10 bowel movements per day, while the response denies experiencing those symptoms."
+        }
+      ],
+      "attribution": {
+        "attribution": "planner_error",
+        "explanation": "The planner incorrectly authorized the disclosure of the patient's weight loss, which should have been withheld, leading to a leak of sensitive information."
+      }
+    }
+  ],
+  "evaluations": [
+    {
+      "turn": 1,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less like a spontaneous reply from a real patient. Phrases like 'significant concern' and 'accompanied by bloody stools with mucus' sound more clinical than what a patient would typically say in a casual conversation. Additionally, the length of the response is longer than what is common for a patient answering a straightforward question."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "G04",
+            "description": "Patient's response does not mention nocturnal diarrhea, which is a significant symptom."
+          },
+          {
+            "fact_id": "G05",
+            "description": "Patient's response does not address tenesmus, which is relevant to their bowel symptoms."
+          },
+          {
+            "fact_id": "G06",
+            "description": "Patient's response does not mention unintentional weight loss, which is an important aspect of their condition."
+          },
+          {
+            "fact_id": "G09",
+            "description": "Patient's response does not mention low-grade fever, which is part of their symptomatology."
+          },
+          {
+            "fact_id": "G13",
+            "description": "Patient's response does not acknowledge taking ibuprofen, which is relevant to their pain management."
+          },
+          {
+            "fact_id": "G14",
+            "description": "Patient's response does not mention increased alcohol consumption, which may be related to their stress and symptoms."
+          },
+          {
+            "fact_id": "G19",
+            "description": "Patient's response does not mention family history of Crohn's disease, which is pertinent to their condition."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 2,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues, as it sounds somewhat formal and structured for a patient. Phrases like 'self-medicate with loperamide' and 'significant relief' are more clinical than what a typical patient might say. Additionally, the length is a bit longer than what is typical for spontaneous patient responses, making it feel less natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 3,
+      "unlocked_at_this_turn": [],
+      "leakage": {
+        "leaked": true,
+        "leaked_facts": [
+          "G05"
+        ]
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response contains detailed medical descriptions and terminology that a typical patient might not use in casual conversation. While it provides relevant information, the structure feels somewhat formal and clinical, making it less spontaneous and more rehearsed than a natural patient response would be."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "G05",
+            "description": "Patient's response indicates a sensation of incomplete evacuation, which contradicts the withheld fact of tenesmus."
+          },
+          {
+            "fact_id": "G04",
+            "description": "Patient's response indicates a significant increase in bowel movements, which contradicts the withheld fact of nocturnal diarrhea."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 4,
+      "unlocked_at_this_turn": [
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": true,
+        "contradictions": [
+          {
+            "fact_id": "G06",
+            "description": "Fact states unintentional weight loss of about 4 kg (9 lbs) over 3 weeks due to diarrhea, while the response claims weight loss is due to diarrhea and vomiting, which is not mentioned in the facts."
+          },
+          {
+            "fact_id": "G03",
+            "description": "Fact states increased bowel frequency of 8-10 bowel movements per day, while the response denies experiencing those symptoms."
+          }
+        ]
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While the patient provides relevant information about weight loss and its impact on energy levels, the phrasing is a bit too polished for a typical patient response. Additionally, the mention of specific weight loss in kilograms and pounds may come off as overly precise for a casual conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The current response states that the patient does not experience the symptoms of diarrhea and urgency described in the previous response, which directly contradicts the previous statement about experiencing frequent and watery diarrhea."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": false,
+        "inconsistencies": [
+          {
+            "fact_id": "G04",
+            "description": "Patient denied experiencing diarrhea, contradicting the fact of nocturnal diarrhea."
+          },
+          {
+            "fact_id": "G05",
+            "description": "Patient denied experiencing symptoms related to tenesmus, contradicting the fact of incomplete evacuation sensation."
+          }
+        ]
+      }
+    },
+    {
+      "turn": 5,
+      "unlocked_at_this_turn": [
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat structured and includes specific details that a patient might not typically volunteer in a casual conversation. Phrases like 'radiates to my lower back and knees' and 'especially after a long day at work' sound a bit too formal and clinical for a spontaneous patient response. It lacks the emotional authenticity and natural fillers that would make it feel more genuine."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 6,
+      "unlocked_at_this_turn": [
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response contains some natural elements, such as expressing concern about symptoms and their impact on work. However, it feels somewhat structured and polished, lacking the spontaneity and emotional authenticity typical of a real patient. The mention of 'low-grade fever' and 'work performance' may come off as too clinical or formal for a patient, making it sound less like a spontaneous response."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 7,
+      "unlocked_at_this_turn": [
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'noticeable swelling' and 'dull ache' sound more clinical than what a typical patient might say. Additionally, the length of the response is longer than what is typical for a simple question about swelling, making it feel rehearsed rather than natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 8,
+      "unlocked_at_this_turn": [
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 4,
+        "reason": "The response is generally good and conveys the patient's experience, but it feels slightly polished and structured. The use of phrases like 'especially after eating certain foods' and 'it's made me really cautious' adds a level of detail that may not be typical in spontaneous patient responses. Overall, it captures the emotional aspect but could be more casual."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 9,
+      "unlocked_at_this_turn": [
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'significantly affected' and 'irregular due to my busy schedule' sound more clinical than how a typical patient might express their feelings. Additionally, the length of the response is longer than what a real patient would likely provide in a casual conversation, making it feel less natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 10,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and includes specific temperature readings that a typical patient might not mention. It feels slightly structured and lacks the spontaneity and emotional authenticity of a real patient. A more casual and less precise answer would sound more natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 11,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'I don't think it's related to my current symptoms' and 'at least I thought I was until these issues started showing up' sound a bit rehearsed and overly analytical for a typical patient response. While it does provide relevant information, it lacks the emotional authenticity and casual tone that would make it feel more natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 12,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured for a patient, particularly with the phrase 'self-medicating' and the mention of 'significant relief.' It feels a bit too polished and clinical, lacking the casual tone and emotional authenticity that a real patient might express. Additionally, the length is longer than typical spontaneous patient responses."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 13,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. Phrases like 'irregular due to my long work hours and stress from these symptoms' sound a bit too polished for a typical patient. While it does convey the patient's situation, it lacks the emotional authenticity and casual language that would make it feel more natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 14,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues with being too formal and structured for a patient. While it conveys the patient's struggles, the phrasing feels somewhat rehearsed and lacks the spontaneity typical of real patient conversations. Additionally, the length is longer than what would be expected for a simple question about exercise."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 15,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09",
+        "G19"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While it provides relevant information, the phrasing is a bit too polished for a typical patient response. Additionally, the mention of not seeing a doctor in over two years feels like an extra detail that may not be volunteered in such a context."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 16,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09",
+        "G19"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has a formal tone and is somewhat structured, which makes it feel less spontaneous. While it conveys concern and acknowledges the emotional weight of the situation, it uses phrases like 'the possibility of something serious being wrong' that may sound too clinical for a typical patient. Additionally, the length of the response is longer than what a real patient might typically provide in a casual conversation."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 17,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09",
+        "G14",
+        "G19"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured for a patient, particularly in the way it details the increase in alcohol consumption and the acknowledgment of its impact. While it does convey some emotional awareness, the phrasing feels a bit too polished and lacks the spontaneity typical of a real patient. Additionally, the length is longer than what might be expected for a straightforward question about alcohol use."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 18,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09",
+        "G14",
+        "G19"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response is somewhat formal and structured, which makes it feel less spontaneous. While the patient provides relevant information, the phrasing is a bit too polished and includes a level of detail that a typical patient might not volunteer in response to a straightforward question about smoking or substance use."
+      },
+      "line_to_line_consistency": {
+        "consistent": false,
+        "inconsistency": "The patient states they drink alcohol regularly in the previous response but does not mention it in the current response, which focuses on cutting back on habits."
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 19,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09",
+        "G14",
+        "G19"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response contains relevant information but feels somewhat structured and formal for a spontaneous patient reply. The patient provides a lot of detail in a way that seems rehearsed rather than conversational. Phrases like 'what it might mean for my health' and 'adding to my stress levels' sound more clinical than how a typical patient might express their concerns. Additionally, the length of the response is longer than what would be expected for a simple question about hesitance to share information."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    },
+    {
+      "turn": 20,
+      "unlocked_at_this_turn": [
+        "G04",
+        "G06",
+        "G09",
+        "G14",
+        "G19"
+      ],
+      "leakage": {
+        "leaked": false,
+        "leaked_facts": []
+      },
+      "contradiction": {
+        "has_contradiction": false,
+        "contradictions": []
+      },
+      "naturalness": {
+        "score": 3,
+        "reason": "The response has noticeable issues with formality and structure. While it conveys genuine concern, the phrasing is somewhat polished and lacks the spontaneity typical of a real patient. The length is also longer than what might be expected in a casual conversation, making it feel less natural."
+      },
+      "line_to_line_consistency": {
+        "consistent": true,
+        "inconsistency": ""
+      },
+      "prompt_to_line_consistency": {
+        "consistent": true,
+        "inconsistencies": []
+      }
+    }
+  ]
+}
