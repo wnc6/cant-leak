@@ -712,10 +712,18 @@ def main():
         print_summary(all_evals)
 
     if args.output:
-        summary_path = os.path.join(args.output, "summary.json")
-        with open(summary_path, "w") as f:
+        # Per-session dump of just the files processed this invocation.
+        # NOTE: this is NOT a corpus-wide summary — it only contains
+        # entries for the result files evaluated in this specific run.
+        # For aggregated metrics across all 3 runs, use:
+        #     python3 summarize_evals.py evals/
+        # which reads the per-experiment _eval.json files in evals/.
+        timestamp = time.strftime("%Y-%m-%d_%H-%M-%S")
+        session_path = os.path.join(args.output, f"eval_session_{timestamp}.json")
+        with open(session_path, "w") as f:
             json.dump(all_evals, f, indent=2)
-        print(f"\nEvaluations saved to {args.output}/")
+        print(f"\nPer-experiment evals saved to {args.output}/ ({len(all_evals)} files)")
+        print(f"Session dump saved to {session_path}")
 
 
 if __name__ == "__main__":
