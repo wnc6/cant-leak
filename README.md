@@ -54,7 +54,7 @@ jupyter notebook demo/playground.ipynb
 
 > ***Save changes*** to disk first
 ```bash
-cd demo
-python3 stitch_playground.py playground.ipynb -o demo_figure.html
+python3 demo/stitch_playground.py demo/playground.ipynb -o demo/demo_figure.html
 open demo_figure.html
 ```
+

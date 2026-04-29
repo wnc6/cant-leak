@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Combine all HTML outputs from playground.ipynb into a single self-contained
+Combine all HTML outputs from demo/playground.ipynb into a single self-contained
 HTML page suitable for screenshotting or converting to PDF.
 
 Reads the SAVED notebook file (so you need to have run all cells in Jupyter
@@ -8,9 +8,9 @@ and saved before running this — the script reads cell outputs from disk,
 not from a live kernel).
 
 Usage:
-    # 1. Open playground.ipynb in classic Jupyter, run all cells, save.
+    # 1. Open demo/playground.ipynb in classic Jupyter, run all cells, save.
     # 2. Run this:
-    python3 stitch_playground.py playground.ipynb -o demo_figure.html
+    python3 demo/stitch_playground.py demo/playground.ipynb -o demo/demo_figure.html
     # 3. Open demo_figure.html in a browser, screenshot, or print to PDF.
 
 Selecting which sections to include:
