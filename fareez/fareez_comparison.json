@@ -1,0 +1,43 @@
+{
+  "n_fareez": 50,
+  "n_ours": 50,
+  "naturalness": {
+    "fareez_mean": null,
+    "ours_mean": null,
+    "fareez_scores": [],
+    "our_scores": []
+  },
+  "response_length": {
+    "fareez_mean": 14.3,
+    "ours_mean": 46.9
+  },
+  "hedging": {
+    "fareez_rate": 20.0,
+    "per_condition": {
+      "Naive Prompting": {
+        "rate": 23.4,
+        "avg_per_response": 0.27
+      },
+      "Structured Prompting": {
+        "rate": 15.1,
+        "avg_per_response": 0.2
+      },
+      "Self-Monitoring": {
+        "rate": 8.8,
+        "avg_per_response": 0.1
+      },
+      "Isolated Architecture": {
+        "rate": 16.7,
+        "avg_per_response": 0.2
+      },
+      "No-Isolation Ablation": {
+        "rate": 11.0,
+        "avg_per_response": 0.12
+      },
+      "No-Verifier Ablation": {
+        "rate": 18.5,
+        "avg_per_response": 0.22
+      }
+    }
+  }
+}

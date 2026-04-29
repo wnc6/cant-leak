@@ -7,9 +7,16 @@ from Fareez et al. (2022) on three dimensions:
 2. Response length distribution
 3. Hedging frequency
 
-Usage:
+Usage (from the repo root):
     export OPENAI_API_KEY=sk-...
-    python3 fareez_comparison.py --fareez "Clean Transcripts/" --evals evals/ --output fareez_analysis/
+    python3 fareez/fareez_comparison.py
+
+Defaults assume the standard repo layout:
+    fareez/clean_transcripts/   (Fareez transcripts, must be downloaded — see fareez/README.md)
+    evals/                      (per-experiment GPT-4o-mini evaluations)
+    results/                    (per-experiment runner outputs)
+
+Output is written to fareez/fareez_comparison.json by default.
 """
 
 import json
@@ -25,6 +32,12 @@ try:
 except ImportError:
     print("Install openai: pip3 install openai")
     sys.exit(1)
+
+
+# Resolve paths relative to the script's location so the script works
+# regardless of where it's invoked from.
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(SCRIPT_DIR)
 
 
 HEDGING_PHRASES = [
@@ -68,7 +81,7 @@ def parse_fareez_transcripts(fareez_dir, n_samples=50, seed=42):
     return sampled
 
 
-def load_our_responses(evals_dir, n_samples=50, seed=42):
+def load_our_responses(evals_dir, results_dir, n_samples=50, seed=42):
     """Load patient responses from our evaluation results."""
     random.seed(seed)
     
@@ -92,7 +105,7 @@ def load_our_responses(evals_dir, n_samples=50, seed=42):
     
     # Also load raw responses for length and hedging analysis
     raw_responses = []
-    for filepath in sorted(glob.glob(os.path.join("results", "**", "run_*.json"), recursive=True)):
+    for filepath in sorted(glob.glob(os.path.join(results_dir, "**", "run_*.json"), recursive=True)):
         with open(filepath) as f:
             result = json.load(f)
         for turn in result.get("turns", []):
@@ -214,9 +227,26 @@ def mann_whitney_u(x, y):
 def main():
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--fareez", default="Clean Transcripts/", help="Path to Fareez transcripts")
-    parser.add_argument("--evals", default="evals/", help="Path to evaluation results")
-    parser.add_argument("--output", default="fareez_analysis/", help="Output directory")
+    parser.add_argument(
+        "--fareez",
+        default=os.path.join(SCRIPT_DIR, "clean_transcripts"),
+        help="Path to Fareez transcripts (default: fareez/clean_transcripts/)",
+    )
+    parser.add_argument(
+        "--evals",
+        default=os.path.join(REPO_ROOT, "evals"),
+        help="Path to per-experiment GPT-4o-mini evaluations (default: evals/)",
+    )
+    parser.add_argument(
+        "--results",
+        default=os.path.join(REPO_ROOT, "results"),
+        help="Path to per-experiment runner outputs (default: results/)",
+    )
+    parser.add_argument(
+        "--output",
+        default=SCRIPT_DIR,
+        help="Output directory for fareez_comparison.json (default: fareez/)",
+    )
     parser.add_argument("--n", type=int, default=50, help="Number of samples per group")
     args = parser.parse_args()
 
@@ -229,7 +259,7 @@ def main():
 
     # Load our responses
     print("Loading our responses...")
-    our_responses, our_eval_data = load_our_responses(args.evals, args.n)
+    our_responses, our_eval_data = load_our_responses(args.evals, args.results, args.n)
     print(f"  Sampled {len(our_responses)} of our patient responses")
 
     # === 1. Naturalness Comparison ===
@@ -293,7 +323,7 @@ def main():
     # Also compute per-condition hedging from all results
     print("\n  Per-condition hedging (all results):")
     condition_hedging = defaultdict(list)
-    for filepath in sorted(glob.glob(os.path.join("results", "**", "run_*.json"), recursive=True)):
+    for filepath in sorted(glob.glob(os.path.join(args.results, "**", "run_*.json"), recursive=True)):
         with open(filepath) as f:
             result = json.load(f)
         condition = result.get("condition", "")
