@@ -18,6 +18,10 @@ The Fareez transcripts are not redistributed in this repository. To
 reproduce the comparison:
 
 1. Download the Fareez 2022 OSCE transcripts from
-   https://figshare.com/articles/dataset/MedDG/19514055
+   https://doi.org/10.6084/m9.figshare.16550013
 2. Move the dataset's "clean_transcripts" folder (containing .txt files) into fareez/
 3. Run `python3 fareez/fareez_comparison.py` from the repo root
+
+## Cite the Data
+
+Christopher William Smith, Faiha Fareez, Tishya Parikh, Christopher Wavell, Saba Shahab, Meghan Chevalier, Scott Good, Isabella De Blasi, Rafik Rhouma, Christopher McMahon, and Jean-Paul Lam. 2022. Collection of simulated medical exams. June.
