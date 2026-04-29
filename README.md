@@ -50,7 +50,8 @@ jupyter notebook demo/playground.ipynb
 **3. Select the `cant-leak` kernel**
 ![Kernel selection](assets/kernel_selection.png)
 
-### Combine playground cell outputs into `demo_figure.html`
+### Combine playground cell outputs into [demo_figure.html](demo/demo_figure.html)
+
 > ***Save changes*** to disk first
 ```bash
 cd demo
