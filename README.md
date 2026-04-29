@@ -35,6 +35,7 @@ ollama pull llama3.1:8b-instruct-fp16
 # smoke test - should respond
 ollama run llama3.1:8b-instruct-fp16 "hello"
 ```
+
 ### Run the playground
 **1. Register the venv as a Jupyter kernel**
 ```bash
@@ -42,9 +43,17 @@ pip install ipykernel
 python3 -m ipykernel install --user --name cant-leak --display-name "cant-leak"
 ```
 **2. Start Jupyter Notebook** (make sure Ollama is running in another terminal)
-- VSCode or Colab would NOT work, due to styled outputs
+> VSCode or Colab would ***NOT*** work, due to styled outputs
 ```bash
 jupyter notebook demo/playground.ipynb
 ```
 **3. Select the `cant-leak` kernel**
 ![Kernel selection](assets/kernel_selection.png)
+
+### Combine playground cell outputs into `demo_figure.html`
+> ***Save changes*** to disk first
+```bash
+cd demo
+python3 stitch_playground.py playground.ipynb -o demo_figure.html
+open demo_figure.html
+```
