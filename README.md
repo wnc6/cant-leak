@@ -22,13 +22,29 @@ source .venv/bin/activate
 
 pip install -r requirements.txt
 ```
-**2. Install and start Ollama** (keep this terminal open)
+**2. Install and start Ollama** (keep running)
 ```bash
 brew install ollama
 ollama serve
 ```
 **3. Pull the model** (in a new terminal)
 ```bash
-ollama pull llama3.1:8b-instruct-fp16  # ~16 GB download - takes few minutes
-ollama run llama3.1:8b-instruct-fp16 "hello"  # smoke test - should respond
+# ~16 GB download - takes few minutes
+ollama pull llama3.1:8b-instruct-fp16
+
+# smoke test - should respond
+ollama run llama3.1:8b-instruct-fp16 "hello"
 ```
+### Run the playground
+**1. Register the venv as a Jupyter kernel**
+```bash
+pip install ipykernel
+python3 -m ipykernel install --user --name cant-leak --display-name "cant-leak"
+```
+**2. Start Jupyter Notebook** (make sure Ollama is running in another terminal)
+- VSCode or Colab would NOT work, due to styled outputs
+```bash
+jupyter notebook demo/playground.ipynb
+```
+**3. Select the `cant-leak` kernel**
+![Kernel selection](assets/kernel_selection.png)
