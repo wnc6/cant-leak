@@ -2,7 +2,7 @@
 Information-isolated disclosure architecture for controlling what LLM dialogue agents reveal under pressure.
 
 
-# Quick Start
+## Quick Start
 
 ### Prerequisites
 - Python 3.10+
