@@ -136,11 +136,12 @@ python3 -m ipykernel install --user --name cant-leak --display-name "cant-leak"
 jupyter notebook demo/playground.ipynb
 ```
 **3. Select the `cant-leak` kernel**
+
 ![Kernel selection](assets/kernel_selection.png)
 
 ### Create the Demo Figure
 
-<details>
+<details open>
 <summary>Click to preview Demo Figure</summary>
 
 ![Preview](assets/demo_figure_screenshot.png)
@@ -204,7 +205,7 @@ The report's headline numbers come from deterministic phrase matching, computed 
 python3 summarize_runs.py results/
 ```
 
-<details>
+<details open>
 <summary>Click to view expected output</summary>
 
 ```
@@ -296,7 +297,7 @@ python3 summarize_evals.py evals/
 # Or regenerate from scratch
 python3 evaluate.py results/ --output evals/
 ```
-<details>
+<details open>
 <summary>Click to view expected output</summary>
 
 ```
@@ -351,7 +352,7 @@ python3 annotate.py compute \
     annotation/annotation_annotator_2.json
 ```
 
-<details>
+<details open>
 <summary>Click to view expected output</summary>
 
 ```
@@ -384,7 +385,7 @@ python3 annotate.py sample
 ```
 This outputs [`annotation/annotate.html`](annotation/annotate.html) and [`annotation/sample_metadata.json`](annotation/sample_metadata.json). Send the HTML to two annotators; each opens it in a browser, labels all 50 samples, and downloads a JSON file. Save the downloads as [`annotation/annotation_annotator_1.json`](annotation/annotation_annotator_1.json) and [`annotation/annotation_annotator_2.json`](annotation/annotation_annotator_2.json), then re-run the `compute` command above.
 
-<details>
+<details open>
 <summary>Click to preview annotate.html</summary>
 
 ![Preview](assets/human_annotation_tool.png)
@@ -411,7 +412,7 @@ Compares 50 sampled isolated-architecture responses against 50 sampled real OSCE
 ```bash
 python3 fareez/fareez_comparison.py
 ```
-<details>
+<details open>
 <summary>Click to view expected output</summary>
 
 ```
