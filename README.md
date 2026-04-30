@@ -68,7 +68,7 @@ Self-contained bundles that aren't part of the main pipeline.
 - [`.gitignore`](.gitignore)
 
 
-## Setup
+## Build the System
 **1. Clone the repo and install Python dependencies:**
 ```bash
 git clone https://github.com/wnc6/cant-leak.git
@@ -88,7 +88,7 @@ brew install ollama
 # Linux
 curl -fsSL https://ollama.com/install.sh | sh
 
-# start local ollama server
+# Start local ollama server
 ollama serve
 ```
 **3. Pull the model** (in a new terminal)
@@ -96,11 +96,16 @@ ollama serve
 # ~16 GB download - takes few minutes
 ollama pull llama3.1:8b-instruct-fp16
 
-# smoke test → should respond
+# Smoke test → should respond
 ollama run llama3.1:8b-instruct-fp16 "hello"
 ```
+**4. Set the OpenAI API key** (for the supplementary GPT-4o-mini evaluation)
+```bash
+export OPENAI_API_KEY=sk-...
+```
 
-## Run the playground
+## Run the System
+### Run the Playground
 **1. Register the venv as a Jupyter kernel**
 ```bash
 pip install ipykernel
@@ -114,18 +119,298 @@ jupyter notebook demo/playground.ipynb
 **3. Select the `cant-leak` kernel**
 ![Kernel selection](assets/kernel_selection.png)
 
-## Create demo figure
+### Create the Demo Figure
 
 <details>
-<summary>Click to preview demo figure</summary>
+<summary>Click to preview Demo Figure</summary>
 
 ![Preview](assets/demo_figure_screenshot.png)
 
 </details>
 
-> ***Save any changes*** first, then:
+After running the playground and saving your desired outputs:
 ```bash
-# combine playground cell outputs
+# Combine playground cell outputs
 python3 demo/stitch_playground.py demo/playground.ipynb -o demo/demo_figure.html
 open demo/demo_figure.html
 ```
+
+### Run a Single Experiment
+Run one conversation (1 case × 1 condition × 1 strategy):
+```bash
+python3 run_experiment.py isolated_architecture gradual_escalation \
+  --case cases/case_cardiology.json \
+  --output /tmp/test.json
+```
+To see all available conditions and strategies:
+```bash
+python3 run_experiment.py --list
+```
+
+### Run All 324 Experiments
+The committed [`results/`](results/) contains all 324 outputs, so you can skip this entirely and proceed to [Reproduce the Evaluation](#reproduce-the-evaluation). 
+
+To regenerate from scratch (6 conditions × 6 strategies × 3 cases × 3 runs):
+```bash
+python3 run_all.py --runs 3
+```
+To preview what would run without executing:
+```bash
+python3 run_all.py --runs 3 --dry-run
+```
+The script writes incrementally; a Ctrl+C interruption preserves completed conversations and `--resume` skips them on a re-run.
+
+
+## Reproduce the Evaluation
+
+The report's claims rest on five reproducible artifacts. Each can be re-derived from this repository.
+
+### 1. Primary leakage measure (Table 2, RQ1, RQ4)
+
+**Requires:** [`results/`](results/) (committed). No API calls, no LLM evaluator.
+
+The report's headline numbers come from deterministic phrase matching, computed by the runner during each conversation and stored in `summary.leak_count`.
+
+```bash
+python3 summarize_runs.py results/
+```
+
+<details>
+<summary>Click to view expected output</summary>
+
+```
+Loaded 324 result files
+
+=================================================================
+LEAKAGE BY CONDITION (mean ± SD across all runs)
+=================================================================
+Condition                    N   Mean     SD  Min  Max
+-----------------------------------------------------------------
+Naive Prompting             54   4.13   2.07    0    8
+Structured Prompting        54   5.17   2.42    1   11
+Self-Monitoring             54   4.22   2.30    0    9
+Isolated Architecture       54   0.00   0.00    0    0
+No-Isolation Ablation       54   0.81   1.10    0    3
+No-Verifier Ablation        54   0.04   0.19    0    1
+
+=====================================================================================
+LEAKAGE BY CONDITION × STRATEGY (mean ± SD)
+=====================================================================================
+Condition                     Direct   Rephrase    Emotion  Authority   Escalate      Logic
+-------------------------------------------------------------------------------------
+Naive Prompting            3.4±2.2   3.4±1.2   3.4±2.2   5.1±2.0   5.0±1.9   4.3±2.4 
+Structured Prompting       4.0±1.9   3.3±1.5   5.6±2.3   5.6±2.1   6.7±2.5   5.9±2.8 
+Self-Monitoring            2.4±1.7   3.4±1.0   3.3±2.7   5.6±1.7   5.0±2.1   5.6±2.6 
+Isolated Architecture      0.0±0.0   0.0±0.0   0.0±0.0   0.0±0.0   0.0±0.0   0.0±0.0 
+No-Isolation Ablation      1.1±1.5   0.4±0.5   1.0±1.0   1.0±1.2   1.3±1.3   0.0±0.0 
+No-Verifier Ablation       0.0±0.0   0.0±0.0   0.1±0.3   0.0±0.0   0.1±0.3   0.0±0.0 
+
+=================================================================
+LEAKAGE BY CONDITION × CASE (mean ± SD)
+=================================================================
+Condition                     Cardio       Resp         GI
+-----------------------------------------------------------------
+Naive Prompting            3.2±1.6   2.9±1.5   6.2±1.3 
+Structured Prompting       4.6±2.1   3.9±1.5   6.9±2.5 
+Self-Monitoring            3.9±2.1   3.0±1.9   5.8±2.1 
+Isolated Architecture      0.0±0.0   0.0±0.0   0.0±0.0 
+No-Isolation Ablation      0.5±0.5   0.2±0.4   1.7±1.4 
+No-Verifier Ablation       0.0±0.0   0.1±0.2   0.1±0.2 
+
+=================================================================
+MANN-WHITNEY U: Each condition vs Isolated Architecture
+=================================================================
+Note: the isolated condition has zero variance by construction,
+so these tests are degenerate. The magnitude of separation is
+the more meaningful comparison (see report Table 2 caption).
+p-values shown for reference only.
+
+Naive Prompting           4.13±2.07 vs 0.00±0.00  U=27  p=0.000000  ***
+Structured Prompting      5.17±2.42 vs 0.00±0.00  U=0  p=0.000000  ***
+Self-Monitoring           4.22±2.30 vs 0.00±0.00  U=27  p=0.000000  ***
+No-Isolation Ablation     0.81±1.10 vs 0.00±0.00  U=783  p=0.000034  ***
+No-Verifier Ablation      0.04±0.19 vs 0.00±0.00  U=1404  p=0.740040  ns
+
+=================================================================
+STRUCTURED vs NAIVE (suggestive only — see report §2.2)
+=================================================================
+The report flags this as a suggestive direction, not an
+established finding. Caveats: borderline p-value that won't
+survive multiple-comparisons correction; structured bundles
+three changes from naive; direction inconsistent across cases.
+
+Naive:      4.13 ± 2.07 (n=54)
+Structured: 5.17 ± 2.42 (n=54)
+Mann-Whitney U: 1123, p = 0.0396 (uncorrected)
+
+=================================================================
+DISCLOSURE RATE (architecture conditions only)
+=================================================================
+Isolated Architecture     73.2% ± 17.4%
+No-Isolation Ablation     73.1% ± 18.1%
+No-Verifier Ablation      72.5% ± 18.8%
+```
+
+</details>
+
+
+### 2. Supplementary GPT-4o-mini evaluation (Tables 4, 7, naturalness)
+
+**Requires:** [`evals/`](evals/) (committed) for aggregation, or [`results/`](results/) + OpenAI API key for regeneration.
+
+GPT-4o-mini scores contradictions (P2L, L2L), naturalness, and failure attribution. Treated as supplementary because human annotation showed ~27% recall on leak detection (§3.6 of the report).
+
+```bash
+# Aggregate the committed evaluations
+python3 summarize_evals.py evals/
+
+# Or regenerate from scratch
+python3 evaluate.py results/ --output evals/
+```
+<details>
+<summary>Click to view expected output</summary>
+
+```
+Loaded 324 eval files
+
+======================================================================
+TABLE 4: Consistency Metrics (mean ± SD across all 3 runs)
+======================================================================
+Condition                       Contrad.            L2L            P2L
+----------------------------------------------------------------------
+Naive Prompting             1.9 ± 2.2      2.6 ± 1.6      9.2 ± 5.9  
+Structured Prompting        1.5 ± 2.1      2.1 ± 1.7     11.6 ± 10.4 
+Self-Monitoring             1.6 ± 2.4      1.7 ± 1.3      5.5 ± 5.4  
+Isolated Architecture       0.6 ± 1.6      1.6 ± 1.1      3.7 ± 4.8  
+No-Isolation Abl.           0.5 ± 1.1      1.3 ± 1.2      6.4 ± 6.0  
+No-Verifier Abl.            1.1 ± 2.5      1.6 ± 1.3      3.7 ± 4.6  
+
+N = 54 per condition
+
+======================================================================
+NATURALNESS (mean ± SD across all 3 runs)
+======================================================================
+Condition                     Mean       SD     N
+----------------------------------------------------------------------
+Naive Prompting               3.43     0.14    54
+Structured Prompting          3.30     0.16    54
+Self-Monitoring               3.37     0.14    54
+Isolated Architecture         3.38     0.15    54
+No-Isolation Abl.             3.25     0.13    54
+No-Verifier Abl.              3.36     0.13    54
+
+======================================================================
+TABLE 7: Failure Attribution (totals across all 3 runs)
+======================================================================
+Generator errors:    760 (48%)
+Planner errors:      792 (50%)
+Verifier misses:      24 (2%)
+Total:              1576
+```
+
+</details>
+
+### 3. Human validation (§3.6, Table 6)
+
+**Requires:** [`annotation/`](annotation/) and [`evals/`](evals/) (both committed).
+
+Two annotators independently labeled the same 50 stratified responses from run 1; both label sets were then compared against GPT-4o-mini.
+
+```bash
+python3 annotate.py compute \
+    annotation/annotation_annotator_1.json \
+    annotation/annotation_annotator_2.json
+```
+
+<details>
+<summary>Click to view expected output</summary>
+
+```
+==================================================
+Inter-Annotator Agreement
+==================================================
+  human1 vs human2
+  Samples:    50
+  Agreement:  96.0%
+  Kappa:      0.919 (Almost perfect)
+  human1: 22 leaks, 2 unsure
+  human2: 22 leaks, 5 unsure
+
+==================================================
+Human vs GPT-4o-mini
+==================================================
+  human1 vs GPT-4o-mini: κ = 0.208
+  human2 vs GPT-4o-mini: κ = 0.208
+  GPT-4o-mini: 6 leaks (12.0%)
+
+  Saved: annotation/kappa_results.json
+```
+
+</details>
+
+To re-run the annotation interface on a fresh sample (additionally requires [`results/`](results/) and two human annotators):
+
+```bash
+python3 annotate.py sample
+```
+This outputs [`annotation/annotate.html`](annotation/annotate.html) and [`annotation/sample_metadata.json`](annotation/sample_metadata.json). Send the HTML to two annotators; each opens it in a browser, labels all 50 samples, and downloads a JSON file. Save the downloads as [`annotation/annotation_annotator_1.json`](annotation/annotation_annotator_1.json) and [`annotation/annotation_annotator_2.json`](annotation/annotation_annotator_2.json), then re-run the `compute` command above.
+
+<details>
+<summary>Click to preview annotate.html</summary>
+
+![Preview](assets/human_annotation_tool.png)
+
+</details>
+
+### 4. Report charts (Figures 2–7)
+
+**Requires:** [`results/`](results/) (committed).
+
+```bash
+python3 generate_charts.py results/ --format pdf
+```
+Outputs are saved to [`charts/`](charts/). Figure 1 ([`assets/architecture.png`](assets/architecture.png)) was drawn manually and is not produced by this pipeline.
+
+### 5. Distributional comparison vs. real OSCE transcripts (Table 5)
+
+**Requires:** [`results/`](results/), [`evals/`](evals/), and the Fareez 2022 dataset (external). An OpenAI API key is optional — without it, length and hedging numbers still compute but naturalness is skipped.
+
+**Setup:** Download the Fareez transcripts from [figshare](https://doi.org/10.6084/m9.figshare.16550013) and place .txt files in `fareez/clean_transcripts/`. See [`fareez/README.md`](fareez/README.md) for citation details.
+
+Compares 50 sampled isolated-architecture responses against 50 sampled real OSCE responses on naturalness, response length, and hedging frequency.
+
+```bash
+python3 fareez/fareez_comparison.py
+```
+<details>
+<summary>Click to view expected output</summary>
+
+```
+Loading Fareez transcripts...
+  Sampled 50 Fareez patient responses
+Loading our responses...
+  Sampled 50 of our patient responses
+
+=== Naturalness Comparison ===
+  Skipping (no OPENAI_API_KEY). Set it to score Fareez responses.
+
+=== Response Length Comparison ===
+  Fareez mean length: 14.3 words
+  Ours mean length:   46.9 words
+  Difference:         +32.6 words
+
+=== Hedging Frequency Comparison ===
+
+  Per-condition hedging (all results):
+  Fareez: 20% of responses contain hedging
+  Naive Prompting: 23% of responses contain hedging (avg 0.27 per response)
+  Structured Prompting: 15% of responses contain hedging (avg 0.20 per response)
+  Self-Monitoring: 9% of responses contain hedging (avg 0.10 per response)
+  Isolated Architecture: 17% of responses contain hedging (avg 0.20 per response)
+  No-Isolation Ablation: 11% of responses contain hedging (avg 0.12 per response)
+  No-Verifier Ablation: 19% of responses contain hedging (avg 0.22 per response)
+
+Results saved to /Users/wenni/Documents/GitHub/cant-leak/fareez/fareez_comparison.json
+```
+
+</details>
