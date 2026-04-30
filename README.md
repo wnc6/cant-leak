@@ -13,7 +13,7 @@ The system itself, plus the cases it operates on. These are the inputs to everyt
 
 ### Main pipeline
 
-The scripts that produce the report's primary numbers. Run in this order to reproduce.
+The scripts that produce the report's primary numbers.
 
 - [`run_experiment.py`](run_experiment.py) — run a single conversation (1 case × 1 condition × 1 strategy)
 - [`run_all.py`](run_all.py) — run the full 324-experiment matrix (3 runs × 3 cases × 6 conditions × 6 strategies)
@@ -27,8 +27,8 @@ The scripts that produce the report's primary numbers. Run in this order to repr
 
 Data the pipeline produces. Committed to the repo so analysis is reproducible without re-running expensive steps.
 
-- [`results/`](results/) — 324 experiment outputs (one JSON per conversation), structured as `<case>/<condition>/<strategy>/run_N.json`
-- [`evals/`](evals/) — 324 GPT-4o-mini supplementary evaluations, parallel structure to `results/`
+- [`results/`](results/) — 324 experiment outputs (one JSON per conversation), structured as `<case>/<condition>/<strategy>/run_N.json`. Source of all primary leakage measurements.
+- [`evals/`](evals/) — 324 GPT-4o-mini supplementary evaluations, parallel structure to `results/`. Source of contradictions, naturalness, and failure attribution numbers.
 - [`charts/`](charts/) — the 6 PDF charts in the report
 
 ### Side analyses
@@ -43,11 +43,11 @@ Self-contained bundles that aren't part of the main pipeline.
 - [`fareez/`](fareez/) — distributional comparison vs. real OSCE transcripts (Table 5)
   - [`fareez_comparison.py`](fareez/fareez_comparison.py), [`fareez_comparison.json`](fareez/fareez_comparison.json) — script and its output
   - [`README.md`](fareez/README.md) — Fareez 2022 dataset download and citation
-  - `clean_transcripts/` — gitignored; stores txt files downloaded from **[HERE](https://doi.org/10.6084/m9.figshare.16550013)**
-- [`demo/`](demo/)
+  - `clean_transcripts/` — gitignored; download txt files from **[figshare](https://doi.org/10.6084/m9.figshare.16550013)** and place them here
+- [`demo/`](demo/) — playground notebook and stitched figure
   - [`playground.ipynb`](demo/playground.ipynb) — interactive notebook (open in classic Jupyter, not VSCode or Colab)
   - [`stitch_playground.py`](demo/stitch_playground.py) — combines playground cell outputs into a single page
-  - [`demo_figure.html`](demo/demo_figure.html) — composed by `stitch_playground.py`
+  - [`demo_figure.html`](demo/demo_figure.html) — 
 
 ### Course deliverables
 
@@ -83,7 +83,13 @@ pip install -r requirements.txt
 ```
 **2. Install and start Ollama** (keep running)
 ```bash
+# macOS
 brew install ollama
+
+# Linux
+curl -fsSL https://ollama.com/install.sh | sh
+
+# start local ollama server
 ollama serve
 ```
 **3. Pull the model** (in a new terminal)
@@ -91,7 +97,7 @@ ollama serve
 # ~16 GB download - takes few minutes
 ollama pull llama3.1:8b-instruct-fp16
 
-# smoke test - should respond
+# smoke test → should respond
 ollama run llama3.1:8b-instruct-fp16 "hello"
 ```
 
@@ -111,8 +117,8 @@ jupyter notebook demo/playground.ipynb
 
 ### Combine playground cell outputs into [demo_figure.html](demo/demo_figure.html)
 
-> ***Save changes*** to disk first
+> ***Save any changes*** first, then:
 ```bash
 python3 demo/stitch_playground.py demo/playground.ipynb -o demo/demo_figure.html
-open demo_figure.html
+open demo/demo_figure.html
 ```
