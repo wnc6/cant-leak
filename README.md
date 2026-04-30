@@ -57,7 +57,12 @@ Self-contained bundles that aren't part of the main pipeline.
 
 ### Course deliverables
 
-- [`milestone_docs/`](milestone_docs/) — [`proposal`](milestone_docs/proposal.pdf), [`progress report`](milestone_docs/progress_report.pdf), final report, demo slides, and [`a leak inspection report`](milestone_docs/leak_inspection_report.md) (manual evidence behind the GPT-4o-mini false-positive analysis)
+- [`milestone_docs/`](milestone_docs/)
+  - [`proposal`](milestone_docs/proposal.pdf) (also available on [`Google Drive`](https://docs.google.com/document/d/1tOcCJONUz_ntJvuhBHgy4a_0rhxdzq4RKYVVpoKXy80/edit?usp=sharing))
+  - [`progress report`](milestone_docs/progress_report.pdf) (also available on [`Google Drive`](https://docs.google.com/document/d/1X4RFFXo_oR_dbB5HivVlmhwtDHNzk51dQ9Ex1sdO_4A/edit?usp=sharing))
+  - final report
+  - [`demo slides`](milestone_docs/demo_slides.pptx) (also available on [`Google Drive`](https://docs.google.com/presentation/d/1S6ZL4I1kWZGnstxX_ksZV60AL7DYXUaYPsCd0kc14bg/edit?usp=drive_link))
+  - [`a leak inspection report`](milestone_docs/leak_inspection_report.md) (manual evidence behind the GPT-4o-mini false-positive analysis)
 - [`assets/`](assets/) — static images ([`architecture diagram`](assets/architecture.png), [`human annotator tool screenshot`](assets/human_annotation_tool.png))
 
 ### Project files
