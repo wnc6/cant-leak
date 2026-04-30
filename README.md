@@ -8,7 +8,7 @@ Information-isolated disclosure architecture for controlling what LLM dialogue a
 The system itself, plus the cases it operates on. These are the inputs to everything else.
 
 - [`src/`](src/) — the [`planner`](src/planner.py), [`generator`](src/generator.py), [`verifier`](src/verifier.py), [`student agent`](src/student_agent.py), and [`six experimental conditions`](src/conditions.py) (naive, structured, self-monitoring, isolated, two ablations)
-- [`cases/`](cases/) — three OSCE clinical cases ([`cardiology`](cases/case_cardiology.py), [`respiratory`](cases/case_respiratory.py), [`GI`](cases/case_gi.py)) with disclosure conditions, unlock keywords, leak phrases, and CMAS symptom attributes
+- [`cases/`](cases/) — three OSCE clinical cases ([`cardiology`](cases/case_cardiology.json), [`respiratory`](cases/case_respiratory.json), [`GI`](cases/case_gi.json)) with disclosure conditions, unlock keywords, leak phrases, and CMAS symptom attributes
 - [`tests/`](tests/) — unit tests for the [`planner`](tests/test_planner.py), [`end-to-end pipeline integration`](tests/test_pipeline.py), and [`a fast smoke test`](tests/smoke_test.py) (fixtures in [`tests/fixtures/`](tests/fixtures/))
 
 ### Main pipeline
