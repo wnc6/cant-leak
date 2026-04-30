@@ -103,6 +103,15 @@ ollama run llama3.1:8b-instruct-fp16 "hello"
 ```bash
 export OPENAI_API_KEY=sk-...
 ```
+**5. Verify the build**
+Run the smoke test to confirm Ollama is reachable, all six conditions instantiate, and each produces a non-empty response on a 10-turn cardiology conversation:
+
+```bash
+python3 tests/smoke_test.py
+```
+If this passes, the system is working end-to-end and you can proceed to [Run the System](#run-the-system).
+
+[`tests/test_planner.py`](tests/test_planner.py) and [`tests/test_pipeline.py`](tests/test_pipeline.py) provide finer-grained unit and integration tests; both run with `python3 tests/<name>.py`.
 
 ## Run the System
 ### Run the Playground
