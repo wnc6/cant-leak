@@ -22,6 +22,6 @@ reproduce the comparison:
 2. Move the dataset's "clean_transcripts" folder (containing .txt files) into fareez/
 3. Run `python3 fareez/fareez_comparison.py` from the repo root
 
-## Cite the Data
+## Citation
 
 Christopher William Smith, Faiha Fareez, Tishya Parikh, Christopher Wavell, Saba Shahab, Meghan Chevalier, Scott Good, Isabella De Blasi, Rafik Rhouma, Christopher McMahon, and Jean-Paul Lam. 2022. Collection of simulated medical exams. June.

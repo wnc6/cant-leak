@@ -47,7 +47,7 @@ Self-contained bundles that aren't part of the main pipeline.
 - [`demo/`](demo/) — playground notebook and stitched figure
   - [`playground.ipynb`](demo/playground.ipynb) — interactive notebook (open in classic Jupyter, not VSCode or Colab)
   - [`stitch_playground.py`](demo/stitch_playground.py) — combines playground cell outputs into a single page
-  - [`demo_figure.html`](demo/demo_figure.html) — 
+  - [`demo_figure.html`](demo/demo_figure.html) — composed by `stitch_playground.py`
 
 ### Course deliverables
 
