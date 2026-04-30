@@ -458,7 +458,7 @@ This project contributes one OSCE benchmark with structured disclosure annotatio
 
 ## Comparison Systems
 
-The evaluation compares the proposed isolated architecture against five alternative systems, implemented as conditions in [`src/conditions.py`](src/conditions.py):
+The isolated architecture is evaluated against five alternative systems implemented in this repository (`src/conditions.py`). Three are prompting-based baselines representing the standard approaches in the LLM-simulated-patient literature; two are ablations of the proposed architecture isolating individual component contributions.
 
 | Condition | Mechanism |
 |---|---|
@@ -469,9 +469,10 @@ The evaluation compares the proposed isolated architecture against five alternat
 | No-isolation ablation | Same pipeline as isolated, but generator sees full case |
 | No-verifier ablation | Same as isolated, but without the verifier |
 
-All six conditions share the same student agent, cases, and Llama 3.1 8B model — only the disclosure-control mechanism differs. Run any of them via [`run_experiment.py`](run_experiment.py) (see [Run a Single Experiment](#run-a-single-experiment)).
+All five conditions use the same Llama 3.1 8B Instruct model, the same student agent strategies, and the same clinical cases as the isolated architecture, ensuring fair comparison. Only the disclosure-control mechanism differs. Run any of them via [`run_experiment.py`](run_experiment.py) (see [Run a Single Experiment](#run-a-single-experiment)).
 
 Architectural antecedents discussed in the report's Related Work but not directly compared as runnable systems: [EvoPatient (ACL 2025)](https://aclanthology.org/2025.acl-long.846/), [AIPatient (2024)](https://arxiv.org/abs/2409.18924), [Abdulhai et al. (NeurIPS 2025)](https://arxiv.org/abs/2511.00222).
+
 
 ## AI Tools Used in Development
 
