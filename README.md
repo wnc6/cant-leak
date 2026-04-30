@@ -423,3 +423,57 @@ Results saved to /Users/wenni/Documents/GitHub/cant-leak/fareez/fareez_compariso
 ```
 
 </details>
+
+## Datasets and Benchmarks
+
+This project contributes one OSCE benchmark with structured disclosure annotations ([`cases/`](cases/)) and three datasets supporting the evaluation ([`results/`](results/), [`evals/`](evals/), [`annotation/`](annotation/)). Two external resources informed case authoring: Fareez et al. 2022 for structural realism, and MediTOD for diagnostic-slot coverage.
+
+### Bundled with this repository
+
+- **[`cases/`](cases/)** — three clinical cases authored as a benchmark for disclosure-control evaluation: [cardiology](cases/case_cardiology.json), [respiratory](cases/case_respiratory.json), [GI](cases/case_gi.json).
+  - *Per fact:* natural-language disclosure condition, deterministic unlock keywords, leak phrases for verifier matching, CMAS-style symptom attributes.
+  - *Validated against:* Fareez transcripts (structural realism), MediTOD CMAS (diagnostic-slot coverage).
+  - *License:* MIT.
+- **[`results/`](results/)** — 324 conversation transcripts produced by running the full experiment matrix. Source for all primary leakage measurements (Table 2, Figures 2–7).
+- **[`evals/`](evals/)** — 324 GPT-4o-mini supplementary evaluations of those transcripts. Source for contradiction, naturalness, and failure-attribution numbers (Tables 4, 7).
+- **[`annotation/`](annotation/)** — 50 stratified responses with independent labels from two human annotators, plus GPT-4o-mini predictions and the Cohen's κ computation. Source for the human validation evidence (§3.6).
+
+### External resources
+
+- **Fareez et al. 2022** — 272 simulated patient–physician OSCE transcripts (predominantly respiratory) recorded by medical residents and senior medical students, with manually corrected text transcripts.
+  - *Used as:* (a) a structural reference for case authoring — ensuring authored cases match real OSCE structure (chief complaint, HPI, family/social history, ROS) rather than being LLM-fabricated; (b) a naturalness comparison benchmark (Table 5).
+  - *Access:* Download from [figshare](https://doi.org/10.6084/m9.figshare.16550013); cite the original authors.
+
+- **MediTOD ([EMNLP 2024](https://aclanthology.org/2024.emnlp-main.936/))** — the Clinical Medical Agent Schema (CMAS), a structured representation of medical dialogue across 11 diagnostic slots: chief complaint · history of present illness · past medical history · medications · allergies · family history · social history · review of systems · physical exam · assessment · plan.
+  - *Used to:* validate that each authored case provides at least one informative fact per slot — ensuring authored cases aren't missing material a real clinician would expect.
+
+## Comparison Systems
+
+The evaluation compares the proposed isolated architecture against five alternative systems, implemented as conditions in [`src/conditions.py`](src/conditions.py):
+
+| Condition | Mechanism |
+|---|---|
+| Naive prompting | Full case in system prompt + "do not reveal these facts" |
+| Structured prompting | Per-fact disclosure rules, few-shot hedging examples, chain-of-thought |
+| Self-monitoring | Generate response, self-check for leaks, regenerate if needed |
+| **Isolated architecture (this work)** | Planner → content brief → generator + verifier |
+| No-isolation ablation | Same pipeline as isolated, but generator sees full case |
+| No-verifier ablation | Same as isolated, but without the verifier |
+
+All six conditions share the same student agent, cases, and Llama 3.1 8B model — only the disclosure-control mechanism differs. Run any of them via [`run_experiment.py`](run_experiment.py) (see [Run a Single Experiment](#run-a-single-experiment)).
+
+Architectural antecedents discussed in the report's Related Work but not directly compared as runnable systems: [EvoPatient (ACL 2025)](https://aclanthology.org/2025.acl-long.846/), [AIPatient (2024)](https://arxiv.org/abs/2409.18924), [Abdulhai et al. (NeurIPS 2025)](https://arxiv.org/abs/2511.00222).
+
+## External Software Built On
+
+| Tool | Used for |
+|---|---|
+| [Ollama](https://ollama.ai) | Local model server |
+| [Llama 3.1 8B Instruct (FP16)](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) | All six experimental conditions (planner, generator, verifier, baselines) |
+| GPT-4o-mini via [OpenAI API](https://platform.openai.com/docs/api-reference) | Supplementary post-hoc evaluation only — never inline during experiments |
+| [requests](https://pypi.org/project/requests/), [openai](https://pypi.org/project/openai/), [matplotlib](https://matplotlib.org/), [jupyter](https://jupyter.org/), [ipykernel](https://github.com/ipython/ipykernel) | HTTP client, OpenAI SDK, plotting, notebook environment, kernel registration. Versions in [`requirements.txt`](requirements.txt). |
+
+
+## License
+
+MIT — see [`LICENSE`](LICENSE). The cases, code, and results are reusable for academic and commercial work with attribution.
