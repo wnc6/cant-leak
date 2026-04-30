@@ -58,12 +58,16 @@ Self-contained bundles that aren't part of the main pipeline.
 ### Course deliverables
 
 - [`milestone_docs/`](milestone_docs/)
-  - [`proposal`](milestone_docs/proposal.pdf) (also available on [`Google Drive`](https://docs.google.com/document/d/1tOcCJONUz_ntJvuhBHgy4a_0rhxdzq4RKYVVpoKXy80/edit?usp=sharing))
-  - [`progress report`](milestone_docs/progress_report.pdf) (also available on [`Google Drive`](https://docs.google.com/document/d/1X4RFFXo_oR_dbB5HivVlmhwtDHNzk51dQ9Ex1sdO_4A/edit?usp=sharing))
+  - [`proposal.pdf`](milestone_docs/proposal.pdf) (also available on [Google Drive](https://docs.google.com/document/d/1tOcCJONUz_ntJvuhBHgy4a_0rhxdzq4RKYVVpoKXy80/edit?usp=sharing))
+  - [`progress_report.pdf`](milestone_docs/progress_report.pdf) (also available on [Google Drive](https://docs.google.com/document/d/1X4RFFXo_oR_dbB5HivVlmhwtDHNzk51dQ9Ex1sdO_4A/edit?usp=sharing))
   - final report
-  - [`demo slides`](milestone_docs/demo_slides.pptx) (also available on [`Google Drive`](https://docs.google.com/presentation/d/1S6ZL4I1kWZGnstxX_ksZV60AL7DYXUaYPsCd0kc14bg/edit?usp=drive_link))
-  - [`a leak inspection report`](milestone_docs/leak_inspection_report.md) (manual evidence behind the GPT-4o-mini false-positive analysis)
-- [`assets/`](assets/) — static images ([`architecture diagram`](assets/architecture.png), [`human annotator tool screenshot`](assets/human_annotation_tool.png))
+  - [`demo_slides.pptx`](milestone_docs/demo_slides.pptx) (also available on [Google Drive](https://docs.google.com/presentation/d/1S6ZL4I1kWZGnstxX_ksZV60AL7DYXUaYPsCd0kc14bg/edit?usp=drive_link))
+  - [`leak_inspection_report.md`](milestone_docs/leak_inspection_report.md) (manual evidence behind the GPT-4o-mini false-positive analysis)
+- [`assets/`](assets/) — static images
+  - [architecture diagram](assets/architecture.png)
+  - [human annotator interface screenshot](assets/human_annotation_tool.png)
+  - [demo figure screenshot](assets/demo_figure_screenshot.png)
+  - [kernel selection screenshot](assets/kernel_selection.png)
 
 ### Project files
 
@@ -440,13 +444,13 @@ Results saved to /Users/wenni/Documents/GitHub/cant-leak/fareez/fareez_compariso
 
 ## Datasets and Benchmarks
 
-This project contributes one OSCE benchmark with structured disclosure annotations ([`cases/`](cases/)) and three datasets supporting the evaluation ([`results/`](results/), [`evals/`](evals/), [`annotation/`](annotation/)). Two external resources informed case authoring: Fareez et al. 2022 for structural realism, and MediTOD for diagnostic-slot coverage.
+This project contributes one OSCE benchmark with structured disclosure annotations ([`cases/`](cases/)) and three datasets supporting the evaluation ([`results/`](results/), [`evals/`](evals/), [`annotation/`](annotation/)). Two external resources informed case authoring: [Fareez et al. 2022](https://doi.org/10.6084/m9.figshare.16550013) for structural realism, and [MediTOD](https://aclanthology.org/2024.emnlp-main.936/) for diagnostic-slot coverage.
 
 ### Bundled with this repository
 
 - **[`cases/`](cases/)** — three clinical cases authored as a benchmark for disclosure-control evaluation: [cardiology](cases/case_cardiology.json), [respiratory](cases/case_respiratory.json), [GI](cases/case_gi.json).
   - *Per fact:* natural-language disclosure condition, deterministic unlock keywords, leak phrases for verifier matching, CMAS-style symptom attributes.
-  - *Validated against:* Fareez transcripts (structural realism), MediTOD CMAS (diagnostic-slot coverage).
+  - *Validated against:* [Fareez et al. 2022](https://doi.org/10.6084/m9.figshare.16550013) (structural realism), and [MediTOD](https://aclanthology.org/2024.emnlp-main.936/) (diagnostic-slot coverage).
   - *License:* MIT.
 - **[`results/`](results/)** — 324 conversation transcripts produced by running the full experiment matrix. Source for all primary leakage measurements (Table 2, Figures 2–7).
 - **[`evals/`](evals/)** — 324 GPT-4o-mini supplementary evaluations of those transcripts. Source for contradiction, naturalness, and failure-attribution numbers (Tables 4, 7).
