@@ -109,11 +109,11 @@ Run the smoke test to confirm Ollama is reachable, all six conditions instantiat
 ```bash
 python3 tests/smoke_test.py
 ```
-If this passes, the system is working end-to-end and you can proceed to [Run the System](#run-the-system).
+If this passes, the system is working end-to-end and you can proceed to [Deploy and Run the System](#deploy-and-run-the-system).
 
 [`tests/test_planner.py`](tests/test_planner.py) and [`tests/test_pipeline.py`](tests/test_pipeline.py) provide finer-grained unit and integration tests; both run with `python3 tests/<name>.py`.
 
-## Deploy and run the System
+## Deploy and Run the System
 
 ### Run the Playground
 **1. Register the venv as a Jupyter kernel**
