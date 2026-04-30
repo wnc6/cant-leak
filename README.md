@@ -1,6 +1,9 @@
 # You Can't Leak What You Don't Know
 Information-isolated disclosure architecture for controlling what LLM dialogue agents reveal under pressure.
 
+## Milestone Documents
+See [Course Deliverables](#course-deliverables)
+
 ## Prerequisites
 - Python 3.10+
 - [Ollama](https://ollama.ai) for local LLM inference
