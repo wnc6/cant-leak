@@ -181,12 +181,14 @@ The script writes incrementally; a Ctrl+C interruption preserves completed conve
 
 ## External Software Built On
 
-| Tool | Used for |
-|---|---|
-| [Ollama](https://ollama.ai) | Local model server |
-| [Llama 3.1 8B Instruct (FP16)](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) | All six experimental conditions (planner, generator, verifier, baselines) |
-| GPT-4o-mini via [OpenAI API](https://platform.openai.com/docs/api-reference) | Supplementary post-hoc evaluation only — never inline during experiments |
-| [requests](https://pypi.org/project/requests/), [openai](https://pypi.org/project/openai/), [matplotlib](https://matplotlib.org/), [jupyter](https://jupyter.org/), [ipykernel](https://github.com/ipython/ipykernel) | HTTP client, OpenAI SDK, plotting, notebook environment, kernel registration. Versions in [`requirements.txt`](requirements.txt). |
+| Tool | Used for | Notes |
+|---|---|---|
+| [Ollama](https://ollama.ai) | Local model server | Avoids API costs and rate limits across 324 experiments. |
+| [Llama 3.1 8B Instruct (FP16)](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) | All six experimental conditions (planner, generator, verifier, baselines) | 8B chosen deliberately — if isolation works at this scale, it works at larger scale (§2.1 of report). |
+| GPT-4o-mini via [OpenAI API](https://platform.openai.com/docs/api-reference) | Supplementary post-hoc evaluation only | Never used inline during experiments. Treated as supplementary because human validation showed ~27% recall on leak detection. |
+| Python deps: [requests](https://pypi.org/project/requests/), [openai](https://pypi.org/project/openai/), [matplotlib](https://matplotlib.org/), [jupyter](https://jupyter.org/), [ipykernel](https://github.com/ipython/ipykernel) | HTTP client, OpenAI SDK, plotting, notebook, kernel registration | Versions in [`requirements.txt`](requirements.txt). |
+
+No other models, embeddings, or external services are used in the experimental pipeline. External datasets and schemas (Fareez 2022, MediTOD CMAS) are documented in [Datasets and Benchmarks](#datasets-and-benchmarks).
 
 ## Reproduce the Evaluation
 
