@@ -114,10 +114,18 @@ jupyter notebook demo/playground.ipynb
 **3. Select the `cant-leak` kernel**
 ![Kernel selection](assets/kernel_selection.png)
 
-## Combine playground cell outputs into [demo_figure.html](demo/demo_figure.html)
+## Create demo figure
+
+<details>
+<summary>Click to preview demo figure</summary>
+
+![Preview](assets/demo_figure_screenshot.png)
+
+</details>
 
 > ***Save any changes*** first, then:
 ```bash
+# combine playground cell outputs
 python3 demo/stitch_playground.py demo/playground.ipynb -o demo/demo_figure.html
 open demo/demo_figure.html
 ```
