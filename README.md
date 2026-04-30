@@ -1,6 +1,12 @@
 # You Can't Leak What You Don't Know
 Information-isolated disclosure architecture for controlling what LLM dialogue agents reveal under pressure.
 
+## Prerequisites
+- Python 3.10+
+- [Ollama](https://ollama.ai) for local LLM inference
+- 16+ GB disk, 12+ GB RAM for `llama3.1:8b-instruct-fp16`
+- OpenAI API key (only for the supplementary GPT-4o-mini evaluation)
+
 ## Repository Layout
 
 ### Architecture and benchmark
@@ -61,15 +67,8 @@ Self-contained bundles that aren't part of the main pipeline.
 - [`LICENSE`](LICENSE) — MIT
 - [`.gitignore`](.gitignore)
 
-## Quick Start
 
-### Prerequisites
-- Python 3.10+
-- [Ollama](https://ollama.ai) for local LLM inference
-- 16+ GB disk, 12+ GB RAM for `llama3.1:8b-instruct-fp16`
-- OpenAI API key (only for the supplementary GPT-4o-mini evaluation)
-
-### Setup
+## Setup
 **1. Clone the repo and install Python dependencies:**
 ```bash
 git clone https://github.com/wnc6/cant-leak.git
@@ -101,7 +100,7 @@ ollama pull llama3.1:8b-instruct-fp16
 ollama run llama3.1:8b-instruct-fp16 "hello"
 ```
 
-### Run the playground
+## Run the playground
 **1. Register the venv as a Jupyter kernel**
 ```bash
 pip install ipykernel
@@ -115,7 +114,7 @@ jupyter notebook demo/playground.ipynb
 **3. Select the `cant-leak` kernel**
 ![Kernel selection](assets/kernel_selection.png)
 
-### Combine playground cell outputs into [demo_figure.html](demo/demo_figure.html)
+## Combine playground cell outputs into [demo_figure.html](demo/demo_figure.html)
 
 > ***Save any changes*** first, then:
 ```bash
