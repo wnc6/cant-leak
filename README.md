@@ -467,7 +467,7 @@ This project contributes one OSCE benchmark with structured disclosure annotatio
 
 ## Comparison Systems
 
-The isolated architecture is evaluated against five alternative systems implemented in this repository (`src/conditions.py`). Three are prompting-based baselines representing the standard approaches in the LLM-simulated-patient literature; two are ablations of the proposed architecture isolating individual component contributions.
+The isolated architecture is evaluated against five alternative systems implemented in this repository [`src/conditions.py`](src/conditions.py). Three are prompting-based baselines representing the standard approaches in the LLM-simulated-patient literature; two are ablations of the proposed architecture isolating individual component contributions.
 
 | Condition | Mechanism |
 |---|---|
@@ -487,7 +487,7 @@ Architectural antecedents discussed in the report's Related Work but not directl
 
 - **Claude (claude.ai)** — drafting, debugging, and refactoring code and docstrings; all code reviewed and all reported numbers independently verified.
 - **Perplexity** — literature search; cited sources verified independently against original publications.
-- **GPT-4o-mini** — pipeline evaluator (`evaluate.py`), not a development tool; treated as supplementary because human validation showed ~27% recall on leak detection.
+- **GPT-4o-mini** — pipeline evaluator [`evaluate.py`](evaluate.py), not a development tool; treated as supplementary because human validation showed ~27% recall on leak detection.
 
 Clinical case content, leak phrases, and unlock keywords were authored manually.
 
