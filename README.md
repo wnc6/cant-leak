@@ -7,6 +7,7 @@ See [Course Deliverables](#course-deliverables)
 ## Prerequisites
 - Python 3.10+
 - [Ollama](https://ollama.ai) for local LLM inference
+> no GPU cluster or cloud compute required
 - 16+ GB disk, 12+ GB RAM for `llama3.1:8b-instruct-fp16`
 - OpenAI API key (only for the supplementary GPT-4o-mini evaluation)
 
