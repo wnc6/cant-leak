@@ -75,6 +75,7 @@ Self-contained bundles that aren't part of the main pipeline.
 ### Project files
 
 - [`README.md`](README.md) — this file
+- [`ADAPTATION.md`](ADAPTATION.md) — guide for adapting the system to a new domain
 - [`requirements.txt`](requirements.txt) — Python dependencies
 - [`LICENSE`](LICENSE) — MIT
 - [`.gitignore`](.gitignore)
@@ -489,9 +490,16 @@ All five conditions use the same Llama 3.1 8B Instruct model, the same student a
 Architectural antecedents discussed in the report's Related Work but not directly compared as runnable systems: [EvoPatient (ACL 2025)](https://aclanthology.org/2025.acl-long.846/), [AIPatient (2024)](https://arxiv.org/abs/2409.18924), [Abdulhai et al. (NeurIPS 2025)](https://arxiv.org/abs/2511.00222).
 
 
+## Adapting to a New Domain
+
+The architecture is portable beyond OSCE simulated patients. To deploy it for negotiation training, privacy assistants, game NPCs, or any setting where an AI must withhold information under questioning, the main work is authoring new case files. 
+
+See [`ADAPTATION.md`](ADAPTATION.md) for the case file schema, a worked authoring example, per-field guidance, validation steps, and common authoring pitfalls.
+
+
 ## AI Tools Used in Development
 
-- **Claude (claude.ai)** — drafting, debugging, and refactoring code and docstrings; all code reviewed and all reported numbers independently verified.
+- **Claude (claude.ai)** — drafting, testing, debugging, and refactoring code, docstrings, and adaptation guide; all code reviewed and all reported numbers independently verified.
 - **Perplexity** — literature search; cited sources verified independently against original publications.
 - **GPT-4o-mini** — pipeline evaluator [`evaluate.py`](evaluate.py), not a development tool; treated as supplementary because human validation showed ~27% recall on leak detection.
 
