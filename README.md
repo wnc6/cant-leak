@@ -113,7 +113,8 @@ If this passes, the system is working end-to-end and you can proceed to [Run the
 
 [`tests/test_planner.py`](tests/test_planner.py) and [`tests/test_pipeline.py`](tests/test_pipeline.py) provide finer-grained unit and integration tests; both run with `python3 tests/<name>.py`.
 
-## Run the System
+## Deploy and run the System
+
 ### Run the Playground
 **1. Register the venv as a Jupyter kernel**
 ```bash
@@ -169,6 +170,14 @@ python3 run_all.py --runs 3 --dry-run
 ```
 The script writes incrementally; a Ctrl+C interruption preserves completed conversations and `--resume` skips them on a re-run.
 
+## External Software Built On
+
+| Tool | Used for |
+|---|---|
+| [Ollama](https://ollama.ai) | Local model server |
+| [Llama 3.1 8B Instruct (FP16)](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) | All six experimental conditions (planner, generator, verifier, baselines) |
+| GPT-4o-mini via [OpenAI API](https://platform.openai.com/docs/api-reference) | Supplementary post-hoc evaluation only — never inline during experiments |
+| [requests](https://pypi.org/project/requests/), [openai](https://pypi.org/project/openai/), [matplotlib](https://matplotlib.org/), [jupyter](https://jupyter.org/), [ipykernel](https://github.com/ipython/ipykernel) | HTTP client, OpenAI SDK, plotting, notebook environment, kernel registration. Versions in [`requirements.txt`](requirements.txt). |
 
 ## Reproduce the Evaluation
 
@@ -464,16 +473,15 @@ All six conditions share the same student agent, cases, and Llama 3.1 8B model �
 
 Architectural antecedents discussed in the report's Related Work but not directly compared as runnable systems: [EvoPatient (ACL 2025)](https://aclanthology.org/2025.acl-long.846/), [AIPatient (2024)](https://arxiv.org/abs/2409.18924), [Abdulhai et al. (NeurIPS 2025)](https://arxiv.org/abs/2511.00222).
 
-## External Software Built On
+## AI Tools Used in Development
 
-| Tool | Used for |
-|---|---|
-| [Ollama](https://ollama.ai) | Local model server |
-| [Llama 3.1 8B Instruct (FP16)](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct) | All six experimental conditions (planner, generator, verifier, baselines) |
-| GPT-4o-mini via [OpenAI API](https://platform.openai.com/docs/api-reference) | Supplementary post-hoc evaluation only — never inline during experiments |
-| [requests](https://pypi.org/project/requests/), [openai](https://pypi.org/project/openai/), [matplotlib](https://matplotlib.org/), [jupyter](https://jupyter.org/), [ipykernel](https://github.com/ipython/ipykernel) | HTTP client, OpenAI SDK, plotting, notebook environment, kernel registration. Versions in [`requirements.txt`](requirements.txt). |
+- **Claude (claude.ai)** — drafting, debugging, and refactoring code and docstrings; all code reviewed and all reported numbers independently verified.
+- **Perplexity** — literature search; cited sources verified independently against original publications.
+- **GPT-4o-mini** — pipeline evaluator (`evaluate.py`), not a development tool; treated as supplementary because human validation showed ~27% recall on leak detection.
 
+Clinical case content, leak phrases, and unlock keywords were authored manually.
 
 ## License
 
 MIT — see [`LICENSE`](LICENSE). The cases, code, and results are reusable for academic and commercial work with attribution.
+
