@@ -64,7 +64,7 @@ Self-contained bundles that aren't part of the main pipeline.
 - [`milestone_docs/`](milestone_docs/)
   - [`proposal.pdf`](milestone_docs/proposal.pdf) (also available on [Google Drive](https://docs.google.com/document/d/1tOcCJONUz_ntJvuhBHgy4a_0rhxdzq4RKYVVpoKXy80/edit?usp=sharing))
   - [`progress_report.pdf`](milestone_docs/progress_report.pdf) (also available on [Google Drive](https://docs.google.com/document/d/1X4RFFXo_oR_dbB5HivVlmhwtDHNzk51dQ9Ex1sdO_4A/edit?usp=sharing))
-  - final report
+  - [`final_report.pdf`](milestone_docs/final_report.pdf) 
   - [`demo_slides.pptx`](milestone_docs/demo_slides.pptx) (also available on [Google Drive](https://docs.google.com/presentation/d/1S6ZL4I1kWZGnstxX_ksZV60AL7DYXUaYPsCd0kc14bg/edit?usp=drive_link))
   - [`leak_inspection_report.md`](milestone_docs/leak_inspection_report.md) (manual evidence behind the GPT-4o-mini false-positive analysis)
 - [`assets/`](assets/) — static images
